@@ -1,0 +1,384 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+//helms
+[itemdef i_platemail_helmet_closed_valorite]
+id i_platemail_helmet_closed
+name valorite platemail closed helmet
+type t_armor
+weight 7
+armor 75
+reqstr 75
+skillmake blacksmithing 85.9
+resources 15 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_helmet_open_valorite]
+id i_platemail_helmet_open
+name valorite platemail open helmet
+type t_armor
+weight 7
+armor 75
+reqstr 75
+skillmake blacksmithing 85.9
+resources 15 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_helmet_bascinet_valorite]
+id i_platemail_helmet_bascinet
+name valorite platemail bascinet helmet
+type t_armor
+weight 7
+armor 75
+reqstr 75
+skillmake blacksmithing 85.9
+resources 15 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_helmet_nose_valorite]
+id i_platemail_helmet_nose
+name valorite platemail nose helmet
+type t_armor
+weight 7
+armor 75
+reqstr 75
+skillmake blacksmithing 85.9
+resources 15 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_helmet_valorite]
+id i_platemail_helmet
+name valorite platemail helmet
+type t_armor
+weight 7
+armor 75
+reqstr 75
+skillmake blacksmithing 85.9
+resources 15 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+//platemails
+[itemdef i_platemail_arms_valorite]
+id i_platemail_arms
+name valorite platemail arms
+type t_armor
+weight 15
+armor 80
+reqstr 75
+skillmake blacksmithing 88.3
+resources 18 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_leggings_valorite]
+id i_platemail_leggings
+name valorite platemail leggings
+type t_armor
+weight 20
+armor 80
+reqstr 75
+skillmake blacksmithing 90.8
+resources 20 i_ingot_valorite
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_gorget_valorite]
+id i_platemail_gorget
+name valorite platemail gorget
+type t_armor
+weight 20
+armor 75
+reqstr 75
+skillmake blacksmithing 77.4
+resources 10 i_ingot_valorite
+
+tag.res_physical 2
+tag.res_fire 0
+tag.res_cold 1
+tag.res_poison 0
+tag.res_energy 1
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_gloves_valorite]
+id i_platemail_gloves
+name valorite platemail gloves
+type t_armor
+weight 20
+armor 80
+reqstr 75
+skillmake blacksmithing 80.9
+resources 12 i_ingot_valorite
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+[itemdef i_platemail_chest_valorite]
+id i_platemail_chest
+name valorite platemail chest
+type t_armor
+weight 20
+armor 80
+reqstr 75
+skillmake blacksmithing 95.2
+resources 25 i_ingot_valorite
+
+tag.res_physical 16
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 75
+
+//chainmails
+[itemdef i_chainmail_coif_valorite]
+id i_chainmail_coif
+name valorite chainmail coif
+type t_armor
+weight 7
+armor 65
+reqstr 65
+skillmake blacksmithing 50.0
+resources 10 i_ingot_valorite
+
+tag.res_physical 3
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 2
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 65
+
+[itemdef i_chainmail_leggings_valorite]
+id i_chainmail_leggings
+name valorite chainmail leggings
+weight 8
+armor 65
+reqstr 65
+skillmake blacksmithing 65.7
+resources 18 i_ingot_valorite
+
+tag.res_physical 8
+tag.res_fire 2
+tag.res_cold 4
+tag.res_poison 2
+tag.res_energy 6
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 65
+
+[itemdef i_chainmail_tunic_valorite]
+id i_chainmail_tunic
+name valorite chainmail tunic
+weight 10
+armor 65
+reqstr 65
+skillmake blacksmithing 68.1
+resources 20 i_ingot_valorite
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 65
+
+//shields
+[itemdef i_shield_round_valorite]
+id i_shield_round
+name valorite round shield
+type t_shield
+weight 12
+armor 30
+reqstr 30
+skillmake blacksmithing 30.0
+resources 10 i_ingot_valorite
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 30
+
+[itemdef i_shield_buckler_valorite]
+id i_shield_buckler
+name valorite buckler shield
+type t_shield
+weight 12
+armor 25
+reqstr 25
+skillmake blacksmithing 45.0
+resources 5 i_ingot_valorite
+
+tag.res_physical 5
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 25
+
+[itemdef i_shield_kite_metal_valorite]
+id i_shield_kite_metal
+name valorite kite metal shield
+type t_shield
+weight 12
+armor 35
+reqstr 35
+skillmake blacksmithing 59.0
+resources 16 i_ingot_valorite
+
+tag.res_physical 17
+tag.res_fire 4
+tag.res_cold 6
+tag.res_poison 4
+tag.res_energy 8
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 35
+
+[itemdef i_shield_heater_valorite]
+id i_shield_heater
+name valorite heater shield
+type t_shield
+weight 12
+armor 40
+reqstr 40
+skillmake blacksmithing 70.0
+resources 20 i_ingot_valorite
+
+tag.res_physical 20
+tag.res_fire 5
+tag.res_cold 7
+tag.res_poison 5
+tag.res_energy 10
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 40
+
+[itemdef i_shield_metal_valorite]
+id i_shield_round_metal
+name valorite metal shield
+type t_shield
+weight 10
+armor 30
+reqstr 30
+skillmake blacksmithing 60.0
+resources 10 i_ingot_valorite
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 8
+tag.color 0515
+
+on=@create
+color 0515
+hitpoints 30
+
+[eof]

@@ -1,0 +1,788 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+[itemdef 00403]
+defname i_gargish_cloth_arms_1
+name gargish cloth arms
+type t_clothing
+layer layer_arms
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 87.1
+resources 8 i_cloth
+dupelist 0405f
+
+on=@create
+hitpoints 40
+
+[itemdef 0405f]
+dupeitem 00403
+
+[itemdef 00404]
+defname i_gargish_cloth_arms_2
+name gargish cloth arms
+type t_clothing
+layer layer_arms
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 87.1
+resources 8 i_cloth
+dupelist 04060
+
+on=@create
+hitpoints 40
+
+[itemdef 04060]
+dupeitem 00404
+
+[itemdef 00405]
+defname i_gargish_cloth_chest_1
+name gargish cloth chest
+type t_clothing
+layer layer_chest
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 94.0
+resources 12 i_cloth
+dupelist 04061
+
+on=@create
+hitpoints 40
+
+[itemdef 04061]
+dupeitem 00405
+
+[itemdef 00406]
+defname i_gargish_cloth_chest_2
+name gargish cloth chest
+type t_clothing
+layer layer_chest
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 94.0
+resources 12 i_cloth
+dupelist 04062
+
+on=@create
+hitpoints 40
+
+[itemdef 04062]
+dupeitem 00406
+
+[itemdef 00407]
+defname i_gargish_cloth_kilt_1
+name gargish cloth kilt
+type t_clothing
+layer layer_skirt
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 82.9
+resources 6 i_cloth
+dupelist 04063
+
+on=@create
+hitpoints 40
+
+[itemdef 04063]
+dupeitem 00407
+
+[itemdef 00408]
+defname i_gargish_cloth_kilt_2
+name gargish cloth kilt
+type t_clothing
+layer layer_skirt
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 82.9
+resources 6 i_cloth
+dupelist 04064
+
+on=@create
+hitpoints 40
+
+[itemdef 04064]
+dupeitem 00408
+
+[itemdef 0040a]
+defname i_gargish_cloth_leggings_1
+name gargish cloth leggings
+type t_clothing
+layer layer_legs
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 91.2
+resources 10 i_cloth
+dupelist 04066
+
+on=@create
+hitpoints 40
+
+[itemdef 04066]
+dupeitem 0040a
+
+[itemdef 00409]
+defname i_gargish_cloth_leggings_2
+name gargish cloth leggings
+type t_clothing
+layer layer_legs
+weight 2
+armor 20
+reqstr 20
+skillmake tailoring 91.2
+resources 10 i_cloth
+dupelist 04065
+
+on=@create
+hitpoints 40
+
+[itemdef 04065]
+dupeitem 00409
+
+[itemdef 045a4]
+defname i_gargish_cloth_wing_armor
+name gargish cloth wing armor
+type t_clothing
+layer layer_cape
+weight 2
+armor 0
+reqstr 10
+skillmake tailoring 65.0
+resources 12 i_cloth
+dupelist 045a5
+
+on=@create
+hitpoints 40
+
+[itemdef 045a5]
+dupeitem 045a4
+
+[itemdef 00301]
+defname i_gargish_leather_arms_1
+name gargish leather arms
+type t_armor_leather
+layer layer_arms
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 53.9
+resources 8 i_hides_cut
+dupelist 04047
+
+on=@create
+hitpoints 40
+
+[itemdef 04047]
+dupeitem 00301
+
+[itemdef 00302]
+defname i_gargish_leather_arms_2
+name gargish leather arms
+type t_armor_leather
+layer layer_arms
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 53.9
+resources 8 i_hides_cut
+dupelist 04048
+
+on=@create
+hitpoints 40
+
+[itemdef 04048]
+dupeitem 00302
+
+[itemdef 00304]
+defname i_gargish_leather_chest_1
+name gargish leather chest
+type t_armor_leather
+layer layer_chest
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 70.5
+resources 8 i_hides_cut
+dupelist 0404a
+
+on=@create
+hitpoints 40
+
+[itemdef 0404a]
+dupeitem 00304
+
+[itemdef 00303]
+defname i_gargish_leather_chest_2
+name gargish leather chest
+type t_armor_leather
+layer layer_chest
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 70.5
+resources 8 i_hides_cut
+dupelist 04049
+
+on=@create
+hitpoints 40
+
+[itemdef 04049]
+dupeitem 00303
+
+[itemdef 00311]
+defname i_gargish_leather_kilt_1
+name gargish leather kilt
+type t_armor_leather
+layer layer_skirt
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 58.0
+resources 6 i_hides_cut
+dupelist 0404c
+
+on=@create
+hitpoints 40
+
+[itemdef 0404c]
+dupeitem 00311
+
+[itemdef 00310]
+defname i_gargish_leather_kilt_2
+name gargish leather kilt
+type t_armor_leather
+layer layer_skirt
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 58.0
+resources 6 i_hides_cut
+dupelist 0404b
+
+on=@create
+hitpoints 40
+
+[itemdef 0404b]
+dupeitem 00310
+
+[itemdef 00305]
+defname i_gargish_leather_leggings_1
+name gargish leather leggings
+type t_armor_leather
+layer layer_legs
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 66.3
+resources 10 i_hides_cut
+dupelist 0404d
+
+on=@create
+hitpoints 40
+
+[itemdef 0404d]
+dupeitem 00305
+
+[itemdef 00306]
+defname i_gargish_leather_leggings_2
+name gargish leather leggings
+type t_armor_leather
+layer layer_legs
+weight 4
+armor 30
+reqstr 25
+skillmake tailoring 66.3
+resources 10 i_hides_cut
+dupelist 0404e
+
+on=@create
+hitpoints 40
+
+[itemdef 0404e]
+dupeitem 00306
+
+[itemdef 041d8]
+defname i_gargish_leather_talons
+name gargish leather talons
+type t_armor_leather
+layer layer_shoes
+weight 2
+armor 0
+reqstr 10
+skillmake tailoring 40.4
+resources 6 i_hides_cut
+dupelist 041d9
+
+on=@create
+hitpoints 40
+
+[itemdef 041d9]
+dupeitem 041d8
+
+[itemdef 0457e]
+defname i_gargish_leather_wing_armor
+name gargish leather wing armor
+type t_armor_leather
+layer layer_cape
+weight 2
+armor 0
+reqstr 10
+skillmake tailoring 65.0
+resources 12 i_hides_cut
+dupelist 0457f
+
+on=@create
+hitpoints 40
+
+[itemdef 0457f]
+dupeitem 0457e
+
+[itemdef 00283]
+defname i_gargish_stone_arms_1
+name gargish stone arms
+type t_armor
+layer layer_arms
+weight 10
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 8 i_granite
+dupelist 04057
+
+on=@create
+hitpoints 40
+
+[itemdef 04057]
+dupeitem 00283
+
+[itemdef 00284]
+defname i_gargish_stone_arms_2
+name gargish stone arms
+type t_armor
+layer layer_arms
+weight 10
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 8 i_granite
+dupelist 04058
+
+on=@create
+hitpoints 40
+
+[itemdef 04058]
+dupeitem 00284
+
+[itemdef 00285]
+defname i_gargish_stone_chest_1
+name gargish stone chest
+type t_armor
+layer layer_chest
+weight 15
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 12 i_granite
+dupelist 04059
+
+on=@create
+hitpoints 40
+
+[itemdef 04059]
+dupeitem 00285
+
+[itemdef 00286]
+defname i_gargish_stone_chest_2
+name gargish stone chest
+type t_armor
+layer layer_chest
+weight 15
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 12 i_granite
+dupelist 0405a
+
+on=@create
+hitpoints 40
+
+[itemdef 0405a]
+dupeitem 00286
+
+[itemdef 00287]
+defname i_gargish_stone_kilt_1
+name gargish stone kilt
+type t_armor
+layer layer_skirt
+weight 10
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 6 i_granite
+dupelist 0405b
+
+on=@create
+hitpoints 40
+
+[itemdef 0405b]
+dupeitem 00287
+
+[itemdef 00288]
+defname i_gargish_stone_kilt_2
+name gargish stone kilt
+type t_armor
+layer layer_skirt
+weight 10
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 6 i_granite
+dupelist 0405c
+
+on=@create
+hitpoints 40
+
+[itemdef 0405c]
+dupeitem 00288
+
+[itemdef 00289]
+defname i_gargish_stone_leggings_1
+name gargish stone leggings
+type t_armor
+layer layer_legs
+weight 15
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 10 i_granite
+dupelist 0405d
+
+on=@create
+hitpoints 40
+
+[itemdef 0405d]
+dupeitem 00289
+
+[itemdef 0028a]
+defname i_gargish_stone_leggings_2
+name gargish stone leggings
+type t_armor
+layer layer_legs
+weight 15
+armor 40
+reqstr 40
+skillmake carpentry 100.0
+resources 10 i_granite
+dupelist 0405e
+
+on=@create
+hitpoints 40
+
+[itemdef 0405e]
+dupeitem 0028a
+
+[itemdef 00308]
+defname i_gargish_platemail_arms_1
+name gargish platemail arms
+type t_armor
+layer layer_arms
+weight 5
+armor 48
+reqstr 80
+skillmake blacksmithing 66.3
+resources 18 i_ingot_iron
+dupelist 04050
+
+on=@create
+hitpoints 40
+
+[itemdef 04050]
+dupeitem 00308
+
+[itemdef 00307]
+defname i_gargish_platemail_arms_2
+name gargish platemail arms
+type t_armor
+layer layer_arms
+weight 5
+armor 48
+reqstr 80
+skillmake blacksmithing 66.3
+resources 8 i_ingot_iron
+dupelist 0404f
+
+on=@create
+hitpoints 40
+
+[itemdef 0404f]
+dupeitem 00307
+
+[itemdef 0030a]
+defname i_gargish_platemail_chest_1
+name gargish platemail chest
+type t_armor
+layer layer_chest
+weight 10
+armor 48
+reqstr 95
+skillmake blacksmithing 75.0
+resources 25 i_ingot_iron
+dupelist 04052
+
+on=@create
+hitpoints 40
+
+[itemdef 04052]
+dupeitem 0030a
+
+[itemdef 00309]
+defname i_gargish_platemail_chest_2
+name gargish platemail chest
+type t_armor
+layer layer_chest
+weight 10
+armor 48
+reqstr 95
+skillmake blacksmithing 75.0
+resources 25 i_ingot_iron
+dupelist 04051
+
+on=@create
+hitpoints 40
+
+[itemdef 04051]
+dupeitem 00309
+
+[itemdef 0030c]
+defname i_gargish_platemail_kilt_1
+name gargish platemail kilt
+type t_armor
+layer layer_skirt
+weight 5
+armor 48
+reqstr 80
+skillmake blacksmithing 58.9
+resources 12 i_ingot_iron
+dupelist 04054
+
+on=@create
+hitpoints 40
+
+[itemdef 04054]
+dupeitem 0030c
+
+[itemdef 0030b]
+defname i_gargish_platemail_kilt_2
+name gargish platemail kilt
+type t_armor
+layer layer_skirt
+weight 5
+armor 48
+reqstr 80
+skillmake blacksmithing 58.9
+resources 12 i_ingot_iron
+dupelist 04053
+
+on=@create
+hitpoints 40
+
+[itemdef 04053]
+dupeitem 0030b
+
+[itemdef 0030d]
+defname i_gargish_platemail_leggings_1
+name gargish platemail leggings
+type t_armor
+layer layer_legs
+weight 7
+armor 48
+reqstr 90
+skillmake blacksmithing 68.8
+resources 20 i_ingot_iron
+dupelist 04055
+
+on=@create
+hitpoints 40
+
+[itemdef 04055]
+dupeitem 0030d
+
+[itemdef 0030e]
+defname i_gargish_platemail_leggings_2
+name gargish platemail leggings
+type t_armor
+layer layer_legs
+weight 7
+armor 48
+reqstr 90
+skillmake blacksmithing 68.8
+resources 20 i_ingot_iron
+dupelist 04056
+
+on=@create
+hitpoints 40
+
+[itemdef 04056]
+dupeitem 0030e
+
+[itemdef 042de]
+defname i_gargish_platemail_talons
+name gargish platemail talons
+type t_armor
+layer layer_shoes
+weight 4
+armor 0
+reqstr 20
+skillmake blacksmithing 40.0
+resources 12 i_ingot_iron
+dupelist 042df
+
+on=@create
+hitpoints 40
+
+[itemdef 042df]
+dupeitem 042de
+
+[itemdef 04200]
+defname i_gargish_wooden_shield
+name gargish wooden shield
+type t_shield
+weight 5
+armor 8
+reqstr 20
+skillmake carpentry 52.6
+resources 9 i_log
+dupelist 04207
+
+on=@create
+hitpoints 40
+
+[itemdef 04207]
+dupeitem 04200
+
+[itemdef 04201]
+defname i_gargish_kite_shield
+name gargish kite shield
+type t_shield
+weight 7
+armor 18
+reqstr 45
+skillmake blacksmithing 4.6
+resources 16 i_ingot_iron
+dupelist 04206
+
+on=@create
+hitpoints 40
+
+[itemdef 04206]
+dupeitem 04201
+
+[itemdef 04202]
+defname i_small_plate_shield
+name small plate shield
+type t_shield
+weight 6
+armor 10
+reqstr 20
+skillmake blacksmithing 0.0
+resources 12 i_ingot_iron
+dupelist 0420a
+
+on=@create
+hitpoints 40
+
+[itemdef 0420a]
+dupeitem 04202
+
+[itemdef 04203]
+defname i_medium_plate_shield
+name medium plate shield
+type t_shield
+weight 6
+armor 16
+reqstr 45
+skillmake blacksmithing 0.0
+resources 14 i_ingot_iron
+dupelist 04209
+
+on=@create
+hitpoints 40
+
+[itemdef 04209]
+dupeitem 04203
+
+[itemdef 04204]
+defname i_large_plate_shield
+name large plate shield
+type t_shield
+weight 8
+armor 24
+reqstr 90
+skillmake blacksmithing 0.0
+resources 18 i_ingot_iron
+dupelist 04208
+
+on=@create
+hitpoints 40
+
+[itemdef 04208]
+dupeitem 04204
+
+[itemdef 04205]
+defname i_large_stone_shield
+name large stone shield
+type t_shield
+weight 7
+armor 20
+reqstr 40
+skillmake carpentry 100.0
+resources 16 i_granite
+dupelist 0420b
+
+on=@create
+hitpoints 40
+
+[itemdef 0420b]
+dupeitem 04205
+
+[itemdef 04228]
+defname i_gargish_chaos_shield
+name gargish chaos shield
+type t_shield
+weight 5
+armor 32
+reqstr 95
+skillmake blacksmithing 85.0
+resources 25 i_ingot_iron
+dupelist 04229
+
+on=@create
+hitpoints 40
+
+[itemdef 04229]
+dupeitem 04228
+
+[itemdef 0422a]
+defname i_gargish_order_shield
+name gargish order shield
+type t_shield
+weight 7
+armor 30
+reqstr 95
+skillmake blacksmithing 85.0
+resources 25 i_ingot_iron
+dupelist 0422c
+
+on=@create
+hitpoints 40
+
+[itemdef 0422c]
+dupeitem 0422a
+
+[eof]

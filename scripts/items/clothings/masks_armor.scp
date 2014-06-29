@@ -1,0 +1,29 @@
+// 29.06.2014 - mon jeu
+
+[itemdef 0141b]
+defname i_mask_orc
+type t_armor_leather
+armor 15
+weight 4
+dupelist 0141c
+
+on=@create
+hitpoints 25
+
+[itemdef 0141c]
+dupeitem 0141b
+
+[itemdef 01f0b]
+defname i_helm_orc
+type t_armor_leather
+armor 20
+weight 5
+dupelist 01f0c
+
+on=@create
+hitpoints={31 70}
+
+[itemdef 01f0c]
+dupeitem 01f0b
+
+[eof]

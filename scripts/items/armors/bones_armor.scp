@@ -1,0 +1,89 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+[itemdef 0144e]
+defname i_bone_arms
+name bone arms
+type t_armor_leather
+weight 2
+armor 30
+reqstr 40
+skillmake tailoring 92.0
+resources 4 i_reag_bone, 8 i_hides_cut
+dupelist 01453
+
+on=@create
+hitpoints 35
+
+[itemdef 01453]
+dupeitem 0144e
+
+[itemdef 0144f]
+defname i_bone_chest
+name bone chest
+type t_armor_leather
+weight 11
+armor 30
+reqstr 40
+skillmake tailoring 92.0
+resources 4 i_reag_bone, 8 i_hides_cut
+dupelist 01454
+
+on=@create
+hitpoints 35
+
+[itemdef 01454]
+dupeitem 0144f
+
+[itemdef 01450]
+defname i_bone_gloves
+name bone gloves
+type t_armor_leather
+weight 3
+armor 30
+reqstr 40
+skillmake tailoring 89.0
+resources 2 i_reag_bone, 6 i_hides_cut
+dupelist 01455
+
+on=@create
+hitpoints 35
+
+[itemdef 01455]
+dupeitem 01450
+
+[itemdef 01451]
+defname i_bone_helmet
+name bone helmet
+type t_armor_leather
+weight 4
+armor 30
+reqstr 40
+skillmake tailoring 85.0
+resources 2 i_reag_bone, 4 i_hides_cut
+dupelist 01456
+
+on=@create
+hitpoints 35
+
+[itemdef 01456]
+dupeitem 01451
+
+[itemdef 01452]
+defname i_bone_leggings
+name bone leggings
+type t_armor_leather
+weight 6
+armor 30
+reqstr 40
+skillmake tailoring 95.0
+resources 6 i_reag_bone, 10 i_hides_cut
+dupelist 01457
+
+on=@create
+hitpoints 35
+
+[itemdef 01457]
+dupeitem 01452
+
+[eof]

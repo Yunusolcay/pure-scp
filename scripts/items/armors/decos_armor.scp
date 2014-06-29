@@ -1,0 +1,117 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+[itemdef 013bc]
+defname i_chainmail_leggings_decoration
+name decoration chainmail leggings
+type t_normal
+weight 11
+resources 1 i_chainmail_leggings
+dupelist 013c1,013c3
+
+[itemdef 013c1]
+dupeitem 013bc
+
+[itemdef 013c3]
+dupeitem 013bc
+
+[itemdef 013bd]
+defname i_chainmail_tunic_decoration
+name decoration chainmail tunic
+type t_normal
+weight 15
+resources 1 i_chainmail_tunic
+dupelist 013c2
+
+[itemdef 013c2]
+dupeitem 013bd
+
+[itemdef 013c9]
+defname i_leather_leggings_decoration
+name decoration leather leggings
+type t_normal
+weight 7
+resources 1 i_leather_leggings
+dupelist 013d0
+
+[itemdef 013d0]
+dupeitem 013c9
+
+[itemdef 013ca]
+defname i_leather_tunic_decoration
+name decoration leather tunic
+type t_normal
+weight 8
+resources 1 i_leather_tunic
+dupelist 013d1
+
+[itemdef 013d1]
+dupeitem 013ca
+
+[itemdef 013d7]
+defname i_studded_sleeves_decoration
+name decoration studded sleeves
+type t_normal
+weight 9
+resources 1 i_studded_sleeves
+dupelist 013de
+
+[itemdef 013de]
+dupeitem 013d7
+
+[itemdef 013d8]
+defname i_studded_leggings_decoration
+name decoration studded leggings
+type t_normal
+weight 8
+resources 1 i_studded_leggings
+dupelist 013df
+
+[itemdef 013df]
+dupeitem 013d8
+
+[itemdef 013d9]
+defname i_studded_tunic_decoration
+name decoration studded tunic
+type t_normal
+weight 11
+resources 1 i_studded_tunic
+dupelist 013e0
+
+[itemdef 013e0]
+dupeitem 013d9
+
+[itemdef 013e5]
+defname i_ringmail_leggings_decoration
+name decoration ringmail leggings
+type t_normal
+weight 13
+resources 1 i_ringmail_leggings
+dupelist 013e6
+
+[itemdef 013e6]
+dupeitem 013e5
+
+[itemdef 013e7]
+defname i_ringmail_tunic_decoration
+name decoration ringmail tunic
+type t_normal
+weight 16
+resources 1 i_ringmail_tunic
+dupelist 013e8
+
+[itemdef 013e8]
+dupeitem 013e7
+
+[itemdef 013e9]
+defname i_ringmail_sleeves_decoration
+name decoration ringmail sleeves
+type t_normal
+weight 16
+resources 1 i_ringmail_sleeves
+dupelist 013ea
+
+[itemdef 013ea]
+dupeitem 013e9
+
+[eof]

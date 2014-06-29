@@ -1,0 +1,9 @@
+armors
+	platemail
+		blackrock	
+		
+
+			
+on=@create
+color=color_o_gold
+hitpoints=60

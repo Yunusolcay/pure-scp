@@ -1,0 +1,156 @@
+//29.06.2014 - mon jeu
+//todo
+//weight, armor, reqstr, skillmake, resources
+version 0.56c
+
+[itemdef i_reag_dragon_scale]
+id i_reag_serpent_scale
+name dragon scale%s
+type t_reagent
+weight 0.5
+
+on=@create
+color 043
+
+[itemdef 025e4]
+defname i_armor_female_shorts_spiked
+name spiked shorts
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake 
+resources 
+dupelist 025e5
+
+on=@create
+hitpoints 55
+
+[itemdef 025e5]
+dupeitem 025e4
+
+[itemdef 025e6]
+defname i_armor_female_harness_amazon
+name amazon harness
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake 
+resources 
+dupelist 025e7
+
+on=@create
+hitpoints 55
+
+[itemdef 025e7]
+dupeitem 025e6
+
+[itemdef 025e8]
+defname i_armor_female_harness_elite
+name elite harness
+type t_armor
+weight 
+armor 
+reqstr
+skillmake 
+resources 
+dupelist 025e9
+
+on=@create
+hitpoints 55
+
+[itemdef 025e9]
+dupeitem 025e8
+
+[itemdef 02641]
+defname i_dragon_chest
+name dragon breastplate
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake blacksmithing 85.0
+resources 36 i_reag_dragon_scale
+dupelist 02642
+
+on=@create
+color 043
+hitpoints 55
+
+[itemdef 02642]
+dupeitem 02641
+
+[itemdef 02643]
+defname i_dragon_gloves
+name dragon gloves
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake blacksmithing 68.9
+resources 16 i_reag_dragon_scale
+dupelist 02644
+
+on=@create
+color 043
+hitpoints 55
+
+[itemdef 02644]
+dupeitem 02643
+
+[itemdef 02645]
+defname i_dragon_helm
+name dragon helm
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake blacksmithing 72.6
+resources 20 i_reag_dragon_scale
+dupelist 02646
+
+on=@create
+color 043
+hitpoints 55
+
+[itemdef 02646]
+dupeitem 02645
+
+[itemdef 02647]
+defname i_dragon_leggings
+name dragon leggings
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake blacksmithing 78.8
+resources 28 i_reag_dragon_scale
+dupelist 02648
+
+on=@create
+color 043
+hitpoints 55
+
+[itemdef 02648]
+dupeitem 02647
+
+[itemdef 02657]
+defname i_dragon_sleeves
+name dragon sleeves
+type t_armor
+weight 
+armor 
+reqstr 
+skillmake blacksmithing 76.3
+resources 24 i_reag_dragon_scale
+dupelist 02658
+
+on=@create
+color 043
+hitpoints 55
+
+[itemdef 02658]
+dupeitem 02657
+
+[eof]

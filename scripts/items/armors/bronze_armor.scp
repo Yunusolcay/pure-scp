@@ -1,0 +1,384 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+//helms
+[itemdef i_platemail_helmet_closed_bronze]
+id i_platemail_helmet_closed
+name bronze platemail closed helmet
+type t_armor
+weight 7
+armor 50
+reqstr 50
+skillmake blacksmithing 67.9
+resources 15 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_helmet_open_bronze]
+id i_platemail_helmet_open
+name bronze platemail open helmet
+type t_armor
+weight 7
+armor 50
+reqstr 50
+skillmake blacksmithing 67.9
+resources 15 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_helmet_bascinet_bronze]
+id i_platemail_helmet_bascinet
+name bronze platemail bascinet helmet
+type t_armor
+weight 7
+armor 50
+reqstr 50
+skillmake blacksmithing 67.9
+resources 15 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_helmet_nose_bronze]
+id i_platemail_helmet_nose
+name bronze platemail nose helmet
+type t_armor
+weight 7
+armor 50
+reqstr 50
+skillmake blacksmithing 67.9
+resources 15 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_helmet_bronze]
+id i_platemail_helmet
+name bronze platemail helmet
+type t_armor
+weight 7
+armor 50
+reqstr 50
+skillmake blacksmithing 67.9
+resources 15 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+//platemails
+[itemdef i_platemail_arms_bronze]
+id i_platemail_arms
+name bronze platemail arms
+type t_armor
+weight 15
+armor 50
+reqstr 50
+skillmake blacksmithing 75.3
+resources 18 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_leggings_bronze]
+id i_platemail_leggings
+name bronze platemail leggings
+type t_armor
+weight 20
+armor 55
+reqstr 50
+skillmake blacksmithing 78.8
+resources 20 i_ingot_bronze
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_gorget_bronze]
+id i_platemail_gorget
+name bronze platemail gorget
+type t_armor
+weight 20
+armor 50
+reqstr 50
+skillmake blacksmithing 66.4
+resources 10 i_ingot_bronze
+
+tag.res_physical 2
+tag.res_fire 0
+tag.res_cold 1
+tag.res_poison 0
+tag.res_energy 1
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_gloves_bronze]
+id i_platemail_gloves
+name bronze platemail gloves
+type t_armor
+weight 20
+armor 50
+reqstr 50
+skillmake blacksmithing 68.9
+resources 12 i_ingot_bronze
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+[itemdef i_platemail_chest_bronze]
+id i_platemail_chest
+name bronze platemail chest
+type t_armor
+weight 20
+armor 55
+reqstr 50
+skillmake blacksmithing 80.2
+resources 25 i_ingot_bronze
+
+tag.res_physical 16
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 50
+
+//chainmails
+[itemdef i_chainmail_coif_bronze]
+id i_chainmail_coif
+name bronze chainmail coif
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 25.0
+resources 10 i_ingot_bronze
+
+tag.res_physical 3
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 2
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 40
+
+[itemdef i_chainmail_leggings_bronze]
+id i_chainmail_leggings
+name bronze chainmail leggings
+weight 8
+armor 40
+reqstr 40
+skillmake blacksmithing 46.7
+resources 18 i_ingot_bronze
+
+tag.res_physical 8
+tag.res_fire 2
+tag.res_cold 4
+tag.res_poison 2
+tag.res_energy 6
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 40
+
+[itemdef i_chainmail_tunic_bronze]
+id i_chainmail_tunic
+name bronze chainmail tunic
+weight 10
+armor 40
+reqstr 40
+skillmake blacksmithing 49.1
+resources 20 i_ingot_bronze
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 40
+
+//shields
+[itemdef i_shield_round_bronze]
+id i_shield_round
+name bronze round shield
+type t_shield
+weight 12
+armor 5
+reqstr 5
+skillmake blacksmithing 27.0
+resources 10 i_ingot_bronze
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 5
+
+[itemdef i_shield_buckler_bronze]
+id i_shield_buckler
+name bronze buckler shield
+type t_shield
+weight 12
+armor 5
+reqstr 5
+skillmake blacksmithing 27.0
+resources 5 i_ingot_bronze
+
+tag.res_physical 5
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 5
+
+[itemdef i_shield_kite_metal_bronze]
+id i_shield_kite_metal
+name bronze kite metal shield
+type t_shield
+weight 12
+armor 15
+reqstr 15
+skillmake blacksmithing 37.0
+resources 16 i_ingot_bronze
+
+tag.res_physical 17
+tag.res_fire 4
+tag.res_cold 6
+tag.res_poison 4
+tag.res_energy 8
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 15
+
+[itemdef i_shield_heater_bronze]
+id i_shield_heater
+name bronze heater shield
+type t_shield
+weight 12
+armor 15
+reqstr 15
+skillmake blacksmithing 45.0
+resources 20 i_ingot_bronze
+
+tag.res_physical 20
+tag.res_fire 5
+tag.res_cold 7
+tag.res_poison 5
+tag.res_energy 10
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 15
+
+[itemdef i_shield_metal_bronze]
+id i_shield_round_metal
+name bronze metal shield
+type t_shield
+weight 10
+armor 10
+reqstr 10
+skillmake blacksmithing 37.0
+resources 10 i_ingot_bronze
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 8
+tag.color 06d6
+
+on=@create
+color 06d6
+hitpoints 10
+
+[eof]

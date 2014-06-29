@@ -1,0 +1,57 @@
+Boilerplate & Pure Sphere Scripts
+
+29.09.2014 / Mon Jeu
+- edited
+	items/armors/* scripts're renamed and decomposed for simplification
+	
+- removed
+	items/artifacts/sphere_item_artifacts
+	items/artifacts/sphere_item_artifacts_minor
+	items/artifacts/sphere_item_artifacts_tokuno
+	
+28.09.2014 / Mon Jeu
+- edited
+	items folder is categorizing by main names and relevance
+		armors
+			sphere_item_magic_armor, sphere_item_magic_leather, sphere_item_provisions_armor, sphere_item_provisions_shields, sphere_item_provisions_armor_color
+			
+		artifacts
+			sphere_item_artifacts, sphere_item_artifacts_minor, sphere_item_artifacts_tokuno
+			
+		buildings
+			sphere_item_boulders_rocks, sphere_item_building_doors, sphere_item_building_floors, sphere_item_building_other, 
+			sphere_item_building_roofs, sphere_item_building_stairs, sphere_item_building_walls, sphere_item_buildings, 
+			sphere_item_ground_tiles, sphere_item_offset
+			
+		clothings
+			sphere_item_provisions_clothing
+			
+		decos
+			sphere_item_deco_carpet_rugs, sphere_item_deco_carvings_statues, sphere_item_deco_dungeons_traps_dead, 
+			sphere_item_deco_fireplace_chimney_oven, sphere_item_deco_furniture, sphere_item_deco_lightsources, sphere_item_deco_miniatures, 
+			sphere_item_deco_signs, sphere_item_deco_virtues, sphere_item_deco_wall_hangings
+			
+		magics
+			sphere_item_magic_chivalry, sphere_item_magic_magery, sphere_item_magic_mysticism, sphere_item_magic_necromancer_aos, 
+			sphere_item_magic_ninjitsu_bushido, sphere_item_magic_spellweaving
+			
+		multis
+			multis_foundations, multis_houses, multis_misc, multis_ships, multis_stairs, multis_wandering_camps
+			
+		others
+			sphere_item_animations, sphere_item_char_icons, sphere_item_christmas, sphere_item_magic_jewelry, sphere_item_memories, sphere_item_misc, 
+			sphere_item_provisions_ore, sphere_item_resources, sphere_item_siege, sphere_item_treasure_maps, sphere_item_typedef_equipitem, 
+			sphere_item_typedefs, sphere_item_unsorted, sphere_item_vegetation
+			
+		professions
+			sphere_item_profession, sphere_item_profession_alchemist, sphere_item_profession_barber, sphere_item_profession_cartographer, 
+			sphere_item_profession_cook_barkeep_baker, sphere_item_profession_tailor_tanner
+			
+		provisions
+			sphere_item_provisions_deed, sphere_item_provisions_jewelry, sphere_item_provisions_misc, sphere_item_provisions_potions
+			
+		ship_parts
+			sphere_item_ship_parts, sphere_item_ship_parts_britannian, sphere_item_ship_parts_gargish, sphere_item_ship_parts_orcish, sphere_item_ship_parts_tokuno
+			
+		weapons
+			sphere_item_magic_wands, sphere_item_magic_weapon, sphere_item_provisions_weapons

@@ -1,0 +1,489 @@
+//29.06.2014 - mon jeu
+version 0.56c
+
+//helms
+[itemdef 01408]
+defname i_platemail_helmet_closed
+name platemail closed helmet
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 57.9
+resources 15 i_ingot_iron
+dupelist 01409
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 01409]
+dupeitem 01408
+
+[itemdef 0140a]
+defname i_platemail_helmet_open
+name platemail open helmet
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 57.9
+resources 15 i_ingot_iron
+dupelist 0140b
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 0140b]
+dupeitem 0140a
+
+[itemdef 0140c]
+defname i_platemail_helmet_bascinet
+name platemail bascinet helmet
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 57.9
+resources 15 i_ingot_iron
+dupelist 0140d
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 0140d]
+dupeitem 0140c
+
+[itemdef 0140e]
+defname i_platemail_helmet_nose
+name platemail nose helmet
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 57.9
+resources 15 i_ingot_iron
+dupelist 0140f
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 0140f]
+dupeitem 0140e
+
+[itemdef 01412]
+defname i_platemail_helmet
+name platemail helmet
+type t_armor
+weight 7
+armor 40
+reqstr 40
+skillmake blacksmithing 57.9
+resources 15 i_ingot_iron
+dupelist 01419
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 01419]
+dupeitem 01412
+
+//platemails
+[itemdef 01410]
+defname i_platemail_arms
+name platemail arms
+type t_armor
+weight 15
+armor 40
+reqstr 40
+skillmake blacksmithing 66.3
+resources 18 i_ingot_iron
+dupelist 01417
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 01417]
+dupeitem 01410
+
+[itemdef 01411]
+defname i_platemail_leggings
+name platemail leggings
+type t_armor
+weight 20
+armor 40
+reqstr 40
+skillmake blacksmithing 68.8
+resources 20 i_ingot_iron
+dupelist 0141a
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+
+on=@create
+hitpoints 40
+
+[itemdef 0141a]
+dupeitem 01411
+
+[itemdef 01413]
+defname i_platemail_gorget
+name platemail gorget
+type t_armor
+weight 20
+armor 40
+reqstr 40
+skillmake blacksmithing 56.4
+resources 10 i_ingot_iron
+
+tag.res_physical 2
+tag.res_fire 0
+tag.res_cold 1
+tag.res_poison 0
+tag.res_energy 1
+
+on=@create
+hitpoints 40
+
+[itemdef 01414]
+defname i_platemail_gloves
+name platemail gloves
+type t_armor
+weight 20
+armor 40
+reqstr 40
+skillmake blacksmithing 58.9
+resources 12 i_ingot_iron
+dupelist 01418
+
+tag.res_physical 4
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 40
+
+[itemdef 01418]
+dupeitem 01414
+
+[itemdef 01415]
+defname i_platemail_chest
+name platemail chest
+type t_armor
+weight 20
+armor 40
+reqstr 40
+skillmake blacksmithing 75.0
+resources 25 i_ingot_iron
+dupelist 01416
+
+tag.res_physical 16
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+
+on=@create
+hitpoints 40
+
+[itemdef 01416]
+dupeitem 01415
+
+//chainmails
+[itemdef 013bb]
+defname i_chainmail_coif
+name chainmail coif
+type t_armor
+weight 7
+armor 30
+reqstr 30
+skillmake blacksmithing 15.0
+resources 10 i_ingot_iron
+dupelist 013c0
+
+tag.res_physical 3
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 2
+
+on=@create
+hitpoints 30
+
+[itemdef 013c0]
+dupeitem 013bb
+
+[itemdef 013be]
+defname i_chainmail_leggings
+name chainmail leggings
+type t_armor
+weight 8
+armor 30
+reqstr 30
+skillmake blacksmithing 36.7
+resources 18 i_ingot_iron
+
+tag.res_physical 8
+tag.res_fire 2
+tag.res_cold 4
+tag.res_poison 2
+tag.res_energy 6
+
+on=@create
+hitpoints 30
+
+[itemdef 013bf]
+defname i_chainmail_tunic
+name chainmail tunic
+type t_armor
+weight 10
+armor 30
+reqstr 30
+skillmake blacksmithing 39.1
+resources 20 i_ingot_iron
+dupelist 013c4
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 9
+
+on=@create
+hitpoints 30
+
+[itemdef 013c4]
+dupeitem 013bf
+
+//shields
+[itemdef 01b72]
+defname i_shield_round
+name round shield
+type t_shield
+weight 12
+armor 3
+reqstr 3
+skillmake blacksmithing 25.0
+resources 10 i_ingot_iron
+
+tag.res_physical 10
+tag.res_fire 3
+tag.res_cold 5
+tag.res_poison 3
+tag.res_energy 8
+
+on=@create
+hitpoints 3
+
+[itemdef 01b73]
+defname i_shield_buckler
+name buckler shield
+type t_shield
+weight 12
+armor 3
+reqstr 3
+skillmake blacksmithing 20.0
+resources 5 i_ingot_iron
+
+tag.res_physical 5
+tag.res_fire 1
+tag.res_cold 2
+tag.res_poison 1
+tag.res_energy 3
+
+on=@create
+hitpoints 3
+
+[itemdef 01b74]
+defname i_shield_kite_metal
+name kite metal shield
+type t_shield
+weight 12
+armor 5
+reqstr 5
+skillmake blacksmithing 30.0
+resources 16 i_ingot_iron
+dupelist 01b75
+
+tag.res_physical 17
+tag.res_fire 4
+tag.res_cold 6
+tag.res_poison 4
+tag.res_energy 8
+
+on=@create
+hitpoints 5
+
+[itemdef 01b75]
+dupeitem 01b74
+
+[itemdef 01b76]
+defname i_shield_heater
+name heater shield
+type t_shield
+weight 12
+armor 5
+reqstr 5
+skillmake blacksmithing 35.0
+resources 20 i_ingot_iron
+dupelist 01b77
+
+tag.res_physical 20
+tag.res_fire 5
+tag.res_cold 7
+tag.res_poison 5
+tag.res_energy 10
+
+on=@create
+hitpoints 5
+
+[itemdef 01b77]
+dupeitem 01b76
+
+[itemdef 01b78]
+defname i_shield_kite_wood
+name kite wood shield
+type t_shield
+weight 12
+armor 3
+reqstr 3
+skillmake blacksmithing 28.0
+resources 16 i_ingot_iron, 4 i_log
+//dupeitem 01b79
+
+tag.res_physical 15
+tag.res_fire 5
+tag.res_cold 6
+tag.res_poison 5
+tag.res_energy 8
+
+on=@create
+hitpoints 3
+
+[itemdef 01b79]
+dupeitem 01b78
+
+[itemdef 01b7a]
+defname i_shield_wood
+name wood shield
+type=t_shield
+type t_shield
+weight 9
+armor 2
+reqstr 2
+skillmake blacksmithing 32.6
+resources 3 i_ingot_iron, 9 i_log
+
+tag.res_physical 8
+tag.res_fire 2
+tag.res_cold 4
+tag.res_poison 2
+tag.res_energy 6
+
+on=@create
+hitpoints 2
+
+[itemdef 01b7b]
+defname i_shield_round_metal
+name metal shield
+type t_shield
+weight 10
+armor 3
+reqstr 3
+skillmake blacksmithing 30.0
+resources 10 i_ingot_iron
+
+tag.res_physical 12
+tag.res_fire 3
+tag.res_cold 6
+tag.res_poison 3
+tag.res_energy 8
+
+on=@create
+hitpoints 3
+
+[itemdef 01bc3]
+defname i_shield_chaos
+name chaos shield
+type t_shield
+weight 1
+armor 65
+reqstr 1
+skillmake blacksmithing 85.0
+resources 25 i_ingot_iron
+
+on=@create
+attr attr_newbie|attr_magic
+hitpoints 100
+
+on=@equip
+if (<src.memoryfindtype.memory_guild.link.align> != 2) && (<src.isgm> != 1)
+	unequip
+	return 1
+endif
+
+[itemdef 01bc4]
+defname i_shield_order
+name order shield
+type t_shield
+weight 1
+armor 65
+reqstr 1
+skillmake blacksmithing 85.0
+resources 25 i_ingot_iron
+dupelist 01bc5
+
+on=@create
+attr attr_newbie|attr_magic
+hitpoints 100
+
+on=@equip
+if (<src.memoryfindtype.memory_guild.link.align> != 1) && (<src.isgm> != 1)
+	unequip
+	return 1
+endif
+
+[itemdef 01bc5]
+dupeitem 01bc4
+
+[eof]
