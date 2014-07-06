@@ -1,0 +1,16 @@
+[function f_toplist]
+tag0.rank ++
+
+if !strregex(^[0-9]+$, <list.toplist.findelem <uid>>)
+list.toplist.add <uid>
+endif
+
+for 0 <list.toplist.count>
+ref1 <list.toplist.<dlocal._for>>
+if (<dtag.rank> >= <ref1.dtag.rank>)
+local.elem <list.toplist.findelem <uid>>
+list.toplist.<dlocal.elem>.remove
+list.toplist.<dlocal._for>.insert <uid>
+return 1
+endif
+endfor

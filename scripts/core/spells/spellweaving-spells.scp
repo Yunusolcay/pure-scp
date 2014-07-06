@@ -1,0 +1,276 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 601]
+defname s_arcane_circle
+name arcane circle
+sound snd_spell_arcane_circle
+runes .myrshalee
+cast_time 0.5
+resources 
+rune_item 0
+scroll_item i_scroll_arcane_circle
+flags spellflag_good
+effect_id 03779
+effect 0
+duration 0.0
+manause 24
+skillreq spellweaving 0.1
+interrupt 100.0,100.0
+
+[spell 602]
+defname s_gift_of_renewal
+name gift of renewal
+sound snd_spell_gift_renewal
+runes .olorisstra
+cast_time 3.0
+resources 
+rune_item 0
+scroll_item i_scroll_gift_of_renewal
+flags spellflag_good|spellflag_targ_player
+effect_id 0
+effect 0
+duration 0.0
+manause 24
+skillreq spellweaving 0.1
+interrupt 100.0,100.0
+
+[spell 603]
+defname s_immolating_weapon
+name immolating weapon
+sound 0
+runes .thalshara
+cast_time 1.0
+resources 
+rune_item 0
+scroll_item i_scroll_immolating_weapon
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 26
+skillreq spellweaving 10.0
+interrupt 100.0,100.0
+
+[spell 604]
+defname s_attunement
+name attunement
+sound 0
+runes .haeldril
+cast_time 1.0
+resources 
+rune_item 0
+scroll_item i_scroll_attunement
+flags spellflag_targ_char
+effect_id 0
+effect 0
+duration 0.0
+manause 26
+skillreq spellweaving 0.1
+interrupt 100.0,100.0
+
+[spell 605]
+defname s_thunderstorm
+name thunderstorm
+sound 0
+runes .erelonia
+cast_time 1.5
+resources 
+rune_item 0
+scroll_item i_scroll_thunderstorm
+flags spellflag_targ_xyz|spellflag_harm
+effect_id 0
+effect 0
+duration 0.0
+manause 32
+skillreq spellweaving 10.0
+interrupt 100.0,100.0
+
+[spell 606]
+defname s_nature_fury
+name natures fury
+sound 0
+runes .rauvvrae
+cast_time 1.5
+resources 
+rune_item 0
+scroll_item i_scroll_nature_fury
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 24
+skillreq spellweaving 0.1
+interrupt 100.0,100.0
+
+[spell 607]
+defname s_summon_fey
+name summon fey
+sound 0
+runes .alalithra
+cast_time 2.0
+resources 
+rune_item 0
+scroll_item i_scroll_summon_fey
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 31
+skillreq spellweaving 38.0
+interrupt 100.0,100.0
+
+[spell 608]
+defname s_summon_fiend
+name summon fiend
+sound 0
+runes .nylisstra
+cast_time 2.0
+resources 
+rune_item 0
+scroll_item i_scroll_summon_fiend
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 31
+skillreq spellweaving 38.0
+interrupt 100.0,100.0
+
+[spell 609]
+defname s_reaper_form
+name reaper form
+sound 0
+runes .tarisstree
+cast_time 2.5
+resources 
+rune_item 0
+scroll_item i_scroll_reaper_form
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 24
+skillreq spellweaving 24.0
+interrupt 100.0,100.0
+
+[spell 610]
+defname s_wildfire
+name wildfire
+sound 0
+runes .haelyn
+cast_time 2.5
+resources 
+rune_item 0
+scroll_item i_scroll_wildfire
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 34
+skillreq spellweaving 66.0
+interrupt 100.0,100.0
+
+[spell 611]
+defname s_essence_of_wind
+name essence of wind
+sound 0
+runes .anathrae
+cast_time 3.0
+resources 
+rune_item 0
+scroll_item i_scroll_essence_of_wind
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 40
+skillreq spellweaving 52.0
+interrupt 100.0,100.0
+
+[spell 612]
+defname s_dryad_allure
+name dryad allure
+sound 0
+runes .rathril
+cast_time 3.0
+resources 
+rune_item 0
+scroll_item i_scroll_dryad_allure
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 40
+skillreq spellweaving 52.0
+interrupt 100.0,100.0
+
+[spell 613]
+defname s_ethereal_voyage
+name ethereal voyage
+sound 0
+runes .orlavdra
+cast_time 3.5
+resources 
+rune_item 0
+scroll_item i_scroll_ethereal_voyage
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 60
+skillreq spellweaving 24.0
+interrupt 100.0,100.0
+
+[spell 614]
+defname s_word_of_death
+name word of death
+sound 0
+runes .nyraxle
+cast_time 3.5
+resources 
+rune_item 0
+scroll_item i_scroll_word_of_death
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 60
+skillreq spellweaving 80.0
+interrupt 100.0,100.0
+
+[spell 615]
+defname s_gift_of_life
+name gift of life
+sound 0
+runes .illorae
+cast_time 4.0
+resources 
+rune_item 0
+scroll_item i_scroll_gift_of_life
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 70
+skillreq spellweaving 38.0
+interrupt 100.0,100.0
+
+[spell 616]
+defname s_arcane_empowerment
+name arcane empowerment
+sound 0
+runes .aslavdra
+cast_time 4.0
+resources 
+rune_item 0
+scroll_item i_scroll_arcane_empowerment
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 70
+skillreq spellweaving 24.0
+interrupt 100.0,100.0
+
+[eof]

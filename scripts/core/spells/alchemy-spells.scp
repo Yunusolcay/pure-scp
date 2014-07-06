@@ -1,0 +1,134 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 71]
+defname s_stone
+name stone
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 72]
+defname s_shrink
+name shrink
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 73]
+defname s_refresh
+name refresh
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect 40,180
+
+[spell 74]
+defname s_restore
+name restore
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect 10,100
+
+[spell 75]
+defname s_mana
+name mana
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect_id i_fx_heal_effect
+effect 10,100
+
+[spell 76]
+defname s_sustenance
+name sustenance
+flags spellflag_targ_char | spellflag_dir_anim| spellflag_good | spellflag_fx_targ | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect 4,100
+
+[spell 77]
+defname s_chameleon
+name chameleon
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 78]
+defname s_beastform
+name beast form
+flags spellflag_harm | spellflag_resist | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 79]
+defname s_monster_form
+name monster form
+flags spellflag_harm | spellflag_resist | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 80]
+defname s_forget
+name forget
+flags spellflag_harm | spellflag_resist | spellflag_playeronly
+rune_item i_rune_alchem_3
+
+[spell 81]
+defname s_gender_swap
+name gender swap
+flags spellflag_harm | spellflag_resist | spellflag_playeronly
+rune_item i_rune_alchem_3
+
+[spell 82]
+defname s_trance
+name trance
+flags spellflag_playeronly
+rune_item i_rune_alchem_3
+effect_id i_fx_heal_effect
+duration 2*60.0,4*60.0
+
+[spell 83]
+defname s_particle_form
+name particle form
+flags spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 84]
+defname s_shield
+name shield
+flags spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 85]
+defname s_steelskin
+name steel skin
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect 4,40
+duration 2*60.0,4*60.0
+
+[spell 86]
+defname s_stoneskin
+name stone skin
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+effect 4,40
+duration 2*60.0,4*60.0
+
+[spell 87]
+defname s_regenerate
+name regeneration
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+duration 2*60.0,4*60.0
+
+[spell 88]
+defname s_enchant
+name enchantment
+flags spellflag_targ_obj | spellflag_fx_targ | spellflag_good | spellflag_playeronly
+rune_item i_rune_alchem_3
+manause 200
+skillreq magery 200.0
+effect 1,15
+
+[eof]

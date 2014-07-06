@@ -1,0 +1,42 @@
+﻿//29.06.2014 - mon jeu
+version 0.56c
+
+[areadef a_facet_tokuno_islands]
+name tokuno islands
+group allmap
+p 737, 1245, 30, 4
+rect 0, 0, 1448, 1448, 4
+events r_default, r_default_rock, r_default_water, r_default_tree, r_default_grass
+
+[areadef a_zento]
+name zento
+group zento
+p 736, 1256, 30, 4
+rect 656, 1192, 816, 1320, 4
+flags region_flag_nobuilding | region_flag_guarded
+events r_default, r_default_rock, r_default_water, r_default_tree, r_default_grass
+
+[areadef a_fan_dancer_dojo]
+name fan dancer's dojo
+group tokuno islands
+p 977, 223, 23, 4
+rect 969, 194, 992, 224, 4
+events r_default, r_default_rock, r_default_water, r_default_tree, r_default_grass
+
+[areadef a_bushido_dojo]
+name bushido dojo
+group tokuno islands
+p 320, 408, 32, 4
+rect 283, 361, 351, 463, 4
+flags region_flag_nobuilding | region_flag_underground
+events r_default, r_default_rock, r_default_water, r_default_tree, r_default_grass
+
+[areadef a_hotaka_plains]
+name hotaka plains
+group tokuno islands
+p 1235, 771, 3, 4
+rect 1223, 753, 1248, 776, 4
+flags region_flag_nobuilding | region_flag_underground
+events r_default, r_default_rock, r_default_water, r_default_tree, r_default_grass
+
+[eof]

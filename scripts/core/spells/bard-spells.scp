@@ -1,0 +1,117 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+//provocation (exhiliarator)
+// inspire; uus por; upkeep 8
+// invigorate; an zu; upkeep 10
+//peacemaking (galvanizer)
+// resilience; kal mani tym; upkeep 8
+// perseverance; uus jux sanct; upkeep 8
+//discordance (desponder)
+// tribulaion; in jux hur rel; upkeep 16
+// despair; kal des mani tym; upkeep 18
+//will add more info later.
+
+[spell 701]
+defname s_inspire
+name inspire
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 0
+skillreq provocation 90.0
+interrupt 0.0,0.0
+
+[spell 702]
+defname s_invigorate
+name invigorate
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 30
+skillreq provocation 90.0
+interrupt 0.0,0.0
+
+[spell 703]
+defname s_resilience
+name resilience
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 30
+skillreq peacemaking 90.0
+interrupt 0.0,0.0
+
+[spell 704]
+defname s_perseverance
+name perseverance
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 30
+skillreq peacemaking 90.0
+interrupt 0.0,0.0
+
+[spell 705]
+defname s_tribulation
+name tribulation
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 30
+skillreq discordance 90.0
+interrupt 0.0,0.0
+
+[spell 706]
+defname s_despair
+name despair
+sound 0
+runes 0
+cast_time 0
+resources 0
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 30
+skillreq discordance 90.0
+interrupt 0.0,0.0
+
+[eof]

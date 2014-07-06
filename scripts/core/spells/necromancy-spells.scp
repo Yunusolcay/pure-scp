@@ -1,0 +1,294 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 101]
+defname s_animate_dead
+name animate dead
+sound snd_spell_animate_dead
+runes Uus Corp
+cast_time 1.5
+resources i_reag_grave_dust, i_reag_daemon_blood
+rune_item 0
+scroll_item i_scroll_animate_dead
+flags spellflag_targ_item | spellflag_good | spellflag_summon | spellflag_fx_targ | spellflag_playeronly | spellflag_targ_no_player | spellflag_targ_no_npc //spellflag_scripted
+effect_id i_fx_smoke
+effect 0
+duration 0
+manause 23
+skillreq necromancy 40.0
+interrupt 100.0,1.0
+
+[spell 102]
+defname s_blood_oath
+name blood oath
+sound 01e9
+runes In Jux Mani Xen
+cast_time 1.5
+resources i_reag_daemon_blood
+rune_item 0
+scroll_item i_scroll_blood_oath
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_targ_noself | spellflag_nounparalyze
+effect_id i_fx_curse
+effect 0
+duration 0
+manause 13
+skillreq necromancy 20.0
+interrupt 100.0,1.0
+
+[spell 103]
+defname s_corpse_skin
+name corpse skin
+sound snd_spell_weaken
+runes In Agle Corp Ylem
+cast_time 2.0
+resources i_reag_grave_dust, i_reag_batwing
+rune_item 
+scroll_item i_scroll_corpse_skin
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_nounparalyze
+effect_id i_fx_sparkle
+effect 0
+duration 0
+manause 11
+skillreq necromancy 20.0
+interrupt 100.0,1.0
+
+[spell 104]
+defname s_curse_weapon
+name curse weapon
+sound snd_spell_curse
+runes An Sanct Gra Char
+cast_time 1.0
+resources i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_curse_weapon
+flags spellflag_good
+effect_id i_fx_sparkle
+effect 0
+duration 0
+manause 7
+skillreq necromancy 0.0
+interrupt 100.0,1.0
+
+[spell 105]
+defname s_evil_omen
+name evil omen
+sound 0245
+runes Pas Tym An Sanct
+cast_time 1.0
+resources i_reag_batwing, i_reag_nox_crystal
+rune_item 0
+scroll_item i_scroll_evil_omen
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_targ_noself | spellflag_nounparalyze
+effect_id i_fx_curse
+effect 10,15
+duration 0
+manause 11
+skillreq necromancy 20.0
+interrupt 100.0,1.0
+
+[spell 106]
+defname s_horrific_beast
+name horrific beast
+sound snd_spell_summon_daemon
+runes Rel Xen Vas Bal
+cast_time 4.0
+resources i_reag_daemon_blood, i_reag_batwing
+rune_item 0
+scroll_item i_scroll_horrific_beast
+flags spellflag_good | spellflag_playeronly
+effect_id i_fx_smoke
+effect 5,15
+duration 0
+manause 11
+skillreq necromancy 40.0
+interrupt 100.0,1.0
+
+[spell 107]
+defname s_lich_form
+name lich form
+sound 0fb
+runes Rel Xen Corp Ort
+cast_time 4.0
+resources i_reag_grave_dust,i_reag_nox_crystal,i_reag_daemon_blood
+rune_item 0
+scroll_item i_scroll_lich_form
+flags spellflag_good | spellflag_playeronly
+effect_id i_fx_smoke
+effect 5,15
+duration 0
+manause 23
+skillreq necromancy 70.0
+interrupt 100.0,1.0
+
+[spell 108]
+defname s_mind_rot
+name mind rot
+sound 0213
+runes Wis An Ben
+cast_time 1.5
+resources i_reag_batwing, i_reag_daemon_blood, i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_mind_rot
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_targ_noself | spellflag_nounparalyze
+effect_id i_fx_curse
+effect 5,15
+duration 0
+manause 17
+skillreq necromancy 30.0
+interrupt 100.0,1.0
+prompt_msg target a creature to put this curse on.
+
+[spell 109]
+defname s_pain_spike
+name pain spike
+sound snd_spell_dispel_field
+runes In Sar
+cast_time 1.0
+resources i_reag_grave_dust, i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_pain_spike
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_targ_noself
+effect_id i_fx_curse
+effect 0
+duration 0
+manause 5
+skillreq necromancy 20.0
+interrupt 100.0,1.0
+
+[spell 110]
+defname s_poison_strike
+name poison strike
+sound snd_spell_poison_field
+runes In Vas Nox
+cast_time 2.0
+resources i_reag_nox_crystal
+rune_item 0
+scroll_item i_scroll_poison_strike
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_resist | spellflag_targ_noself | spellflag_playeronly | spellflag_nounparalyze
+effect_id 0
+effect 0
+duration 1.0,15.0
+manause 17
+skillreq necromancy 50.0
+interrupt 100.0,1.0
+
+[spell 111]
+defname s_strangle
+name strangle
+sound 
+runes In Bal Nox
+cast_time 2.5
+resources i_reag_daemon_blood, i_reag_nox_crystal
+rune_item 0
+scroll_item i_scroll_strangle
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_targ_noself | spellflag_nounparalyze
+effect_id i_fx_curse
+effect 0
+duration 0
+manause 29
+skillreq necromancy 65.0
+interrupt 100.0,1.0
+
+[spell 112]
+defname s_summon_familiar
+name summon familiar
+sound 0214
+runes Kal Xen Bal
+cast_time 4.0
+resources i_reag_batwing, i_reag_grave_dust, i_reag_daemon_blood
+rune_item 0
+scroll_item i_scroll_summon_familiar
+flags spellflag_dir_anim | spellflag_targ_xyz | spellflag_summon | spellflag_playeronly
+effect_id 0
+effect 0
+duration 120.0,240.0
+manause 17
+skillreq necromancy 30.0
+interrupt 100.0,1.0
+
+[spell 113]
+defname s_vampiric_embrace
+name vampiric embrace
+sound 01eb
+runes Rel Xen An Sanct
+cast_time 4.0
+resources i_reag_batwing, i_reag_pig_iron, i_reag_nox_crystal
+rune_item 0
+scroll_item i_scroll_vampiric_embrace
+flags spellflag_good | spellflag_playeronly
+effect_id i_fx_smoke
+effect 5,15
+duration 0
+manause 23
+skillreq necromancy 99.0
+interrupt 100.0,1.0
+
+[spell 114]
+defname s_vengeful_spirit
+name vengeful spirit
+sound 019c
+runes Kal Xen Bal Beh
+cast_time 8.0
+resources i_reag_batwing, i_reag_grave_dust, i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_vengeful_spirit
+flags spellflag_dir_anim | spellflag_targ_char | spellflag_fx_targ | spellflag_targ_noself
+effect_id i_fx_smoke
+effect 0
+duration 0
+manause 41
+skillreq necromancy 80.0
+interrupt 100.0,1.0
+
+[spell 115]
+defname s_wither
+name wither
+sound 0108
+runes Kal Vas An Flam
+cast_time 1.5
+resources i_reag_grave_dust, i_reag_nox_crystal, i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_wither
+flags spellflag_dir_anim | spellflag_harm | spellflag_fx_targ
+effect_id i_fx_curse
+effect 0
+duration 0
+manause 23
+skillreq necromancy 60.0
+interrupt 100.0,1.0
+
+[spell 116]
+defname s_wraith_form
+name wraith form
+sound 01d2
+runes Rel Xen Um
+cast_time 4.0
+resources i_reag_nox_crystal, i_reag_pig_iron
+rune_item 0
+scroll_item i_scroll_wraith_form
+flags spellflag_good | spellflag_playeronly
+effect_id i_fx_smoke
+effect 5,15
+duration 0
+manause 17
+skillreq necromancy 20.0
+interrupt 100.0,1.0
+
+[spell 117]
+defname s_exorcism
+name exorcism
+sound 
+runes Ort Corp Grav
+cast_time 2.0
+resources i_reag_nox_crystal, i_reag_grave_dust
+rune_item 0
+scroll_item i_scroll_exorcism
+flags spellflag_playeronly
+effect_id 0
+effect 0
+duration 0
+manause 40
+skillreq necromancy 80.0
+interrupt 100.0,1.0
+
+[eof]

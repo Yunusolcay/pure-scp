@@ -1,0 +1,140 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 501]
+defname s_focus_attack
+name focus attack
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 10
+skillreq ninjitsu 30.0
+interrupt 0.0,0.0
+
+[spell 502]
+defname s_death_strike
+name death strike
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 30
+skillreq ninjitsu 85.0
+interrupt 0.0,0.0
+
+[spell 503]
+defname s_animal_form
+name animal form
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 10
+skillreq ninjitsu 0.0
+interrupt 0.0,0.0
+
+[spell 504]
+defname s_ki_attack
+name ki attack
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 
+skillreq ninjitsu 0.0
+interrupt 0.0,0.0
+
+[spell 505]
+defname s_surprise_attack
+name surprise attack
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 20
+skillreq ninjitsu 60.0
+interrupt 0.0,0.0
+
+[spell 506]
+defname s_backstab
+name backstab
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 30
+skillreq ninjitsu 40.0
+interrupt 0.0,0.0
+
+[spell 507]
+defname s_shadowjump
+name shadowjump
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 15
+skillreq ninjitsu 50.0
+interrupt 0.0,0.0
+
+[spell 508]
+defname s_mirror_image
+name mirror image
+sound 0
+runes 
+cast_time 
+resources 
+rune_item 0
+scroll_item 0
+flags 
+effect_id 
+effect 
+duration 
+manause 10
+skillreq ninjitsu 20.0
+interrupt 0.0,0.0
+
+[eof]

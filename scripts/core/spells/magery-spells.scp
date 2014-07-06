@@ -1,0 +1,1093 @@
+﻿//*********************************************
+// 18.12.2013
+//*******************************************<?
+// Büyülere eklenen trigger veya yapılacak işler buraya yazılacak <spell>
+// 27, 32, 46, 53 büyüler @select ile kapatıldı
+// 57 @success altından earthquake efekti eklenecek
+// 32, 52 recall ve gate @success altından sorgulanacak orjinal kullanılacak
+// 56 polymorph @start altından fixlendi, @select altından dialog yapıldı
+// 40 summon @select altından dialog yapıldı
+
+[spell 0]
+defname s_water
+name water
+sound 0
+runes 
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0.0
+manause 4
+skillreq magery 1.0
+interrupt 100.0,100.0
+
+[spell 1]
+defname s_clumsy
+name clumsy
+sound snd_spell_clumsy
+runes Uus Jux
+cast_time 0.5
+resources i_reag_blood_moss,i_reag_nightshade
+rune_item i_rune_clumsy
+scroll_item i_scroll_clumsy
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 6,15
+duration 180.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 2]
+defname s_create_food
+name create food
+sound snd_spell_create_food
+runes In Mani Ylem
+cast_time 0.5
+resources i_reag_garlic,i_reag_ginseng,i_reag_mandrake_root
+rune_item i_rune_create_food
+scroll_item i_scroll_create_food
+flags spellflag_targ_xyz | spellflag_good
+effect_id 0
+effect 20
+duration 0.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 3]
+defname s_feeblemind
+name feeblemind
+sound snd_spell_feeblemind
+runes Rel Wis
+cast_time 0.5
+resources i_reag_ginseng,i_reag_nightshade
+rune_item i_rune_feeblemind
+scroll_item i_scroll_feeblemind
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 5,10
+duration 180.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 4]
+defname s_heal
+name heal
+sound snd_spell_heal
+runes In Mani
+cast_time 1.0
+resources i_reag_garlic,i_reag_ginseng,i_reag_spider_silk
+rune_item i_rune_heal
+scroll_item i_scroll_heal
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_heal_effect
+effect 10,11
+duration 0.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 5]
+defname s_magic_arrow
+name magic arrow
+sound snd_spell_magic_arrow
+cast_time 0.2
+runes In Por Ylem
+resources i_reag_black_pearl,i_reag_nightshade
+rune_item i_rune_magic_arrow
+scroll_item i_scroll_magic_arrow
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm
+effect_id 0
+effect 1,2
+duration 0.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 6]
+defname s_night_sight
+name night sight
+sound snd_spell_night_sight
+runes In Lor
+cast_time 0.5
+resources i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_night_sight
+scroll_item i_scroll_night_sight
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_heal_effect
+effect 0
+duration 600.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 7]
+defname s_reactive_armor
+name reactive armor
+sound snd_spell_reactive_armor
+runes Flam Sanct
+cast_time 0.8
+resources i_reag_garlic,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_reactive_armor
+scroll_item i_scroll_reactive_armor
+flags spellflag_fx_targ | spellflag_good
+effect_id i_fx_heal_effect
+effect 15.0,60.0
+duration 300.0
+manause 4
+skillreq magery 10.0
+interrupt 100.0,100.0
+
+[spell 8]
+defname s_weaken
+name weaken
+sound snd_spell_weaken
+runes Des Mani
+cast_time 0.5
+resources i_reag_garlic,i_reag_nightshade
+rune_item i_rune_weaken
+scroll_item i_scroll_weaken
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 5,10
+duration 180.0
+manause 4
+skillreq magery 10.0
+
+[spell 9]
+defname s_agility
+name agility
+sound snd_spell_agility
+runes Ex Uus
+cast_time 1.0
+resources i_reag_blood_moss,i_reag_mandrake_root
+rune_item i_rune_agility
+scroll_item i_scroll_agility
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 5,20
+duration 300.0
+manause 6
+skillreq magery 20.0
+interrupt 100.0,100.0
+
+[spell 10]
+defname s_cunning
+name cunning
+sound snd_spell_cunning
+runes Uus Wis
+cast_time 1.0
+resources i_reag_mandrake_root,i_reag_nightshade
+rune_item i_rune_cunning
+scroll_item i_scroll_cunning
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 5,20
+duration 300.0
+manause 6
+skillreq magery 20.0
+interrupt 100.0,100.0
+
+[spell 11]
+defname s_cure
+name cure
+sound snd_spell_cure
+runes An Nox
+cast_time 1.3
+resources i_reag_garlic,i_reag_ginseng
+rune_item i_rune_cure
+scroll_item i_scroll_cure
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_heal_effect
+effect 0
+duration 0.0
+manause 6
+skillreq magery 20.0
+
+[spell 12]
+defname s_harm
+name harm
+sound snd_spell_harm
+runes An Mani
+cast_time 1.5
+resources i_reag_nightshade,i_reag_spider_silk
+rune_item i_rune_harm
+scroll_item i_scroll_harm
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ | spellflag_resist
+effect_id i_fx_curse
+effect 4,7
+duration 0.0
+manause 6
+skillreq magery 20.0
+
+[spell 13]
+defname s_magic_trap
+name magic trap
+sound snd_spell_magic_trap
+runes In Jux
+cast_time 1.0
+resources i_reag_garlic,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_magic_trap
+scroll_item i_scroll_magic_trap
+flags spellflag_targ_obj | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 6
+skillreq magery 20.0
+
+[spell 14]
+defname s_magic_untrap
+name magic untrap
+sound snd_spell_magic_untrap
+runes An Jux
+cast_time 1.0
+resources i_reag_blood_moss,i_reag_sulfur_ash
+rune_item i_rune_magic_untrap
+scroll_item i_scroll_magic_untrap
+flags spellflag_targ_obj | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 6
+skillreq magery 20.0
+
+[spell 15]
+defname s_protection
+name protection
+sound snd_spell_protection
+runes Uus Sanct
+cast_time 1.5
+resources i_reag_garlic,i_reag_ginseng,i_reag_sulfur_ash
+rune_item i_rune_protection
+scroll_item i_scroll_protection
+flags spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 5,20
+duration 300.0
+manause 6
+skillreq magery 20.0
+
+[spell 16]
+defname s_strength
+name strength
+sound snd_spell_strength
+runes Uus Mani
+cast_time 1.0
+resources i_reag_mandrake_root,i_reag_nightshade
+rune_item i_rune_strength
+scroll_item i_scroll_strength
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 5,15
+duration 300.0
+manause 6
+skillreq magery 20.0
+
+[spell 17]
+defname s_bless
+name bless
+sound snd_spell_bless
+runes Rel Sanct
+cast_time 1.5
+resources i_reag_garlic,i_reag_mandrake_root
+rune_item i_rune_bless
+scroll_item i_scroll_bless
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 5,20
+duration 300.0
+manause 9
+skillreq magery 30.0
+
+[spell 18]
+defname s_fireball
+name fireball
+sound snd_spell_fireball
+runes Vas Flam
+cast_time 1.5
+resources i_reag_black_pearl,i_reag_sulfur_ash
+rune_item i_rune_fireball
+scroll_item i_scroll_fireball
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_resist
+effect_id 0
+effect 10,15
+duration 0.0
+manause 9
+skillreq magery 30.0
+
+[spell 19]
+defname s_magic_lock
+name magic lock
+sound snd_spell_magic_lock
+runes An Por
+cast_time 1.5
+resources i_reag_blood_moss,i_reag_garlic,i_reag_sulfur_ash
+rune_item i_rune_magic_lock
+scroll_item i_scroll_magic_lock
+flags spellflag_targ_obj | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 9
+skillreq magery 30.0
+
+[spell 20]
+defname s_poison
+name poison
+sound snd_spell_poison
+runes In Nox
+cast_time 2.0
+resources i_reag_nightshade
+rune_item i_rune_poison
+scroll_item i_scroll_poison
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ
+effect_id i_fx_curse
+effect 15,20
+duration 2,3
+manause 9
+skillreq magery 30.0
+
+[spell 21]
+defname s_telekinesis
+name telekinesis
+sound snd_spell_telekinesis
+runes Ort Por Ylem
+cast_time 1.5
+resources i_reag_blood_moss,i_reag_mandrake_root
+rune_item i_rune_telekinesis
+scroll_item i_scroll_telekinesis
+flags spellflag_targ_obj | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 9
+skillreq magery 30.0
+
+[spell 22]
+defname s_teleport
+name teleport
+sound snd_spell_teleport
+runes Rel Por
+cast_time 1.5
+resources i_reag_blood_moss,i_reag_mandrake_root
+rune_item i_rune_teleport
+scroll_item i_scroll_teleport
+flags spellflag_targ_xyz | spellflag_targ_char | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 9
+skillreq magery 30.0
+
+[spell 23]
+defname s_unlock
+name unlock
+sound snd_spell_unlock
+runes Ex Por
+cast_time 1.5
+resources i_reag_blood_moss,i_reag_sulfur_ash
+rune_item i_rune_unlock
+scroll_item i_scroll_unlock
+flags spellflag_targ_obj | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 9
+skillreq magery 30.0
+
+[spell 24]
+defname s_wall_of_stone
+name wall of stone
+sound snd_spell_wall_of_stone
+runes In Sanct Ylem
+cast_time 1.5
+resources i_reag_blood_moss,i_reag_garlic
+rune_item i_rune_wall_of_stone
+scroll_item i_scroll_wall_of_stone
+flags spellflag_targ_xyz | spellflag_fx_targ | spellflag_field | spellflag_nounparalyze | spellflag_harm
+effect_id 0
+effect 0
+duration 30.0
+manause 9
+skillreq magery 30.0
+
+[spell 25]
+defname s_archcure
+name archcure
+sound snd_spell_archcure
+runes Vas An Nox
+cast_time 2.0
+resources i_reag_garlic,i_reag_ginseng,i_reag_mandrake_root
+rune_item i_rune_archcure
+scroll_item i_scroll_archcure
+flags spellflag_fx_targ | spellflag_good | spellflag_area
+effect_id i_fx_heal_effect
+effect 0
+duration 0.0
+manause 11
+skillreq magery 40.0
+
+[spell 26]
+defname s_archprotection
+name archprotection
+sound snd_spell_archprotection
+runes Vas Uus Sanct
+cast_time 2.0
+resources i_reag_garlic,i_reag_ginseng,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_archprotection
+scroll_item i_scroll_archprotection
+flags spellflag_fx_targ | spellflag_good | spellflag_area
+effect_id i_fx_bless_effect
+effect 1,2
+duration 300.0
+manause 11
+skillreq magery 40.0
+
+[spell 27]
+defname s_curse
+name curse
+sound snd_spell_curse
+runes Des Sanct
+cast_time 2.0
+resources i_reag_garlic,i_reag_nightshade,i_reag_sulfur_ash
+rune_item i_rune_curse
+scroll_item i_scroll_curse
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 5,15
+duration 180.0
+manause 11
+skillreq magery 40.0
+
+on=@select
+src.sysmessage @,,1 Bu büyü geçici olarak kapatılmıştır.
+return 1
+
+[spell 28]
+defname s_fire_field
+name fire field
+sound snd_spell_fire_field
+runes In Flam Grav
+cast_time 2.0
+resources i_reag_black_pearl,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_fire_field
+scroll_item i_scroll_fire_field
+flags spellflag_targ_xyz | spellflag_harm | spellflag_fx_targ | spellflag_field | spellflag_resist
+effect_id 0
+effect 5,12
+duration 60.0
+manause 11
+skillreq magery 45.0
+
+[spell 29]
+defname s_greater_heal
+name greater heal
+sound snd_spell_greater_heal
+runes In Vas Mani
+cast_time 2.0
+resources i_reag_garlic,i_reag_ginseng,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_greater_heal
+scroll_item i_scroll_greater_heal
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_heal_effect
+effect 15,50
+duration 0.0
+manause 11
+skillreq magery 40.0
+
+[spell 30]
+defname s_lightning
+name lightning
+sound snd_spell_lightning
+runes Por Ort Grav
+cast_time 2.0
+resources i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_lightning
+scroll_item i_scroll_lightning
+flags spellflag_targ_char | spellflag_harm | spellflag_resist
+effect_id 0
+effect 10,15
+duration 0.0
+manause 11
+skillreq magery 50.0
+
+[spell 31]
+defname s_mana_drain
+name mana drain
+sound snd_spell_mana_drain
+runes Ort Rel
+cast_time 2.0
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_mana_drain
+scroll_item i_scroll_mana_drain
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 0
+duration 0.0
+manause 11
+skillreq magery 50.0
+
+on=@select
+src.sysmessage @,,1 Bu büyü geçici olarak kapatılmıştır.
+return 1
+
+[spell 32]
+defname s_recall
+name recall
+sound snd_spell_recall
+runes Kal Ort Por
+cast_time 3.7
+resources i_reag_black_pearl,i_reag_blood_moss,i_reag_mandrake_root
+rune_item i_rune_recall
+scroll_item i_scroll_recall
+flags spellflag_targ_obj
+effect_id 0
+effect 0
+duration 0.0
+manause 15
+skillreq magery 40.0
+
+[spell 33]
+defname s_blade_spirits
+name blade spirits
+sound snd_spell_blade_spirits
+runes In Jux Hur Ylem
+cast_time 2.5
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_nightshade
+rune_item i_rune_blade_spirits
+scroll_item i_scroll_blade_spirits
+flags spellflag_targ_xyz | spellflag_harm | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 14
+skillreq magery 60.0
+
+[spell 34]
+defname s_dispel_field
+name dispel field
+sound snd_spell_dispel_field
+runes An Grav
+cast_time 2.5
+resources i_reag_black_pearl,i_reag_garlic,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_dispel_field
+scroll_item i_scroll_dispel_field
+flags spellflag_targ_obj
+effect_id 0
+effect 0
+duration 0.0
+manause 14
+skillreq magery 60.0
+
+[spell 35]
+defname s_incognito
+name incognito
+sound snd_spell_incognito
+runes Kal In Ex
+cast_time 2.5
+resources i_reag_blood_moss,i_reag_garlic,i_reag_nightshade
+rune_item i_rune_incognito
+scroll_item i_scroll_incognito
+flags spellflag_good
+effect_id 0
+effect 0
+duration 600.0
+manause 14
+skillreq magery 60.0
+
+[spell 36]
+defname s_magic_reflection
+name magic reflecion
+sound snd_spell_magic_reflection
+runes In Jux Sanct
+cast_time 2.5
+resources i_reag_garlic,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_magic_reflection
+scroll_item i_scroll_magic_reflection
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_good
+effect_id i_fx_bless_effect
+effect 0
+duration 300.0
+manause 14
+skillreq magery 60.0
+
+[spell 37]
+defname s_mind_blast
+name mind blast
+sound snd_spell_mind_blast
+runes Por Corp Wis
+cast_time 2.5
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_nightshade,i_reag_sulfur_ash
+rune_item i_rune_mind_blast
+scroll_item i_scroll_mind_blast
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_harm | spellflag_resist
+effect_id i_fx_curse
+effect 50,60
+duration 0.0
+manause 14
+skillreq magery 60.0
+
+[spell 38]
+defname s_paralyze
+name paralyze
+sound snd_spell_paralyze
+runes An Ex Por
+cast_time 3.0
+resources i_reag_garlic,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_paralyze
+scroll_item i_scroll_paralyze
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 0
+duration 15.0
+manause 14
+skillreq magery 65.0
+
+[spell 39]
+defname s_poison_field
+name poison field
+sound snd_spell_poison_field
+runes In Nox Grav
+cast_time 2.5
+resources i_reag_black_pearl,i_reag_nightshade,i_reag_spider_silk
+rune_item i_rune_poison_field
+scroll_item i_scroll_poison_field
+flags spellflag_targ_xyz | spellflag_harm | spellflag_fx_targ | spellflag_field
+effect_id i_fx_curse
+effect 5,50
+duration 300.0
+manause 14
+skillreq magery 60.0
+
+[spell 40]
+defname s_summon_creature
+name summon creature
+sound snd_spell_summon_creature
+runes Kal Xen
+cast_time 2.5
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_summon_creature
+scroll_item i_scroll_summon_creature
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 14
+skillreq magery 60.0
+
+on=@select
+if (<argn3> == 3)
+	mdialog d_menusummon
+	return 1
+endif
+
+[spell 41]
+defname s_dispel
+name dispel
+sound snd_spell_dispel
+runes An Ort
+cast_time 2.8
+resources i_reag_garlic,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_dispel
+scroll_item i_scroll_dispel
+flags spellflag_targ_char
+effect_id 0
+effect 0
+duration 0.0
+manause 20
+skillreq magery 70.0
+
+[spell 42]
+defname s_energy_bolt
+name energy bolt
+sound snd_spell_energy_bolt
+runes Corp Por
+cast_time 3.0
+resources i_reag_black_pearl,i_reag_nightshade
+rune_item i_rune_energy_bolt
+scroll_item i_scroll_energy_bolt
+flags spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist
+effect_id 0
+effect 35,40
+duration 0.0
+manause 20
+skillreq magery 70.0
+
+[spell 43]
+defname s_explosion
+name explosion
+sound snd_spell_explosion
+runes Vas Ort Flam
+cast_time 3.0
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_explosion
+scroll_item i_scroll_explosion
+flags spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist | spellflag_area
+effect_id i_fx_explode
+effect 35,45
+duration 0.0
+manause 20
+skillreq magery 70.0
+
+[spell 44]
+defname s_invisibility
+name invisibility
+sound snd_spell_invisibility
+runes An Lor Xen
+cast_time 3.0
+resources i_reag_blood_moss,i_reag_nightshade
+rune_item i_rune_invisibility
+scroll_item i_scroll_invisibility
+flags spellflag_targ_char | spellflag_good
+effect_id 0
+effect 0
+duration 180.0
+manause 20
+skillreq magery 70.0
+
+[spell 45]
+defname s_mark
+name mark
+sound snd_spell_mark
+runes Kal Por Ylem
+cast_time 3.0
+resources i_reag_black_pearl,i_reag_blood_moss,i_reag_mandrake_root
+rune_item i_rune_mark
+scroll_item i_scroll_mark
+flags spellflag_targ_obj
+effect_id 0
+effect 1,10
+duration 0.0
+manause 20
+skillreq magery 65.0
+
+[spell 46]
+defname s_mass_curse
+name mass curse
+sound snd_spell_mass_curse
+runes Vas Des Sanct
+cast_time 3.0
+resources i_reag_garlic,i_reag_mandrake_root,i_reag_nightshade,i_reag_sulfur_ash
+rune_item i_rune_mass_curse
+scroll_item i_scroll_mass_curse
+flags spellflag_fx_targ | spellflag_resist | spellflag_harm | spellflag_area
+effect_id i_fx_curse
+effect 5,8
+duration 0.0
+manause 20
+skillreq magery 70.0
+
+on=@select
+src.sysmessage @,,1 Bu büyü geçici olarak kapatılmıştır.
+return 1
+
+[spell 47]
+defname s_paralyzation_field
+name paralyzation field
+sound snd_spell_paralyze_field
+runes In Ex Grav
+cast_time 3.0
+resources i_reag_black_pearl,i_reag_ginseng,i_reag_spider_silk
+rune_item i_rune_paralyze_field
+scroll_item i_scroll_paralyze_field
+flags spellflag_targ_xyz | spellflag_fx_targ | spellflag_field | spellflag_resist | spellflag_harm | spellflag_nounparalyze
+effect_id i_fx_curse
+effect 0
+duration 60.0
+manause 20
+skillreq magery 75.0
+
+[spell 48]
+defname s_reveal
+name reveal
+sound snd_spell_reveal
+runes Wis Quas
+cast_time 3.0
+resources i_reag_blood_moss,i_reag_sulfur_ash
+rune_item i_rune_reveal
+scroll_item i_scroll_reveal
+flags spellflag_area
+effect_id 0
+effect 0
+duration 0.0
+manause 20
+skillreq magery 70.0
+
+[spell 49]
+defname s_chain_lightning
+name chain lightning
+sound snd_spell_chain_lightning
+runes Vas Ort Grav
+cast_time 3.5
+resources i_reag_black_pearl,i_reag_blood_moss,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_chain_lightning
+scroll_item i_scroll_chain_lightning
+flags spellflag_targ_xyz | spellflag_harm | spellflag_resist | spellflag_area
+effect_id 0
+effect 30,50
+duration 0.0
+manause 40
+skillreq magery 85.0
+
+[spell 50]
+defname s_energy_field
+name energy field
+sound snd_spell_energy_field
+runes In Sanct Grav
+cast_time 3.5
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_energy_field
+scroll_item i_scroll_energy_field
+flags spellflag_targ_xyz | spellflag_fx_targ | spellflag_field | spellflag_harm
+effect_id 0
+effect 40,60
+duration 300.0
+manause 40
+skillreq magery 80.0
+
+[spell 51]
+defname s_flamestrike
+name flamestrike
+sound snd_spell_flamestrike
+runes Kal Vas Flam
+cast_time 3.5
+resources i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_flamestrike
+scroll_item i_scroll_flamestrike
+flags spellflag_targ_char | spellflag_harm | spellflag_fx_targ | spellflag_resist
+effect_id 03709
+effect 45,55
+duration 0.0
+manause 40
+skillreq magery 85.0
+
+[spell 52]
+defname s_gate_travel
+name gate travel
+sound snd_spell_gate_travel
+runes Vas Rel Por
+cast_time 4.5
+resources i_reag_black_pearl,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_gate_travel
+scroll_item i_scroll_gate_travel
+flags spellflag_targ_obj
+effect_id i_moongate_blue
+effect 0
+duration 60.0
+manause 40
+skillreq magery 75.0
+
+[spell 53]
+defname s_mana_vampire
+name mana vampire
+sound snd_spell_mana_vampire
+runes Ort Sanct
+cast_time 3.5
+resources i_reag_black_pearl,i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_mana_vampire
+scroll_item i_scroll_mana_vampire
+flags spellflag_targ_char | spellflag_fx_targ | spellflag_resist | spellflag_harm
+effect_id i_fx_curse
+effect 0
+duration 0.0
+manause 40
+skillreq magery 70.0
+
+on=@select
+src.sysmessage @,,1 Bu büyü geçici olarak kapatılmıştır.
+return 1
+
+[spell 54]
+defname s_mass_dispel
+name mass dispel
+sound snd_spell_mass_dispel
+runes Vas An Ort
+cast_time 4.0
+resources i_reag_black_pearl,i_reag_garlic,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_mass_dispel
+scroll_item i_scroll_mass_dispel
+flags spellflag_area
+effect_id 0
+effect 0
+duration 0.0
+manause 40
+skillreq magery 85.0
+
+[spell 55]
+defname s_meteor_swarm
+name meteor swarm
+sound snd_spell_meteor_swarm
+runes Flam Kal Des Ylem
+cast_time 3.5
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_meteor_swarm
+scroll_item i_scroll_meteor_swarm
+flags spellflag_targ_xyz | spellflag_harm | spellflag_resist | spellflag_area
+effect_id 0
+effect 45,50
+duration 0.0
+manause 40
+skillreq magery 80.0
+
+[spell 56]
+defname s_polymorph
+name polymorph
+sound snd_spell_polymorph
+runes Vas Ylem Rel
+cast_time 3.5
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_polymorph
+scroll_item i_scroll_polymorph
+flags spellflag_resist | spellflag_good
+effect_id 0
+effect 0
+duration 300.0
+manause 40
+skillreq magery 30.0
+
+on=@select
+if (<argn3> == 3)
+	mdialog d_menupolymorph
+	return 1
+endif
+
+on=@start
+actprv <uid>
+act <uid>
+
+[spell 57]
+defname s_earthquake
+name earthquake
+sound snd_spell_earthquake
+runes In Vas Por
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_ginseng,i_reag_mandrake_root,i_reag_sulfur_ash
+rune_item i_rune_earthquake
+scroll_item i_scroll_earthquake
+flags spellflag_harm | spellflag_resist | spellflag_area
+effect_id 0
+effect 55,62
+duration 0
+manause 50
+skillreq magery 90.0
+
+[spell 58]
+defname s_energy_vortex
+name energy vortex
+sound snd_spell_energy_vortex
+runes Vas Corp Por
+cast_time 4.0
+resources i_reag_black_pearl,i_reag_blood_moss,i_reag_mandrake_root,i_reag_nightshade
+rune_item i_rune_energy_vortex
+scroll_item i_scroll_energy_vortex
+flags spellflag_targ_xyz | spellflag_harm | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[spell 59]
+defname s_resurrection
+name resurrection
+sound snd_spell_resurrection
+runes An Corp
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_garlic,i_reag_ginseng
+rune_item i_rune_resurrection
+scroll_item i_scroll_resurrection
+flags spellflag_targ_char | spellflag_good
+effect_id 0
+effect 0
+duration 0.0
+manause 50
+skillreq magery 90.0
+
+[spell 60]
+defname s_summon_elem_air
+name air elem
+sound snd_spell_summon_elem_air
+runes Kal Vas Xen Hur
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_summon_elem_air
+scroll_item i_scroll_summon_elem_air
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[spell 61]
+defname s_summon_daemon
+name daemon
+sound snd_spell_summon_daemon
+runes Kal Vas Xen Corp
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_summon_daemon
+scroll_item i_scroll_summon_daemon
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[spell 62]
+defname s_summon_elem_earth
+name elem earth
+sound snd_spell_summon_elem_earth
+runes Kal Vas Xen Ylem
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_summon_elem_earth
+scroll_item i_scroll_summon_elem_earth
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[spell 63]
+defname s_summon_elem_fire
+name elem fire
+sound snd_spell_summon_elem_fire
+runes Kal Vas Xen Flam
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_rune_summon_elem_fire
+scroll_item i_scroll_summon_elem_fire
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[spell 64]
+defname s_summon_elem_water
+name elem water
+sound snd_spell_summon_elem_water
+runes Kal Vas Xen An Flam
+cast_time 4.0
+resources i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
+rune_item i_rune_summon_elem_water
+scroll_item i_scroll_summon_elem_water
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 180.0
+manause 50
+skillreq magery 90.0
+
+[eof]

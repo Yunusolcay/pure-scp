@@ -1,0 +1,2238 @@
+﻿[EVENTS e_human_ai]
+ON=@Click
+message @55 <job> <name>
+return 1
+
+ON=@EnvironChange
+	if <flags>&statf_war 
+		return 0
+	endif
+	if !<sector.isdark> || (<flags>&statf_nightsight)
+		if <findlayer(layer_hand2)>
+			if <findlayer(layer_hand2).type> == t_light_lit
+				findlayer(layer_hand2).bounce
+			endif
+		endif
+		return 0
+	endif
+	// already have a lit light ?
+	if <findlayer(layer_hand2)>
+		if <findlayer(layer_hand2).type> == t_light_lit
+			return 0
+		endif
+	endif
+	// try to use a torch or light source if i have one. (and it's dark)
+	if <findtype.t_light_out>
+		findtype.t_light_out.equip
+		findtype.t_light_out.use
+	endif
+	return 0
+	action 104
+	
+ON=@NPCSeeNewPlayer
+dorand 12
+say Hello. I'm <job> <name>.
+say Welcome thee.
+say Can I help you?
+say I'm <name> and i wish help you.
+say How can I help you?
+say May I help you?
+enddo
+face
+timerf 1,anim 32
+
+ON=@DClick
+if (<isvendor>) && (<distance> < 5) && (<canseelos>)
+  buy
+  face
+  act <src>
+  action 101
+  return 1
+endif
+
+[SPEECH spk_human_ai]
+ON=*
+if (<flags>&statf_war)	
+  if (<memory>&034)
+			if (rand(8))
+				return 1
+			endif
+	else
+			if (rand(5))
+				return 1
+			endif
+	endif
+	return 1
+endif
+return 0
+
+ON=teach
+local._skill <skillbest>
+if (<<skillbest>>) && (<src.<dlocal._skill>> < 300)
+  say I can teach some skills.
+  src.sysmessage @,,1 Yetenek öğrenmek için [.teach] yazmalısın.
+else
+  say I can teach any skill.
+  src.sysmessage @,,1 Bu NPC size herhangi bir yetenek öğretemez.
+endif
+
+ON=*bye*
+ON=*bb*
+dorand 3
+  say Bye!
+  say Goodbye.
+  say Bye bye!
+enddo
+anim 33
+bye
+leave (1+Rand(3))
+
+ON=*ner*d*
+ON=*where*
+say @,,1 Şuan <src.region.name> bölgesindesin.
+return 1
+
+ON=*buy*
+src.sysmessage @,,1 Eşya alma işlemi için [.buy] yazmalısın.
+return 1
+
+ON=*sell*
+src.sysmessage @,,1 Eşya satma işlemi için [.sell] yazmalısın.
+return 1
+
+[CHARDEF c_actor]
+defname c_actor
+name #NAMES_HUMANFEMALE Actor
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+musicianship 100.0
+
+item i_hair_long
+color colors_hair
+item i_lantern_lit
+item i_tunic
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item i_cap
+color colors_neutral
+item backpack
+
+[CHARDEF c_alchemist]
+defname c_alchemist
+name #NAMES_HUMANMALE Alchemist
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+alchemy 100.0
+poisoning 100.0
+magery 100.0
+evaluatingintel 100.0
+
+item i_hair_short
+color colors_hair
+item i_torch_lit
+item i_robe
+color colors_neutral
+item i_apron_half
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_potion_refresh,35
+sell i_potion_agility,35
+sell i_potion_nightsight,35
+sell i_potion_heal,35
+sell i_potion_strength,35
+sell i_potion_poison,35
+sell i_potion_cure,35
+sell i_potion_explosion,35
+sell i_mortar_pestle,35
+sell i_bottle_empty,215
+buy i_potion_refresh,{3 18}
+buy i_potion_agility,{3 18}
+buy i_potion_nightsight,{3 18}
+buy i_potion_heal,{3 18}
+buy i_potion_strength,{3 18}
+buy i_potion_poison,{3 18}
+buy i_potion_cure,{3 18}
+buy i_potion_explosion,{3 18}
+buy i_mortar_pestle,{3 18}
+buy i_bottle_empty,{23 48}
+
+[CHARDEF c_armour]
+defname c_armour
+name #NAMES_HUMANMALE Armour
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+	
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+blacksmithing 100.0
+armslore 100.0
+parrying 100.0
+lockpicking 100.0
+tactics 100.0
+
+item i_hair_short
+color colors_hair
+item i_beard_short_med
+color match_hair
+item i_chainmail_tunic
+item i_chainmail_leggings
+item i_shield_round_metal
+item i_boots_calf
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_shield_kite_wood,7
+sell i_shield_kite_metal,7
+sell i_shield_round_bronze,7
+sell i_shield_round_metal,7
+sell i_shield_heater,7
+sell i_chainmail_coif,7
+sell i_chainmail_tunic,7
+sell i_chainmail_leggings,7
+sell i_platemail_gorget,7
+sell i_platemail_chest,7
+sell i_platemail_leggings,7
+sell i_platemail_arms,7
+sell i_platemail_gloves,7
+sell i_platemail_helmet,7
+buy i_shield_kite_wood,7
+buy i_shield_kite_metal,7
+buy i_shield_round_bronze,7
+buy i_shield_round_metal,7
+buy i_shield_heater,7
+buy i_chainmail_coif,7
+buy i_chainmail_tunic,7
+buy i_chainmail_leggings,7
+buy i_platemail_gorget,7
+buy i_platemail_chest,7
+buy i_platemail_leggings,7
+buy i_platemail_arms,7
+buy i_platemail_gloves,7
+buy i_platemail_helmet,7
+
+[CHARDEF c_assistant]
+defname c_assistant
+name #NAMES_HUMANFEMALE Assistant
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+alchemy 100.0
+anatomy 100.0
+animallore 100.0
+itemid 100.0
+armslore 100.0
+parrying 100.0
+begging 100.0
+blacksmithing 100.0
+bowcraft 100.0
+peacemaking 100.0
+camping 100.0
+carpentry 100.0
+cartography 100.0
+cooking 100.0
+detectinghidden 100.0
+enticement 100.0
+evaluatingintel 100.0
+healing 100.0
+fishing 100.0
+forensics 100.0
+herding 100.0
+hiding 100.0
+provocation 100.0
+inscription 100.0
+lockpicking 100.0
+
+item i_hair_2_pigtails
+color colors_hair
+item i_shirt_plain
+color colors_blue
+item i_kilt
+color colors_blue
+item i_bonnet
+color colors_blue
+item i_sandals
+item backpack
+itemnewbie i_spellbook
+
+[CHARDEF c_baker]
+defname c_baker
+name #NAMES_HUMANMALE Baker
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cooking 100.0
+tasteid 100.0
+camping 100.0
+
+item i_hair_short
+color colors_hair
+item i_bonnet
+item i_torch_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item i_apron_half
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bread_loaf,7
+sell i_pie_baked,7
+sell i_cake,7
+sell i_bread_french,7
+sell i_pizza,7
+sell i_flour_sack,30
+
+[CHARDEF c_banker]
+defname c_banker
+name #NAMES_HUMANMALE Banker
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_banker
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item random_male_hair
+color colors_hair
+item random_facial_hair
+color match_hair
+item i_lantern_lit
+item i_shirt_fancy
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item random_shoes
+color colors_neutral
+item backpack
+
+[CHARDEF c_barber]
+defname c_barber
+name #NAMES_HUMANMALE Barber
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_long
+color colors_hair
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item random_pants
+color colors_neutral
+item i_sandals
+color colors_neutral
+item backpack
+
+ON=@DClick
+if (<distance> < 3)
+	src.hairdressing
+	return 1
+endif
+
+[CHARDEF c_bard]
+defname c_bard
+name #NAMES_HUMANMALE Bard
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+musicianship 100.0
+
+item i_hair_2_pigtails
+color colors_hair
+item i_shirt_fancy
+color colors_neutral
+item i_skirt_long
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item backpack
+
+[CHARDEF c_beggar]
+defname c_beggar
+name #NAMES_HUMANFEMALE Beggar
+id c_woman
+desires t_food,t_fruit,t_gold
+tspeech spk_human_ai
+//tevents e_human_ai
+
+ON=@Create
+npc brain_beggar
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+begging 100.0
+
+item i_hair_2_pigtails
+color colors_hair
+item i_staff_quarter
+item i_dress_plain
+color colors_neutral
+item backpack
+
+ON=@Click
+message <job> <name>
+return 1
+
+[CHARDEF c_blacksmith]
+defname c_blacksmith
+name #NAMES_HUMANMALE Blacksmith
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+mining 100.0
+blacksmithing 100.0
+swordsmanship 100.0
+fencing 100.0
+macefighting 100.0
+wrestling 100.0
+armslore 100.0
+parrying 100.0
+tactics 100.0
+
+item i_beard_short_med
+item i_hammer_smith
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_apron_full
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_ingot_iron,15
+sell i_hammer_smith,7
+buy i_ingot_iron,15
+buy i_hammer_smith,7
+
+[CHARDEF c_bowyer]
+defname c_bowyer
+name #NAMES_HUMANMALE Bowyer
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+bowcraft 100.0
+archery 100.0
+tactics 100.0
+anatomy 100.0
+
+item i_hair_long
+color colors_hair
+item i_torch_lit
+item i_tunic
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_sandals
+item i_leather_gorget
+item i_hat_feather
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_crossbow,7
+sell i_crossbow_heavy,7
+sell i_bow,7
+sell i_xbolt,250
+sell i_arrow,250
+sell i_feather,250
+sell i_arrow_shaft,250
+buy i_crossbow,7
+buy i_crossbow_heavy,7
+buy i_bow,7
+buy i_xbolt,250
+buy i_arrow,250
+buy i_feather,250
+buy i_arrow_shaft,250
+
+[CHARDEF c_butcher]
+defname c_butcher
+name #NAMES_HUMANMALE Butcher
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cooking 100.0
+
+item i_cleaver_meat
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item i_apron_half
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bird_raw,15
+sell i_lamb_leg_raw,15
+sell i_ribs_raw,15
+sell i_cleaver_meat,7
+buy i_bird_raw,15
+buy i_lamb_leg_raw,15
+buy i_ribs_raw,15
+buy i_cleaver_meat,7
+
+[CHARDEF c_carpenter]
+defname c_carpenter
+name #NAMES_HUMANMALE Carpenter
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+lumberjacking 100.0
+carpentry 100.0
+wrestling 100.0
+
+item i_hair_short
+color colors_hair
+item i_beard_vandyke
+color match_hair
+
+item i_torch_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_sandals
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_log,75
+sell i_board,75
+sell i_drum,7
+sell i_lyre,7
+sell i_lute,7
+sell i_nails,7
+sell i_saw,7
+buy i_log,75
+buy i_board,75
+buy i_drum,7
+buy i_lyre,7
+buy i_lute,7
+buy i_nails,7
+buy i_saw,7
+
+[CHARDEF c_cook]
+defname c_cook
+name #NAMES_HUMANFEMALE Cooker
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cooking 100.0
+tasteid 100.0
+camping 100.0
+
+itemnewbie i_hair_ponytail
+color colors_hair
+item i_torch_lit
+item i_shirt_plain
+color colors_neutral
+item i_kilt
+color colors_neutral
+item i_apron_half
+item i_boots_calf
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bowl_wood_carrots,7
+sell i_bowl_wood_corn,7
+sell i_bowl_wood_lettuce,7
+sell i_bowl_wood_peas,7
+sell i_bowl_pewter_potatoes,7
+sell i_bowl_stew_lg,7
+sell i_bowl_tomato_soup,7
+buy i_bowl_wood_carrots,7
+buy i_bowl_wood_corn,7
+buy i_bowl_wood_lettuce,7
+buy i_bowl_wood_peas,7
+buy i_bowl_pewter_potatoes,7
+buy i_bowl_stew_lg,7
+buy i_bowl_tomato_soup,7
+
+[CHARDEF c_farmer]
+defname c_farmer
+name #NAMES_HUMANMALE Farmer
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_ponytail
+color colors_hair
+item i_beard_short
+color match_hair
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_hat_wide_brim
+color colors_neutral
+item i_boots_thigh
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_fruit_cabbage,7
+sell i_fruit_lettuce,7
+sell i_fruit_corn,7
+sell i_fruit_carrot,7
+sell i_fruit_squash,7
+sell i_fruit_onion,7
+sell i_fruit_pumpkin,7
+sell i_fruit_turnip,7
+sell i_fruit_watermelon,7
+sell i_fruit_peach,7
+sell i_fruit_pear,7
+sell i_fruit_lemon,7
+sell i_fruit_grapes,7
+sell i_fruit_apple,7
+buy i_fruit_cabbage,7
+buy i_fruit_lettuce,7
+buy i_fruit_corn,7
+buy i_fruit_carrot,7
+buy i_fruit_squash,7
+buy i_fruit_onion,7
+buy i_fruit_pumpkin,7
+buy i_fruit_turnip,7
+buy i_fruit_watermelon,7
+buy i_fruit_peach,7
+buy i_fruit_pear,7
+buy i_fruit_lemon,7
+buy i_fruit_grapes,7
+buy i_fruit_apple,7
+
+[CHARDEF c_fisher]
+defname c_fisher
+name #NAMES_HUMANMALE Fisher
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+fishing 100.0
+camping 100.0
+
+item i_hair_long
+color colors_hair
+item i_beard_vandyke
+color match_hair
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_hat_floppy
+color colors_neutral
+item i_sandals
+item i_fishing_pole
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_fish_cut_raw,15
+sell i_fish_small,15
+sell i_fish_big_1,15
+sell i_fish_big_2,15
+sell i_fish_big_3,15
+sell i_fish_big_4,15
+sell i_fishing_pole,7
+buy i_fish_cut_raw,15
+buy i_fish_small,15
+buy i_fish_big_1,15
+buy i_fish_big_2,15
+buy i_fish_big_3,15
+buy i_fish_big_4,15
+buy i_fishing_pole,7
+
+[CHARDEF c_florist]
+defname c_florist
+name #NAMES_HUMANFEMALE Florist
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+hiding 100.0
+stealth 100.0
+
+item i_hair_ponytail
+color colors_hair
+item i_lantern_lit
+item i_dress_plain
+color colors_neutral
+item i_hat_wide_brim
+color colors_neutral
+item i_sandals
+item backpack
+
+[CHARDEF c_gambler]
+defname c_gambler
+name #NAMES_HUMANMALE Gambler
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_buns
+color colors_hair
+item i_beard_vandyke
+color match_hair
+item i_torch_lit
+item i_robe
+color colors_neutral
+item i_boots_calf
+item backpack
+
+[CHARDEF c_glassblower]
+defname c_glassblower
+name #NAMES_HUMANFEMALE Glassblower
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+itemnewbie i_hair_ponytail
+color colors_hair
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item i_skirt_long
+color colors_neutral
+item i_apron_half
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bottle_empty,150
+sell i_jar_empty,15
+sell i_pitcher_glass,15
+buy i_bottle_empty,150
+buy i_jar_empty,15
+buy i_pitcher_glass,15
+
+[CHARDEF c_guard]
+defname c_guard
+name #NAMES_HUMANMALE Guard
+id c_man
+dam 15,20
+armor 20
+moverate 30
+
+ON=@Create
+npc brain_guard
+color colors_skin
+title <job>
+str 1000
+dex 1000
+int 1000
+
+detectinghidden 100.0
+parrying 100.0
+swordsmanship 100.0
+wrestling 100.0
+magicresistance 100.0
+tactics 100.0
+
+item i_shield_kite_metal
+color color_o_shadow
+item i_sword_viking
+color color_o_shadow
+item i_platemail_chest
+color color_o_shadow
+item i_platemail_leggings
+color color_o_shadow
+item i_platemail_arms
+color color_o_shadow
+item i_platemail_helmet_closed
+color color_o_shadow
+item i_sash
+color color_o_shadow
+
+ON=@NPCRefuseItem
+return 1
+
+ON=@Click
+message @55 <job> <name>
+return 1
+
+[CHARDEF c_healer]
+defname c_healer
+name #NAMES_HUMANMALE Healer
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_healer
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+healing 100.0
+
+itemnewbie i_hair_long
+color colors_hair
+item i_torch_lit
+item i_robe
+color colors_neutral
+item i_sandals
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bandage_bloody,50
+sell i_bandage,25
+
+[CHARDEF c_herbalist]
+defname c_herbalist
+name #NAMES_HUMANFEMALE Herbalist
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_2_pigtails
+color colors_hair
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_sandals
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+
+[CHARDEF c_innkeeper]
+defname c_innkeeper
+name #NAMES_HUMANFEMALE Innkeeper
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_short
+color colors_hair
+item i_beard_short
+color match_hair
+item i_shirt_fancy
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_bottle_ale,7
+sell i_bottle_wine,7
+sell i_bottle_liquor,7
+buy i_bottle_ale,7
+buy i_bottle_wine,7
+buy i_bottle_liquor,7
+
+[CHARDEF c_innwaiter]
+defname c_innwaiter
+name #NAMES_HUMANMALE Innwaiter
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+moverate 30
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex {55 75}
+int 75
+
+item i_hair_short
+color colors_hair
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_sandals
+item i_apron_half
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+buy i_bottle_ale,7
+buy i_bottle_wine,7
+buy i_bottle_liquor,7
+
+[CHARDEF c_prison_guard]
+defname c_prison_guard
+name #NAMES_HUMANMALE Prison Guard
+id c_man
+tspeech spk_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_krisna
+color colors_hair
+item i_beard_long_med
+color match_hair
+item i_chainmail_tunic
+item i_chainmail_leggings
+item i_shield_round_bronze
+item i_boots_calf
+color colors_neutral
+item i_sword_long
+item backpack
+
+ON=@Click
+message @55 <job> <name>
+return 1
+
+[CHARDEF c_jeweller]
+defname c_jeweller
+name #NAMES_HUMANFEMALE Jeweller
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+itemnewbie i_hair_ponytail
+color colors_hair
+item i_lantern_lit
+item i_shirt_fancy
+color colors_neutral
+item i_kilt
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item i_necklace_gold
+item i_earrings_gold
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_ring_gold,7
+sell i_necklace_silver_beads,7
+sell i_necklace_silver,7
+sell i_necklace_gold_beads,7
+sell i_necklace_gold,7
+sell i_necklace_metal_beads,7
+sell i_beads,7
+sell i_bracelet_gold,7
+sell i_earrings_gold,7
+buy i_ring_gold,7
+buy i_necklace_silver_beads,7
+buy i_necklace_silver,7
+buy i_necklace_gold_beads,7
+buy i_necklace_gold,7
+buy i_necklace_metal_beads,7
+buy i_beads,7
+buy i_bracelet_gold,7
+buy i_earrings_gold,7
+
+[CHARDEF c_magician]
+defname c_magician
+name #NAMES_HUMANMALE Magician
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+magery 100.0
+magicresistance 100.0
+meditation 100.0
+poisoning 100.0
+evaluatingintel 100.0
+inscription 100.0
+poisoning 100.0
+
+itemnewbie i_hair_long
+itemnewbie i_beard_long
+color match_hair
+item i_robe
+color colors_blue
+item i_boots_calf
+color colors_blue
+item i_hat_wizards
+color colors_blue
+item i_staff_black
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_reag_black_pearl,250
+sell i_reag_blood_moss,250
+sell i_reag_garlic,250
+sell i_reag_ginseng,250
+sell i_reag_mandrake_root,250
+sell i_reag_nightshade,250
+sell i_reag_sulfur_ash,250
+sell i_reag_spider_silk,250
+sell i_regs_lesser,10
+sell i_regs_normal,10
+sell i_regs_great,10
+sell i_spellbook,7
+sell i_rune_marker,150
+buy i_reag_black_pearl,250
+buy i_reag_blood_moss,250
+buy i_reag_garlic,250
+buy i_reag_ginseng,250
+buy i_reag_mandrake_root,250
+buy i_reag_nightshade,250
+buy i_reag_sulfur_ash,250
+buy i_reag_spider_silk,250
+buy i_spellbook,7
+buy i_rune_marker,150
+
+[CHARDEF c_mapmaker]
+defname c_mapmaker
+name #NAMES_HUMANMALE Mapmaker
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cartography 100.0
+
+item i_hair_short
+color colors_hair
+item i_beard_short_med
+color match_hair
+item i_torch_lit
+item i_hat_straw_tall
+item i_robe
+color colors_neutral
+item i_sandals
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_map_blank,250
+sell i_spyglass,7
+sell i_sextant,7
+
+[CHARDEF c_mayor]
+defname c_mayor
+name #NAMES_HUMANMALE Mayor
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+magery 100.0
+magicresistance 100.0
+tactics 100.0
+snooping 100.0
+musicianship 100.0
+poisoning 100.0
+archery 100.0
+spiritspeak 100.0
+stealing 100.0
+tailoring 100.0
+taming 100.0
+tasteid 100.0
+tinkering 100.0
+tracking 100.0
+veterinary 100.0
+swordsmanship 100.0
+macefighting 100.0
+fencing 100.0
+wrestling 100.0
+lumberjacking 100.0
+mining 100.0
+meditation 100.0
+stealth 100.0
+removetrap 100.0
+
+item i_hair_afro
+color colors_hair
+item i_leather_gorget
+item i_leather_sleeves
+item i_leather_tunic
+item i_leather_leggings
+item i_leather_gloves
+item i_sash
+item i_boots_calf
+item backpack
+
+[CHARDEF c_miller]
+defname c_miller
+name #NAMES_HUMANMALE Miller
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_short
+color colors_hair
+item i_beard_short
+color match_hair
+item i_lantern
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_sandals
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_flour_sack,15
+sell i_hay_sheaf,10
+buy i_flour_sack,15
+buy i_hay_sheaf,10
+
+[CHARDEF c_miner]
+defname c_miner
+name #NAMES_HUMANMALE Miner
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+mining 100.0
+blacksmithing 100.0
+lumberjacking 100.0
+
+item i_hair_receding
+color colors_hair
+item i_beard_short_med
+color match_hair
+
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item i_pickaxe
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_ingot_iron,15
+sell i_shovel,7
+sell i_pickaxe,7
+buy i_ingot_iron,15
+buy i_shovel,7
+buy i_pickaxe,7
+
+[CHARDEF c_monk]
+defname c_monk
+name #NAMES_HUMANMALE Monk
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+healing 100.0
+magery 100.0
+evaluatingintel 100.0
+
+item i_hair_receding
+color colors_hair
+item i_beard_short
+color match_hair
+item i_robe
+color colors_neutral
+item i_sandals
+item i_staff_quarter
+
+[CHARDEF c_noble]
+defname c_noble
+name #NAMES_HUMANMALE Noble
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+	
+itemnewbie i_hair_short
+color colors_hair
+item i_platemail_chest
+item i_platemail_leggings
+item i_platemail_arms
+item i_platemail_gloves
+item i_sash
+item backpack
+
+[CHARDEF c_priest]
+defname c_priest
+name #NAMES_HUMANMALE Priest
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+healing 100.0
+magery 100.0
+
+item i_hair_receding
+color colors_hair
+item i_beard_long
+color match_hair
+item i_robe
+color colors_neutral
+item i_sandals
+item i_maul
+
+[CHARDEF c_prisoner]
+defname c_prisoner
+name #NAMES_HUMANMALE Prisoner
+id c_man
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_long
+color colors_hair
+item i_beard_short_med
+color match_hair
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+item i_sandals
+
+ON=@Click
+message <job> <name>
+return 1
+
+ON=@NPCSeeNewPlayer
+dorand 6
+say I want to get out of here!
+say I'm not criminal.
+say I'm just a worker, help me!
+say I was hurt anybody.
+say Where is this place?
+say Help me!
+enddo
+
+[CHARDEF c_provisioner]
+defname c_provisioner
+name #NAMES_HUMANMALE Provisioner
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+itemid 100.0
+armslore 100.0
+begging 100.0
+bowcraft 100.0
+hiding 100.0
+tactics 100.0
+stealing 100.0
+snooping 100.0
+tinkering 100.0
+detectinghidden 100.0
+stealth 100.0
+
+itemnewbie i_hair_short
+color colors_hair
+itemnewbie i_beard_short_med
+color match_hair
+item i_torch_lit
+item i_robe
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item i_leather_gloves
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_arrow,150
+sell i_xbolt,150
+sell i_key_rusty,7
+sell i_lockpick,7
+sell i_pouch,7
+sell i_bag,7
+sell i_backpack,7
+sell i_box_wood,7
+buy i_arrow,150
+buy i_xbolt,150
+buy i_key_rusty,7
+buy i_lockpick,7
+buy i_pouch,7
+buy i_bag,7
+buy i_backpack,7
+buy i_box_wood,7
+
+[CHARDEF c_scribe]
+defname c_scribe
+name #NAMES_HUMANFEMALE Scribe
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+inscription 100.0
+magery 100.0
+magicresistance 100.0
+evaluatingintel 100.0
+meditation 100.0
+poisoning 100.0
+
+item i_hair_2_pigtails
+color colors_hair
+item i_robe
+color colors_blue
+item i_hat_wizards
+color colors_blue
+item i_sandals
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_book_sm,7
+sell i_pen_and_ink,7
+sell i_scroll_blank,250
+
+sell i_scroll_polymorph
+sell i_scroll_meteor_swarm
+sell i_scroll_mass_dispel
+sell i_scroll_mana_vampire
+sell i_scroll_gate_travel
+sell i_scroll_flamestrike
+sell i_scroll_energy_field
+sell i_scroll_chain_lightning
+
+sell i_scroll_reveal
+sell i_scroll_paralyze_field
+sell i_scroll_mass_curse
+sell i_scroll_mark
+sell i_scroll_invisibility
+sell i_scroll_explosion
+sell i_scroll_energy_bolt
+sell i_scroll_dispel
+
+sell i_scroll_summon_creature
+sell i_scroll_poison_field
+sell i_scroll_paralyze
+sell i_scroll_mind_blast
+sell i_scroll_magic_reflection
+sell i_scroll_incognito
+sell i_scroll_dispel_field
+sell i_scroll_blade_spirits
+
+buy i_scroll_summon_elem_water
+buy i_scroll_summon_elem_fire
+buy i_scroll_summon_elem_earth
+buy i_scroll_summon_daemon
+buy i_scroll_summon_elem_air
+buy i_scroll_resurrection
+buy i_scroll_energy_vortex
+buy i_scroll_earthquake
+
+buy i_scroll_polymorph
+buy i_scroll_meteor_swarm
+buy i_scroll_mass_dispel
+buy i_scroll_mana_vampire
+buy i_scroll_gate_travel
+buy i_scroll_flamestrike
+buy i_scroll_energy_field
+buy i_scroll_chain_lightning
+
+buy i_scroll_reveal
+buy i_scroll_paralyze_field
+buy i_scroll_mass_curse
+buy i_scroll_mark
+buy i_scroll_invisibility
+buy i_scroll_explosion
+buy i_scroll_energy_bolt
+buy i_scroll_dispel
+
+buy i_scroll_summon_creature
+buy i_scroll_poison_field
+buy i_scroll_paralyze
+buy i_scroll_mind_blast
+buy i_scroll_magic_reflection
+buy i_scroll_incognito
+buy i_scroll_dispel_field
+buy i_scroll_blade_spirits
+
+buy i_scroll_recall
+buy i_scroll_mana_drain
+buy i_scroll_lightning
+buy i_scroll_greater_heal
+buy i_scroll_fire_field
+buy i_scroll_curse
+buy i_scroll_archprotection
+buy i_scroll_archcure
+
+buy i_scroll_wall_of_stone
+buy i_scroll_unlock
+buy i_scroll_teleport
+buy i_scroll_telekinesis
+buy i_scroll_poison
+buy i_scroll_magic_lock
+buy i_scroll_fireball
+buy i_scroll_bless
+
+buy i_scroll_strength
+buy i_scroll_protection
+buy i_scroll_magic_untrap
+buy i_scroll_magic_trap
+buy i_scroll_harm
+buy i_scroll_cure
+buy i_scroll_cunning
+buy i_scroll_agility
+
+buy i_scroll_weaken
+buy i_scroll_reactive_armor
+buy i_scroll_night_sight
+buy i_scroll_magic_arrow
+buy i_scroll_heal
+buy i_scroll_feeblemind
+buy i_scroll_create_food
+buy i_scroll_clumsy
+
+buy i_book_sm,7
+buy i_pen_and_ink,7
+buy i_scroll_blank,250
+
+[CHARDEF c_shepherd]
+defname c_shepherd
+name #NAMES_HUMANMALE Shepherd
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+animallore 100.0
+veterinary 100.0
+taming 100.0
+herding 100.0
+
+itemnewbie i_hair_receding
+color colors_hair
+itemnewbie i_beard_short_med
+color match_hair
+item i_torch_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_hat_wide_brim
+color colors_neutral
+item i_boots_calf
+item i_shepherds_crook
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_wool,15
+sell i_shepherds_crook,7
+buy i_wool,15
+buy i_shepherds_crook,7
+
+[CHARDEF c_shipcaptain]
+defname c_shipcaptain
+name #NAMES_HUMANMALE Captain
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cartography 100.0
+camping 100.0
+tracking 100.0
+
+item i_hair_long
+color colors_hair
+item i_lantern
+item i_robe
+color colors_neutral
+item i_sandals
+item i_hat_straw
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+timerf 1,f_vendormarkup
+sell i_deed_ship_small_n,7
+sell i_deed_ship_dragon_small_n,7
+sell i_deed_ship_medium_n,7
+sell i_deed_ship_dragon_medium_n,7
+sell i_deed_ship_long_n,7
+sell i_deed_ship_dragon_long_n,7
+sell i_ship_finder,7
+
+[CHARDEF c_shippirate]
+defname c_shippirate
+name #NAMES_HUMANMALE Pirate
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+cartography 100.0
+camping 100.0
+tracking 100.0
+
+item i_hair_long
+color colors_hair
+item i_beard_short_med 
+color match_hair
+item i_shield_wood
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_red
+item i_cutlass
+item i_skull_cap
+color colors_red
+item i_boots_thigh
+item backpack
+
+[CHARDEF c_shipsailor]
+defname c_shipsailor
+name #NAMES_HUMANFEMALE Sailor
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_human
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+carpentry 100.0
+mining 100.0
+camping 100.0
+
+itemnewbie i_hair_afro
+color colors_hair
+itemnewbie i_beard_short
+color match_hair
+item i_torch_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_bandana
+color colors_red
+item i_boots_thigh
+item i_cutlass
+item backpack
+
+[CHARDEF c_stonecrafter]
+defname c_stonecrafter
+name #NAMES_HUMANMALE Stonecrafter
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+
+item i_hair_afro
+color colors_hair
+
+item i_torch_lit
+item i_shirt_fancy
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_boots_calf
+color colors_neutral
+item backpack
+
+[CHARDEF c_tailor]
+defname c_tailor
+name #NAMES_HUMANMALE Tailor
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+tailoring 100.0
+parrying 100.0
+
+itemnewbie i_hair_receding
+color colors_hair
+item i_lantern
+item i_robe
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_dye_tub,7
+sell i_dyes,7
+sell i_shirt_plain,7
+sell i_pants_long,7
+sell i_dress_plain,7
+sell i_skirt_long,7
+sell i_robe,7
+sell i_apron_half,7
+sell i_doublet,7
+sell i_tunic,7
+sell i_hat_floppy,7
+sell i_hat_wide_brim,7
+sell i_cap,7
+sell i_hat_straw_tall,7
+sell i_hat_straw,7
+sell i_hat_feather,7
+sell i_hat_tricorne,7
+sell i_bandana,7
+sell i_skull_cap,7
+sell i_cloth,7
+sell i_sewing_kit,7
+sell i_scissors,7
+buy i_dye_tub,7
+buy i_dyes,7
+buy i_shirt_plain,7
+buy i_pants_long,7
+buy i_dress_plain,7
+buy i_skirt_long,7
+buy i_robe,7
+buy i_apron_half,7
+buy i_doublet,7
+buy i_tunic,7
+buy i_hat_floppy,7
+buy i_hat_wide_brim,7
+buy i_cap,7
+buy i_hat_straw_tall,7
+buy i_hat_straw,7
+buy i_hat_feather,7
+buy i_hat_tricorne,7
+buy i_bandana,7
+buy i_skull_cap,7
+buy i_cloth,7
+buy i_sewing_kit,7
+buy i_scissors,7
+buy i_cotton,250
+buy i_yarn_ball,250
+buy i_cloth_bolt,250
+
+[CHARDEF c_tamer]
+defname c_tamer
+name #NAMES_HUMANMALE Tamer
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_animal_trainer
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+taming 100.0
+animallore 100.0
+herding 100.0
+tracking 100.0
+
+item i_hair_short
+color colors_hair
+item i_beard_short
+color match_hair
+
+item i_shirt_plain
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_boots_thigh
+item i_staff_gnarled
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_pet_horse_pack,7
+sell i_pet_llama_pack,7
+sell i_pet_horse_tan,7
+sell i_pet_horse_gray,7
+sell i_pet_horse_brown_lt,7
+sell i_pet_horse_brown_dk,7
+sell i_deed_shrink,7
+sell i_staff_gnarled,7
+
+[CHARDEF c_tanner]
+defname c_tanner
+name #NAMES_HUMANFEMALE Tanner
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+tailoring 100.0
+wrestling 100.0
+parrying 100.0
+
+item i_hair_2_pigtails
+color colors_hair
+item i_lantern_lit
+item i_armor_female_bustier
+item i_armor_female_skirt
+item i_boots_calf
+color colors_brown
+item i_leather_gorget
+item i_leather_gloves
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_leather_cap,7
+sell i_leather_gorget,7
+sell i_leather_sleeves,7
+sell i_leather_tunic,7
+sell i_leather_leggings,7
+sell i_leather_gloves,7
+//sell i_studded_gorget,7
+//sell i_studded_sleeves,7
+//sell i_studded_tunic,7
+//sell i_studded_leggings,7
+//sell i_studded_gloves,7
+buy i_leather_cap,7
+buy i_leather_gorget,7
+buy i_leather_sleeves,7
+buy i_leather_tunic,7
+buy i_leather_leggings,7
+buy i_leather_gloves,7
+//buy i_studded_gorget,7
+//buy i_studded_sleeves,7
+//buy i_studded_tunic,7
+//buy i_studded_leggings,7
+//buy i_studded_gloves,7
+
+[CHARDEF c_thief]
+defname c_thief
+name #NAMES_HUMANMALE Thief
+id c_man
+hiredaywage 60
+tspeech spk_human_ai
+//tevents e_human_ai
+moverate 30
+
+ON=@Create
+npc brain_thief
+color colors_skin
+title <job>
+str {75 95}
+dex {85 95}
+int {60 75}
+stealth 100.0
+stealing 100.0
+snooping 100.0
+begging 100.0
+hiding 100.0
+lockpicking 100.0
+
+item i_hair_krisna
+color colors_hair
+item i_beard_long_med
+color match_hair
+item i_torch_lit
+item i_robe
+color colors_neutral
+item i_sandals
+item i_dagger
+item i_lockpick
+item backpack
+
+ON=@Click
+message <job> <name>
+return 1
+
+ON=@NPCSeeNewPlayer
+dorand 5
+say Hi <src.name>, are you busy?
+say Can I ask a question
+say Hey! I need your help.
+say How a nice day. Enjoy!
+say Do you wanna help me?
+enddo
+act <src.uid>
+timerf 1,action 100
+timerf 5,action 107
+
+[CHARDEF c_tinker]
+defname c_tinker
+name #NAMES_HUMANMALE Tinker
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+	
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+tinkering 100.0
+blacksmithing 100.0
+lockpicking 100.0
+
+item i_hair_afro
+color colors_hair
+item i_beard_short_med
+color match_hair
+item i_lantern_lit
+item i_shirt_plain
+color colors_neutral
+item i_pants_short
+color colors_neutral
+item i_shoes_plain
+color colors_neutral
+item i_apron_full
+item i_tinker_tools
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_key_rusty,7
+sell i_key_ring,7
+sell i_froe,7
+sell i_clock_parts,7
+sell i_sextant_parts,7
+sell i_inshave,7
+sell i_nails,7
+sell i_axel_and_gears,7
+sell i_ingot_iron,15
+sell i_lockpick,7
+sell i_tinker_tools,7
+buy i_key_rusty,7
+buy i_key_ring,7
+buy i_froe,7
+buy i_clock_parts,7
+buy i_sextant_parts,7
+buy i_inshave,7
+buy i_nails,7
+buy i_axel_and_gears,7
+buy i_ingot_iron,150
+buy i_lockpick,7
+buy i_tinker_tools,7
+
+[CHARDEF c_vendor]
+defname c_vendor
+name #NAMES_HUMANMALE Vendor
+id c_man
+
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+//flags 028000005
+
+	ITEMNEWBIE=i_lantern
+	ITEMNEWBIE=random_male_hair
+	COLOR=colors_hair
+	ITEMNEWBIE=random_facial_hair
+	COLOR=match_hair
+	ITEMNEWBIE=i_shirt_plain
+	COLOR=colors_all
+	ITEMNEWBIE=random_pants
+	COLOR=colors_all
+	ITEMNEWBIE=random_shoes
+	COLOR=colors_neutral
+	
+[CHARDEF c_vet]
+defname c_vet
+name #NAMES_HUMANFEMALE Veterinarian
+id c_woman
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+anatomy 100.0
+animallore 100.0
+veterinary 100.0
+taming 100.0
+herding 100.0
+
+item i_hair_ponytail
+color colors_hair
+item i_lantern_lit
+item i_shirt_fancy
+color colors_neutral
+item i_pants_long
+color colors_neutral
+item i_shoes_plain
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_hay_sheaf,15
+sell i_pet_mouse,7
+sell i_pet_cat,7
+sell i_pet_dog,7
+buy i_hay_sheaf,25
+
+[CHARDEF c_weaponsmith]
+defname c_weaponsmith
+name #NAMES_HUMANMALE Weaponsmith
+id c_man
+tspeech spk_human_ai
+tevents e_human_ai
+
+ON=@Create
+npc brain_vendor
+color colors_skin
+title <job>
+str 75
+dex 75
+int 75
+swordsmanship 100.0
+fencing 100.0
+macefighting 100.0
+archery 100.0
+wrestling 100.0
+armslore 100.0
+bowcraft 100.0
+tactics 100.0
+
+item i_hair_receding
+color colors_hair
+item i_robe
+color colors_neutral
+item i_shoes_plain
+item i_leather_gorget
+item i_leather_gloves
+item i_bardiche
+item i_apron_half
+item backpack
+
+ON=@NPCRestock
+timerf 1,f_vendormarkup
+sell i_hammer_war,7
+sell i_staff_black,7
+sell i_mace,7
+sell i_club,7
+sell i_axe_war,7
+sell i_spear_short,7
+sell i_kryss,7
+sell i_axe_exec,7
+sell i_axe_double,7
+sell i_axe_battle,7
+sell i_bardiche,7
+sell i_sword_viking,7
+sell i_cutlass,7
+sell i_dagger,7
+buy i_hammer_war,7
+buy i_staff_black,7
+buy i_mace,7
+buy i_club,7
+buy i_axe_war,7
+buy i_spear_short,7
+buy i_kryss,7
+buy i_axe_exec,7
+buy i_axe_double,7
+buy i_axe_battle,7
+buy i_bardiche,7
+buy i_sword_viking,7
+buy i_cutlass,7
+buy i_dagger,7
+
+[EOF]

@@ -1,0 +1,260 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 678]
+defname s_nether_bolt
+name nether bolt
+cast_time 0.5
+runes icy
+resources i_reag_black_pearl, i_reag_sulfur_ash
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_resist
+rune_item 0
+scroll_item i_scroll_nether_bolt
+effect_id 0
+effect 5,15
+duration 0.0
+manause 4
+skillreq mysticism 0.0
+interrupt 100.0,100.0
+
+[spell 679]
+defname s_healing_stone
+name healing stone
+cast_time 0.5
+runes kim
+resources i_reag_bone, i_reag_garlic, i_reag_ginseng, i_reag_spider_silk
+flags 0
+rune_item 0
+scroll_item i_scroll_healing_stone
+effect_id i_fx_heal
+effect 5,20
+duration 0.0
+manause 4
+skillreq mysticism 0.0
+interrupt 100.0,100.0
+
+[spell 680]
+defname s_purge_magic
+name purge magic
+cast_time 0.7
+runes aos
+resources i_reag_fertile_dirt, i_reag_garlic, i_reag_mandrake_root, i_reag_sulfur_ash
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_resist
+rune_item 0
+scroll_item i_scroll_purge_magic
+effect_id i_fx_curse
+effect 3,15
+duration 0.0
+manause 6
+skillreq mysticism 8.0
+interrupt 100.0,100.0
+
+[spell 681]
+defname s_enchant
+name enchant
+cast_time 1.0
+runes ioy
+resources i_reag_spider_silk, i_reag_mandrake_root, i_reag_sulfur_ash
+flags spellflag_targ_item
+rune_item 0
+scroll_item i_scroll_enchant
+effect_id 0
+effect 3,15
+duration 45.0,60.0
+manause 9
+skillreq mysticism 20.0
+interrupt 100.0,100.0
+
+[spell 682]
+defname s_sleep
+name sleep
+cast_time 1.0
+runes iz
+resources i_reag_nightshade, i_reag_spider_silk, i_reag_black_pearl
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_resist
+rune_item 0
+scroll_item i_scroll_sleep
+effect_id i_fx_curse
+effect 5,30
+duration 45.0,60.0
+manause 9
+skillreq mysticism 20.0
+interrupt 100.0,100.0
+
+[spell 683]
+defname s_eagle_strike
+name eagle strike
+cast_time 1.0
+runes kpz
+resources i_reag_blood_moss, i_reag_bone, i_reag_spider_silk, i_reag_mandrake_root
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm
+rune_item 0
+scroll_item i_scroll_eagle_strike
+effect_id 0
+effect 5,30
+duration 0.0
+manause 9
+skillreq mysticism 20.0
+interrupt 100.0,100.0
+
+[spell 684]
+defname s_animated_weapon
+name animated weapon
+cast_time 1.0
+runes ijpy
+resources i_reag_bone, i_reag_black_pearl, i_reag_mandrake_root, i_reag_nightshade
+flags spellflag_summon
+rune_item 0
+scroll_item i_scroll_animated_weapon
+effect_id 0
+effect 5,30
+duration 45.0,60.0
+manause 11
+skillreq mysticism 33.0
+interrupt 100.0,100.0
+
+[spell 685]
+defname s_stone_form
+name stone form
+cast_time 1.0
+runes iry
+resources i_reag_blood_moss, i_reag_fertile_dirt, i_reag_garlic
+flags 0
+rune_item 0
+scroll_item i_scroll_stone_form
+effect_id 0
+effect 5,30
+duration 45.0,60.0
+manause 11
+skillreq mysticism 33.0
+interrupt 100.0,100.0
+
+[spell 686]
+defname s_spell_trigger
+name spell trigger
+cast_time 1.0
+runes ivoe
+resources i_reag_dragon_blood, i_reag_garlic, i_reag_mandrake_root, i_reag_spider_silk
+flags spellflag_targ_item
+rune_item 0
+scroll_item i_scroll_spell_trigger
+effect_id 0
+effect 5,30
+duration 0.0
+manause 14
+skillreq mysticism 45.0
+interrupt 100.0,100.0
+
+[spell 687]
+defname s_mass_sleep
+name mass sleep
+cast_time 1.0
+runes vz
+resources i_reag_ginseng, i_reag_nightshade, i_reag_spider_silk
+flags 0
+rune_item 0
+scroll_item i_scroll_mass_sleep
+effect_id 0
+effect 5,30
+duration 0.0
+manause 14
+skillreq mysticism 45.0
+interrupt 100.0,100.0
+
+[spell 688]
+defname s_cleansing_winds
+name cleansing winds
+cast_time 1.0
+runes ivmh
+resources i_reag_dragon_blood, i_reag_garlic, i_reag_ginseng, i_reag_mandrake_root
+flags spellflag_targ_char | spellflag_dir_anim
+rune_item 0
+scroll_item i_scroll_cleansing_winds
+effect_id i_fx_heal
+effect 5,30
+duration 0.0
+manause 20
+skillreq mysticism 58.0
+interrupt 100.0,100.0
+
+[spell 689]
+defname s_bombard
+name bombard
+cast_time 1.0
+runes cpy
+resources i_reag_blood_moss, i_reag_dragon_blood, i_reag_garlic, i_reag_sulfur_ash
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm
+rune_item 0
+scroll_item i_scroll_bombard
+effect_id 0
+effect 5,30
+duration 0.0
+manause 20
+skillreq mysticism 58.0
+interrupt 100.0,100.0
+
+[spell 690]
+defname s_spell_plague
+name spell plague
+cast_time 1.0
+runes vrjo
+resources i_reag_daemon_bone, i_reag_dragon_blood, i_reag_nightshade, i_reag_sulfur_ash
+flags spellflag_harm
+rune_item 0
+scroll_item i_scroll_spell_plague
+effect_id 0
+effect 5,30
+duration 0.0
+manause 40
+skillreq mysticism 70.0
+interrupt 100.0,100.0
+
+[spell 691]
+defname s_hail_storm
+name hail storm
+cast_time 1.0
+runes kdy
+resources i_reag_dragon_blood, i_reag_blood_moss, i_reag_black_pearl, i_reag_mandrake_root
+flags spellflag_harm
+rune_item 0
+scroll_item i_scroll_hail_storm
+effect_id 0
+effect 5,30
+duration 0.0
+manause 40
+skillreq mysticism 70.0
+interrupt 100.0,100.0
+
+[spell 692]
+defname s_nether_cyclone
+name nether cyclone
+cast_time 1.0
+runes gh
+resources i_reag_mandrake_root, i_reag_nightshade, i_reag_sulfur_ash, i_reag_blood_moss
+flags spellflag_harm
+rune_item 0
+scroll_item i_scroll_nether_cyclone
+effect_id 0
+effect 5,30
+duration 30.0,45.0
+manause 50
+skillreq mysticism 83.0
+interrupt 100.0,100.0
+
+[spell 693]
+defname s_rising_colossus
+name rising collossus
+cast_time 1.0
+runes kvxcp
+resources i_reag_daemon_bone, i_reag_dragon_blood, i_reag_fertile_dirt, i_reag_nightshade
+flags spellflag_summon
+rune_item 0
+scroll_item i_scroll_rising_colossus
+effect_id 0
+effect 5,30
+duration 30.0,45.0
+manause 50
+skillreq mysticism 83.0
+interrupt 100.0,100.0
+
+[eof]

@@ -1,0 +1,106 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 65]
+defname s_summon_undead
+name summon undead
+sound snd_spell_summon_undead
+runes Kal Nox Mani
+cast_time 200
+resources i_reag_blood_moss
+rune_item i_rune_alchem_1
+scroll_item i_scroll_x_green2
+flags spellflag_targ_xyz | spellflag_summon
+effect_id 0
+effect 0
+duration 2*60.0,3*60.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[spell 66]
+defname s_animate_dead
+name animate dead
+sound snd_spell_animate_dead
+runes In An Mani Grav
+cast_time 60
+resources i_reag_blood_moss
+rune_item i_rune_alchem_2
+scroll_item i_scroll_x_teal2
+flags spellflag_targ_item
+effect_id 0
+effect 0
+duration 2*60.0,3*60.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[spell 67]
+defname s_bone_armor
+name bone armor
+sound snd_spell_bone_armor
+runes In Corp Sanct Ylem
+cast_time 60
+resources i_reag_blood_moss
+rune_item i_rune_alchem_3
+scroll_item i_scroll_x_brown2
+flags spellflag_targ_obj
+effect_id 0
+effect 0
+duration 0.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[spell 68]
+defname s_light
+name light
+sound snd_spell_light
+runes In Lor
+cast_time 60
+resources i_reag_spider_silk,i_reag_sulfur_ash
+rune_item i_light_source
+scroll_item i_scroll_x_red
+flags spellflag_targ_char | spellflag_good
+effect_id 0
+effect 0
+duration 3*60.0,5*60.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[spell 69]
+defname s_fire_bolt
+name fire bolt
+sound snd_spell_fire_bolt
+runes Vas Flam Por
+cast_time 60
+resources i_reag_black_pearl,i_reag_sulfur_ash,i_reag_nightshade
+rune_item i_rune_fireball
+scroll_item i_scroll_x_blue
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_bolt| spellflag_resist
+effect_id 0
+effect 30,50
+duration 0.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[spell 70]
+defname s_hallucination
+name hallucination
+sound snd_z_end_mystery1
+runes Wis Nox
+cast_time 60
+resources i_reag_garlic,i_reag_nightshade
+rune_item i_rune_mind_blast
+scroll_item i_scroll_mind_blast
+flags spellflag_targ_char | spellflag_dir_anim | spellflag_harm | spellflag_fx_targ | spellflag_resist
+effect_id i_fx_curse
+effect 2,5
+duration 2*60.0,4*60.0
+manause 15
+skillreq magery 30.0, necromancy 40.0
+interrupt 100.0,100.0
+
+[eof]

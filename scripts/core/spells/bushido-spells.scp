@@ -1,0 +1,106 @@
+// @10.05.2012 <?> Macfusion
+version 0.56b
+
+[spell 401]
+defname s_honorable_execution
+name honorable execution
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 0
+skillreq bushido 25.0
+interrupt 0.0,0.0
+
+[spell 402]
+defname s_confidence
+name confidence
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 10
+skillreq bushido 25.0
+interrupt 0.0,0.0
+
+[spell 403]
+defname s_evasion
+name evasion
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 10
+skillreq bushido 60.0
+interrupt 0.0,0.0
+
+[spell 404]
+defname s_counter_attack
+name counter attack
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 5
+skillreq bushido 40.0
+interrupt 0.0,0.0
+
+[spell 405]
+defname s_lightning_strike
+name lightning strike
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 5
+skillreq bushido 50.0
+interrupt 0.0,0.0
+
+[spell 406]
+defname s_momentum_strike
+name momentum strike
+sound 0
+runes 0
+cast_time 0
+resources 
+rune_item 0
+scroll_item 0
+flags 0
+effect_id 0
+effect 0
+duration 0
+manause 10
+skillreq bushido 70.0
+interrupt 0.0,0.0
+
+[eof]
