@@ -11,13 +11,12 @@ Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemel
 Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
 
 ### Kodlar
-**mdialog**<br />
+**mdialog**
 Dialog'u kapatıp açar
 
-**max**<br />
-İki değer arasında ``<max 5,9>`` maksimim değeri verir
-
-**min**<br />
+**max**
+İki değer arasında ``<max 5,9>`` maksimim değeri verir  
+**min**
 İki değer arasında ``<min 2,6>`` maksimim değeri verir
 
 **pay**<br />
