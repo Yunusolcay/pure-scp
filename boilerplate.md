@@ -2,6 +2,30 @@
 **mdialog**  
 Dialog'u kapatýp açar
 
+**elem**
+Dialog'a tek satýrda elemanlar ekler (dtext, button, radio vs.)  
+Dorigin opsiyoneldir, sonraki elemanlarda + - deðerleri kullanýlabilir  
+````
+elem "dtext 20 40 0481 Baþlýk", "dtext +20 - 55 : Ýçerik"
+elem "button 15 300 210 211 1 0 1, "dtext +5 - 0481 Týkla"
+````
+Sonradan fonksiyon olarak özelleþtirilmiþ ve eklenmiþ elemanlar eklenebilir
+````
+Özelleþtirilmiþ buton için örnek fonksiyon. Kullanýldýðý tüm yerde 210 211 butonunu gösterir  
+[function mbutton]
+local._button '210 211'
+button <argn1> <argn2> <local._button> 1 0 <argn3>
+``
+
+Kullanýmý için sadece x y id deðerlerinin girilmesi yeterlidir.  
+````
+mbutton 15 300 1
+````
+
+elem ile kullanýlýþý
+````
+elem "mbutton 15 300 1, "dtext +5 - 0481 Týkla"
+````
 **max**  
 Ýki deðer arasýnda ``<max 5,9>`` maksimim deðeri verir
 
@@ -54,7 +78,7 @@ Tüm harfleri ufaltýr
 **array**
 Deðerin, virgülle ayrýlmýþ deðer içinden çekip-alýnmasýna yarar (zero-based)  
 Alýnacak deðer : 1  
-Alýnacaðý yer = tag/local/def : ``lorem, ipsum, sit, amet`` 
+Alýnacaðý yer = tag/local/def : ``lorem, ipsum, sit, amet``  
 Kullanýmý: ``<array 1, <tag>>``  
 Dönen deðer : ``ipsum``  
 Yukarýdaki tag\local\def için ``lorem = 0, ipsum = 1, sit = 2, amet = 3``
@@ -67,13 +91,13 @@ Kullanýmý: ``if <inarray sit, lorem, ipsum, sit, amet>``
 Dönen deðer: ``3``
 
 **seperate**  
-Numerik deðeri ondalýk olarak gösterir ``<seperate 3000>`` 3.000
+Numerik deðeri ondalýk olarak gösterir ``<seperate 3000>`` = 3.000 ``<seperate 1262326>`` = 1.262.326
 
 **iscriminal**  
-genel olarak suçlu olup olmadýðýný sorgular ``if <iscriminal>`` <uid> = sorgulanan
+Genel olarak suçlu olup olmadýðýný sorgular ``if <iscriminal>`` <uid> = sorgulanan
 
 **iscrime**  
-sorgulanan kiþiye, sorgulanan kiþinin suçlu olup olmadýðýný sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin suçlu olup olmadýðýný sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 ````
 if (<src.targ.iscrime <src>>)
 	src.sysmessage @,,1 Suçlu
@@ -83,13 +107,21 @@ endif
 ````
 
 **iskarma**  
-karma (gri) olup olmadýðýný sorgular ``if <iskarma>`` <uid> = sorgulanan
+Karma (gri) olup olmadýðýný sorgular ``if <iskarma>`` <uid> = sorgulanan
 
 **ismurder**  
-katil (kýrmýzý) olup olmadýðýný sorgular ``if <ismurder>`` <uid> = sorgulanan
+Katil (kýrmýzý) olup olmadýðýný sorgular ``if <ismurder>`` <uid> = sorgulanan
 
 **isally**  
-sorgulanan kiþiye, sorgulanan kiþinin dost olup olmadýðýný sorgular ``if <target.isally <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin dost olup olmadýðýný sorgular ``if <target.isally <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 
 **isenemy**  
-sorgulanan kiþiye, sorgulanan kiþinin düþman olup olmadýðýný sorgular ``if <target.isenemy <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin düþman olup olmadýðýný sorgular ``if <target.isenemy <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+
+**amessage**  
+Aos tarzý yukarý kayan yazý için (sadece rakam kullanýlabilir) ``amessage 30``  
+Düz sarý, karþýya gönderildiðinde kýrmýzý yazar
+
+**psound**  
+Sadece eylemi yapan, etraftan yani baþka oyuncular tarafýndan duyulmayan ses çýkarýr ``psound 25``
+
