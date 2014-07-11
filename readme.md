@@ -25,6 +25,7 @@ Girilen değer kadar GP alır ``pay 25000``
 Olumlu sorgu için ``if <pay 25000>``
 
 **isalfa**
+
 Sorgulanan değerin alfabetik olup-olmadığını sorgular ``if <isalfa lorem>``
 
 **isnumber**
