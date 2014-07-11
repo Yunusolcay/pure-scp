@@ -11,64 +11,64 @@ Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemel
 Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
 
 ### Kodlar
-**mdialog**
+**mdialog**<br />
 Dialog'u kapatıp açar
 
-**max**
+**max**<br />
 İki değer arasında ``<max 5,9>`` maksimim değeri verir
 
-**min**
+**min**<br />
 İki değer arasında ``<min 2,6>`` maksimim değeri verir
 
-**pay**
+**pay**<br />
 Girilen değer kadar GP alır ``pay 25000``
 Olumlu sorgu için ``if <pay 25000>``
 
-**isalfa**
+**isalfa**<br />
 Sorgulanan değerin alfabetik olup-olmadığını sorgular ``if <isalfa lorem>``
 
-**isnumber**
+**isnumber**<br />
 Sorgulanan değerin numerik olup-olmadığını sorgular ``if <isalfa lorem>``
 
-**spellcircle**
+**spellcircle**<br />
 Sorgulanan büyünün sayfa sayısını verir ``<spellcircle 17>``
 
-**freeze**
+**freeze**<br />
 Verilen değer*10 kadar oyuncuyu dondurur, 3 saniye için ``freeze 30``
 
-**clearevents**
+**clearevents**<br />
 Tüm event'leri temizler
 
-**closealldialogs**
+**closealldialogs**<br />
 Tüm dialog'ları kapatır
 
-**logout**
+**logout**<br />
 Oyundan çıkarır
 
-**clearkeys**
+**clearkeys**<br />
 Ev veya gemi kaldırıldığında tüm anahtarlarını temizler
 
-**cancel**
+**cancel**<br />
 Herhangi bir eylemden çıkan target'i iptal eder
 
-**ucfirst**
+**ucfirst**<br />
 Kelimenin ilk harfini büyütür
 
-**ucwords**
+**ucwords**<br />
 Cümledeki tüm kelimelerin ilk harfini büyütür
 
-**uppercase**
+**uppercase**<br />
 Tüm harfleri büyütür
 
-**lowercase**
+**lowercase**<br />
 Tüm harfleri ufaltır
 
-**inarray**
-Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir
-Aranan değer: ``sit``
-Aranacağı yer: ``lorem, ipsum, sit, amet``
-Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``
-Dönen değer: ``3``
+**inarray**<br />
+Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir<br />
+Aranan değer: ``sit``<br />
+Aranacağı yer: ``lorem, ipsum, sit, amet``<br />
+Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``\
+Dönen değer: ``3``/
 
 **seperate**
 Numerik değeri ondalık olarak gösterir ``<seperate 3000>`` 3.000
