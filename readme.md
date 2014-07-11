@@ -67,16 +67,16 @@ Tüm harfleri ufaltır
 Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir<br />
 Aranan değer: ``sit``<br />
 Aranacağı yer: ``lorem, ipsum, sit, amet``<br />
-Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``\
-Dönen değer: ``3``/
+Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``<br />
+Dönen değer: ``3``<br />
 
-**seperate**
+**seperate**<br />
 Numerik değeri ondalık olarak gösterir ``<seperate 3000>`` 3.000
 
-**iscriminal**
+**iscriminal**<br />
 genel olarak suçlu olup olmadığını sorgular ``if <iscriminal>`` <uid> = sorgulanan
 
-**iscrime**
+**iscrime**<br />
 sorgulanan kişiye, sorgulanan kişinin suçlu olup olmadığını sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 ````
 if (<src.targ.iscrime <src>>)
@@ -85,14 +85,15 @@ else
 	src.sysmessage @,,1 Suçsuz
 endif
 ````
-**iskarma**
+
+**iskarma**<br />
 karma (gri) olup olmadığını sorgular ``if <iskarma>`` <uid> = sorgulanan
 
-**ismurder**
+**ismurder**<br />
 katil (kırmızı) olup olmadığını sorgular ``if <ismurder>`` <uid> = sorgulanan
 
-**isally**
+**isally**<br />
 sorgulanan kişiye, sorgulanan kişinin dost olup olmadığını sorgular ``if <target.isally <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 
-**isenemy**
+**isenemy**<br />
 sorgulanan kişiye, sorgulanan kişinin düşman olup olmadığını sorgular ``if <target.isenemy <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
