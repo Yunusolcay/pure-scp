@@ -1,18 +1,13 @@
-zepto-full
-==========
+# Pure Sphere Scripting
+Bu projeye Sphere Scripting baz alınarak girişilmiştir. Amacı sade kodlamadır. Fazlalık gibi görülen, bunca yıl tecrübeyle sabit olarak kullanılmayan eşyaları, yaratıkları vb. kodları silerek sadeliğe yönelmek başlıca hedeflerindendir.
 
-This is a shim repository for [Zepto.js](http://zeptojs.com/) with all the available modules built within it.
+Arandığında ne nerde en çabuk şekilde ulaşılabilmeli, BoilerPlate kodlar ile kod yazımında ki kolaylığı maksimuma çıkarmaktır.
 
-# Installation
+## Kurulum
+Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemeler`` özenle incelenerek devam eden bu projeye entegre edilir. Nightly versiyon release edildiğinde Pure-SCP ile geçişte hiçbir problem yaşanmaması sağlanmıştır., simply run `bower install zepto-full` within your terminal.
 
-For use with Bower, simply run `bower install zepto-full` within your terminal.
+## BoilerPlate Kodlama
+Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
 
-# Build
-
-This shim can be built by checking out the Zepto source, then-- within the root of that directory-- run the following commands:
-
-```shell
-  setenv MODULES 'zepto event ajax form ie detect fx fx_methods assets data deferred callbacks selector touch gesture stack ios3'
-  npm run-script dist
-```
+### Kodlar
 
