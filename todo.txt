@@ -1,0 +1,298 @@
+Sistemler (Core)
+	Temel Sistemler
+		- bildiri (page) sistemi
+		- ev sistemi
+		- ýþýnlanmada bölgesel özelliklerin sorgulanmasý sistemi
+		- sihir (magery) sistemi
+			+ büyü hasar (spell damage) ve ayarlarý
+			
+		- silah bonuslarý ile hasar ve ayarlarý
+		- yetenek (skill) iþleyiþleri, düþürülmesi ve düzenlemesi
+		- zanaatkar (craft) sistemi (dekorasyon için ayrý bir yetenek ya da var olanlardan alakalýlara eklenebilir)
+		- lonca (guild) sistemi
+		- aile (kin) sistemi
+		- bandaj (healing) sistemi ve ayarý
+		- statü (stat) sistemi
+		- doðru orantýlý (r0,10) yetenek geliþtirme hýzý (power hour, ph) sistemi
+		- evcilleþtirme (taming) sistemi
+		- yardým (help) ve takýlma (stuck) menüsü
+		
+	Yan Sistemler
+		- çilingir (lockpick) sistemi (i_lockpick_set)
+		- hazine (treasure) sistemi
+			+ balýkçýlýk, madencilik ve odunculuk ile iliþkisi
+			
+		- görev (quest) sistemi
+		- çeþitli sanat eþyalarý (trophy) vs. sistemi
+		- yumurta ve doðurma sistemi
+			+ desert, forest ostard, zostrich yumurta ve diðerleri doðurma (benzersizler hariç)
+			
+		- balýkçýlýk sistemi
+		- raylar ve element yaratýklarý ile madencilik sistemi
+		- jail sistemi (@Jailed) (sosyal ceza alternatif olarak eklenecek)
+		- klan (faction) sistemi
+		- büyü direnci (resisting spells) sistemi ve ayarý
+		- büyücülük yeteneðinin, büyü kitabýnýn sayfa sayýna göre geliþtirilmesi
+		- pin sistemi
+		- ortak banka sistemi (boþta olan katman üzerinden)
+		- yetenek öðrenme (skill teach) sistemi
+		- acemi (young) sistemi ile parti sistemi düzenlemeleri
+		- yetkililer için not sistemi
+		- sayaç (regs, logs counter) arayüzü
+		- top5-10 sistemi (lonca, aile, ölme-öldürme vb.)
+		
+	Diðer sistemler
+		- arýcýlýk sistemi
+		- çiftçilik ve çiçekçilik sistemi
+		- yaver (ainpc) sistemi (geliþtirilebilir bir yapay zeka)
+		- zindan hazine (dungeon chest) sistemi
+		- silah renklendirme sistemi (opsiyonel)
+		- aktif olmayan yeteneklerin sistemlendirilmesi (provoke, dilencilik vb.)
+		- eþya ekleme sisteminin SQLite ile Arama yapýlabilecek þekilde kategorilendirilmesi ve dinamik hale dönüþtürülmesi
+		- yetkililere tüm komutlarýn kapatýlmasý, sadece gerekenlerin açýlmasý
+		- SQLite üzerine kurulu detaylý kayýtlama (log) sistemi
+		- SQLite üzerine kurulu ihbar veya küfür sistemi
+		- oyunculara çevrimdýþý bildirim sistemi
+			+ evden atýlýnca, kafasý sallandýrýlýnca, loncadan atýlýnca (kendiyle alakalý iþlemler)
+		- saç, sakal stillendirme ile renklendirme (görsel eklenerek)
+		- gerçek zamanlý olaylar sistemi (gece, gündüz, hastalanma (sound 785) veya kendini çok iyi hissetme)
+		- baþarý sistemi
+			+ günde x kadar yaratýk öldür
+			+ haftada 50 tane düello kazan
+			+ 100 kere teleport büyüsü at
+			+ tekrarlanan yazýlarý yaz
+			+ 20 tane zombi öldür
+		- emlakçýlýk sistemi
+		- istikrarsýz makro (afk) sistemi (güvenlik kodu) (@CliPeriodic, @RegPeriodic)
+		- gemi yönetme ve kaldýrma arayüzü
+		- kafa sallandýrma ve avcýlýk sistemi
+		- SQLite veritabanýn alternatif olarak LIST özelliðinin opsiyonel olarak geliþtiriciye sunulmasý
+		- medyum (spirit speak) sistemi
+		- boþ þiþe çift týklamada iksir sayacý, büyü malzemesi çift týklamada büyü malzemesi sayacý arayüzü
+		- info, admin vb. orjinal arayüzlerin tekrardan sade bir þekilde kodlanmasý
+		- ünvan seçme sistemi
+		- vali vb. sistemi
+		- oyunlar ve oto etkinlik sistemleri (oyunlarýn kurgularý düzgün yapýlmalý)
+			^ topuk, futbol, avcýlýk (cs), bombala beni, satranç, iskambil oyunlarý, öl ya da öldür (deathmatch)
+		- karabüyücülük (necromancer) ve þovalye (paladin) sistemi (tooltip açýldýðýndan iptal edilebilir)
+		- köy sistemi
+		- oyuncu tüccarý sistemi
+		- þehir ve zindan kuþatma sistemi (haraca baðlamak)
+		
+	Dengeleme Ayarlarý
+		- silah, zýrh vb. eþyalarýn eritmesindeki oran
+		- eþya yapýmýndaki heba olma oraný
+		- evcilleþtirmeye ve yumurta ile doðurma sistemini kullanmaya yönelik binek fiyatlarý oraný
+		- tüccar (vendor) eþya fiyat oranlarý
+		- suçlu (criminal @Criminal) kalma ile katil (murder @MurderDecay, @MurderMark) kalma süresi ve öldürme sayýsý düþürme ayarlarý
+		- açlýk ile güç-hayat puaný (str-hits), çeviklik-zindelik (dex-stam), zeka-büyü puaný (int-mana) rejenere ayarlarý
+		- cesetlerin kesilmesi ve kemik olma süreleri
+		- ev dýþýnda hayata döndürülen oyuncunun, ev içinde yeniden doðmasý
+		- büyü kitabýna eklenecek büyülerin yaratýklardan çýkmasý (tümü veya sadece 8. sayfa da olabilir)
+		- büyü parþomenleri yapýmý ve satýþ fiyatlarý oranlarý
+		- tutulan balýklarýn kesildiðinde kaçar tane çýktýðý ile çið ve piþmiþ balýklarýn fiyatlandýrma oranlarý
+		- eve dost veya ortak olan oyuncunun kendi isteði ile çýkabilmesi
+		- madenden yapýlmýþ eþyalarýn eritildiðindeki çýkan iþlenmiþ maden sayýsý
+		- yapay zekalarýn (npc) yaðmanacak eþya (loot item) oranlarý
+		- büyücülük (magery) yeteneðe, zeka (evaluatingintel) ile orantýlý baþarýsýz olma oraný
+		
+	Performans Sistemleri
+		- fonksiyonlarý ters sorgu ile sonlandýrýlýp performans artýþý (%20) saðlanmasý
+		- ýþýnlanma kitabý, bildiri vb. gibi sistemleri SQLite üzerine kurulmas (40%)
+		- yapay zekalarýn (npc) öldükten sonra yaðmanacak eþya (loot item) vermesi
+		- yapay zeka bit eþyalarýnýn (spawn) eþya olarak deðil, zamanlama olarak sorgulanmasý (kurgusu tamamlanmadý) 
+		- bir eve hesap baþýna dost veya ortak olunmasý
+			^ (kimlik gizlenmek istenebilir, bu durumda sadece ev sahibinin tüm karkaterleri için geçerli kýlýnabilir)
+		- anket sistemi (web ile baðlantýlý, hesap baþýna 1 oy)
+		- hesap baþýna 1 adet gemi olabilir, hesaptaki tüm karakterler o gemiyi kullanabilir
+		
+	Opsiyonel Sistem Eklentileri
+		- You Are Dead efekti (siyah ekranda)
+		- yetenek menüsünün arayüze (dialog) dökülmesi
+		- arayüz özelleþtirmeyi oyuncuya sunma
+		- kaç hasar verip alýndýðýnýn seçilebilmesi
+		- evlerin halka açýlýp kapatýlmasý (opsiyonel) bu seçeneðin oyuncuya verilip verilmeyeceði (opsiyonel)
+			^ yetkililerin evi onaylamasý, onaylanana kadar eve girilememesi (opsiyonel)
+		- buff sistemi
+		- pet ve ev komutlarý yazý kirliliðini önlemek için komutlar nokta [.] ile baþlayabilir
+			-- all follow
+			-- follow
+			-- item up
+			-- wish lock
+			-- wish unlock / release
+		- otomatik sphere programýný kapatýp, pc yi resetledikten sonra yeniden çalýþtýrma (SYSCMD and SYSSPAWN)
+		- curfollower ile maksimum sahip olacaðý evcil hayvan belirleme (kýsýtlamadan ötürü sorun yaratabilir, opsiyonel)
+		- binekleri yeniden diriltme sistemi (opsiyonel)
+		- vergi sistemi (þehir korumalarýnýn (guardzone) olmadýðý bölgelerde tüccarlarýn daha ucuza eþya satmasý)
+		- ayin sistemi (pentagram (hear?))
+		- þans (luck) sistemi (opsiyonel)
+		- komutlarýn kiþiselleþtirilmesi (opsiyonel)
+		
+	Yetenek ve Silah Bonuslarý
+		- meditasyon (meditation) (yeteneðe oranla meditasyon tamamlanmasýnda artýþ)
+		- büyü yazarlýðý ile orantýlý, büyü yapmaya gereken büyü puaný oranýný düþürme
+		- büyü yazarlýðý ile orantýlý, büyü bitirme süresini düþürme (sorun yaratabilir)
+		- okçulara, büyü puanlarý zindeliði (stam) bitene kadar koþarak ok atma bonusu (dengesizlik yaratabilir)
+		
+Eþyalar (Items)
+	Temel Eþyalar
+		- ýþýnlanma kitabý (runebook) sistemi
+		- gemi bulma (ship finder)
+		- iksir fýçýsý (keg)
+		- eþyayý kaybolmaz (newbified) yapmak için nesne (bless deed)
+		- reaktif kristal (reagent crystal) 30, 60, 90 ve 120 fiyatlarý ve standar
+		- kýlýk deðiþtirme (disguise kit)
+		- nadir kumaþ boyasý (rare dye)
+		- nadir deri boyasý (rare leather dye)
+		- kurtuluþ darbesi (trapped pouch) (i_oil_flask?)
+		
+	Diðer Eþyalar
+		- balýk aðý (fishing net)
+		- yumurta kuluçkasý (egg nest)
+		- mobilya boyasý (furniture dye) (belirli naturel renkler)
+		- yeniden doðuþ parþomeni (reborn deed) (cinsiyet, saç, sakal)
+		- kartopu (snowball)
+		- havai fiþek (firework)
+		- anahtarlýk
+		
+Hatalar ve Düzenlemeler (Fix)
+	Mutlak düzenlemeler
+		- uyarý ve bilgi yazýlarýnýn tek bir dille yazýlmasý, (-sýn -sýnýz, -inde -inizde)
+		- yeniden doðuþ (ankh) taþlarýna süre ekle
+		- ev içerisinde golem çýkarýlmasýný engelle
+		- ev içerisinde ýþýnlanma geçidini (gate) engelle
+		- ev anahtarýnýn kopyalanmasý
+		- ýþýnlanma kitabýnýn (runebook) kopyalanmasý
+		- ev giriþlerine duvar vb. büyüler ile eþya konulmasý
+		- ev içinde oyundan çýkan oyuncu tekrar baðlandýðýnda evin dýþýna atmasý
+		- ev tabelasý altýna eþya koymayý engelle
+		- büyü yazarlýðý (inscription) yeteneði geliþiminde, parþomenlerin tek tek düþmesi
+			^ (yetenek 50.0 veya 60.0'dan sonra parþomenler birleþik düþebilir, opsiyonel)
+		- gemi kaldýrýldýðýnda, deniz üzerinde kalan eþyalarýn temizlenmesi (öncesinde onaylama sorgusu)
+		- gemi veya ev kaldýrýldýðýnda anahtarlarýnýn silinmesi
+		- iksirlerin kontrolü ve iþlevleri (zehirliyken sadece panzehir içebilmesi, yaþam iksiri içememesi gibi..)
+		- zehirli kiþinin yaþam iksiri, þifa büyüsü gibi durumlardan yararlanmasýný engelle (baþkasý da atamasýn)
+		- kaybolmaz (newbified) eþyalarýn, oyuncu tüccarýna veya kervan bineðine verilip alýndýktan sonra özelliðini kaybetmesi
+		- büyü direnci (resisting spells) kendine atarak geliþtirmeyi engelle (fire ve poison field düþünülebilir)
+		- polymorph büyüsündeki absürd durumlarý düzenle
+		- polymorph ve summon creature büyülerine arayüz ekle (opsiyonel)
+		- þehirler arasý ay geçidinin (moongate) arayüzünü açýp uzaktan týklayarak ýþýnlanmasýný engelle
+		- silahlarýn vuruþ mesafe (range) ayarlarý
+		- oyuncu bineðini çekerek kendini öldürtüp, bineðin sahibinin öldürme sayýsýný sürekli yükseltmesi
+		- evin dýþýndan atýlan duvar büyülerinin evin içine sekmesini engelle
+		- xpack ve xfindlayer gibi komutlarýn yetkilere kapatýlmasý ve suicide komutunun oyunculara
+			^ (tüm komutlar kapatýlýp sadece gerekliler açýldýðýnda buna gerek yok)
+		
+	Afaki düzenlemeler
+		- odunculuk yaparken ele kazma alýnýp, maden çýkarýlmasý (@SkillSuccess, @Wait)
+		- hýrsýzlýk yeteneðinde direkt olarak oyuncuya týklayarak rastgele eþya çalýnmasý
+		- zindanlara ýþýnlanma (kaldýrýlabilir)
+		- bineklerin, statü büyülerine maðruz kaldýktan sonra ufaltýlýp bu büyünün tekrarlanmasý
+		- iksilerin, kumaþlarýn kýsaca madenden yapýlmayan eþyalarýn eritilmesini engelle
+		- çantada çalmaya çalýþýlan eþyanýn, ele alýndýðýnda çalma iþlemini sonlandýr
+		- ayný eþyanýn sürekli olarak 2 kiþi tarafýndan birbirlerinden çalýnmasýný engelle (lastuse?)
+		- oyuncu cesedine, normalde taþýyabileceði aðýrlýktan fazlasýný koymayý engelle
+		- oyuncu aðýrlýðý taþýyabileceðinden fazla ise yapýlmakta olan zanaatkar yeteneðini sonlandýr (opsiyonel)
+		- örümcek aðýndaki absürd durumlarý düzenle
+		- yürünemeyen yerlerin iþaretlenmesi veya kontrol noktasý (mark) yapýlmasýný engelle
+		- curse ile equiphallo?
+		- spellcast argn3 ten süreleri uzatma (bless, relsanct?)
+		- yay yapýmcýlýðý (bowcrafting) iptal edilip, bu yeteðe ait eþyalar marangozluða (carpentry) eklenebilir
+		- gizli yürüme sisteminin düzenlemeleri (@StepStealth)
+		- kapýlarýn makro ile sürekli açýlýp kapatýlmasýný engelle
+		- zehir iksirlerine çift týklayarak zehirleme iþlemini baþlatma (@SkillSelect)
+		- kumaþlarýn kesildiðinde bandajlarýn yere düþmesini engelle
+		- makas ile kendine týkladýðýnda saç ve sakal kesimini engelle
+		- kütüphane vb. yerlerden eþya çalmayý engelle
+		- güvenli (safe zone) bölgelerde tüm yeteneklerin kullanýmý engelle (@SkillStart, @Attack, @GetHit)
+		- ölü oyuncu veya yaratýklar üzerine zehir (poison) büyüsünün atýlmasýný engelle
+		- polar ayýya binmeyi engelle
+		- tüccarlardan alýþveriþ yaptýktan sonra baðlantý programýnýn kopmamasý için çalýþmalar
+		- evcil hayvanlarýn isminin "bank, sell, buy, guards" vb. yapýlmasýný engelle
+		- kimlik saklama büyüsünde (incognito) standardý saðla (sadece man/woman olabilir)
+		
+Görevler	
+	Olmasý gerekenler
+	
+	Düþünülenler
+		+ büyü kitabýný tamamlamak (64) için görev
+		
+Yapay Zekalar (NPC)
+	Golem
+	
+Dosya Düzenlemeleri
+	Tiledata.mul
+		- eþyalarýn elde taþýnýp koþu yoluna býrakýlmasý
+		- çalý çýrpý ayarlarý
+		
+Karýþýk
+	Büyü puaný kullanýmýný azaltma
+		on=@spellselect
+		if (<meditation> > 99.8) && (<magery> > 99.8) && (<evaluatingintel> > 99.8)
+			argn2 -= <eval <serv.spell.<argn1>.manause>/2>
+		endif
+		
+	PH için
+		on=@skillgain
+		if (<age> <= <eval (15*24*3600)>) && (<account.totalconnecttime> <= <eval (7*24)>)
+			local.gainchance = <eval (<argn1> * 150) / 100>
+			if <local.gainchance> > 1000
+				local.gainchance = 1000
+			endif
+			argn1 = <local.gainchance>
+		endif
+		
+	Ýsimler
+		Ejderhalar maðarasý
+		Unutulmuþ maden
+		Prag tapýnaðý
+		Acý zindaný
+		Puslu vadi
+		Saklý köy
+		Firavunlar
+		Ra Tapýnaðý
+		
+	Sesler
+		//01523 5411 scroll
+		//031 = 49
+		//61
+		//78 kaynar su 020
+		//48 49 pot içme
+		//79 583 poison sürme
+		//86 silah çekme
+		//89 sayfalar arsý geçiþ
+		//92 fizzle sesi
+		//512 3 lü vuruþ 513
+		//519 520 bomba sesi 551 fitil 552 553
+		//536 matkap
+		//555 556 baril
+		//573 carpen
+		//574 su dökme
+		//575 balýk atma 027
+		//1056 erkek öksürme
+		//576 potion dökme 578 alchemy giriþ 579 fenamsý 580
+		//584 makas 585 scroll 586 anh mi sahko
+		//634 650 paranormal 665 doðuþ
+		//800 kadýn sesleri 884 erkek 1049 1050 erkek
+		//909 910 þiþe kýrýlma 
+		//991 notalar 1039
+		//565 bonus olabilir
+		//1035 görev bitince
+
+		//effect 3,i_fx_vortex_full,0,20,0,0,3
+		//effect 3,0374a,0,30,0,0,3
+		//emote, fcount, equiparmor, equipweapon, fixweight, curfollower, light, newloot, between, between2, modmaxweight, luck
+	
+	Dosyalar
+		Anim4.mul, Anim4.idx, Animdata.mul, Art.mul, Artidx.mul, Cliloc.mul, Fonts.mul, Gumpart.mul, Gumpidx.mul
+		Hues.mul, Login.cfg, Macros.txt, Map0.mul, Multi.mul, Multi.idx, Options.enu, Prof.txt, Professn.enu
+		Skills.mul, Skills.idx, Staidx0.mul, Statics0.mul, Tiledata.mul, Tooltips.mul, Transerv.exe
+		Unifont.mul (options, yazý), Unifont1.mul (tooltips, dtext)
+		
+Sistem içerikleri
+	Spirit Speak yazýldý.
+		- 3 kare etrafýnda oyuncu cesedi varsa ruhu çekiyor ve cesette reslenilmiyor
+		- 3 kare etrafýnda ruhu çekilmiþ ceset varsa ceset normale dönüyor
+		- Etrafýnda ceset yoksa findlayer.45 orjinal item atýyor bonuslarý bloke edecek bir ruhani koruma olacak
+		- Bufflara eklendi
+		- Visualrange eklendi

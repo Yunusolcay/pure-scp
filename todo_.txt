@@ -1,0 +1,166 @@
+﻿*-*-*-*-*-*-*-*-*-*-*-*-*-*
+	19.12.2013
+*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{} scripts/functions/skillgain.scp
+- EKLENDİ:	ISYOUNG: Bir oyuncunun young olup, olmadığını kontrol eder. (QVAL için eklenmiştir.) (UID.ISYOUNG)
+- EKLENDİ:	HASSKILLDOWN: Bir oyuncunun düşüşte skilli olup, olmadığını kontrol eder. (UID.HASSKILLDOWN <SKILL.ID>
+- EKLENDİ:	SKILLGAIN_NEW: Bir oyuncuya skillgain yaptırmaya yarar. (UID.SKILLGAIN_NEW <SKILL.ID>)
+
+{} scripts/events/player.evt.scp
+- TRIGGER: 	on=@skillgain
+		skillgain_new <argn1>
+		return 1
+
+{} scripts/skills/
+* anatomy.skills.scp
+- KALDIRILDI:	on=@select
+		return 1
+- DÜZENLENDİ: 	flags //skf_selectable --> flags skf_selectable
+
+* animallore.skills.scp
+
+- KALDIRILDI:	on=@select
+		return 1
+		return 1
+- DÜZENLENDİ: 	flags //skf_selectable --> flags skf_selectable
+
+* alchemy.skills.scp
+- DÜZENLENDİ: 	[Mortar&Pestle] --> [<serv.itemdef.i_mortar_pestle.name>]
+
+* bowcraft.skills.scp
+- DÜZENLENDİ: 	[feather veya shaft] --> [<serv.itemdef.i_feather.name> veya <serv.itemdef.i_arrow_shaft.name>]
+
+{} scripts/data/newbie.scp
+* male_default
+- KALDIRILDI: 	item i_snowball
+- DÜZENLENDİ: i_gold, 5250 --> i_gold, 2250
+- EKLENDİ: 	itemnewbie i_robe
+		color colors_neutral
+
+* female_default
+- KALDIRILDI: 	item i_snowball
+- DÜZENLENDİ: i_gold, 5250 --> i_gold, 2250
+- EKLENDİ: 	itemnewbie i_dress_plain
+		color colors_neutral
+
+* alchemy
+- KALDIRILDI:	itemnewbie i_robe
+
+* blacksmithing
+- EKLENDİ:	itemnewbie i_ingot_iron, 10
+		itemnewbie i_ingot_dull_copper, 5
+
+* capentry
+- EKLENDİ:	itemnewbie i_toolkit
+		itemnewbie i_ingot_iron, 5
+
+* cooking
+- EKLENDİ:	itemnewbie i_lamb_leg_raw, 2
+		itemnewbie i_ribs_raw, 2
+		itemnewbie i_bird_raw, 2
+
+* healing
+- DÜZENLENDİ:	itemnewbie i_bandage, 5 --> itemnewbie i_bandage, 10
+
+{} scripts/functions/serv_triggers.scp
+- EKLENDİ: 	serv.savestatics
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*
+	20.12.2013
+*-*-*-*-*-*-*-*-*-*-*-*-*-*
+scripts/functions/skillgain.scp
+- EKLENDİ:	PHTIMER: Ph için kalan süreyi hesaplar.
+- EKLENDİ: 	PH: Powerhour açar/kapatır/süreyi gösterir.
+		Kullanımı; .ph [on|off] [süre]saat [%ph]
+		Örnek; .ph on - Ph'ı sabit süre ve değer ile açar. (1 gün, %10)
+		Örnek; .ph on 2 - Ph'ı "2" saat süre ile ve sabit değer ile açar. (2 saat, %10)
+		Örnek; .ph on 5 25 - Ph'ı "5" saat ve %25 değer ile açar. (5 saat, %25)
+		Örnek; .ph off - Ph'ı bitirir.
+		Örnek; .ph - Kalan süreyi gösterir.
+- DÜZENLENDİ: 	local.gain=<eval (rand(99)+1)+<qval <ref1.isyoung>?((<array 0,<local.adv_rate>>*10)+5)>>
+		--> local.gain=<eval (rand(99)+1)+<qval <ref1.isyoung>?((<array 0,<local.adv_rate>>*10)+5)>+<dlocal.powerhour>>
+- EKLENDİ:	if !(<isempty <var.powerhour>>)
+		local.powerhour=<array 1,<var.powerhour>>
+		endif
+- VERİLER:	var.powerhour -> <ARGV[0]> == süre (saniye)
+				 <ARGV[1]> == değer (%)
+- EKLENDİ:	local.adv_rate=<array 0,<local.adv_rate>>,<eval <array 1,<local.adv_rate>>+<qval <ref1.isyoung>?((<array 0,<local.adv_rate>>*10)+5)>+<dlocal.powerhour>>
+- DÜZENLENDİ:	local.gain=<eval (rand(99)+1)+<qval <ref1.isyoung>?((<array 0,<local.adv_rate>>*10)+5)>+<dlocal.powerhour>>
+		--> local.gain=<eval (rand(99)+1)>
+- DÜZENLENDİ:	if (<ref1.<local.skill>> < 300)
+		local.adv_rate=3,<array 0,<local.adv_rate>>
+
+		elif (<ref1.<local.skill>> < 600)
+		local.adv_rate=2,<array 0,<local.adv_rate>>
+		elif (<ref1.<local.skill>> < 800)
+		local.adv_rate=1,<array 0,<local.adv_rate>>
+		else
+		local.adv_rate=0,<array 0,<local.adv_rate>>
+		endif
+		-->
+		if (<ref1.<local.skill>> < 300)
+		local.adv_rate=<eval <array 0,<local.adv_rate>>+<qval <ref1.isyoung>?35>>
+
+		elif (<ref1.<local.skill>> < 600)
+		local.adv_rate=<eval <array 0,<local.adv_rate>>+<qval <ref1.isyoung>?25>>
+		elif (<ref1.<local.skill>> < 800)
+		local.adv_rate=<eval <array 0,<local.adv_rate>>+<qval <ref1.isyoung>?15>>
+		else
+		local.adv_rate=<eval <array 0,<local.adv_rate>>+<qval <ref1.isyoung>?5>>
+		endif
+- DÜZENLENDİ:	<array 1,<local.adv_rate>> --> <dlocal.adv_rate>
+- KALDIRILDI:	<array 0,<local.adv_rate>>
+- DÜZENLENDİ:	local.adv_rate=<array 0,<local.adv_rate>>,<eval <array 1,<local.adv_rate>>+<qval <ref1.isyoung>?((<array 0,<local.adv_rate>>*10)+5)>+<dlocal.powerhour>>
+		--> local.adv_rate=<eval <dlocal.adv_rate>+<dlocal.powerhour>>
+
+
+scripts/spheretables.scp
+- EKLENDİ:	[PLEVEL 1]
+		ph (Oyuncuların kalan ph süresini görmesini sağlar.)
+
+scripts/items/sphere_item_profession.scp
+- DÜZENLENDİ:	RESOURCES=i_TOOLKIT_EMPTY, 4 i_ingot_iron, 1 i_log
+		--> RESOURCES=i_TOOLKIT_EMPTY, 8 i_ingot_iron, 3 i_log
+
+scripts/npcs/char.taming.scp
+- DÜZENLENDİ: 	NAME=Eagle --> NAME=#NAMES_BIRDS
+
+scripts/npcs/spherechar.scp
+- KALDIRILDI:	[*]
+		//SHELTER=*
+		//ALIGNMENT=*
+		//SPELLCIRCLES=*
+
+
+		[0c]
+		TAMING=99.0		
+
+		[01c]
+		TAMING=70.0
+
+		[030]
+		TAMING=60.0
+
+		[033]
+		TAMING=40.0
+
+		[03b]
+		TAMING=99.0
+
+		[03c]
+		TAMING=100.0
+		
+		[03d]
+		TAMING=100.0
+
+		[050]
+		TAMING=85.0
+
+- NOT:		[TAMING]
+		Horse: 65.0
+		Llama: 68.7
+		Desert Ostard: 72.5
+		Zostrich Ostard: 87.2
+		Forest Ostard: 77.5
+		Pack Horse/Llama: 85.0
+
