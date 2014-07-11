@@ -23,7 +23,7 @@ Kullanýmý için sadece x y id deðerlerinin girilmesi yeterlidir.
 mbutton 15 300 1
 ````
 
-elem ile kullanýlýþý
+elem ile kullanýlýþý  
 ````
 elem "mbutton 15 300 1, "dtext +5 - 0481 Týkla"
 ````
