@@ -78,13 +78,13 @@ genel olarak suçlu olup olmadığını sorgular ``if <iscriminal>`` <uid> = sor
 
 **iscrime**
 sorgulanan kişiye, sorgulanan kişinin suçlu olup olmadığını sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
-``
+````
 if (<src.targ.iscrime <src>>)
 	src.sysmessage @,,1 Suçlu
 else
 	src.sysmessage @,,1 Suçsuz
 endif
-``
+````
 **iskarma**
 karma (gri) olup olmadığını sorgular ``if <iskarma>`` <uid> = sorgulanan
 
