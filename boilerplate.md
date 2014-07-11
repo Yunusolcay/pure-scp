@@ -76,7 +76,7 @@ Tüm harfleri büyütür
 **lowercase**  
 Tüm harfleri ufaltýr
 
-**array**
+**array**  
 Deðerin, virgülle ayrýlmýþ deðer içinden çekip-alýnmasýna yarar (zero-based)  
 Alýnacak deðer : 1  
 Alýnacaðý yer = tag/local/def : ``lorem, ipsum, sit, amet``  
