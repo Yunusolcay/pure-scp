@@ -9,13 +9,14 @@ Dorigin opsiyoneldir, sonraki elemanlarda + - deðerleri kullanýlabilir
 elem "dtext 20 40 0481 Baþlýk", "dtext +20 - 55 : Ýçerik"
 elem "button 15 300 210 211 1 0 1, "dtext +5 - 0481 Týkla"
 ````
-Sonradan fonksiyon olarak özelleþtirilmiþ ve eklenmiþ elemanlar eklenebilir
-````
+Sonradan fonksiyon olarak özelleþtirilmiþ ve eklenmiþ elemanlar eklenebilir  
+
 Özelleþtirilmiþ buton için örnek fonksiyon. Kullanýldýðý tüm yerde 210 211 butonunu gösterir  
+````
 [function mbutton]
 local._button '210 211'
 button <argn1> <argn2> <local._button> 1 0 <argn3>
-``
+````
 
 Kullanýmý için sadece x y id deðerlerinin girilmesi yeterlidir.  
 ````
