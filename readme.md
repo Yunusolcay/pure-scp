@@ -7,17 +7,17 @@ Arandığında ne nerde en çabuk şekilde ulaşılabilmeli, BoilerPlate kodlar 
 ## Kurulum
 Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemeler`` özenle incelenerek devam eden bu projeye entegre edilir. Nightly versiyon release edildiğinde Pure-SCP ile geçişte hiçbir problem yaşanmaması sağlanmıştır., simply run `bower install zepto-full` within your terminal.
 
-## BoilerPlate Kodlama
+## BoilerPlate
 Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
 
-### Kodlar
-**mdialog**<br />
+### BoilerPlate Kodlar
+**mdialog**  
 Dialog'u kapatıp açar
 
-**max**<br />
+**max**  
 İki değer arasında ``<max 5,9>`` maksimim değeri verir
 
-**min**<br />
+**min** 
 İki değer arasında ``<min 2,6>`` maksimim değeri verir
 
 **pay**<br />
@@ -63,6 +63,7 @@ Tüm harfleri büyütür
 **lowercase**<br />
 Tüm harfleri ufaltır
 
+**array**
 **inarray**<br />
 Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir<br />
 Aranan değer: ``sit``<br />
