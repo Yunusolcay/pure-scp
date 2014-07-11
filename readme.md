@@ -20,64 +20,64 @@ Dialog'u kapatıp açar
 **min** 
 İki değer arasında ``<min 2,6>`` maksimim değeri verir
 
-**pay**<br />
+**pay**  
 Girilen değer kadar GP alır ``pay 25000``
 Olumlu sorgu için ``if <pay 25000>``
 
-**isalfa**<br />
+**isalfa**  
 Sorgulanan değerin alfabetik olup-olmadığını sorgular ``if <isalfa lorem>``
 
-**isnumber**<br />
+**isnumber**  
 Sorgulanan değerin numerik olup-olmadığını sorgular ``if <isalfa lorem>``
 
-**spellcircle**<br />
+**spellcircle**  
 Sorgulanan büyünün sayfa sayısını verir ``<spellcircle 17>``
 
-**freeze**<br />
+**freeze**  
 Verilen değer*10 kadar oyuncuyu dondurur, 3 saniye için ``freeze 30``
 
-**clearevents**<br />
+**clearevents**  
 Tüm event'leri temizler
 
-**closealldialogs**<br />
+**closealldialogs**  
 Tüm dialog'ları kapatır
 
-**logout**<br />
+**logout**  
 Oyundan çıkarır
 
-**clearkeys**<br />
+**clearkeys**  
 Ev veya gemi kaldırıldığında tüm anahtarlarını temizler
 
-**cancel**<br />
+**cancel**  
 Herhangi bir eylemden çıkan target'i iptal eder
 
-**ucfirst**<br />
+**ucfirst**  
 Kelimenin ilk harfini büyütür
 
-**ucwords**<br />
+**ucwords**  
 Cümledeki tüm kelimelerin ilk harfini büyütür
 
-**uppercase**<br />
+**uppercase**  
 Tüm harfleri büyütür
 
-**lowercase**<br />
+**lowercase**  
 Tüm harfleri ufaltır
 
 **array**
-**inarray**<br />
-Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir<br />
-Aranan değer: ``sit``<br />
-Aranacağı yer: ``lorem, ipsum, sit, amet``<br />
-Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``<br />
-Dönen değer: ``3``<br />
+**inarray**  
+Değerin, virgüllerle ayrılmış bir değerde olup olmadığını sorgular, varsa sırasını verir  
+Aranan değer: ``sit``  
+Aranacağı yer: ``lorem, ipsum, sit, amet``  
+Kullanımı: ``if <inarray sit, lorem, ipsum, sit, amet>``  
+Dönen değer: ``3``  
 
-**seperate**<br />
+**seperate**  
 Numerik değeri ondalık olarak gösterir ``<seperate 3000>`` 3.000
 
-**iscriminal**<br />
+**iscriminal**  
 genel olarak suçlu olup olmadığını sorgular ``if <iscriminal>`` <uid> = sorgulanan
 
-**iscrime**<br />
+**iscrime**  
 sorgulanan kişiye, sorgulanan kişinin suçlu olup olmadığını sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 ````
 if (<src.targ.iscrime <src>>)
@@ -87,14 +87,14 @@ else
 endif
 ````
 
-**iskarma**<br />
+**iskarma**  
 karma (gri) olup olmadığını sorgular ``if <iskarma>`` <uid> = sorgulanan
 
-**ismurder**<br />
+**ismurder**  
 katil (kırmızı) olup olmadığını sorgular ``if <ismurder>`` <uid> = sorgulanan
 
-**isally**<br />
+**isally**  
 sorgulanan kişiye, sorgulanan kişinin dost olup olmadığını sorgular ``if <target.isally <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
 
-**isenemy**<br />
+**isenemy**  
 sorgulanan kişiye, sorgulanan kişinin düşman olup olmadığını sorgular ``if <target.isenemy <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
