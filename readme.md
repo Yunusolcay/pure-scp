@@ -7,5 +7,8 @@ Arandığında ne nerde en çabuk şekilde ulaşılabilmeli, BoilerPlate kodlar 
 ## Kurulum
 Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemeler`` özenle incelenerek devam eden bu projeye entegre edilir. Nightly versiyon release edildiğinde Pure-SCP ile geçişte hiçbir problem yaşanmaması sağlanmıştır., simply run `bower install zepto-full` within your terminal.
 
-## BoilerPlate
+## BoilerPlate Fonksiyonlar
 Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
+
+## Smart Fonksiyonlar
+Oyun içinde yöneticilerin yapması gereken eylemleri kolaylaştıran kodlardır.

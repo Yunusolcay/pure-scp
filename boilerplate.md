@@ -52,12 +52,19 @@ Tüm harfleri büyütür
 Tüm harfleri ufaltýr
 
 **array**
+Deðerin, virgülle ayrýlmýþ deðer içinden çekip-alýnmasýna yarar (zero-based)  
+Alýnacak deðer : 1  
+Alýnacaðý yer = tag/local/def : ``lorem, ipsum, sit, amet`` 
+Kullanýmý: ``<array 1, <tag>>``  
+Dönen deðer : ``ipsum``  
+Yukarýdaki tag\local\def için ``lorem = 0, ipsum = 1, sit = 2, amet = 3``
+
 **inarray**  
-Deðerin, virgüllerle ayrýlmýþ bir deðerde olup olmadýðýný sorgular, varsa sýrasýný verir  
+Deðerin, virgüllerle ayrýlmýþ bir deðerde olup olmadýðýný sorgular, varsa sýrasýný verir (one-based)  
 Aranan deðer: ``sit``  
 Aranacaðý yer: ``lorem, ipsum, sit, amet``  
 Kullanýmý: ``if <inarray sit, lorem, ipsum, sit, amet>``  
-Dönen deðer: ``3``  
+Dönen deðer: ``3``
 
 **seperate**  
 Numerik deðeri ondalýk olarak gösterir ``<seperate 3000>`` 3.000
