@@ -15,7 +15,7 @@ background 3500 200 250, transparent 5 5
 ````
 
 #### ibutton
-Stil atanmýþ buttonlardýr. Çoðaltýlabilir. Kullanýldýðý tüm yerde 210 211 buttonunu gösterir. **input** ile birlikte kullanýlabilir
+Stil atanmýþ buttonlardýr, çoðaltýlabilir. Kullanýldýðý tüm yerde öncesinde ayarlanmýþ, örneðin **210 211** buttonunu gösterir. **input** ile birlikte kullanýlabilir
 ````
 [function ibutton]
 local._button '210 211'
@@ -23,10 +23,10 @@ button <argn1> <argn2> <local._button> 1 0 <argn3>
 ````
 ``ibutton 15 10 1`` x y id
 
-#### <small> <small/>
+#### &lt;small&gt; &lt;small/&gt;
 Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **ufak** yazý stil fonksiyonudur.
 
-#### <big> <big/>
+#### &lt;big&gt; &lt;big/&gt;
 Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** yazý stil fonksiyonudur.
 
 #### input
