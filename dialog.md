@@ -3,8 +3,8 @@
 Dialog'u kapatýp açar.  
 ``mdialog d_dialog``
 
-##### iresizepic
-Arayüz arka planýný belirler. Normalde þu þekilde kullanýlan ``resizepic`` ve 5'er piksellik iç çerçeve için ``checkertrans``  
+#### iresizepic
+Arayüz arka planýný belirler. Normalde þu þekilde kullanýlan ``resizepic`` ve 5'er piksellik iç çerçeve için ``checkertrans``
 ````
 resizepic 0 0 3500 200 250
 checkertrans 5 5 190 240
@@ -13,9 +13,10 @@ checkertrans 5 5 190 240
 ````
 iresizepic 3500 200 250, transparent 5 5
 ````
-**elem**
+
+#### elem
 Dialog'a tek satýrda elemanlar ekler (dtext, button, radio vs.)  
-Dorigin opsiyoneldir, sonraki elemanlarda + - deðerleri kullanýlabilir  
+Dorigin opsiyoneldir, sonraki elemanlarda + - deðerleri kullanýlabilir
 ````
 elem "dtext 20 40 0481 Baþlýk", "dtext +20 - 55 : Ýçerik"
 elem "button 15 300 210 211 1 0 1, "dtext +5 - 0481 Týkla"
