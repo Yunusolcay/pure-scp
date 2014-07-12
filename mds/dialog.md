@@ -19,7 +19,8 @@ Stil atanmýþ button-radio-checkbox-dtext fonksiyonlarýdýr, çoðaltýlabilir. Kulla
 ``ibutton 15 10 1`` x y id  
 Sonrasýna sabit **x y** deðerlerine sahip ``dtext`` atanabilir.  
 ``ibutton 15 10 1, lorem ipsum``  
-Yukarýdaki örnekte **lorem ipsum** yani ``dtext`` in **x y** deðerleri fonksiyon içinden daha önce atanmýþtýr ve sabittir. ``radio-checkbox-dtext`` için örnekler aynýdýr.
+Yukarýdaki örnekte **lorem ipsum** yani ``dtext`` in **x y** deðerleri fonksiyon içinden daha önce atanmýþtýr ve sabittir.  
+**radio-checkbox-dtext** için örnekler aynýdýr.
 
 #### &lt;big&gt; &lt;big/&gt; ve &lt;small&gt; &lt;small/&gt;
 Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** ve **ufak** yazý stil fonksiyonudur.  
