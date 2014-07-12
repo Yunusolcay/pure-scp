@@ -1,6 +1,7 @@
 ### Arayüz Fonksiyonlarý
-####mdialog
-Dialog'u kapatýp açar
+#### mdialog
+Dialog'u kapatýp açar.
+``mdialog d_dialog``
 
 #### iresizepic
 Arayüz arka planýný belirler  
