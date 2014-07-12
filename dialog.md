@@ -1,11 +1,10 @@
 ### Arayüz Fonksiyonlarý
 #### mdialog
-Dialog'u kapatýp açar.
+Dialog'u kapatýp açar.  
 ``mdialog d_dialog``
 
-#### iresizepic
-Arayüz arka planýný belirler  
-Normalde þu þekilde kullanýlan ``resizepic`` ve 5'er piksellik iç çerçeve için ``checkertrans``  
+##### iresizepic
+Arayüz arka planýný belirler. Normalde þu þekilde kullanýlan ``resizepic`` ve 5'er piksellik iç çerçeve için ``checkertrans``  
 ````
 resizepic 0 0 3500 200 250
 checkertrans 5 5 190 240
