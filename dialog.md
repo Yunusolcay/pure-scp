@@ -14,20 +14,28 @@ checkertrans 5 5 190 240
 background 3500 200 250, transparent 5 5
 ````
 
-#### ibutton
-Stil atanmýþ buttonlardýr, çoðaltýlabilir. Kullanýldýðý tüm yerde öncesinde ayarlanmýþ, örneðin **210 211** buttonunu gösterir. **input** ile birlikte kullanýlabilir
-````
-[function ibutton]
-local._button '210 211'
-button <argn1> <argn2> <local._button> 1 0 <argn3>
-````
-``ibutton 15 10 1`` x y id
+#### ibutton iradio icheck itext
+Stil atanmýþ button-radio-checkbox-dtext fonksiyonlarýdýr, çoðaltýlabilir. Kullanýldýðý tüm yerde öncesinde ayarlanmýþ, örneðin **210 211** buttonunu gösterir. **input** ile birlikte kullanýlabilir
+``ibutton 15 10 1`` x y id  
+Sonrasýna sabit **x y** deðerlerine sahip **dtext** atanabilir.  
+``ibutton 15 10 1, Lorem ipsum``  
+Yukarýdaki örnekte **Lorem ipsum** daha yani **dtext** in **x y** deðerleri fonksiyon içinden daha önce atanmýþtýr ve sabittir. **radio-checkbox-dtext** için örnekler aynýdýr.
 
-#### &lt;small&gt; &lt;small/&gt;
-Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **ufak** yazý stil fonksiyonudur.
+#### &lt;big&gt; &lt;big/&gt; ve &lt;small&gt; &lt;small/&gt;
+Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** ve **ufak** yazý stil fonksiyonudur.
+``htmlgump 10 10 100 20 0 0 lorem <small>ipsum<small/> sit amet``
 
-#### &lt;big&gt; &lt;big/&gt;
-Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** yazý stil fonksiyonudur.
+#### &lt;hblue&gt; &lt;hblue/&gt; &lt;hwhite&gt; &lt;hwhite/&gt; &lt;hred&gt; &lt;hred/&gt; &lt;hyellow&gt; &lt;hyellow/&gt; 
+Arayüzden ``htmlgump`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir
+``htmlgump 10 10 100 20 0 0 lorem ipsum <hred>sit<hred/> amet``
+
+#### &lt;blue&gt; &lt;white&gt; &lt;red&gt; &lt;yellow&gt;
+Arayüzden ``dtext`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir. Ayrýca ``msg`` ve ``smsg`` ile de kullanýlabilir
+``dtext 10 10 <white> lorem ipsum sit amet``
+
+#### msg smsg
+``message`` ve ``sysmessage`` ile ayný görevi görür.  
+``msg <red> Lorem ipsum sit amet``
 
 #### input
 Dialog'a tek satýrda elemanlar ekler (dtext, button, radio vs.) Normal kullaným þekli aþaðýdadýr.
@@ -64,15 +72,3 @@ input "button 15 90 210 211 1 0 5, "dtext +25 - 0481 Moonglow"
 ````
 Yukarýdaki örnekten de anlaþýlacaðý gibi, normalde 8 satýr olmasý gereken ve hangi buttonun hangi yazýya denk geldiðini öðrenmek için verilen uðraþlarýn yerine bu basit fonksiyon hazýrlanmýþtýr.
 
-
-
-Kullanýmý için sadece x y id deðerlerinin girilmesi yeterlidir.  
-````
-mbutton 15 300 1
-````
-
-input ile kullanýlýþý  
-````
-input "mbutton 15 300 1, "dtext +5 - 0481 Týkla"
-````
-**
