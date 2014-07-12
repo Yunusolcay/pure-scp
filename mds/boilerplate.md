@@ -19,7 +19,7 @@ Sorgulanan deðerin numerik olup-olmadýðýný sorgular ``if <isalfa lorem>``
 Sorgulanan büyünün sayfa sayýsýný verir ``<spellcircle 17>``
 
 #### spellresources
-Sorgulanan büyünün sayfa sayýsýný verir ``<spellresources 17>``
+Sorgulanan büyünün yapýlýþýnda gereken malzemelerin listesini verir ``<spellresources 17>``
 
 #### freeze
 Verilen deðer*10 kadar oyuncuyu dondurur, 3 saniye için ``freeze 30``

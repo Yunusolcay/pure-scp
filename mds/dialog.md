@@ -22,15 +22,15 @@ Sonrasýna sabit **x y** deðerlerine sahip ``dtext`` atanabilir.
 Yukarýdaki örnekte **Lorem ipsum** daha yani ``dtext`` in **x y** deðerleri fonksiyon içinden daha önce atanmýþtýr ve sabittir. ``radio-checkbox-dtext`` için örnekler aynýdýr.
 
 #### &lt;big&gt; &lt;big/&gt; ve &lt;small&gt; &lt;small/&gt;
-Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** ve **ufak** yazý stil fonksiyonudur.
+Arayüzden ``htmlgump`` elemanýnda kullanýnabilen **büyük** ve **ufak** yazý stil fonksiyonudur.  
 ``htmlgump 10 10 100 20 0 0 lorem <small>ipsum<small/> sit amet``
 
 #### &lt;hblue&gt; &lt;hblue/&gt; &lt;hwhite&gt; &lt;hwhite/&gt; &lt;hred&gt; &lt;hred/&gt; &lt;hyellow&gt; &lt;hyellow/&gt; 
-Arayüzden ``htmlgump`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir
+Arayüzden ``htmlgump`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir  
 ``htmlgump 10 10 100 20 0 0 lorem ipsum <hred>sit<hred/> amet``
 
 #### &lt;blue&gt; &lt;white&gt; &lt;red&gt; &lt;yellow&gt;
-Arayüzden ``dtext`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir. Ayrýca ``msg`` ve ``smsg`` ile de kullanýlabilir.
+Arayüzden ``dtext`` elemanýnda kullanýnabilen renk stil fonksiyonudur, çoðaltýlabilir. Ayrýca ``msg`` ve ``smsg`` ile de kullanýlabilir.  
 ``dtext 10 10 <white> lorem ipsum sit amet``
 
 #### msg smsg
