@@ -72,13 +72,17 @@ Kullanýmý: ``if <inarray sit, lorem, ipsum, sit, amet>``
 Dönen deðer: ``3``
 
 #### seperate
-Numerik deðeri ondalýk olarak gösterir ``<seperate 3000>`` = 3.000 ``<seperate 1262326>`` = 1.262.326
+Numerik deðeri ondalýk olarak gösterir  
+``<seperate 3000>`` = 3.000  
+``<seperate 1262326>`` = 1.262.326
 
 #### iscriminal
 Genel olarak suçlu olup olmadýðýný sorgular ``if <iscriminal>`` <uid> = sorgulanan
 
 #### iscrime
-Sorgulanan kiþiye, sorgulanan kiþinin suçlu olup olmadýðýný sorgular ``if <target.iscrime <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin suçlu olup olmadýðýný sorgular  
+``if <target.iscrime <uid>>`` 
+``<target> = sorgulanan, <uid> = sorgulayan``
 ````
 if (<src.targ.iscrime <src>>)
 	src.sysmessage @,,1 Suçlu
@@ -94,17 +98,22 @@ Karma (gri) olup olmadýðýný sorgular ``if <iskarma>`` <uid> = sorgulanan
 Katil (kýrmýzý) olup olmadýðýný sorgular ``if <ismurder>`` <uid> = sorgulanan
 
 #### isally
-Sorgulanan kiþiye, sorgulanan kiþinin dost olup olmadýðýný sorgular ``if <target.isally <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin dost olup olmadýðýný sorgular  
+``if <target.isally <uid>>``  
+``<target> = sorgulanan, <uid> = sorgulayan``
 
 #### isenemy
-Sorgulanan kiþiye, sorgulanan kiþinin düþman olup olmadýðýný sorgular ``if <target.isenemy <uid>>`` <target> = sorgulanan, <uid> = sorgulayan
+Sorgulanan kiþiye, sorgulanan kiþinin düþman olup olmadýðýný sorgular  
+``if <target.isenemy <uid>>``  
+``<target> = sorgulanan, <uid> = sorgulayan``
 
 #### except
 Rasgetle sayý üretirken, belirlenen sayýlarý saf dýþý býrakýr  
-r10 içinde 1 2 3 hariç rand sayý döndürür (<r1,10> da kullanýlabilir)  
+r10 içinde 1 2 3 hariç rand sayý döndürür (&lt;r1,10&gt; da kullanýlabilir)  
 ````
 except <r10>, 1, 2, 3
 ````
 
 #### ispoisoned
 Sorgulanan oyuncunun zehirlenip zehirlenmediðini gösterir ( 0/1 )
+``if <src.ispoisoned>``

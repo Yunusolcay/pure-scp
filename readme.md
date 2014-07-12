@@ -11,9 +11,21 @@ Pure-SCP ``SphereServer Nightly Automated SVN`` kullanır. Olası ``güncellemel
 
 ## Fonksiyonlar
 ### BoilerPlate Fonksiyonlar
+BoilerPlate fonksiyonlar için [buraya tıklayınız](https://github.com/monjeu/pure-scp/blob/master/mds/boilerplate.md)  
 Yarasız gibi görülen ufak kod parçalarıdır ve projede büyük rol oynar. Bir kodu tekrar tekrar yazmamamız için bu yola başvurulmuş ve bundan sondaki kodlamalar bu yönde yapılacaktır.
 
 ### Smart Fonksiyonlar
+Smart fonksiyonlar için [buraya tıklayınız](https://github.com/monjeu/pure-scp/blob/master/mds/smart.md)  
 Oyun içinde yöneticilerin yapması gereken eylemleri kolaylaştıran kodlardır.
+
+### Sendpacket Fonksiyonları
+Sendpacket fonksiyonlar için [buraya tıklayınız](https://github.com/monjeu/pure-scp/blob/master/mds/sendpacket.md)  
+Sendpacket ile yapılmış yararlı fonksiyonlardır. ``Client > Server`` ve ``Server > Client`` taraflı ilişkiler göz önüne alınmıştır.  
+**todo**  
+Çeşitli efektler eklenecek
+
+### Dialog Fonksiyonları
+Dialog fonksiyonları ve ayarları için [buraya tıklayınız](https://github.com/monjeu/pure-scp/blob/master/mds/dialog.md)  
+Dialog (arayüz) yapımında kodların uzamasını engelleyen, bakıldığında anlaşılır ve kolay düzenlenebilir kodlar oluşturmak için yapılan fonksiyonlardır.
 
 ## Sistemler
