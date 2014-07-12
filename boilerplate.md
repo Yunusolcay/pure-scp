@@ -1,37 +1,9 @@
 ### BoilerPlate Fonksiyonlar
-**mdialog**  
-Dialog'u kapatýp açar
-
-**elem**
-Dialog'a tek satýrda elemanlar ekler (dtext, button, radio vs.)  
-Dorigin opsiyoneldir, sonraki elemanlarda + - deðerleri kullanýlabilir  
-````
-elem "dtext 20 40 0481 Baþlýk", "dtext +20 - 55 : Ýçerik"
-elem "button 15 300 210 211 1 0 1, "dtext +5 - 0481 Týkla"
-````
-Sonradan fonksiyon olarak özelleþtirilmiþ ve eklenmiþ elemanlar eklenebilir  
-
-Özelleþtirilmiþ buton için örnek fonksiyon. Kullanýldýðý tüm yerde 210 211 butonunu gösterir  
-````
-[function mbutton]
-local._button '210 211'
-button <argn1> <argn2> <local._button> 1 0 <argn3>
-````
-
-Kullanýmý için sadece x y id deðerlerinin girilmesi yeterlidir.  
-````
-mbutton 15 300 1
-````
-
-elem ile kullanýlýþý  
-````
-elem "mbutton 15 300 1, "dtext +5 - 0481 Týkla"
-````
 **max**  
-Ýki deðer arasýnda ``<max 5,9>`` maksimim deðeri verir
+Ýki deðer arasýnda ``<max 5,9>`` büyük olan deðeri verir
 
-**min** 
-Ýki deðer arasýnda ``<min 2,6>`` maksimim deðeri verir
+**min**  
+Ýki deðer arasýnda ``<min 2,6>`` küçük olan deðeri verir
 
 **pay**  
 Girilen deðer kadar GP alýr ``pay 25000``
@@ -60,6 +32,17 @@ Oyundan çýkarýr
 
 **clearkeys**  
 Ev veya gemi kaldýrýldýðýnda tüm anahtarlarýný temizler
+
+**hasclass**  
+Oyunca, sorgulanan class'ýn olup-olmadýðý deðeri verir ( 0/1 )
+
+**hasevent**  
+Oyunca, sorgulanan event'in olup-olmadýðý deðeri verir ( 0/1 )  
+``if <src.hasevent e_profile>``
+
+**hastag / hasctag**  
+Oyunca, sorgulanan tag veya ctag'ýn olup-olmadýðý deðeri verir ( 0/1 )  
+``if <src.hastag color>``
 
 **cancel**  
 Herhangi bir eylemden çýkan target'i iptal eder
@@ -126,3 +109,12 @@ Düz sarý, karþýya gönderildiðinde kýrmýzý yazar
 **psound**  
 Sadece eylemi yapan, etraftan yani baþka oyuncular tarafýndan duyulmayan ses çýkarýr ``psound 25``
 
+**except**  
+Rasgetle sayý üretirken, belirlenen sayýlarý saf dýþý býrakýr  
+r10 içinde 1 2 3 hariç rand sayý döndürür (<r1,10> da kullanýlabilir)  
+````
+except <r10>, 1, 2, 3
+````
+
+**ispoisoned**
+Sorgulanan oyuncunun zehirlenip zehirlenmediðini gösterir ( 0/1 )
