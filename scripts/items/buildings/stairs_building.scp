@@ -1,6 +1,8 @@
 // 13.12.2014 - mon jeu
 // version 0.56b - 0.56c
 
+// not: ladders nesneleri bu dosyaya eklendi
+
 //stone stairs
 [itemdef 03ee]
 defname i_stairs_stone
@@ -759,12 +761,69 @@ dupeitem 087a
 [itemdef 087d]
 dupeitem 087a
 
-//stone ramp
-[itemdef 0915]
-defname i_ramp_stone
+//wooden ladder
+[itemdef 0899]
+defname i_ladder_wood
 tag.category buildings
 tag.subsection stairs
-tag.description stone ramp
+tag.description wooden ladder
+dupelist 089a,089b,089c,089d,089e
+
+[itemdef 089a]
+dupeitem 0899
+
+[itemdef 089b]
+dupeitem 0899
+
+[itemdef 089c]
+dupeitem 0899
+
+[itemdef 089d]
+dupeitem 0899
+
+[itemdef 089e]
+dupeitem 0899
+
+//wooden ladder 2
+[itemdef 089f]
+defname i_ladder_wood_2
+tag.category buildings
+tag.subsection stairs
+tag.description wooden ladder 2
+dupelist 08a0,08a1,08a2,08a3,08a4
+
+[itemdef 08a0]
+dupeitem 089f
+
+[itemdef 08a1]
+dupeitem 089f
+
+[itemdef 08a2]
+dupeitem 089f
+
+[itemdef 08a3]
+dupeitem 089f
+
+[itemdef 08a4]
+dupeitem 089f
+
+//rope ladder
+[itemdef 08a5]
+defname i_ladder_rope
+tag.category buildings
+tag.subsection stairs
+tag.description rope ladder
+dupelist 08a6
+
+[itemdef 08a6]
+dupeitem 08a5
+
+//stone step
+[itemdef 0915]
+defname i_stone_step
+tag.category buildings
+tag.subsection stairs
+tag.description stone step
 dupelist 0916,0917,0918
 
 [itemdef 0916]
