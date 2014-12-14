@@ -1,0 +1,935 @@
+// 14.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+[itemdef 0550]
+defname i_roof_stone
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description stone roof
+dupelist 0558,0559,055a,055b,056b,056c,056d,056e,056f,0570,0571,0572,0573,0574,0575,0576,0577,0578,05ef,062b,062c,062d,062e,0637,0638,0639,063a,0652,0653,065a,065b,065c,065d
+
+[itemdef 0558]
+dupeitem 0550
+
+[itemdef 0559]
+dupeitem 0550
+
+[itemdef 055a]
+dupeitem 0550
+
+[itemdef 055b]
+dupeitem 0550
+
+[itemdef 056b]
+dupeitem 0550
+
+[itemdef 056c]
+dupeitem 0550
+
+[itemdef 056d]
+dupeitem 0550
+
+[itemdef 056e]
+dupeitem 0550
+
+[itemdef 056f]
+dupeitem 0550
+
+[itemdef 0570]
+dupeitem 0550
+
+[itemdef 0571]
+dupeitem 0550
+
+[itemdef 0572]
+dupeitem 0550
+
+[itemdef 0573]
+dupeitem 0550
+
+[itemdef 0574]
+dupeitem 0550
+
+[itemdef 0575]
+dupeitem 0550
+
+[itemdef 0576]
+dupeitem 0550
+
+[itemdef 0577]
+dupeitem 0550
+
+[itemdef 0578]
+dupeitem 0550
+
+[itemdef 05ef]
+dupeitem 0550
+
+[itemdef 062b]
+dupeitem 0550
+
+[itemdef 062c]
+dupeitem 0550
+
+[itemdef 062d]
+dupeitem 0550
+
+[itemdef 062e]
+dupeitem 0550
+
+[itemdef 0637]
+dupeitem 0550
+
+[itemdef 0638]
+dupeitem 0550
+
+[itemdef 0639]
+dupeitem 0550
+
+[itemdef 063a]
+dupeitem 0550
+
+[itemdef 0652]
+dupeitem 0550
+
+[itemdef 0653]
+dupeitem 0550
+
+[itemdef 065a]
+dupeitem 0550
+
+[itemdef 065b]
+dupeitem 0550
+
+[itemdef 065c]
+dupeitem 0550
+
+[itemdef 065d]
+dupeitem 0550
+
+//stone roof 2
+[itemdef 0554]
+defname i_roof_stone_2
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description stone roof 2
+dupelist 0555,0556,0557,055c,055d,055e,055f,0560,0561,0562,0563,0564,0565,0566,0567,0568,0569,062f,0630,0631,0632,0656,0657
+
+[itemdef 0555]
+dupeitem 0554
+
+[itemdef 0556]
+dupeitem 0554
+
+[itemdef 0557]
+dupeitem 0554
+
+[itemdef 055c]
+dupeitem 0554
+
+[itemdef 055d]
+dupeitem 0554
+
+[itemdef 055e]
+dupeitem 0554
+
+[itemdef 055f]
+dupeitem 0554
+
+[itemdef 0560]
+dupeitem 0554
+
+[itemdef 0561]
+dupeitem 0554
+
+[itemdef 0562]
+dupeitem 0554
+
+[itemdef 0563]
+dupeitem 0554
+
+[itemdef 0564]
+dupeitem 0554
+
+[itemdef 0565]
+dupeitem 0554
+
+[itemdef 0566]
+dupeitem 0554
+
+[itemdef 0567]
+dupeitem 0554
+
+[itemdef 0568]
+dupeitem 0554
+
+[itemdef 0569]
+dupeitem 0554
+
+[itemdef 062f]
+dupeitem 0554
+
+[itemdef 0630]
+dupeitem 0554
+
+[itemdef 0631]
+dupeitem 0554
+
+[itemdef 0632]
+dupeitem 0554
+
+[itemdef 0656]
+dupeitem 0554
+
+[itemdef 0657]
+dupeitem 0554
+
+//stone roof 3
+[itemdef 0579]
+defname i_roof_stone_3
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description stone roof 3
+dupelist 057a,057b,057c,057d,057e,063b,063c,063d,063e,0654,0655
+
+[itemdef 057a]
+dupeitem 0579
+
+[itemdef 057b]
+dupeitem 0579
+
+[itemdef 057c]
+dupeitem 0579
+
+[itemdef 057d]
+dupeitem 0579
+
+[itemdef 057e]
+dupeitem 0579
+
+[itemdef 063b]
+dupeitem 0579
+
+[itemdef 063c]
+dupeitem 0579
+
+[itemdef 063d]
+dupeitem 0579
+
+[itemdef 063e]
+dupeitem 0579
+
+[itemdef 0654]
+dupeitem 0579
+
+[itemdef 0655]
+dupeitem 0579
+
+//slate roof
+[itemdef 057f]
+defname i_roof_slate
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description slate roof
+dupelist 0580,0581,0582,0583,0584,0585,0658,0659
+
+[itemdef 0580]
+dupeitem 057f
+
+[itemdef 0581]
+dupeitem 057f
+
+[itemdef 0582]
+dupeitem 057f
+
+[itemdef 0583]
+dupeitem 057f
+
+[itemdef 0584]
+dupeitem 057f
+
+[itemdef 0585]
+dupeitem 057f
+
+[itemdef 0658]
+dupeitem 057f
+
+[itemdef 0659]
+dupeitem 057f
+
+//palmfrond roof
+[itemdef 0586]
+defname i_roof_palmfrond
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description palmfrond roof
+dupelist 0587,0588,0589,058a,058b,058c,058d,058e,058f,0590,0591,0592,0593,0594,05d1,05d2,05d3,05d4,05d6,05d7,05d8,05d9,05da,05db,05dc,05dd,05de,05df,05e0,05e1,05e2,05e3,05e4,05e5,05e6,05e7,05e8,05e9,05ea,05eb,05ec
+
+[itemdef 0587]
+dupeitem 0586
+
+[itemdef 0588]
+dupeitem 0586
+
+[itemdef 0589]
+dupeitem 0586
+
+[itemdef 058a]
+dupeitem 0586
+
+[itemdef 058b]
+dupeitem 0586
+
+[itemdef 058c]
+dupeitem 0586
+
+[itemdef 058d]
+dupeitem 0586
+
+[itemdef 058e]
+dupeitem 0586
+
+[itemdef 058f]
+dupeitem 0586
+
+[itemdef 0590]
+dupeitem 0586
+
+[itemdef 0591]
+dupeitem 0586
+
+[itemdef 0592]
+dupeitem 0586
+
+[itemdef 0593]
+dupeitem 0586
+
+[itemdef 0594]
+dupeitem 0586
+
+[itemdef 05d1]
+dupeitem 0586
+
+[itemdef 05d2]
+dupeitem 0586
+
+[itemdef 05d3]
+dupeitem 0586
+
+[itemdef 05d4]
+dupeitem 0586
+
+[itemdef 05d6]
+dupeitem 0586
+
+[itemdef 05d7]
+dupeitem 0586
+
+[itemdef 05d8]
+dupeitem 0586
+
+[itemdef 05d9]
+dupeitem 0586
+
+[itemdef 05da]
+dupeitem 0586
+
+[itemdef 05db]
+dupeitem 0586
+
+[itemdef 05dc]
+dupeitem 0586
+
+[itemdef 05dd]
+dupeitem 0586
+
+[itemdef 05de]
+dupeitem 0586
+
+[itemdef 05df]
+dupeitem 0586
+
+[itemdef 05e0]
+dupeitem 0586
+
+[itemdef 05e1]
+dupeitem 0586
+
+[itemdef 05e2]
+dupeitem 0586
+
+[itemdef 05e3]
+dupeitem 0586
+
+[itemdef 05e4]
+dupeitem 0586
+
+[itemdef 05e5]
+dupeitem 0586
+
+[itemdef 05e6]
+dupeitem 0586
+
+[itemdef 05e7]
+dupeitem 0586
+
+[itemdef 05e8]
+dupeitem 0586
+
+[itemdef 05e9]
+dupeitem 0586
+
+[itemdef 05ea]
+dupeitem 0586
+
+[itemdef 05eb]
+dupeitem 0586
+
+[itemdef 05ec]
+dupeitem 0586
+
+//slate roof 2
+[itemdef 0595]
+defname i_roof_slate_2
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description slate roof 2
+dupelist 0596,0597,0598,0599,059a,059b,059c,059d,059e,059f,05a0,05a1,05a2,05a3
+
+[itemdef 0596]
+dupeitem 0595
+
+[itemdef 0597]
+dupeitem 0595
+
+[itemdef 0598]
+dupeitem 0595
+
+[itemdef 0599]
+dupeitem 0595
+
+[itemdef 059a]
+dupeitem 0595
+
+[itemdef 059b]
+dupeitem 0595
+
+[itemdef 059c]
+dupeitem 0595
+
+[itemdef 059d]
+dupeitem 0595
+
+[itemdef 059e]
+dupeitem 0595
+
+[itemdef 059f]
+dupeitem 0595
+
+[itemdef 05a0]
+dupeitem 0595
+
+[itemdef 05a1]
+dupeitem 0595
+
+[itemdef 05a2]
+dupeitem 0595
+
+[itemdef 05a3]
+dupeitem 0595
+
+//thatch roof
+[itemdef 05a4]
+defname i_roof_thatch
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description thatch roof
+dupelist 05a5,05a6,05a7,05a8,05a9,05aa,05ab,05ac,05ad,05ae,05af,05b0,05b1,05b2
+
+[itemdef 05a5]
+dupeitem 05a4
+
+[itemdef 05a6]
+dupeitem 05a4
+
+[itemdef 05a7]
+dupeitem 05a4
+
+[itemdef 05a8]
+dupeitem 05a4
+
+[itemdef 05a9]
+dupeitem 05a4
+
+[itemdef 05aa]
+dupeitem 05a4
+
+[itemdef 05ab]
+dupeitem 05a4
+
+[itemdef 05ac]
+dupeitem 05a4
+
+[itemdef 05ad]
+dupeitem 05a4
+
+[itemdef 05ae]
+dupeitem 05a4
+
+[itemdef 05af]
+dupeitem 05a4
+
+[itemdef 05b0]
+dupeitem 05a4
+
+[itemdef 05b1]
+dupeitem 05a4
+
+[itemdef 05b2]
+dupeitem 05a4
+
+//tile roof
+[itemdef 05b3]
+defname i_roof_tile
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description tile roof
+dupelist 05b4,05b5,05b6,05b7,05b8,05b9,05ba,05bb,05bc,05bd,05be,05bf,05c0,05c1,06fd,06fe,06ff,0700
+
+[itemdef 05b4]
+dupeitem 05b3
+
+[itemdef 05b5]
+dupeitem 05b3
+
+[itemdef 05b6]
+dupeitem 05b3
+
+[itemdef 05b7]
+dupeitem 05b3
+
+[itemdef 05b8]
+dupeitem 05b3
+
+[itemdef 05b9]
+dupeitem 05b3
+
+[itemdef 05ba]
+dupeitem 05b3
+
+[itemdef 05bb]
+dupeitem 05b3
+
+[itemdef 05bc]
+dupeitem 05b3
+
+[itemdef 05bd]
+dupeitem 05b3
+
+[itemdef 05be]
+dupeitem 05b3
+
+[itemdef 05bf]
+dupeitem 05b3
+
+[itemdef 05c0]
+dupeitem 05b3
+
+[itemdef 05c1]
+dupeitem 05b3
+
+[itemdef 06fd]
+dupeitem 05b3
+
+[itemdef 06fe]
+dupeitem 05b3
+
+[itemdef 06ff]
+dupeitem 05b3
+
+[itemdef 0700]
+dupeitem 05b3
+
+//wooden shingle roof
+[itemdef 05c2]
+defname i_roof_wooden_shingle
+tag.category buildings
+tag.subsection roofs
+tag.description wooden shingle roof
+dupelist 05c3,05c4,05c5,05c6,05c7,05c8,05c9,05ca,05cb,05cc,05cd,05ce,05cf,05d0
+
+[itemdef 05c3]
+dupeitem 05c2
+
+[itemdef 05c4]
+dupeitem 05c2
+
+[itemdef 05c5]
+dupeitem 05c2
+
+[itemdef 05c6]
+dupeitem 05c2
+
+[itemdef 05c7]
+dupeitem 05c2
+
+[itemdef 05c8]
+dupeitem 05c2
+
+[itemdef 05c9]
+dupeitem 05c2
+
+[itemdef 05ca]
+dupeitem 05c2
+
+[itemdef 05cb]
+dupeitem 05c2
+
+[itemdef 05cc]
+dupeitem 05c2
+
+[itemdef 05cd]
+dupeitem 05c2
+
+[itemdef 05ce]
+dupeitem 05c2
+
+[itemdef 05cf]
+dupeitem 05c2
+
+[itemdef 05d0]
+dupeitem 05c2
+
+//logs roof
+[itemdef 05f0]
+defname i_roof_logs
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description logs roof
+dupelist 05f1,05f2,05f3,05f4,05f5,05f6,05f7,05f8,05f9,05fa,05fb,05fc,05fd,05fe
+
+[itemdef 05f1]
+dupeitem 05f0
+
+[itemdef 05f2]
+dupeitem 05f0
+
+[itemdef 05f3]
+dupeitem 05f0
+
+[itemdef 05f4]
+dupeitem 05f0
+
+[itemdef 05f5]
+dupeitem 05f0
+
+[itemdef 05f6]
+dupeitem 05f0
+
+[itemdef 05f7]
+dupeitem 05f0
+
+[itemdef 05f8]
+dupeitem 05f0
+
+[itemdef 05f9]
+dupeitem 05f0
+
+[itemdef 05fa]
+dupeitem 05f0
+
+[itemdef 05fb]
+dupeitem 05f0
+
+[itemdef 05fc]
+dupeitem 05f0
+
+[itemdef 05fd]
+dupeitem 05f0
+
+[itemdef 05fe]
+dupeitem 05f0
+
+//tent roof
+[itemdef 05ff]
+defname i_roof_tent
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description tent roof
+dupelist 0600,0601,0602,0603,0604,0605,0606,0607,0608,0609,060a,060b,060c,060d,060e,060f,0610,0611,0612,0613,0614,0615,0616,0617,0618,0619,061a,061b,061c,061d,061e,061f,0620,0621,0622,0623,0624,0625,0626,0627,0628,0629,062a,0633,0634,0635,0636,0648,0649,064a,064b,064c,064d,064e,064f,0650,0651,065e,065f,0660,0661,0662,0663,0664,0665,0666,0667,0668,0669,066a,066b,066c,066d,066e,066f,0670,0671,0672,0673,0674
+
+[itemdef 0600]
+dupeitem 05ff
+
+[itemdef 0601]
+dupeitem 05ff
+
+[itemdef 0602]
+dupeitem 05ff
+
+[itemdef 0603]
+dupeitem 05ff
+
+[itemdef 0604]
+dupeitem 05ff
+
+[itemdef 0605]
+dupeitem 05ff
+
+[itemdef 0606]
+dupeitem 05ff
+
+[itemdef 0607]
+dupeitem 05ff
+
+[itemdef 0608]
+dupeitem 05ff
+
+[itemdef 0609]
+dupeitem 05ff
+
+[itemdef 060a]
+dupeitem 05ff
+
+[itemdef 060b]
+dupeitem 05ff
+
+[itemdef 060c]
+dupeitem 05ff
+
+[itemdef 060d]
+dupeitem 05ff
+
+[itemdef 060e]
+dupeitem 05ff
+
+[itemdef 060f]
+dupeitem 05ff
+
+[itemdef 0610]
+dupeitem 05ff
+
+[itemdef 0611]
+dupeitem 05ff
+
+[itemdef 0612]
+dupeitem 05ff
+
+[itemdef 0613]
+dupeitem 05ff
+
+[itemdef 0614]
+dupeitem 05ff
+
+[itemdef 0615]
+dupeitem 05ff
+
+[itemdef 0616]
+dupeitem 05ff
+
+[itemdef 0617]
+dupeitem 05ff
+
+[itemdef 0618]
+dupeitem 05ff
+
+[itemdef 0619]
+dupeitem 05ff
+
+[itemdef 061a]
+dupeitem 05ff
+
+[itemdef 061b]
+dupeitem 05ff
+
+[itemdef 061c]
+dupeitem 05ff
+
+[itemdef 061d]
+dupeitem 05ff
+
+[itemdef 061e]
+dupeitem 05ff
+
+[itemdef 061f]
+dupeitem 05ff
+
+[itemdef 0620]
+dupeitem 05ff
+
+[itemdef 0621]
+dupeitem 05ff
+
+[itemdef 0622]
+dupeitem 05ff
+
+[itemdef 0623]
+dupeitem 05ff
+
+[itemdef 0624]
+dupeitem 05ff
+
+[itemdef 0625]
+dupeitem 05ff
+
+[itemdef 0626]
+dupeitem 05ff
+
+[itemdef 0627]
+dupeitem 05ff
+
+[itemdef 0628]
+dupeitem 05ff
+
+[itemdef 0629]
+dupeitem 05ff
+
+[itemdef 062a]
+dupeitem 05ff
+
+[itemdef 0633]
+dupeitem 05ff
+
+[itemdef 0634]
+dupeitem 05ff
+
+[itemdef 0635]
+dupeitem 05ff
+
+[itemdef 0636]
+dupeitem 05ff
+
+[itemdef 0648]
+dupeitem 05ff
+
+[itemdef 0649]
+dupeitem 05ff
+
+[itemdef 064a]
+dupeitem 05ff
+
+[itemdef 064b]
+dupeitem 05ff
+
+[itemdef 064c]
+dupeitem 05ff
+
+[itemdef 064d]
+dupeitem 05ff
+
+[itemdef 064e]
+dupeitem 05ff
+
+[itemdef 064f]
+dupeitem 05ff
+
+[itemdef 0650]
+dupeitem 05ff
+
+[itemdef 0651]
+dupeitem 05ff
+
+[itemdef 065e]
+dupeitem 05ff
+
+[itemdef 065f]
+dupeitem 05ff
+
+[itemdef 0660]
+dupeitem 05ff
+
+[itemdef 0661]
+dupeitem 05ff
+
+[itemdef 0662]
+dupeitem 05ff
+
+[itemdef 0663]
+dupeitem 05ff
+
+[itemdef 0664]
+dupeitem 05ff
+
+[itemdef 0665]
+dupeitem 05ff
+
+[itemdef 0666]
+dupeitem 05ff
+
+[itemdef 0667]
+dupeitem 05ff
+
+[itemdef 0668]
+dupeitem 05ff
+
+[itemdef 0669]
+dupeitem 05ff
+
+[itemdef 066a]
+dupeitem 05ff
+
+[itemdef 066b]
+dupeitem 05ff
+
+[itemdef 066c]
+dupeitem 05ff
+
+[itemdef 066d]
+dupeitem 05ff
+
+[itemdef 066e]
+dupeitem 05ff
+
+[itemdef 066f]
+dupeitem 05ff
+
+[itemdef 0670]
+dupeitem 05ff
+
+[itemdef 0671]
+dupeitem 05ff
+
+[itemdef 0672]
+dupeitem 05ff
+
+[itemdef 0673]
+dupeitem 05ff
+
+[itemdef 0674]
+dupeitem 05ff
+
+//stone tile roof
+[itemdef 01939]
+defname i_roof_tile_stone
+type t_roof
+tag.category buildings
+tag.subsection roofs
+tag.description stone tile roof
+dupelist 0193a,0193b,0193c,0193d,0193e
+
+[itemdef 0193a]
+dupeitem 01939
+
+[itemdef 0193b]
+dupeitem 01939
+
+[itemdef 0193c]
+dupeitem 01939
+
+[itemdef 0193d]
+dupeitem 01939
+
+[itemdef 0193e]
+dupeitem 01939
+
+[eof]

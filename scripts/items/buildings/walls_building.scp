@@ -1,0 +1,2762 @@
+// 13.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//wooden wall
+[itemdef 06]
+defname i_wall_wood
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description wooden wall
+dupelist 07,08,09,0a,0b,0c,0d,0e,0f,010,011,012,013,014,015,016,017,018,019
+
+[itemdef 07]
+dupeitem 06
+
+[itemdef 08]
+dupeitem 06
+
+[itemdef 09]
+dupeitem 06
+
+[itemdef 0a]
+dupeitem 06
+
+[itemdef 0b]
+dupeitem 06
+
+[itemdef 0c]
+dupeitem 06
+
+[itemdef 0d]
+dupeitem 06
+
+[itemdef 0e] //window
+type t_window
+dupeitem 06
+
+[itemdef 0f] //window
+type t_window
+dupeitem 06
+
+[itemdef 010]
+dupeitem 06
+
+[itemdef 011]
+dupeitem 06
+
+[itemdef 012]
+dupeitem 06
+
+[itemdef 013]
+dupeitem 06
+
+[itemdef 014]
+dupeitem 06
+
+[itemdef 015]
+dupeitem 06
+
+[itemdef 016]
+dupeitem 06
+
+[itemdef 017]
+dupeitem 06
+
+[itemdef 018]
+dupeitem 06
+
+[itemdef 019]
+dupeitem 06
+
+//stone wall
+[itemdef 01a]
+defname i_wall_stone
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall
+dupelist 01b,01c,01d,01e,01f,020,021,022,023,024,025,026,027,028,029,02a,02b,02c,02d,02e,02f,030,031,032
+
+[itemdef 01b]
+dupeitem 01a
+
+[itemdef 01c]
+dupeitem 01a
+
+[itemdef 01d]
+dupeitem 01a
+
+[itemdef 01e]
+dupeitem 01a
+
+[itemdef 01f]
+dupeitem 01a
+
+[itemdef 020]
+dupeitem 01a
+
+[itemdef 021]
+dupeitem 01a
+
+[itemdef 022] //window
+type t_window
+dupeitem 01a
+
+[itemdef 023] //window
+type t_window
+dupeitem 01a
+
+[itemdef 024]
+dupeitem 01a
+
+[itemdef 025]
+dupeitem 01a
+
+[itemdef 026]
+dupeitem 01a
+
+[itemdef 027]
+dupeitem 01a
+
+[itemdef 028]
+dupeitem 01a
+
+[itemdef 029]
+dupeitem 01a
+
+[itemdef 02a]
+dupeitem 01a
+
+[itemdef 02b]
+dupeitem 01a
+
+[itemdef 02c]
+dupeitem 01a
+
+[itemdef 02d]
+dupeitem 01a
+
+[itemdef 02e]
+dupeitem 01a
+
+[itemdef 02f]
+dupeitem 01a
+
+[itemdef 030]
+dupeitem 01a
+
+[itemdef 031]
+dupeitem 01a
+
+[itemdef 032]
+dupeitem 01a
+
+//brick wall
+[itemdef 033]
+defname i_wall_brick
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description brick wall
+dupelist 034,035,036,037,038,039,03a,03b,03c,03d,03e,03f,040,041,042,043,044,045,046,047,048,049,04a,04b,04c,04d,04e,04f,050,051,052,053,054,055,056
+
+[itemdef 034]
+dupeitem 033
+
+[itemdef 035]
+dupeitem 033
+
+[itemdef 036]
+dupeitem 033
+
+[itemdef 037]
+dupeitem 033
+
+[itemdef 038]
+dupeitem 033
+
+[itemdef 039]
+dupeitem 033
+
+[itemdef 03a]
+dupeitem 033
+
+[itemdef 03b] //window
+type t_window
+dupeitem 033
+
+[itemdef 03c] //window
+type t_window
+dupeitem 033
+
+[itemdef 03d]
+dupeitem 033
+
+[itemdef 03e]
+dupeitem 033
+
+[itemdef 03f]
+dupeitem 033
+
+[itemdef 040]
+dupeitem 033
+
+[itemdef 041]
+dupeitem 033
+
+[itemdef 042]
+dupeitem 033
+
+[itemdef 043]
+dupeitem 033
+
+[itemdef 044]
+dupeitem 033
+
+[itemdef 045]
+dupeitem 033
+
+[itemdef 046]
+dupeitem 033
+
+[itemdef 047]
+dupeitem 033
+
+[itemdef 048]
+dupeitem 033
+
+[itemdef 049]
+dupeitem 033
+
+[itemdef 04a]
+dupeitem 033
+
+[itemdef 04b]
+dupeitem 033
+
+[itemdef 04c]
+dupeitem 033
+
+[itemdef 04d]
+dupeitem 033
+
+[itemdef 04e]
+dupeitem 033
+
+[itemdef 04f]
+dupeitem 033
+
+[itemdef 050]
+dupeitem 033
+
+[itemdef 051]
+dupeitem 033
+
+[itemdef 052]
+dupeitem 033
+
+[itemdef 053]
+dupeitem 033
+
+[itemdef 054]
+dupeitem 033
+
+[itemdef 055]
+dupeitem 033
+
+[itemdef 056]
+dupeitem 033
+
+//stone wall 2
+[itemdef 057]
+defname i_wall_stone_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 2
+dupelist 058,059,05a,05b,05c,05d,05e,06d,06e,06f,070,071,072,073,074,075,076,077,078,079,07d9
+
+[itemdef 058]
+dupeitem 057
+
+[itemdef 059]
+dupeitem 057
+
+[itemdef 05a]
+dupeitem 057
+
+[itemdef 05b]
+dupeitem 057
+
+[itemdef 05c]
+dupeitem 057
+
+[itemdef 05d] //window
+type t_window
+dupeitem 057
+
+[itemdef 05e] //window
+type t_window
+dupeitem 05d
+
+[itemdef 06d]
+dupeitem 057
+
+[itemdef 06e]
+dupeitem 057
+
+[itemdef 06f]
+dupeitem 057
+
+[itemdef 070]
+dupeitem 057
+
+[itemdef 071]
+dupeitem 057
+
+[itemdef 072]
+dupeitem 057
+
+[itemdef 073]
+dupeitem 057
+
+[itemdef 074]
+dupeitem 057
+
+[itemdef 075]
+dupeitem 057
+
+[itemdef 076]
+dupeitem 057
+
+[itemdef 077]
+dupeitem 057
+
+[itemdef 078]
+dupeitem 057
+
+[itemdef 079]
+dupeitem 057
+
+[itemdef 07d9]
+dupeitem 057
+
+//stone wall 3
+[itemdef 05f]
+defname i_wall_stone_3
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 3
+dupelist 060,061,062
+
+[itemdef 060]
+dupeitem 05f
+
+[itemdef 061]
+dupeitem 05f
+
+[itemdef 062]
+dupeitem 05f
+
+//stone wall 4
+[itemdef 063]
+defname i_wall_stone_4
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 4
+dupelist 064,065,066,067,068,069,06a,06b,06c
+
+[itemdef 064]
+dupeitem 063
+
+[itemdef 065]
+dupeitem 063
+
+[itemdef 066]
+dupeitem 063
+
+[itemdef 067]
+dupeitem 063
+
+[itemdef 068]
+dupeitem 063
+
+[itemdef 069]
+dupeitem 063
+
+[itemdef 06a]
+dupeitem 063
+
+[itemdef 06b]
+dupeitem 063
+
+[itemdef 06c]
+dupeitem 063
+
+//stone wall 5
+[itemdef 07a]
+defname i_wall_stone_5
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 5
+dupelist 07b,07c,07d,07e,07f,080,081,082,083,084,085,086,087,088,089,08a,08b,08c,08d,08e,08f,0364,0365
+
+[itemdef 07b]
+dupeitem 07a
+
+[itemdef 07c]
+dupeitem 07a
+
+[itemdef 07d]
+dupeitem 07a
+
+[itemdef 07e]
+dupeitem 07a
+
+[itemdef 07f]
+dupeitem 07a
+
+[itemdef 080]
+dupeitem 07a
+
+[itemdef 081]
+dupeitem 07a
+
+[itemdef 082]
+dupeitem 07a
+
+[itemdef 083] //window
+type t_window
+dupeitem 07a
+
+[itemdef 084]
+dupeitem 07a
+
+[itemdef 085] //window
+type t_window
+dupeitem 07a
+
+[itemdef 086]
+dupeitem 07a
+
+[itemdef 087]
+dupeitem 07a
+
+[itemdef 088]
+dupeitem 07a
+
+[itemdef 089]
+dupeitem 07a
+
+[itemdef 08a]
+dupeitem 07a
+
+[itemdef 08b]
+dupeitem 07a
+
+[itemdef 08c]
+dupeitem 07a
+
+[itemdef 08d] //window
+type t_window
+dupeitem 07a
+
+[itemdef 08e]
+dupeitem 07a
+
+[itemdef 08f] //window
+type t_window
+dupeitem 07a
+
+[itemdef 0364]
+dupeitem 07a
+
+[itemdef 0365]
+dupeitem 07a
+
+//log wall
+[itemdef 090]
+defname i_wall_log
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description log wall
+dupelist 091,092,093,094,095,096,097,098,099,09a,09b,09c,09d,09e,09f,0a0,0a1,0a2,0a3,0a4,0a5,0145,0146,0147,0148
+
+[itemdef 091]
+dupeitem 090
+
+[itemdef 092]
+dupeitem 090
+
+[itemdef 093]
+//log post
+dupeitem 090
+
+[itemdef 094]
+dupeitem 090
+
+[itemdef 095]
+dupeitem 090
+
+[itemdef 096]
+dupeitem 090
+
+[itemdef 097]
+dupeitem 090
+
+[itemdef 098] //window
+type t_window
+dupeitem 090
+
+[itemdef 099] //window
+type t_window
+dupeitem 090
+
+[itemdef 09a]
+dupeitem 090
+
+[itemdef 09b]
+dupeitem 090
+
+[itemdef 09c]
+dupeitem 090
+
+[itemdef 09d]
+dupeitem 090
+
+[itemdef 09e]
+dupeitem 090
+
+[itemdef 09f]
+dupeitem 090
+
+[itemdef 0a0]
+dupeitem 090
+
+[itemdef 0a1]
+dupeitem 090
+
+[itemdef 0a2]
+dupeitem 090
+
+[itemdef 0a3]
+dupeitem 090
+
+[itemdef 0a4]
+dupeitem 090
+
+[itemdef 0a5]
+dupeitem 090
+
+[itemdef 0145]
+dupeitem 090
+
+[itemdef 0146]
+dupeitem 090
+
+[itemdef 0147]
+dupeitem 090
+
+[itemdef 0148]
+dupeitem 090
+
+//wooden wall 2
+[itemdef 0a6]
+defname i_wall_wood_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description wooden wall 2
+dupelist 0a7,0a8,0a9,0aa,0ab,0ac,0ad,0ae,0af,0b0,0b1,0b2,0b3,0b4,0b5,0b6,0b7,0b8,0b9,0ba,0bb,0bc,0bd,0be,0bf,0c0,0c1,0c2
+
+[itemdef 0a7]
+dupeitem 0a6
+
+[itemdef 0a8]
+dupeitem 0a6
+
+[itemdef 0a9]
+dupeitem 0a6
+
+[itemdef 0aa]
+dupeitem 0a6
+
+[itemdef 0ab]
+dupeitem 0a6
+
+[itemdef 0ac]
+dupeitem 0a6
+
+[itemdef 0ad]
+dupeitem 0a6
+
+[itemdef 0ae]
+dupeitem 0a6
+
+[itemdef 0af]
+dupeitem 0a6
+
+[itemdef 0b0]
+dupeitem 0a6
+
+[itemdef 0b1]
+dupeitem 0a6
+
+[itemdef 0b2]
+dupeitem 0a6
+
+[itemdef 0b3]
+dupeitem 0a6
+
+[itemdef 0b4]
+dupeitem 0a6
+
+[itemdef 0b5]
+dupeitem 0a6
+
+[itemdef 0b6]
+dupeitem 0a6
+
+[itemdef 0b7]
+dupeitem 0a6
+
+[itemdef 0b8]
+dupeitem 0a6
+
+[itemdef 0b9] //window
+type t_window
+dupeitem 0a6
+
+[itemdef 0ba] //window
+type t_window
+dupeitem 0a6
+
+[itemdef 0bb] //window
+type t_window
+dupeitem 0a6
+
+[itemdef 0bc] //window
+type t_window
+dupeitem 0a6
+
+[itemdef 0bd]
+dupeitem 0a6
+
+[itemdef 0be]
+dupeitem 0a6
+
+[itemdef 0bf]
+dupeitem 0a6
+
+[itemdef 0c0]
+dupeitem 0a6
+
+[itemdef 0c1]
+dupeitem 0a6
+
+[itemdef 0c2]
+dupeitem 0a6
+
+//stone wall 6
+[itemdef 0c5]
+defname i_wall_stone_6
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 6
+dupelist 0c6,0c7,0c8,0c9,0ca,0cb,0cc,0cd,0ce,0cf,0d0,0d1,0d2,0d3,0d4,0d5,0d6,0d7,0d8,0d9,0da,0db,0dc,0dd,0de,0df,0e0,0e1,0e2,0e3,0e4,0e5,0e6,0e7
+
+[itemdef 0c6]
+dupeitem 0c5
+
+[itemdef 0c7]
+dupeitem 0c5
+
+[itemdef 0c8]
+dupeitem 0c5
+
+[itemdef 0c9]
+dupeitem 0c5
+
+[itemdef 0ca]
+dupeitem 0c5
+
+[itemdef 0cb]
+dupeitem 0c5
+
+[itemdef 0cc]
+dupeitem 0c5
+
+[itemdef 0cd]
+dupeitem 0c5
+
+[itemdef 0ce]
+dupeitem 0c5
+
+[itemdef 0cf]
+dupeitem 0c5
+
+[itemdef 0d0]
+dupeitem 0c5
+
+[itemdef 0d1]
+dupeitem 0c5
+
+[itemdef 0d2]
+dupeitem 0c5
+
+[itemdef 0d3]
+dupeitem 0c5
+
+[itemdef 0d4]
+dupeitem 0c5
+
+[itemdef 0d5]
+dupeitem 0c5
+
+[itemdef 0d6]
+dupeitem 0c5
+
+[itemdef 0d7]
+dupeitem 0c5
+
+[itemdef 0d8]
+dupeitem 0c5
+
+[itemdef 0d9]
+dupeitem 0c5
+
+[itemdef 0da]
+dupeitem 0c5
+
+[itemdef 0db]
+dupeitem 0c5
+
+[itemdef 0dc]
+dupeitem 0c5
+
+[itemdef 0dd]
+dupeitem 0c5
+
+[itemdef 0de]
+dupeitem 0c5
+
+[itemdef 0df]
+dupeitem 0c5
+
+[itemdef 0e0]
+dupeitem 0c5
+
+[itemdef 0e1]
+dupeitem 0c5
+
+[itemdef 0e2]
+dupeitem 0c5
+
+[itemdef 0e3]
+dupeitem 0c5
+
+[itemdef 0e4]
+dupeitem 0c5
+
+[itemdef 0e5]
+dupeitem 0c5
+
+[itemdef 0e6]
+dupeitem 0c5
+
+[itemdef 0e7]
+dupeitem 0c5
+
+//marble wall
+[itemdef 0f8]
+defname i_wall_marble
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description marble wall
+dupelist 0f9,0fa,0fb,0fc,0fd,0fe,0ff,0100,0101,0102,0103,0104,0105,0106,0107,0108,0109,010a,010b,010c,010d,010e,010f,0110,0111,0112,0113,0114,0115,0116,0117,0118,0119,011a,011b,011c,011d,011e,011f,0120,0121,0122,0123,0124,0125,0126,0438,0439,043a,043b,043c,043d,043e,043f,0440,0441,0442,0443,0444,0445,0446,0447,0448,0449,044a,044b,044c,044d,044e,044f,0450,0451,0452,0453
+
+[itemdef 0f9]
+dupeitem 0f8
+
+[itemdef 0fa]
+dupeitem 0f8
+
+[itemdef 0fb]
+dupeitem 0f8
+
+[itemdef 0fc] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 0fd] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 0fe]
+dupeitem 0f8
+
+[itemdef 0ff]
+dupeitem 0f8
+
+[itemdef 0100]
+dupeitem 0f8
+
+[itemdef 0101]
+dupeitem 0f8
+
+[itemdef 0102] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 0103] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 0104]
+dupeitem 0f8
+
+[itemdef 0105]
+dupeitem 0f8
+
+[itemdef 0106]
+dupeitem 0f8
+
+[itemdef 0107]
+dupeitem 0f8
+
+[itemdef 0108] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 0109] //window
+type t_window
+dupeitem 0f8
+
+[itemdef 010a]
+dupeitem 0f8
+
+[itemdef 010b]
+dupeitem 0f8
+
+[itemdef 010c]
+dupeitem 0f8
+
+[itemdef 010d]
+dupeitem 0f8
+
+[itemdef 010e]
+dupeitem 0f8
+
+[itemdef 010f]
+dupeitem 0f8
+
+[itemdef 0110]
+dupeitem 0f8
+
+[itemdef 0111]
+dupeitem 0f8
+
+[itemdef 0112]
+dupeitem 0f8
+
+[itemdef 0113]
+dupeitem 0f8
+
+[itemdef 0114]
+dupeitem 0f8
+
+[itemdef 0115]
+dupeitem 0f8
+
+[itemdef 0116]
+dupeitem 0f8
+
+[itemdef 0117]
+dupeitem 0f8
+
+[itemdef 0118]
+dupeitem 0f8
+
+[itemdef 0119]
+dupeitem 0f8
+
+[itemdef 011a]
+dupeitem 0f8
+
+[itemdef 011b]
+dupeitem 0f8
+
+[itemdef 011c]
+dupeitem 0f8
+
+[itemdef 011d]
+dupeitem 0f8
+
+[itemdef 011e]
+dupeitem 0f8
+
+[itemdef 011f]
+dupeitem 0f8
+
+[itemdef 0120]
+dupeitem 0f8
+
+[itemdef 0121]
+dupeitem 0f8
+
+[itemdef 0122]
+dupeitem 0f8
+
+[itemdef 0123]
+dupeitem 0f8
+
+[itemdef 0124]
+dupeitem 0f8
+
+[itemdef 0125]
+dupeitem 0f8
+
+[itemdef 0126]
+dupeitem 0f8
+
+[itemdef 0438]
+dupeitem 0f8
+
+[itemdef 0439]
+dupeitem 0f8
+
+[itemdef 043a]
+dupeitem 0f8
+
+[itemdef 043b]
+dupeitem 0f8
+
+[itemdef 043c]
+dupeitem 0f8
+
+[itemdef 043d]
+dupeitem 0f8
+
+[itemdef 043e]
+dupeitem 0f8
+
+[itemdef 043f]
+dupeitem 0f8
+
+[itemdef 0440]
+dupeitem 0f8
+
+[itemdef 0441]
+dupeitem 0f8
+
+[itemdef 0442]
+dupeitem 0f8
+
+[itemdef 0443]
+dupeitem 0f8
+
+[itemdef 0444]
+dupeitem 0f8
+
+[itemdef 0445]
+dupeitem 0f8
+
+[itemdef 0446]
+dupeitem 0f8
+
+[itemdef 0447]
+dupeitem 0f8
+
+[itemdef 0448]
+dupeitem 0f8
+
+[itemdef 0449]
+dupeitem 0f8
+
+[itemdef 044a]
+dupeitem 0f8
+
+[itemdef 044b]
+dupeitem 0f8
+
+[itemdef 044c]
+dupeitem 0f8
+
+[itemdef 044d]
+dupeitem 0f8
+
+[itemdef 044e]
+dupeitem 0f8
+
+[itemdef 044f]
+dupeitem 0f8
+
+[itemdef 0450]
+dupeitem 0f8
+
+[itemdef 0451]
+dupeitem 0f8
+
+[itemdef 0452]
+dupeitem 0f8
+
+[itemdef 0453]
+dupeitem 0f8
+
+//plaster wall
+[itemdef 0127]
+defname i_wall_plaster
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description plaster wall
+dupelist 0128,0129,012a,012b,012c,012d,012e,012f,0130,0131,0132,0133,0134,0135,0136,0137,0138,0139,013a,013b,013c,013d,013e,013f,0140,0141,0142,0143,0144,0149,014a,014b,014c,014d,014e,014f,0150,0151,0152,0153,0154,0155,0156,0157
+
+[itemdef 0128]
+dupeitem 0127
+
+[itemdef 0129]
+dupeitem 0127
+
+[itemdef 012a]
+dupeitem 0127
+
+[itemdef 012b]
+dupeitem 0127
+
+[itemdef 012c]
+dupeitem 0127
+
+[itemdef 012d]
+dupeitem 0127
+
+[itemdef 012e]
+dupeitem 0127
+
+[itemdef 012f]
+dupeitem 0127
+
+[itemdef 0130]
+dupeitem 0127
+
+[itemdef 0131]
+dupeitem 0127
+
+[itemdef 0132]
+dupeitem 0127
+
+[itemdef 0133]
+dupeitem 0127
+
+[itemdef 0134]
+dupeitem 0127
+
+[itemdef 0135]
+dupeitem 0127
+
+[itemdef 0136]
+dupeitem 0127
+
+[itemdef 0137]
+dupeitem 0127
+
+[itemdef 0138]
+dupeitem 0127
+
+[itemdef 0139]
+dupeitem 0127
+
+[itemdef 013a] //window
+type t_window
+dupeitem 0127
+
+[itemdef 013b] //window
+type t_window
+dupeitem 0127
+
+[itemdef 013c]
+dupeitem 0127
+
+[itemdef 013d]
+dupeitem 0127
+
+[itemdef 013e]
+dupeitem 0127
+
+[itemdef 013f]
+dupeitem 0127
+
+[itemdef 0140]
+dupeitem 0127
+
+[itemdef 0141]
+dupeitem 0127
+
+[itemdef 0142]
+dupeitem 0127
+
+[itemdef 0143]
+dupeitem 0127
+
+[itemdef 0144]
+dupeitem 0127
+
+[itemdef 0149]
+dupeitem 0127
+
+[itemdef 014a]
+dupeitem 0127
+
+[itemdef 014b]
+dupeitem 0127
+
+[itemdef 014c]
+dupeitem 0127
+
+[itemdef 014d]
+dupeitem 0127
+
+[itemdef 014e]
+dupeitem 0127
+
+[itemdef 014f]
+dupeitem 0127
+
+[itemdef 0150]
+dupeitem 0127
+
+[itemdef 0151]
+dupeitem 0127
+
+[itemdef 0152]
+dupeitem 0127
+
+[itemdef 0153]
+dupeitem 0127
+
+[itemdef 0154] //window
+type t_window
+dupeitem 0127
+
+[itemdef 0155] //window
+type t_window
+dupeitem 0127
+
+[itemdef 0156] //window
+type t_window
+dupeitem 0127
+
+[itemdef 0157] //window
+type t_window
+dupeitem 0127
+
+//sandstone wall
+[itemdef 0158]
+defname i_wall_sandstone
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description sandstone wall
+dupelist 0159,015a,015b,015c,015d,015e,015f,0160,0161,0162,0163,0164,0165,0166,0167,0168,0169,016a,016b,016c,016d,016e,016f,0170,0171,0172,0173,0174,0175,0176,0177,0178,0179,017a,017b,017c,017d,017e,017f,0180,0181,0182,0183,0184,0185,0186,0187,0188,0189,018a,018b,018c,018d,018e,018f,0190,0191,0192,0193,0194,0195,0196,0197,0198,0199,019a,01a4,01b1,01b2,01b3,01b4,01ca,01ec,01ed,01ee,01ef
+
+[itemdef 0159]
+dupeitem 0158
+
+[itemdef 015a]
+dupeitem 0158
+
+[itemdef 015b]
+dupeitem 0158
+
+[itemdef 015c] //window
+type t_window
+dupeitem 0158
+
+[itemdef 015d] //window
+type t_window
+dupeitem 0158
+
+[itemdef 015e]
+dupeitem 0158
+
+[itemdef 015f]
+dupeitem 0158
+
+[itemdef 0160]
+dupeitem 0158
+
+[itemdef 0161]
+dupeitem 0158
+
+[itemdef 0162] //window
+type t_window
+dupeitem 0158
+
+[itemdef 0163] //window
+type t_window
+dupeitem 0158
+
+[itemdef 0164]
+dupeitem 0158
+
+[itemdef 0165]
+dupeitem 0158
+
+[itemdef 0166]
+dupeitem 0158
+
+[itemdef 0167]
+dupeitem 0158
+
+[itemdef 0168]
+dupeitem 0158
+
+[itemdef 0169]
+dupeitem 0158
+
+[itemdef 016a]
+dupeitem 0158
+
+[itemdef 016b]
+dupeitem 0158
+
+[itemdef 016c]
+dupeitem 0158
+
+[itemdef 016d]
+dupeitem 0158
+
+[itemdef 016e]
+dupeitem 0158
+
+[itemdef 016f]
+dupeitem 0158
+
+[itemdef 0170]
+dupeitem 0158
+
+[itemdef 0171]
+dupeitem 0158
+
+[itemdef 0172]
+dupeitem 0158
+
+[itemdef 0173]
+dupeitem 0158
+
+[itemdef 0174]
+dupeitem 0158
+
+[itemdef 0175]
+dupeitem 0158
+
+[itemdef 0176]
+dupeitem 0158
+
+[itemdef 0177]
+dupeitem 0158
+
+[itemdef 0178]
+dupeitem 0158
+
+[itemdef 0179]
+dupeitem 0158
+
+[itemdef 017a]
+dupeitem 0158
+
+[itemdef 017b]
+dupeitem 0158
+
+[itemdef 017c]
+dupeitem 0158
+
+[itemdef 017d]
+dupeitem 0158
+
+[itemdef 017e]
+dupeitem 0158
+
+[itemdef 017f]
+dupeitem 0158
+
+[itemdef 0180]
+dupeitem 0158
+
+[itemdef 0181]
+dupeitem 0158
+
+[itemdef 0182]
+dupeitem 0158
+
+[itemdef 0183]
+dupeitem 0158
+
+[itemdef 0184]
+dupeitem 0158
+
+[itemdef 0185]
+dupeitem 0158
+
+[itemdef 0186]
+dupeitem 0158
+
+[itemdef 0187]
+dupeitem 0158
+
+[itemdef 0188]
+dupeitem 0158
+
+[itemdef 0189]
+dupeitem 0158
+
+[itemdef 018a]
+dupeitem 0158
+
+[itemdef 018b]
+dupeitem 0158
+
+[itemdef 018c]
+dupeitem 0158
+
+[itemdef 018d]
+dupeitem 0158
+
+[itemdef 018e]
+dupeitem 0158
+
+[itemdef 018f]
+dupeitem 0158
+
+[itemdef 0190]
+dupeitem 0158
+
+[itemdef 0191]
+dupeitem 0158
+
+[itemdef 0192]
+dupeitem 0158
+
+[itemdef 0193]
+dupeitem 0158
+
+[itemdef 0194]
+dupeitem 0158
+
+[itemdef 0195]
+dupeitem 0158
+
+[itemdef 0196]
+dupeitem 0158
+
+[itemdef 0197]
+dupeitem 0158
+
+[itemdef 0198]
+dupeitem 0158
+
+[itemdef 0199]
+dupeitem 0158
+
+[itemdef 019a]
+dupeitem 0158
+
+[itemdef 01a4]
+dupeitem 0158
+
+[itemdef 01b1]
+dupeitem 0158
+
+[itemdef 01b2]
+dupeitem 0158
+
+[itemdef 01b3]
+dupeitem 0158
+
+[itemdef 01b4]
+dupeitem 0158
+
+[itemdef 01ca]
+dupeitem 0158
+
+[itemdef 01ec]
+dupeitem 0158
+
+[itemdef 01ed]
+dupeitem 0158
+
+[itemdef 01ee]
+dupeitem 0158
+
+[itemdef 01ef]
+dupeitem 0158
+
+//primitivewood wall
+[itemdef 019b]
+defname i_wall_primitivewood
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description primitivewood wall
+dupelist 019c,019d,019e,019f,01a0,01a1,01a2,01a3,01b5,01b9,01cb,01cc,01cd,01ce
+
+[itemdef 019c]
+dupeitem 019b
+
+[itemdef 019d]
+dupeitem 019b
+
+[itemdef 019e]
+dupeitem 019b
+
+[itemdef 019f]
+dupeitem 019b
+
+[itemdef 01a0]
+dupeitem 019b
+
+[itemdef 01a1]
+dupeitem 019b
+
+[itemdef 01a2]
+dupeitem 019b
+
+[itemdef 01a3]
+dupeitem 019b
+
+[itemdef 01b5]
+dupeitem 019b
+
+[itemdef 01b9]
+dupeitem 019b
+
+[itemdef 01cb]
+dupeitem 019b
+
+[itemdef 01cc]
+dupeitem 019b
+
+[itemdef 01cd]
+dupeitem 019b
+
+[itemdef 01ce]
+dupeitem 019b
+
+//rattan wall
+[itemdef 01a5]
+defname i_wall_rattan
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description rattan wall
+dupelist 01a6,01a7,01a8,01a9,01aa,01ab,01ac,01ad,01ae,01af,01b0
+
+[itemdef 01a6]
+dupeitem 01a5
+
+[itemdef 01a7]
+dupeitem 01a5
+
+[itemdef 01a8]
+//wood post
+dupeitem 01a5
+
+[itemdef 01a9]
+dupeitem 01a5
+
+[itemdef 01aa]
+dupeitem 01a5
+
+[itemdef 01ab]
+dupeitem 01a5
+
+[itemdef 01ac]
+dupeitem 01a5
+
+[itemdef 01ad] //window
+type t_window
+dupeitem 01a5
+
+[itemdef 01ae] //window
+type t_window
+dupeitem 01a5
+
+[itemdef 01af] //window
+type t_window
+dupeitem 01a5
+
+[itemdef 01b0] //window
+type t_window
+dupeitem 01a5
+
+//hide wall
+[itemdef 01b6]
+defname i_wall_hide
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description hide wall
+dupelist 01b7,01b8,01ba,01bb,01bc,01bd,01be,01bf,01c0,01c1,01c2,01c3,01c4,01c5,01c6,01c7,01c8,01c9
+
+[itemdef 01b7]
+dupeitem 01b6
+
+[itemdef 01b8]
+dupeitem 01b6
+
+[itemdef 01ba]
+dupeitem 01b6
+
+[itemdef 01bb]
+dupeitem 01b6
+
+[itemdef 01bc]
+dupeitem 01b6
+
+[itemdef 01bd]
+dupeitem 01b6
+
+[itemdef 01be]
+dupeitem 01b6
+
+[itemdef 01bf]
+dupeitem 01b6
+
+[itemdef 01c0]
+dupeitem 01b6
+
+[itemdef 01c1]
+dupeitem 01b6
+
+[itemdef 01c2]
+dupeitem 01b6
+
+[itemdef 01c3]
+dupeitem 01b6
+
+[itemdef 01c4] //window
+type t_window
+dupeitem 01b6
+
+[itemdef 01c5] //window
+type t_window
+dupeitem 01b6
+
+[itemdef 01c6] //window
+type t_window
+dupeitem 01b6
+
+[itemdef 01c7] //window
+type t_window
+dupeitem 01b6
+
+[itemdef 01c8]
+dupeitem 01b6
+
+[itemdef 01c9]
+dupeitem 01b6
+
+//stone wall 7
+[itemdef 01cf]
+defname i_wall_stone_7
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 7
+dupelist 01d0,01d1,01d2,01d3,01d4,01d5,01d6,01d7,01d8,01d9,01da,01db,01dc,01dd,01de,01df,01e0,01e1,01e2,01e3,01e4,01e5,01e6,01e7,01e8,01e9,01ea,01eb
+
+[itemdef 01d0]
+dupeitem 01cf
+
+[itemdef 01d1]
+dupeitem 01cf
+
+[itemdef 01d2]
+dupeitem 01cf
+
+[itemdef 01d3] // window
+type t_window
+dupelist 01d4
+
+[itemdef 01d4] // window
+type t_window
+dupelist 01d4
+
+[itemdef 01d5]
+dupeitem 01cf
+
+[itemdef 01d6]
+dupeitem 01cf
+
+[itemdef 01d7]
+dupeitem 01cf
+
+[itemdef 01d8]
+dupeitem 01cf
+
+[itemdef 01d9]
+dupeitem 01cf
+
+[itemdef 01da]
+dupeitem 01cf
+
+[itemdef 01db]
+dupeitem 01cf
+
+[itemdef 01dc]
+dupeitem 01cf
+
+[itemdef 01dd]
+dupeitem 01cf
+
+[itemdef 01de]
+dupeitem 01cf
+
+[itemdef 01df]
+dupeitem 01cf
+
+[itemdef 01e0]
+dupeitem 01cf
+
+[itemdef 01e1]
+dupeitem 01cf
+
+[itemdef 01e2]
+dupeitem 01cf
+
+[itemdef 01e3]
+dupeitem 01cf
+
+[itemdef 01e4]
+dupeitem 01cf
+
+[itemdef 01e5]
+dupeitem 01cf
+
+[itemdef 01e6]
+dupeitem 01cf
+
+[itemdef 01e7]
+dupeitem 01cf
+
+[itemdef 01e8]
+dupeitem 01cf
+
+[itemdef 01e9]
+dupeitem 01cf
+
+[itemdef 01ea]
+dupeitem 01cf
+
+[itemdef 01eb]
+dupeitem 01cf
+
+//tent wall
+[itemdef 01f0]
+defname i_wall_tent
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall
+dupelist 01f1,01f2,01f3,01f4,01f5,01f6,01f7,01f8,01f9
+
+[itemdef 01f1]
+dupeitem 01f0
+
+[itemdef 01f2]
+dupeitem 01f0
+
+[itemdef 01f3]
+dupeitem 01f0
+
+[itemdef 01f4]
+dupeitem 01f0
+
+[itemdef 01f5]
+dupeitem 01f0
+
+[itemdef 01f6]
+dupeitem 01f0
+
+[itemdef 01f7]
+dupeitem 01f0
+
+[itemdef 01f8]
+dupeitem 01f0
+
+[itemdef 01f9]
+dupeitem 01f0
+
+//plaster wall 2
+[itemdef 01ff]
+defname i_wall_plaster_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description plaster wall 2
+dupelist 0200,0201,0202,0203,0204,0205,0206,0207,0208,0209,020a,020b,020c
+
+[itemdef 0200]
+dupeitem 01ff
+
+[itemdef 0201]
+dupeitem 01ff
+
+[itemdef 0202]
+dupeitem 01ff
+
+[itemdef 0203]
+dupeitem 01ff
+
+[itemdef 0204]
+dupeitem 01ff
+
+[itemdef 0205]
+dupeitem 01ff
+
+[itemdef 0206]
+dupeitem 01ff
+
+[itemdef 0207] //window
+type t_window
+dupeitem 01ff
+
+[itemdef 0208] //window
+type t_window
+dupeitem 01ff
+
+[itemdef 0209] //window
+type t_window
+dupeitem 01ff
+
+[itemdef 020a] //window
+type t_window
+dupeitem 01ff
+
+[itemdef 020b]
+dupeitem 01ff
+
+[itemdef 020c]
+dupeitem 01ff
+
+//bamboo wall
+[itemdef 020f]
+defname i_wall_bamboo
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description bamboo wall
+dupelist 0210,0211,0212,0213,0214,0215,0216,0217,0218,0219,021a
+
+[itemdef 0210]
+dupeitem 020f
+
+[itemdef 0211]
+dupeitem 020f
+
+[itemdef 0212]
+dupeitem 020f
+
+[itemdef 0213]
+dupeitem 020f
+
+[itemdef 0214]
+dupeitem 020f
+
+[itemdef 0215]
+dupeitem 020f
+
+[itemdef 0216]
+dupeitem 020f
+
+[itemdef 0217]
+dupeitem 020f
+
+[itemdef 0218]
+dupeitem 020f
+
+[itemdef 0219]
+dupeitem 020f
+
+[itemdef 021a]
+dupeitem 020f
+
+//palisade wall
+[itemdef 021d]
+defname i_wall_palisade
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description palisade wall
+dupelist 021e,021f,0220,0221,0222,0223,0226,0227,0228,0229,022a,022b
+
+[itemdef 021e]
+dupeitem 021d
+
+[itemdef 021f]
+dupeitem 021d
+
+[itemdef 0220]
+dupeitem 021d
+
+[itemdef 0221]
+dupeitem 021d
+
+[itemdef 0222]
+dupeitem 021d
+
+[itemdef 0223]
+dupeitem 021d
+
+[itemdef 0226]
+dupeitem 021d
+
+[itemdef 0227]
+dupeitem 021d
+
+[itemdef 0228]
+dupeitem 021d
+
+[itemdef 0229]
+dupeitem 021d
+
+[itemdef 022a]
+dupeitem 021d
+
+[itemdef 022b]
+dupeitem 021d
+
+//tent wall 2
+[itemdef 0230]
+defname i_wall_tent_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall 2
+dupelist 0231,0232,0233,0234,0235,0236,0237,0238,0239
+
+[itemdef 0231]
+dupeitem 0230
+
+[itemdef 0232]
+dupeitem 0230
+
+[itemdef 0233]
+dupeitem 0230
+
+[itemdef 0234]
+dupeitem 0230
+
+[itemdef 0235]
+dupeitem 0230
+
+[itemdef 0236]
+dupeitem 0230
+
+[itemdef 0237]
+dupeitem 0230
+
+[itemdef 0238]
+dupeitem 0230
+
+[itemdef 0239]
+dupeitem 0230
+
+//dungeon wall
+[itemdef 0241]
+defname i_wall_dungeon
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description dungeon wall
+dupelist 0242,0243,0244,0245,0246,0247,0248,0249,024a,02f9,02fa,02fb,02fc,02fd,02fe,02ff,0300
+
+[itemdef 0242]
+dupeitem 0241
+
+[itemdef 0243]
+dupeitem 0241
+
+[itemdef 0244]
+dupeitem 0241
+
+[itemdef 0245]
+dupeitem 0241
+
+[itemdef 0246]
+dupeitem 0241
+
+[itemdef 0247]
+dupeitem 0241
+
+[itemdef 0248]
+dupeitem 0241
+
+[itemdef 0249]
+dupeitem 0241
+
+[itemdef 024a]
+dupeitem 0241
+
+[itemdef 02f9]
+dupeitem 0241
+
+[itemdef 02fa]
+dupeitem 0241
+
+[itemdef 02fb]
+dupeitem 0241
+
+[itemdef 02fc]
+dupeitem 0241
+
+[itemdef 02fd]
+dupeitem 0241
+
+[itemdef 02fe]
+dupeitem 0241
+
+[itemdef 02ff]
+dupeitem 0241
+
+[itemdef 0300]
+dupeitem 0241
+
+//sandstone wall 2
+[itemdef 024c]
+defname i_wall_sandstone_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description sandstone wall 2
+dupelist 024d,024e,024f,0250,0251,0252,0253,0254,0255,0256,0257,0258,0259,025a,025b
+
+[itemdef 024d]
+dupeitem 024c
+
+[itemdef 024e]
+dupeitem 024c
+
+[itemdef 024f]
+dupeitem 024c
+
+[itemdef 0250]
+dupeitem 024c
+
+[itemdef 0251]
+dupeitem 024c
+
+[itemdef 0252] //window
+type t_window
+dupeitem 024c
+
+[itemdef 0253] //window
+type t_window
+dupeitem 024c
+
+[itemdef 0254] //window
+type t_window
+dupeitem 024c
+
+[itemdef 0255]
+dupeitem 024c
+
+[itemdef 0256]
+dupeitem 024c
+
+[itemdef 0257]
+dupeitem 024c
+
+[itemdef 0258]
+dupeitem 024c
+
+[itemdef 0259]
+dupeitem 024c
+
+[itemdef 025a]
+dupeitem 024c
+
+[itemdef 025b]
+dupeitem 024c
+
+//cave wall
+[itemdef 025c]
+defname i_wall_cave
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description cave wall
+dupelist 025d,025e,025f,0260,0261,0262,0263,0264,0265,0266,0267,0268,0269,026a,026b,026c,026d,026e,026f,0270,0271,0272,0273,0274,0275,0276,027d,027e,027f,0280
+
+[itemdef 025d]
+dupeitem 025c
+
+[itemdef 025e]
+dupeitem 025c
+
+[itemdef 025f]
+dupeitem 025c
+
+[itemdef 0260]
+dupeitem 025c
+
+[itemdef 0261]
+dupeitem 025c
+
+[itemdef 0262]
+dupeitem 025c
+
+[itemdef 0263]
+dupeitem 025c
+
+[itemdef 0264]
+dupeitem 025c
+
+[itemdef 0265]
+dupeitem 025c
+
+[itemdef 0266]
+dupeitem 025c
+
+[itemdef 0267]
+dupeitem 025c
+
+[itemdef 0268]
+dupeitem 025c
+
+[itemdef 0269]
+dupeitem 025c
+
+[itemdef 026a]
+dupeitem 025c
+
+[itemdef 026b]
+dupeitem 025c
+
+[itemdef 026c]
+dupeitem 025c
+
+[itemdef 026d]
+dupeitem 025c
+
+[itemdef 026e]
+dupeitem 025c
+
+[itemdef 026f]
+dupeitem 025c
+
+[itemdef 0270]
+dupeitem 025c
+
+[itemdef 0271]
+dupeitem 025c
+
+[itemdef 0272]
+dupeitem 025c
+
+[itemdef 0273]
+dupeitem 025c
+
+[itemdef 0274]
+dupeitem 025c
+
+[itemdef 0275]
+dupeitem 025c
+
+[itemdef 0276]
+dupeitem 025c
+
+[itemdef 027d]
+dupeitem 025c
+
+[itemdef 027e]
+dupeitem 025c
+
+[itemdef 027f]
+dupeitem 025c
+
+[itemdef 0280]
+dupeitem 025c
+
+//ruined wall
+[itemdef 0277]
+defname i_wall_ruined
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description ruined wall
+dupelist 0278,0279,027a,027b,027c,0281,0282
+
+[itemdef 0278]
+dupeitem 0277
+
+[itemdef 0279]
+dupeitem 0277
+
+[itemdef 027a]
+dupeitem 0277
+
+[itemdef 027b]
+dupeitem 0277
+
+[itemdef 027c]
+dupeitem 0277
+
+[itemdef 0281]
+dupeitem 0277
+
+[itemdef 0282]
+dupeitem 0277
+
+//marble wall 2
+[itemdef 0291]
+defname i_wall_marble_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description marble wall
+dupelist 0292,0293,0294,0295,0296,0297,0298,0299,029a,029b,029c,029d,029e,029f,02a0,02a1,02a2,02a3,02a4,02a5,02a6,02a7,02a8,02a9,02aa,02ab,02ac,02ad,02ae,02b0,02b1,02b2,02b3,02b4,02b5,02b6,02b7,02b8,02b9,02ba,02bb,02bc,02bd,02be,02bf,02c0
+
+[itemdef 0292]
+dupeitem 0291
+
+[itemdef 0293]
+dupeitem 0291
+
+[itemdef 0294]
+dupeitem 0291
+
+[itemdef 0295] //window
+type t_window
+dupeitem 0291
+
+[itemdef 0296] //window
+type t_window
+dupeitem 0291
+
+[itemdef 0297]
+dupeitem 0291
+
+[itemdef 0298]
+dupeitem 0291
+
+[itemdef 0299]
+dupeitem 0291
+
+[itemdef 029a]
+dupeitem 0291
+
+[itemdef 029b] //window
+type t_window
+dupeitem 0291
+
+[itemdef 029c] //window
+type t_window
+dupeitem 0291
+
+[itemdef 029d]
+dupeitem 0291
+
+[itemdef 029e]
+dupeitem 0291
+
+[itemdef 029f]
+dupeitem 0291
+
+[itemdef 02a0]
+dupeitem 0291
+
+[itemdef 02a1]
+dupeitem 0291
+
+[itemdef 02a2]
+dupeitem 0291
+
+[itemdef 02a3]
+dupeitem 0291
+
+[itemdef 02a4]
+dupeitem 0291
+
+[itemdef 02a5]
+dupeitem 0291
+
+[itemdef 02a6]
+dupeitem 0291
+
+[itemdef 02a7]
+dupeitem 0291
+
+[itemdef 02a8]
+dupeitem 0291
+
+[itemdef 02a9]
+dupeitem 0291
+
+[itemdef 02aa]
+dupeitem 0291
+
+[itemdef 02ab]
+dupeitem 0291
+
+[itemdef 02ac]
+dupeitem 0291
+
+[itemdef 02ad] //window
+type t_window
+dupeitem 0291
+
+[itemdef 02ae] //window
+type t_window
+dupeitem 0291
+
+[itemdef 02b0]
+dupeitem 0291
+
+[itemdef 02b1]
+dupeitem 0291
+
+[itemdef 02b2]
+dupeitem 0291
+
+[itemdef 02b3]
+dupeitem 0291
+
+[itemdef 02b4]
+dupeitem 0291
+
+[itemdef 02b5]
+dupeitem 0291
+
+[itemdef 02b6]
+dupeitem 0291
+
+[itemdef 02b7]
+dupeitem 0291
+
+[itemdef 02b8]
+dupeitem 0291
+
+[itemdef 02b9]
+dupeitem 0291
+
+[itemdef 02ba]
+dupeitem 0291
+
+[itemdef 02bb]
+dupeitem 0291
+
+[itemdef 02bc]
+dupeitem 0291
+
+[itemdef 02bd]
+dupeitem 0291
+
+[itemdef 02be]
+dupeitem 0291
+
+[itemdef 02bf]
+dupeitem 0291
+
+[itemdef 02c0]
+dupeitem 0291
+
+//stone wall 8
+[itemdef 02c7]
+defname i_wall_stone_8
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 8
+dupelist 02c8,02c9,02ca,02cb,02cc,02cd,02ce,02cf,02d0,02d1,02d2,02d3,02d4,02d5,02d6,02d7,02d8,02d9
+
+[itemdef 02c8]
+dupeitem 02c7
+
+[itemdef 02c9]
+dupeitem 02c7
+
+[itemdef 02ca]
+dupeitem 02c7
+
+[itemdef 02cb]
+dupeitem 02c7
+
+[itemdef 02cc]
+dupeitem 02c7
+
+[itemdef 02cd]
+dupeitem 02c7
+
+[itemdef 02ce]
+dupeitem 02c7
+
+[itemdef 02cf]
+dupeitem 02c7
+
+[itemdef 02d0]
+dupeitem 02c7
+
+[itemdef 02d1]
+dupeitem 02c7
+
+[itemdef 02d2]
+dupeitem 02c7
+
+[itemdef 02d3]
+dupeitem 02c7
+
+[itemdef 02d4]
+dupeitem 02c7
+
+[itemdef 02d5]
+dupeitem 02c7
+
+[itemdef 02d6]
+dupeitem 02c7
+
+[itemdef 02d7]
+dupeitem 02c7
+
+[itemdef 02d8]
+dupeitem 02c7
+
+[itemdef 02d9]
+dupeitem 02c7
+
+//tent wall 3
+[itemdef 02de]
+defname i_wall_tent_3
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall 3
+dupelist 02df,02e0,02e1,02e2,02e3,02e4,02e5,02e6,02e7
+
+[itemdef 02df]
+dupeitem 02de
+
+[itemdef 02e0]
+dupeitem 02de
+
+[itemdef 02e1]
+dupeitem 02de
+
+[itemdef 02e2]
+dupeitem 02de
+
+[itemdef 02e3]
+dupeitem 02de
+
+[itemdef 02e4]
+dupeitem 02de
+
+[itemdef 02e5]
+dupeitem 02de
+
+[itemdef 02e6]
+dupeitem 02de
+
+[itemdef 02e7]
+dupeitem 02de
+
+//tent wall 4 (ruined)
+[itemdef 02e8]
+defname i_wall_tent_4
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall 4 (ruined)
+dupelist 02e9,02ea,02eb,02ec
+
+[itemdef 02e9]
+dupeitem 02e8
+
+[itemdef 02ea]
+dupeitem 02e8
+
+[itemdef 02eb]
+dupeitem 02e8
+
+[itemdef 02ec]
+dupeitem 02e8
+
+//tent wall 5 (patch)
+[itemdef 02ef]
+defname i_wall_tent_5
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall 5 (patch)
+dupelist 02f0,02f1,02f2,02f3,02f4,0372,0373,0374,0375,0376,0377
+
+[itemdef 02f0]
+dupeitem 02ef
+
+[itemdef 02f1]
+dupeitem 02ef
+
+[itemdef 02f2]
+dupeitem 02ef
+
+[itemdef 02f3]
+dupeitem 02ef
+
+[itemdef 02f4]
+dupeitem 02ef
+
+[itemdef 0372]
+dupeitem 02ef
+
+[itemdef 0373]
+dupeitem 02ef
+
+[itemdef 0374]
+dupeitem 02ef
+
+[itemdef 0375]
+dupeitem 02ef
+
+[itemdef 0376]
+dupeitem 02ef
+
+[itemdef 0377]
+dupeitem 02ef
+
+[itemdef 0368]
+defname i_wall_tent_6
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description tent wall 6
+dupelist 0369,036a,036b,036c,036d,036e,036f,0370,0371
+
+[itemdef 0369]
+dupeitem 0368
+
+[itemdef 036a]
+dupeitem 0368
+
+[itemdef 036b]
+dupeitem 0368
+
+[itemdef 036c]
+dupeitem 0368
+
+[itemdef 036d]
+dupeitem 0368
+
+[itemdef 036e]
+dupeitem 0368
+
+[itemdef 036f]
+dupeitem 0368
+
+[itemdef 0370]
+dupeitem 0368
+
+[itemdef 0371]
+dupeitem 0368
+
+//plaster wall 3 (ruined)
+[itemdef 037f]
+defname i_wall_plaster_3
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description plaster wall 3 (ruined)
+dupelist 0380,0381,0382,0383,0384,0385,0386,0387,0388,0389,038a,038b,038c,038d,038e,038f,0390,0391,0392,0393,0394,0395,0396,0397,0398,0399,039a,039b,039c,039d,039e,039f,03a0
+
+[itemdef 0380]
+dupeitem 037f
+
+[itemdef 0381]
+dupeitem 037f
+
+[itemdef 0382]
+dupeitem 037f
+
+[itemdef 0383]
+dupeitem 037f
+
+[itemdef 0384]
+dupeitem 037f
+
+[itemdef 0385]
+dupeitem 037f
+
+[itemdef 0386]
+dupeitem 037f
+
+[itemdef 0387]
+dupeitem 037f
+
+[itemdef 0388]
+dupeitem 037f
+
+[itemdef 0389]
+dupeitem 037f
+
+[itemdef 038a]
+dupeitem 037f
+
+[itemdef 038b]
+dupeitem 037f
+
+[itemdef 038c]
+dupeitem 037f
+
+[itemdef 038d]
+dupeitem 037f
+
+[itemdef 038e]
+dupeitem 037f
+
+[itemdef 038f]
+dupeitem 037f
+
+[itemdef 0390]
+dupeitem 037f
+
+[itemdef 0391]
+dupeitem 037f
+
+[itemdef 0392]
+dupeitem 037f
+
+[itemdef 0393]
+dupeitem 037f
+
+[itemdef 0394]
+dupeitem 037f
+
+[itemdef 0395]
+dupeitem 037f
+
+[itemdef 0396]
+dupeitem 037f
+
+[itemdef 0397]
+dupeitem 037f
+
+[itemdef 0398]
+dupeitem 037f
+
+[itemdef 0399]
+dupeitem 037f
+
+[itemdef 039a]
+dupeitem 037f
+
+[itemdef 039b]
+dupeitem 037f
+
+[itemdef 039c]
+dupeitem 037f
+
+[itemdef 039d]
+dupeitem 037f
+
+[itemdef 039e]
+dupeitem 037f
+
+[itemdef 039f]
+dupeitem 037f
+
+[itemdef 03a0]
+dupeitem 037f
+
+//ruined wall 2
+[itemdef 03b7]
+defname i_wall_ruined_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description ruined wall 2
+dupelist 03b8,03b9,03ba,03bb,03bc,03bd,03be,03bf,03c0,03c1,03c2,03c3,03c4,03c5,03c6,03c7,03c8,03c9,03ca,03dd,03de,03df
+
+[itemdef 03b8]
+dupeitem 03b7
+
+[itemdef 03b9]
+dupeitem 03b7
+
+[itemdef 03ba]
+dupeitem 03b7
+
+[itemdef 03bb]
+dupeitem 03b7
+
+[itemdef 03bc]
+dupeitem 03b7
+
+[itemdef 03bd]
+dupeitem 03b7
+
+[itemdef 03be]
+dupeitem 03b7
+
+[itemdef 03bf]
+dupeitem 03b7
+
+[itemdef 03c0]
+dupeitem 03b7
+
+[itemdef 03c1]
+dupeitem 03b7
+
+[itemdef 03c2]
+dupeitem 03b7
+
+[itemdef 03c3]
+dupeitem 03b7
+
+[itemdef 03c4]
+dupeitem 03b7
+
+[itemdef 03c5]
+dupeitem 03b7
+
+[itemdef 03c6]
+dupeitem 03b7
+
+[itemdef 03c7]
+dupeitem 03b7
+
+[itemdef 03c8]
+dupeitem 03b7
+
+[itemdef 03c9]
+dupeitem 03b7
+
+[itemdef 03ca]
+dupeitem 03b7
+
+[itemdef 03dd] //window
+type t_window
+dupeitem 03b7
+
+[itemdef 03de] //window
+type t_window
+dupeitem 03b7
+
+[itemdef 03df] //window
+type t_window
+dupeitem 03b7
+
+//stone wall 9
+[itemdef 03cb]
+defname i_wall_stone_9
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 9
+dupelist 03cc,03cd,03ce,03d3,03d4,03d5,03d6,03d7,03d8,03d9,03da,03db,03dc,03e0,03e1,03e2
+
+[itemdef 03cc]
+dupeitem 03cb
+
+[itemdef 03cd]
+dupeitem 03cb
+
+[itemdef 03ce]
+dupeitem 03cb
+
+[itemdef 03d3]
+dupeitem 03cb
+
+[itemdef 03d4]
+dupeitem 03cb
+
+[itemdef 03d5]
+dupeitem 03cb
+
+[itemdef 03d6]
+dupeitem 03cb
+
+[itemdef 03d7]
+dupeitem 03cb
+
+[itemdef 03d8]
+dupeitem 03cb
+
+[itemdef 03d9]
+dupeitem 03cb
+
+[itemdef 03da]
+dupeitem 03cb
+
+[itemdef 03db]
+dupeitem 03cb
+
+[itemdef 03dc]
+dupeitem 03cb
+
+[itemdef 03e0]
+dupeitem 03cb
+
+[itemdef 03e1]
+dupeitem 03cb
+
+[itemdef 03e2]
+dupeitem 03cb
+
+//stone wall 10
+[itemdef 03cf]
+defname i_wall_stone_10
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description stone wall 10
+dupelist 03d0,03d1,03d2
+
+[itemdef 03d0]
+dupeitem 03cf
+
+[itemdef 03d1]
+dupeitem 03cf
+
+[itemdef 03d2]
+dupeitem 03cf
+
+//rattan wall 2
+[itemdef 0215a]
+defname i_wall_rattan_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description rattan wall
+dupelist 0215b,0215c
+
+[itemdef 0215b]
+dupeitem 0215a
+
+[itemdef 0215c]
+dupeitem 0215a
+
+//cave wall 2 (entrance)
+[itemdef 02166]
+defname i_wall_cave_2
+type t_wall
+tag.category buildings
+tag.subsection walls
+tag.description cave wall 2 (entrance)
+dupelist 02167,02168,02169
+
+[itemdef 02167]
+dupeitem 02166
+
+[itemdef 02168]
+dupeitem 02166
+
+[itemdef 02169]
+dupeitem 02166
+
+[eof]

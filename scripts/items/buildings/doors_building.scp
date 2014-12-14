@@ -1,0 +1,520 @@
+// 13.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//metal door
+[itemdef 0675]
+defname i_door_metal
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description metal door
+dupelist 0677,0679,067b,067d,067f,0681,0683
+
+[itemdef 0676]
+defname i_door_metal_open
+type t_door_open
+dupelist 0678,067a,067c,067e,0680,0682,0684
+
+[itemdef 0677]
+dupeitem 0675
+
+[itemdef 0678]
+dupeitem 0676
+
+[itemdef 0679]
+dupeitem 0675
+
+[itemdef 067a]
+dupeitem 0676
+
+[itemdef 067b]
+dupeitem 0675
+
+[itemdef 067c]
+dupeitem 0676
+
+[itemdef 067d]
+dupeitem 0675
+
+[itemdef 067e]
+dupeitem 0676
+
+[itemdef 067f]
+dupeitem 0675
+
+[itemdef 0680]
+dupeitem 0676
+
+[itemdef 0681]
+dupeitem 0675
+
+[itemdef 0682]
+dupeitem 0676
+
+[itemdef 0683]
+dupeitem 0675
+
+[itemdef 0684]
+dupeitem 0676
+
+//barred metal door
+[itemdef 0685]
+defname i_door_metal_barred
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description barred metal door
+dupelist 0687,0689,068b,068d,068f,0691,0693
+
+[itemdef 0686]
+defname i_door_metal_barred_open
+type t_door_open
+dupelist 0688,068a,068c,068e,0690,0692,0694
+
+[itemdef 0687]
+dupeitem 0685
+
+[itemdef 0688]
+dupeitem 0686
+
+[itemdef 0689]
+dupeitem 0685
+
+[itemdef 068a]
+dupeitem 0686
+
+[itemdef 068b]
+dupeitem 0685
+
+[itemdef 068c]
+dupeitem 0686
+
+[itemdef 068d]
+dupeitem 0685
+
+[itemdef 068e]
+dupeitem 0686
+
+[itemdef 068f]
+dupeitem 0685
+
+[itemdef 0690]
+dupeitem 0686
+
+[itemdef 0691]
+dupeitem 0685
+
+[itemdef 0692]
+dupeitem 0686
+
+[itemdef 0693]
+dupeitem 0685
+
+[itemdef 0694]
+dupeitem 0686
+
+//rattan door
+[itemdef 0695]
+defname i_door_rattan
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description rattan door
+dupelist 0697,0699,069b,069d,069f,06a1,06a3
+
+[itemdef 0696]
+defname i_door_rattan_open
+type t_door_open
+dupelist 0698,069a,069c,069e,06a0,06a2,06a4
+
+[itemdef 0697]
+dupeitem 0695
+
+[itemdef 0698]
+dupeitem 0696
+
+[itemdef 0699]
+dupeitem 0695
+
+[itemdef 069a]
+dupeitem 0696
+
+[itemdef 069b]
+dupeitem 0695
+
+[itemdef 069c]
+dupeitem 0696
+
+[itemdef 069d]
+dupeitem 0695
+
+[itemdef 069e]
+dupeitem 0696
+
+[itemdef 069f]
+dupeitem 0695
+
+[itemdef 06a0]
+dupeitem 0696
+
+[itemdef 06a1]
+dupeitem 0695
+
+[itemdef 06a2]
+dupeitem 0696
+
+[itemdef 06a3]
+dupeitem 0695
+
+[itemdef 06a4]
+dupeitem 0696
+
+//wooden door
+[itemdef 06a5]
+defname i_door_wood
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description wooden door
+dupelist 06a7,06a9,06ab,06ad,06af,06b1,06b3
+
+[itemdef 06a6]
+defname i_door_wood_open
+type t_door_open
+dupelist 06a8,06aa,06ac,06ae,06b0,06b2,06b4
+
+[itemdef 06a7]
+dupeitem 06a5
+
+[itemdef 06a8]
+dupeitem 06a6
+
+[itemdef 06a9]
+dupeitem 06a5
+
+[itemdef 06aa]
+dupeitem 06a6
+
+[itemdef 06ab]
+dupeitem 06a5
+
+[itemdef 06ac]
+dupeitem 06a6
+
+[itemdef 06ad]
+dupeitem 06a5
+
+[itemdef 06ae]
+dupeitem 06a6
+
+[itemdef 06af]
+dupeitem 06a5
+
+[itemdef 06b0]
+dupeitem 06a6
+
+[itemdef 06b1]
+dupeitem 06a5
+
+[itemdef 06b2]
+dupeitem 06a6
+
+[itemdef 06b3]
+dupeitem 06a5
+
+[itemdef 06b4]
+dupeitem 06a6
+
+//wooden door 2
+[itemdef 06b5]
+defname i_door_wood_2
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description wooden door 2
+dupelist 06b7,06b9,06bb,06bd,06bf,06c1,06c3
+
+[itemdef 06b6]
+defname i_door_wood_2_open
+type t_door_open
+dupelist 06b8,06ba,06bc,06be,06c0,06c2,06c4
+
+[itemdef 06b7]
+dupeitem 06b5
+
+[itemdef 06b8]
+dupeitem 06b6
+
+[itemdef 06b9]
+dupeitem 06b5
+
+[itemdef 06ba]
+dupeitem 06b6
+
+[itemdef 06bb]
+dupeitem 06b5
+
+[itemdef 06bc]
+dupeitem 06b6
+
+[itemdef 06bd]
+dupeitem 06b5
+
+[itemdef 06be]
+dupeitem 06b6
+
+[itemdef 06bf]
+dupeitem 06b5
+
+[itemdef 06c0]
+dupeitem 06b6
+
+[itemdef 06c1]
+dupeitem 06b5
+
+[itemdef 06c2]
+dupeitem 06b6
+
+[itemdef 06c3]
+dupeitem 06b5
+
+[itemdef 06c4]
+dupeitem 06b6
+
+//metal door 2
+[itemdef 06c5]
+defname i_door_metal_2
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description metal door 2
+dupelist 06c7,06c9,06cb,06cd,06cf,06d1,06d3
+
+[itemdef 06c6]
+defname i_door_metal_2_open
+type t_door_open
+dupelist 06c8,06ca,06cc,06ce,06d0,06d2,06d4
+
+[itemdef 06c7]
+dupeitem 06c5
+
+[itemdef 06c8]
+dupeitem 06c6
+
+[itemdef 06c9]
+dupeitem 06c5
+
+[itemdef 06ca]
+dupeitem 06c6
+
+[itemdef 06cb]
+dupeitem 06c5
+
+[itemdef 06cc]
+dupeitem 06c6
+
+[itemdef 06cd]
+dupeitem 06c5
+
+[itemdef 06ce]
+dupeitem 06c6
+
+[itemdef 06cf]
+dupeitem 06c5
+
+[itemdef 06d0]
+dupeitem 06c6
+
+[itemdef 06d1]
+dupeitem 06c5
+
+[itemdef 06d2]
+dupeitem 06c6
+
+[itemdef 06d3]
+dupeitem 06c5
+
+[itemdef 06d4]
+dupeitem 06c6
+
+//wooden door 3
+[itemdef 06d5]
+defname i_door_wood_3
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description wooden door 3
+dupelist 06d7,06d9,06db,06dd,06df,06e1,06e3
+
+[itemdef 06d6]
+defname i_door_wood_3_open
+type t_door_open
+dupelist 06d8,06da,06dc,06de,06e0,06e2,06e4
+
+[itemdef 06d7]
+dupeitem 06d5
+
+[itemdef 06d8]
+dupeitem 06d6
+
+[itemdef 06d9]
+dupeitem 06d5
+
+[itemdef 06da]
+dupeitem 06d6
+
+[itemdef 06db]
+dupeitem 06d5
+
+[itemdef 06dc]
+dupeitem 06d6
+
+[itemdef 06dd]
+dupeitem 06d5
+
+[itemdef 06de]
+dupeitem 06d6
+
+[itemdef 06df]
+dupeitem 06d5
+
+[itemdef 06e0]
+dupeitem 06d6
+
+[itemdef 06e1]
+dupeitem 06d5
+
+[itemdef 06e2]
+dupeitem 06d6
+
+[itemdef 06e3]
+dupeitem 06d5
+
+[itemdef 06e4]
+dupeitem 06d6
+
+//wooden door 4
+[itemdef 06e5]
+defname i_door_wood_4
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description wooden door 4
+dupelist 06e7,06e9,06eb,06ed,06ef,06f1,06f3
+
+[itemdef 06e6]
+defname i_door_wood_4_open
+type t_door_open
+dupelist 06e8,06ea,06ec,06ee,06f0,06f2,06f4
+
+[itemdef 06e7]
+dupeitem 06e5
+
+[itemdef 06e8]
+dupeitem 06e6
+
+[itemdef 06e9]
+dupeitem 06e5
+
+[itemdef 06ea]
+dupeitem 06e6
+
+[itemdef 06eb]
+dupeitem 06e5
+
+[itemdef 06ec]
+dupeitem 06e6
+
+[itemdef 06ed]
+dupeitem 06e5
+
+[itemdef 06ee]
+dupeitem 06e6
+
+[itemdef 06ef]
+dupeitem 06e5
+
+[itemdef 06f0]
+dupeitem 06e6
+
+[itemdef 06f1]
+dupeitem 06e5
+
+[itemdef 06f2]
+dupeitem 06e6
+
+[itemdef 06f3]
+dupeitem 06e5
+
+[itemdef 06f4]
+dupeitem 06e6
+
+//portcullis door
+[itemdef 06f5]
+defname i_door_portculis
+type t_portculis
+tag.category buildings
+tag.subsection doors
+tag.description portcullis door
+dupelist 06f6
+
+[itemdef 06f6]
+dupeitem 06f5
+
+//barred metal door 2
+[itemdef 01fed]
+defname i_door_metal_barred_2
+type t_door
+tag.category buildings
+tag.subsection doors
+tag.description barred metal door 2
+dupelist 01fef,01ff1,01ff3,01ff5,01ff7,01ff9,01ffb
+
+[itemdef 01fee]
+defname i_door_metal_barred_2_open
+type t_door_open
+dupelist 01ff0,01ff2,01ff4,01ff6,01ff8,01ffa,01ffc
+
+[itemdef 01fef]
+dupeitem 01fed
+
+[itemdef 01ff0]
+dupeitem 01fee
+
+[itemdef 01ff1]
+dupeitem 01fed
+
+[itemdef 01ff2]
+dupeitem 01fee
+
+[itemdef 01ff3]
+dupeitem 01fed
+
+[itemdef 01ff4]
+dupeitem 01fee
+
+[itemdef 01ff5]
+dupeitem 01fed
+
+[itemdef 01ff6]
+dupeitem 01fee
+
+[itemdef 01ff7]
+dupeitem 01fed
+
+[itemdef 01ff8]
+dupeitem 01fee
+
+[itemdef 01ff9]
+dupeitem 01fed
+
+[itemdef 01ffa]
+dupeitem 01fee
+
+[itemdef 01ffb]
+dupeitem 01fed
+
+[itemdef 01ffc]
+dupeitem 01fee
+
+[eof]

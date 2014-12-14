@@ -1,0 +1,2463 @@
+// 14.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//changes
+//i_hole	> i_tile_hole
+//i_dirt	> i_tile_dirt_3
+
+//dirt
+[itemdef 0911]
+defname i_tile_dirt
+tag.category buildings
+tag.subsection tiles
+tag.description dirt
+dupelist 0912,0913,0914
+
+[itemdef 0912]
+dupeitem 0911
+
+[itemdef 0913]
+dupeitem 0911
+
+[itemdef 0914]
+dupeitem 0911
+
+//crumbling tile
+[itemdef 011c0]
+defname i_tile_crumbling
+type t_trap
+weight 10
+tag.category buildings
+tag.subsection tiles
+tag.description crumbling tile
+dupelist 011c1,011c2,011c3,011c4,011c5
+
+[itemdef 011c1]
+dupeitem 011c0
+
+[itemdef 011c2]
+dupeitem 011c0
+
+[itemdef 011c3]
+dupeitem 011c0
+
+[itemdef 011c4]
+dupeitem 011c0
+
+[itemdef 011c5]
+dupeitem 011c0
+
+//lava
+[itemdef 012ee]
+defname i_tile_lava
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava
+dupelist 012ef,012f1,012f2,012f4,012f5,012f6,012f7,012f8,012fa,012fb,012fc,012fd,012fe,01300,01301,01302,01303,01304,01306,01307,01308,01309,0130a,0130c,0130d,0130e,0130f,01310,01312,01313,01314,01315,01316,01318,01319,0131a,0131b,0131c
+
+[itemdef 012ef]
+dupeitem 012ee
+
+[itemdef 012f1]
+dupeitem 012ee
+
+[itemdef 012f2]
+dupeitem 012ee
+
+[itemdef 012f4]
+dupeitem 012ee
+
+[itemdef 012f5]
+dupeitem 012ee
+
+[itemdef 012f6]
+dupeitem 012ee
+
+[itemdef 012f7]
+dupeitem 012ee
+
+[itemdef 012f8]
+dupeitem 012ee
+
+[itemdef 012fa]
+dupeitem 012ee
+
+[itemdef 012fb]
+dupeitem 012ee
+
+[itemdef 012fc]
+dupeitem 012ee
+
+[itemdef 012fd]
+dupeitem 012ee
+
+[itemdef 012fe]
+dupeitem 012ee
+
+[itemdef 01300]
+dupeitem 012ee
+
+[itemdef 01301]
+dupeitem 012ee
+
+[itemdef 01302]
+dupeitem 012ee
+
+[itemdef 01303]
+dupeitem 012ee
+
+[itemdef 01304]
+dupeitem 012ee
+
+[itemdef 01306]
+dupeitem 012ee
+
+[itemdef 01307]
+dupeitem 012ee
+
+[itemdef 01308]
+dupeitem 012ee
+
+[itemdef 01309]
+dupeitem 012ee
+
+[itemdef 0130a]
+dupeitem 012ee
+
+[itemdef 0130c]
+dupeitem 012ee
+
+[itemdef 0130d]
+dupeitem 012ee
+
+[itemdef 0130e]
+dupeitem 012ee
+
+[itemdef 0130f]
+dupeitem 012ee
+
+[itemdef 01310]
+dupeitem 012ee
+
+[itemdef 01312]
+dupeitem 012ee
+
+[itemdef 01313]
+dupeitem 012ee
+
+[itemdef 01314]
+dupeitem 012ee
+
+[itemdef 01315]
+dupeitem 012ee
+
+[itemdef 01316]
+dupeitem 012ee
+
+[itemdef 01318]
+dupeitem 012ee
+
+[itemdef 01319]
+dupeitem 012ee
+
+[itemdef 0131a]
+dupeitem 012ee
+
+[itemdef 0131b]
+dupeitem 012ee
+
+[itemdef 0131c]
+dupeitem 012ee
+
+//lava edge
+[itemdef 0131e]
+defname i_tile_lava_edge
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava edge
+dupelist 0131f,01320,01321,01322,01323,01324,01325,01326,01327,01328,01329,0132a,0132b,0132c,0132d,0132e,0132f,01330,01331,01332,01333,01334,01335,01336,01337,01338,01339,0133a,0133b,0133c,0133d,0133e,0133f,01340,01341,01342,01343,01344,01345,01346,01347,01348,01349,0134a,0134b,0134c,0134d
+
+[itemdef 0131f]
+dupeitem 0131e
+
+[itemdef 01320]
+dupeitem 0131e
+
+[itemdef 01321]
+dupeitem 0131e
+
+[itemdef 01322]
+dupeitem 0131e
+
+[itemdef 01323]
+dupeitem 0131e
+
+[itemdef 01324]
+dupeitem 0131e
+
+[itemdef 01325]
+dupeitem 0131e
+
+[itemdef 01326]
+dupeitem 0131e
+
+[itemdef 01327]
+dupeitem 0131e
+
+[itemdef 01328]
+dupeitem 0131e
+
+[itemdef 01329]
+dupeitem 0131e
+
+[itemdef 0132a]
+dupeitem 0131e
+
+[itemdef 0132b]
+dupeitem 0131e
+
+[itemdef 0132c]
+dupeitem 0131e
+
+[itemdef 0132d]
+dupeitem 0131e
+
+[itemdef 0132e]
+dupeitem 0131e
+
+[itemdef 0132f]
+dupeitem 0131e
+
+[itemdef 01330]
+dupeitem 0131e
+
+[itemdef 01331]
+dupeitem 0131e
+
+[itemdef 01332]
+dupeitem 0131e
+
+[itemdef 01333]
+dupeitem 0131e
+
+[itemdef 01334]
+dupeitem 0131e
+
+[itemdef 01335]
+dupeitem 0131e
+
+[itemdef 01336]
+dupeitem 0131e
+
+[itemdef 01337]
+dupeitem 0131e
+
+[itemdef 01338]
+dupeitem 0131e
+
+[itemdef 01339]
+dupeitem 0131e
+
+[itemdef 0133a]
+dupeitem 0131e
+
+[itemdef 0133b]
+dupeitem 0131e
+
+[itemdef 0133c]
+dupeitem 0131e
+
+[itemdef 0133d]
+dupeitem 0131e
+
+[itemdef 0133e]
+dupeitem 0131e
+
+[itemdef 0133f]
+dupeitem 0131e
+
+[itemdef 01340]
+dupeitem 0131e
+
+[itemdef 01341]
+dupeitem 0131e
+
+[itemdef 01342]
+dupeitem 0131e
+
+[itemdef 01343]
+dupeitem 0131e
+
+[itemdef 01344]
+dupeitem 0131e
+
+[itemdef 01345]
+dupeitem 0131e
+
+[itemdef 01346]
+dupeitem 0131e
+
+[itemdef 01347]
+dupeitem 0131e
+
+[itemdef 01348]
+dupeitem 0131e
+
+[itemdef 01349]
+dupeitem 0131e
+
+[itemdef 0134a]
+dupeitem 0131e
+
+[itemdef 0134b]
+dupeitem 0131e
+
+[itemdef 0134c]
+dupeitem 0131e
+
+[itemdef 0134d]
+dupeitem 0131e
+
+//sandstone tile
+[itemdef 01383]
+defname i_tile_sandstone
+tag.category buildings
+tag.subsection tiles
+tag.description sandstone tiles
+dupelist 01384,01385,01386
+
+[itemdef 01384]
+dupeitem 01383
+
+[itemdef 01385]
+dupeitem 01383
+
+[itemdef 01386]
+dupeitem 01383
+
+//grass
+[itemdef 0177d]
+defname i_tile_grass
+type t_grass
+tag.category buildings
+tag.subsection tiles
+tag.description grass
+dupelist 0177e,0177f,01780,01781,01782,01783,01784,01785,01786,01787,01788,01789
+
+[itemdef 0177e]
+dupeitem 0177d
+
+[itemdef 0177f]
+dupeitem 0177d
+
+[itemdef 01780]
+dupeitem 0177d
+
+[itemdef 01781]
+dupeitem 0177d
+
+[itemdef 01782]
+dupeitem 0177d
+
+[itemdef 01783]
+dupeitem 0177d
+
+[itemdef 01784]
+dupeitem 0177d
+
+[itemdef 01785]
+dupeitem 0177d
+
+[itemdef 01786]
+dupeitem 0177d
+
+[itemdef 01787]
+dupeitem 0177d
+
+[itemdef 01788]
+dupeitem 0177d
+
+[itemdef 01789]
+dupeitem 0177d
+
+//snow
+[itemdef 017bd]
+defname i_tile_snow
+tag.category buildings
+tag.subsection tiles
+tag.description snow
+dupelist 017be,017bf,017c0,017c1,017c2,017c3,017c4,017c5,017c6,017c7,017c8,017c9,017ca,017cb,017cc,017cd,017ce
+
+[itemdef 017be]
+dupeitem 017bd
+
+[itemdef 017bf]
+dupeitem 017bd
+
+[itemdef 017c0]
+dupeitem 017bd
+
+[itemdef 017c1]
+dupeitem 017bd
+
+[itemdef 017c2]
+dupeitem 017bd
+
+[itemdef 017c3]
+dupeitem 017bd
+
+[itemdef 017c4]
+dupeitem 017bd
+
+[itemdef 017c5]
+dupeitem 017bd
+
+[itemdef 017c6]
+dupeitem 017bd
+
+[itemdef 017c7]
+dupeitem 017bd
+
+[itemdef 017c8]
+dupeitem 017bd
+
+[itemdef 017c9]
+dupeitem 017bd
+
+[itemdef 017ca]
+dupeitem 017bd
+
+[itemdef 017cb]
+dupeitem 017bd
+
+[itemdef 017cc]
+dupeitem 017bd
+
+[itemdef 017cd]
+dupeitem 017bd
+
+[itemdef 017ce]
+dupeitem 017bd
+
+//lava falls
+[itemdef 01a19]
+defname i_tile_lava_falls
+type t_fire
+tag.category buildings
+tag.subsection tiles
+tag.description lava falls
+dupelist 012f0,01a1a,01a1b,01a1c,01a1d,01a47,01a48,01a49,01a4a,01a4b
+
+[itemdef 01a1a]
+dupeitem 01a19
+
+[itemdef 01a1b]
+dupeitem 01a19
+
+[itemdef 01a1c]
+dupeitem 01a19
+
+[itemdef 01a1d]
+dupeitem 01a19
+
+[itemdef 01a47]
+dupeitem 01a19
+
+[itemdef 01a48]
+dupeitem 01a19
+
+[itemdef 01a49]
+dupeitem 01a19
+
+[itemdef 01a4a]
+dupeitem 01a19
+
+[itemdef 01a4b]
+dupeitem 01a19
+
+[itemdef 012f0]
+dupeitem 01a19
+
+//lava wall
+[itemdef 01a1e]
+defname i_tile_lava_wall
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava wall
+dupelist 01a1f,01a20,01a21,01a22,01a23,01a24,01a25,01a26,01a27,01a28,01a29,01a2a,01a2b,01a2c,01a2d,01a2e,01a2f,01a30,01a31,01a32,01a33,01a34,01a35,01a36,01a4c,01a4d,01a4e,01a4f,01a50,01a51,01a52,01a53,01a54,01a55,01a56,01a57,01a58,01a59,01a5a,01a5b,01a5c,01a5d,01a5e,01a5f,01a60,01a61,01a62,01a63,01a64
+
+[itemdef 01a1f]
+dupeitem 01a1e
+
+[itemdef 01a20]
+dupeitem 01a1e
+
+[itemdef 01a21]
+dupeitem 01a1e
+
+[itemdef 01a22]
+dupeitem 01a1e
+
+[itemdef 01a23]
+dupeitem 01a1e
+
+[itemdef 01a24]
+dupeitem 01a1e
+
+[itemdef 01a25]
+dupeitem 01a1e
+
+[itemdef 01a26]
+dupeitem 01a1e
+
+[itemdef 01a27]
+dupeitem 01a1e
+
+[itemdef 01a28]
+dupeitem 01a1e
+
+[itemdef 01a29]
+dupeitem 01a1e
+
+[itemdef 01a2a]
+dupeitem 01a1e
+
+[itemdef 01a2b]
+dupeitem 01a1e
+
+[itemdef 01a2c]
+dupeitem 01a1e
+
+[itemdef 01a2d]
+dupeitem 01a1e
+
+[itemdef 01a2e]
+dupeitem 01a1e
+
+[itemdef 01a2f]
+dupeitem 01a1e
+
+[itemdef 01a30]
+dupeitem 01a1e
+
+[itemdef 01a31]
+dupeitem 01a1e
+
+[itemdef 01a32]
+dupeitem 01a1e
+
+[itemdef 01a33]
+dupeitem 01a1e
+
+[itemdef 01a34]
+dupeitem 01a1e
+
+[itemdef 01a35]
+dupeitem 01a1e
+
+[itemdef 01a36]
+dupeitem 01a1e
+
+[itemdef 01a4c]
+dupeitem 01a1e
+
+[itemdef 01a4d]
+dupeitem 01a1e
+
+[itemdef 01a4e]
+dupeitem 01a1e
+
+[itemdef 01a4f]
+dupeitem 01a1e
+
+[itemdef 01a50]
+dupeitem 01a1e
+
+[itemdef 01a51]
+dupeitem 01a1e
+
+[itemdef 01a52]
+dupeitem 01a1e
+
+[itemdef 01a53]
+dupeitem 01a1e
+
+[itemdef 01a54]
+dupeitem 01a1e
+
+[itemdef 01a55]
+dupeitem 01a1e
+
+[itemdef 01a56]
+dupeitem 01a1e
+
+[itemdef 01a57]
+dupeitem 01a1e
+
+[itemdef 01a58]
+dupeitem 01a1e
+
+[itemdef 01a59]
+dupeitem 01a1e
+
+[itemdef 01a5a]
+dupeitem 01a1e
+
+[itemdef 01a5b]
+dupeitem 01a1e
+
+[itemdef 01a5c]
+dupeitem 01a1e
+
+[itemdef 01a5d]
+dupeitem 01a1e
+
+[itemdef 01a5e]
+dupeitem 01a1e
+
+[itemdef 01a5f]
+dupeitem 01a1e
+
+[itemdef 01a60]
+dupeitem 01a1e
+
+[itemdef 01a61]
+dupeitem 01a1e
+
+[itemdef 01a62]
+dupeitem 01a1e
+
+[itemdef 01a63]
+dupeitem 01a1e
+
+[itemdef 01a64]
+dupeitem 01a1e
+
+//lava base
+[itemdef 01a37]
+defname i_tile_lava_base
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava base
+dupelist 01a38,01a39,01a3a,01a3b,01a3c,01a3d,01a3e,01a3f,01a40,01a41,01a42,01a43,01a44,01a45,01a46,01a65,01a66,01a67,01a68,01a69,01a6a,01a6b,01a6c,01a6d,01a6e,01a6f,01a70,01a71,01a72,01a73,01a74
+
+[itemdef 01a38]
+dupeitem 01a37
+
+[itemdef 01a39]
+dupeitem 01a37
+
+[itemdef 01a3a]
+dupeitem 01a37
+
+[itemdef 01a3b]
+dupeitem 01a37
+
+[itemdef 01a3c]
+dupeitem 01a37
+
+[itemdef 01a3d]
+dupeitem 01a37
+
+[itemdef 01a3e]
+dupeitem 01a37
+
+[itemdef 01a3f]
+dupeitem 01a37
+
+[itemdef 01a40]
+dupeitem 01a37
+
+[itemdef 01a41]
+dupeitem 01a37
+
+[itemdef 01a42]
+dupeitem 01a37
+
+[itemdef 01a43]
+dupeitem 01a37
+
+[itemdef 01a44]
+dupeitem 01a37
+
+[itemdef 01a45]
+dupeitem 01a37
+
+[itemdef 01a46]
+dupeitem 01a37
+
+[itemdef 01a65]
+dupeitem 01a37
+
+[itemdef 01a66]
+dupeitem 01a37
+
+[itemdef 01a67]
+dupeitem 01a37
+
+[itemdef 01a68]
+dupeitem 01a37
+
+[itemdef 01a69]
+dupeitem 01a37
+
+[itemdef 01a6a]
+dupeitem 01a37
+
+[itemdef 01a6b]
+dupeitem 01a37
+
+[itemdef 01a6c]
+dupeitem 01a37
+
+[itemdef 01a6d]
+dupeitem 01a37
+
+[itemdef 01a6e]
+dupeitem 01a37
+
+[itemdef 01a6f]
+dupeitem 01a37
+
+[itemdef 01a70]
+dupeitem 01a37
+
+[itemdef 01a71]
+dupeitem 01a37
+
+[itemdef 01a72]
+dupeitem 01a37
+
+[itemdef 01a73]
+dupeitem 01a37
+
+[itemdef 01a74]
+dupeitem 01a37
+
+//cracks tile
+[itemdef 01b01]
+defname i_tile_cracks
+tag.category buildings
+tag.subsection tiles
+tag.description cracks tile
+dupelist 01b02,01b03,01b04,01b05,01b06,01b08
+
+[itemdef 01b02]
+dupeitem 01b01
+
+[itemdef 01b03]
+dupeitem 01b01
+
+[itemdef 01b04]
+dupeitem 01b01
+
+[itemdef 01b05]
+dupeitem 01b01
+
+[itemdef 01b06]
+dupeitem 01b01
+
+[itemdef 01b08]
+dupeitem 01b01
+
+//dirt 2
+[itemdef 01b27]
+defname i_tile_dirt_2
+tag.category buildings
+tag.subsection tiles
+tag.description dirt 2
+dupelist 01b28,01b29,01b2a,01b2b,01b2c,01b2d,01b2e,01b2f,01b30,01b31,01b32,01b33,01b34,01b35,01b36,01b37,01b38,01b39,01b3a,01b3b,01b3c,01b3d,01b3e
+
+[itemdef 01b28]
+dupeitem 01b27
+
+[itemdef 01b29]
+dupeitem 01b27
+
+[itemdef 01b2a]
+dupeitem 01b27
+
+[itemdef 01b2b]
+dupeitem 01b27
+
+[itemdef 01b2c]
+dupeitem 01b27
+
+[itemdef 01b2d]
+dupeitem 01b27
+
+[itemdef 01b2e]
+dupeitem 01b27
+
+[itemdef 01b2f]
+dupeitem 01b27
+
+[itemdef 01b30]
+dupeitem 01b27
+
+[itemdef 01b31]
+dupeitem 01b27
+
+[itemdef 01b32]
+dupeitem 01b27
+
+[itemdef 01b33]
+dupeitem 01b27
+
+[itemdef 01b34]
+dupeitem 01b27
+
+[itemdef 01b35]
+dupeitem 01b27
+
+[itemdef 01b36]
+dupeitem 01b27
+
+[itemdef 01b37]
+dupeitem 01b27
+
+[itemdef 01b38]
+dupeitem 01b27
+
+[itemdef 01b39]
+dupeitem 01b27
+
+[itemdef 01b3a]
+dupeitem 01b27
+
+[itemdef 01b3b]
+dupeitem 01b27
+
+[itemdef 01b3c]
+dupeitem 01b27
+
+[itemdef 01b3d]
+dupeitem 01b27
+
+[itemdef 01b3e]
+dupeitem 01b27
+
+//hole
+[itemdef 01b71]
+defname i_tile_hole
+tag.category buildings
+tag.subsection tiles
+tag.description hole
+
+//refuse
+[itemdef 01b9f]
+defname i_tile_refuse
+tag.category buildings
+tag.subsection tiles
+tag.description refuse
+dupelist 01ba0,01ba1,01ba2,01ba3,01ba4,01ba5,01ba6,01ba7,01ba8,01ba9,01baa,01bab,01bac,01bad,01bae,01baf,01bb0,01bb1,01bb2,01bb4,01bb5,01bb6,01bb7,01bb8,01bb9,01bba,01bbb,01bbc,01bbd
+
+[itemdef 01ba0]
+dupeitem 01b9f
+
+[itemdef 01ba1]
+dupeitem 01b9f
+
+[itemdef 01ba2]
+dupeitem 01b9f
+
+[itemdef 01ba3]
+dupeitem 01b9f
+
+[itemdef 01ba4]
+dupeitem 01b9f
+
+[itemdef 01ba5]
+dupeitem 01b9f
+
+[itemdef 01ba6]
+dupeitem 01b9f
+
+[itemdef 01ba7]
+dupeitem 01b9f
+
+[itemdef 01ba8]
+dupeitem 01b9f
+
+[itemdef 01ba9]
+dupeitem 01b9f
+
+[itemdef 01baa]
+dupeitem 01b9f
+
+[itemdef 01bab]
+dupeitem 01b9f
+
+[itemdef 01bac]
+dupeitem 01b9f
+
+[itemdef 01bad]
+dupeitem 01b9f
+
+[itemdef 01bae]
+dupeitem 01b9f
+
+[itemdef 01baf]
+dupeitem 01b9f
+
+[itemdef 01bb0]
+dupeitem 01b9f
+
+[itemdef 01bb1]
+dupeitem 01b9f
+
+[itemdef 01bb2]
+dupeitem 01b9f
+
+[itemdef 01bb4]
+dupeitem 01b9f
+
+[itemdef 01bb5]
+dupeitem 01b9f
+
+[itemdef 01bb6]
+dupeitem 01b9f
+
+[itemdef 01bb7]
+dupeitem 01b9f
+
+[itemdef 01bb8]
+dupeitem 01b9f
+
+[itemdef 01bb9]
+dupeitem 01b9f
+
+[itemdef 01bba]
+dupeitem 01b9f
+
+[itemdef 01bbb]
+dupeitem 01b9f
+
+[itemdef 01bbc]
+dupeitem 01b9f
+
+[itemdef 01bbd]
+dupeitem 01b9f
+
+//water
+[itemdef 01797]
+defname i_water
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water
+dupelist 01798,01799,0179a,0179b,0179c,0179d,0179e,0179f,017a0,017a1,017a2,017a3,017a4,017a5,017a6,017a7,017a8,017a9,017aa,017ab,017ac,017ad,017ae,017af,017b0,017b1,017b2,01796
+
+[itemdef 01796]
+dupeitem 01797
+
+[itemdef 01798]
+dupeitem 01797
+
+[itemdef 01799]
+dupeitem 01797
+
+[itemdef 0179a]
+dupeitem 01797
+
+[itemdef 0179b]
+dupeitem 01797
+
+[itemdef 0179c]
+dupeitem 01797
+
+[itemdef 0179d]
+dupeitem 01797
+
+[itemdef 0179e]
+dupeitem 01797
+
+[itemdef 0179f]
+dupeitem 01797
+
+[itemdef 017a0]
+dupeitem 01797
+
+[itemdef 017a1]
+dupeitem 01797
+
+[itemdef 017a2]
+dupeitem 01797
+
+[itemdef 017a3]
+dupeitem 01797
+
+[itemdef 017a4]
+dupeitem 01797
+
+[itemdef 017a5]
+dupeitem 01797
+
+[itemdef 017a6]
+dupeitem 01797
+
+[itemdef 017a7]
+dupeitem 01797
+
+[itemdef 017a8]
+dupeitem 01797
+
+[itemdef 017a9]
+dupeitem 01797
+
+[itemdef 017aa]
+dupeitem 01797
+
+[itemdef 017ab]
+dupeitem 01797
+
+[itemdef 017ac]
+dupeitem 01797
+
+[itemdef 017ad]
+dupeitem 01797
+
+[itemdef 017ae]
+dupeitem 01797
+
+[itemdef 017af]
+dupeitem 01797
+
+[itemdef 017b0]
+dupeitem 01797
+
+[itemdef 017b1]
+dupeitem 01797
+
+[itemdef 017b2]
+dupeitem 01797
+
+//dirt 3
+[itemdef 01dfd]
+defname i_tile_dirt_3
+tag.category buildings
+tag.subsection tiles
+tag.description dirt 3
+dupelist 01dfe,01dff,01e00
+
+[itemdef 01dfe]
+dupeitem 01dfd
+
+[itemdef 01dff]
+dupeitem 01dfd
+
+[itemdef 01e00]
+dupeitem 01dfd
+
+//mud
+[itemdef 01e01]
+defname i_tile_mud
+tag.category buildings
+tag.subsection tiles
+tag.description mud & footprints & stain
+dupelist 01e02,01e03,01e04,01e05,01e06,01e07,01e08,01e09,01e0a,01e0b,01e0c,01e0d,01e0e
+
+[itemdef 01e02]
+dupeitem 01e01
+
+//footprints
+[itemdef 01e03]
+dupeitem 01e01
+
+[itemdef 01e04]
+dupeitem 01e01
+
+[itemdef 01e05]
+dupeitem 01e01
+
+[itemdef 01e06]
+dupeitem 01e01
+
+//stain
+[itemdef 01e07]
+dupeitem 01e01
+
+[itemdef 01e08]
+dupeitem 01e01
+
+[itemdef 01e09]
+dupeitem 01e01
+
+[itemdef 01e0a]
+dupeitem 01e01
+
+[itemdef 01e0b]
+dupeitem 01e01
+
+[itemdef 01e0c]
+dupeitem 01e01
+
+[itemdef 01e0d]
+dupeitem 01e01
+
+[itemdef 01e0e]
+dupeitem 01e01
+
+//wave
+[itemdef 01fa3]
+defname i_tile_wave
+tag.category buildings
+tag.subsection tiles
+tag.description wave
+dupelist 01fa4,01fa5,01fa6,01fa7,01fa8,01fa9,01faa,01fab,01fac,01fad,01fae,01faf,01fb0,01fb1,01fb2,01fb3,01fb4,01fb5,01fb6,01fb7,01fb8,01fb9,01fba,01fbb,01fbc,01fbd,01fbe,01fbf,01fc0,01fc1,01fc2,01fc3,01fc4,01fc5,01fc6,01fc7,01fc8,01fc9,01fca
+
+[itemdef 01fa4]
+dupeitem 01fa3
+
+[itemdef 01fa5]
+dupeitem 01fa3
+
+[itemdef 01fa6]
+dupeitem 01fa3
+
+[itemdef 01fa7]
+dupeitem 01fa3
+
+[itemdef 01fa8]
+dupeitem 01fa3
+
+[itemdef 01fa9]
+dupeitem 01fa3
+
+[itemdef 01faa]
+dupeitem 01fa3
+
+[itemdef 01fab]
+dupeitem 01fa3
+
+[itemdef 01fac]
+dupeitem 01fa3
+
+[itemdef 01fad]
+dupeitem 01fa3
+
+[itemdef 01fae]
+dupeitem 01fa3
+
+[itemdef 01faf]
+dupeitem 01fa3
+
+[itemdef 01fb0]
+dupeitem 01fa3
+
+[itemdef 01fb1]
+dupeitem 01fa3
+
+[itemdef 01fb2]
+dupeitem 01fa3
+
+[itemdef 01fb3]
+dupeitem 01fa3
+
+[itemdef 01fb4]
+dupeitem 01fa3
+
+[itemdef 01fb5]
+dupeitem 01fa3
+
+[itemdef 01fb6]
+dupeitem 01fa3
+
+[itemdef 01fb7]
+dupeitem 01fa3
+
+[itemdef 01fb8]
+dupeitem 01fa3
+
+[itemdef 01fb9]
+dupeitem 01fa3
+
+[itemdef 01fba]
+dupeitem 01fa3
+
+[itemdef 01fbb]
+dupeitem 01fa3
+
+[itemdef 01fbc]
+dupeitem 01fa3
+
+[itemdef 01fbd]
+dupeitem 01fa3
+
+[itemdef 01fbe]
+dupeitem 01fa3
+
+[itemdef 01fbf]
+dupeitem 01fa3
+
+[itemdef 01fc0]
+dupeitem 01fa3
+
+[itemdef 01fc1]
+dupeitem 01fa3
+
+[itemdef 01fc2]
+dupeitem 01fa3
+
+[itemdef 01fc3]
+dupeitem 01fa3
+
+[itemdef 01fc4]
+dupeitem 01fa3
+
+[itemdef 01fc5]
+dupeitem 01fa3
+
+[itemdef 01fc6]
+dupeitem 01fa3
+
+[itemdef 01fc7]
+dupeitem 01fa3
+
+[itemdef 01fc8]
+dupeitem 01fa3
+
+[itemdef 01fc9]
+dupeitem 01fa3
+
+[itemdef 01fca]
+dupeitem 01fa3
+
+//dirt 4
+[itemdef 031f4]
+defname i_tile_dirt_4
+tag.category buildings
+tag.subsection tiles
+tag.description dirt 4
+dupelist 031f5,031f6,031f7,031f8,031f9,031fa,031fb
+
+[itemdef 031f5]
+dupeitem 031f4
+
+[itemdef 031f6]
+dupeitem 031f4
+
+[itemdef 031f7]
+dupeitem 031f4
+
+[itemdef 031f8]
+dupeitem 031f4
+
+[itemdef 031f9]
+dupeitem 031f4
+
+[itemdef 031fa]
+dupeitem 031f4
+
+[itemdef 031fb]
+dupeitem 031f4
+
+//swamp
+[itemdef 03209]
+defname i_tile_swamp
+tag.category buildings
+tag.subsection tiles
+tag.description swamp
+dupelist 0320a,0324b,0324c,0324d,0324e,0324f,03250,03251,03252,03253,03254,03255,03256,03257,03258,03259,0325a,0325b,0325c,0325d,0325e,0325f,03260,03261,03262,03263,03264,03265,03266,03267,03268,03269,0326a,0326b,0326c,0326d,0326e,0326f,03270,03271,03272,03273,03274,03275,03276,03277,03278,03279,0327a,0327b,0327c,0327d,0327e,0327f,03280,03281,03282,03283,03284,03285
+
+[itemdef 0320a]
+dupeitem 03209
+
+[itemdef 0324b]
+dupeitem 03209
+
+[itemdef 0324c]
+dupeitem 03209
+
+[itemdef 0324d]
+dupeitem 03209
+
+[itemdef 0324e]
+dupeitem 03209
+
+[itemdef 0324f]
+dupeitem 03209
+
+[itemdef 03250]
+dupeitem 03209
+
+[itemdef 03251]
+dupeitem 03209
+
+[itemdef 03252]
+dupeitem 03209
+
+[itemdef 03253]
+dupeitem 03209
+
+[itemdef 03254]
+dupeitem 03209
+
+[itemdef 03255]
+dupeitem 03209
+
+[itemdef 03256]
+dupeitem 03209
+
+[itemdef 03257]
+dupeitem 03209
+
+[itemdef 03258]
+dupeitem 03209
+
+[itemdef 03259]
+dupeitem 03209
+
+[itemdef 0325a]
+dupeitem 03209
+
+[itemdef 0325b]
+dupeitem 03209
+
+[itemdef 0325c]
+dupeitem 03209
+
+[itemdef 0325d]
+dupeitem 03209
+
+[itemdef 0325e]
+dupeitem 03209
+
+[itemdef 0325f]
+dupeitem 03209
+
+[itemdef 03260]
+dupeitem 03209
+
+[itemdef 03261]
+dupeitem 03209
+
+[itemdef 03262]
+dupeitem 03209
+
+[itemdef 03263]
+dupeitem 03209
+
+[itemdef 03264]
+dupeitem 03209
+
+[itemdef 03265]
+dupeitem 03209
+
+[itemdef 03266]
+dupeitem 03209
+
+[itemdef 03267]
+dupeitem 03209
+
+[itemdef 03268]
+dupeitem 03209
+
+[itemdef 03269]
+dupeitem 03209
+
+[itemdef 0326a]
+dupeitem 03209
+
+[itemdef 0326b]
+dupeitem 03209
+
+[itemdef 0326c]
+dupeitem 03209
+
+[itemdef 0326d]
+dupeitem 03209
+
+[itemdef 0326e]
+dupeitem 03209
+
+[itemdef 0326f]
+dupeitem 03209
+
+[itemdef 03270]
+dupeitem 03209
+
+[itemdef 03271]
+dupeitem 03209
+
+[itemdef 03272]
+dupeitem 03209
+
+[itemdef 03273]
+dupeitem 03209
+
+[itemdef 03274]
+dupeitem 03209
+
+[itemdef 03275]
+dupeitem 03209
+
+[itemdef 03276]
+dupeitem 03209
+
+[itemdef 03277]
+dupeitem 03209
+
+[itemdef 03278]
+dupeitem 03209
+
+[itemdef 03279]
+dupeitem 03209
+
+[itemdef 0327a]
+dupeitem 03209
+
+[itemdef 0327b]
+dupeitem 03209
+
+[itemdef 0327c]
+dupeitem 03209
+
+[itemdef 0327d]
+dupeitem 03209
+
+[itemdef 0327e]
+dupeitem 03209
+
+[itemdef 0327f]
+dupeitem 03209
+
+[itemdef 03280]
+dupeitem 03209
+
+[itemdef 03281]
+dupeitem 03209
+
+[itemdef 03282]
+dupeitem 03209
+
+[itemdef 03283]
+dupeitem 03209
+
+[itemdef 03284]
+dupeitem 03209
+
+[itemdef 03285]
+dupeitem 03209
+
+//swamp (animated)
+[itemdef 0320d]
+defname i_tile_swamp_anim
+tag.category buildings
+tag.subsection tiles
+tag.description swamp (animated)
+dupelist 0320e,0320f,03210,03211,03213,03214,03215,03216,03217,03218,0321a,0321b,0321c,0321d,0321e,03220,03221,03222,03223,03224,03226,03227,03228,03229,0322a,0322c,0322d,0322e,0322f,03230,03231,03232,03233,03234,03236,03237,03238,03239,0323a,0323b,0323c,0323d,0323e,0323f,03241,03242,03243,03244,03245,03246,03247,03248,03249,0324a
+
+[itemdef 0320e]
+dupeitem 0320d
+
+[itemdef 0320f]
+dupeitem 0320d
+
+[itemdef 03210]
+dupeitem 0320d
+
+[itemdef 03211]
+dupeitem 0320d
+
+[itemdef 03213]
+dupeitem 0320d
+
+[itemdef 03214]
+dupeitem 0320d
+
+[itemdef 03215]
+dupeitem 0320d
+
+[itemdef 03216]
+dupeitem 0320d
+
+[itemdef 03217]
+dupeitem 0320d
+
+[itemdef 03218]
+dupeitem 0320d
+
+[itemdef 0321a]
+dupeitem 0320d
+
+[itemdef 0321b]
+dupeitem 0320d
+
+[itemdef 0321c]
+dupeitem 0320d
+
+[itemdef 0321d]
+dupeitem 0320d
+
+[itemdef 0321e]
+dupeitem 0320d
+
+[itemdef 03220]
+dupeitem 0320d
+
+[itemdef 03221]
+dupeitem 0320d
+
+[itemdef 03222]
+dupeitem 0320d
+
+[itemdef 03223]
+dupeitem 0320d
+
+[itemdef 03224]
+dupeitem 0320d
+
+[itemdef 03226]
+dupeitem 0320d
+
+[itemdef 03227]
+dupeitem 0320d
+
+[itemdef 03228]
+dupeitem 0320d
+
+[itemdef 03229]
+dupeitem 0320d
+
+[itemdef 0322a]
+dupeitem 0320d
+
+[itemdef 0322c]
+dupeitem 0320d
+
+[itemdef 0322d]
+dupeitem 0320d
+
+[itemdef 0322e]
+dupeitem 0320d
+
+[itemdef 0322f]
+dupeitem 0320d
+
+[itemdef 03230]
+dupeitem 0320d
+
+[itemdef 03231]
+dupeitem 0320d
+
+[itemdef 03232]
+dupeitem 0320d
+
+[itemdef 03233]
+dupeitem 0320d
+
+[itemdef 03234]
+dupeitem 0320d
+
+[itemdef 03236]
+dupeitem 0320d
+
+[itemdef 03237]
+dupeitem 0320d
+
+[itemdef 03238]
+dupeitem 0320d
+
+[itemdef 03239]
+dupeitem 0320d
+
+[itemdef 0323a]
+dupeitem 0320d
+
+[itemdef 0323b]
+dupeitem 0320d
+
+[itemdef 0323c]
+dupeitem 0320d
+
+[itemdef 0323d]
+dupeitem 0320d
+
+[itemdef 0323e]
+dupeitem 0320d
+
+[itemdef 0323f]
+dupeitem 0320d
+
+[itemdef 03241]
+dupeitem 0320d
+
+[itemdef 03242]
+dupeitem 0320d
+
+[itemdef 03243]
+dupeitem 0320d
+
+[itemdef 03244]
+dupeitem 0320d
+
+[itemdef 03245]
+dupeitem 0320d
+
+[itemdef 03246]
+dupeitem 0320d
+
+[itemdef 03247]
+dupeitem 0320d
+
+[itemdef 03248]
+dupeitem 0320d
+
+[itemdef 03249]
+dupeitem 0320d
+
+[itemdef 0324a]
+dupeitem 0320d
+
+//lava edge 2
+[itemdef 03286]
+defname i_tile_lava_edge_2
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava edge 2
+dupelist 03287,03288,03289,0328a,0328b,0328c,0328d,0328e,0328f,03290,03291,03292,03293,03294,03295,03296,03297,03298,03299,0329a,0329b,0329c,0329d,0329e,0329f,032a0,032a1,032a2,032a3,032a4,032a5,032a6,032a7,032a8,032a9,032aa,032ab,032ac,032ad,032ae,032af,032b0,032b1
+
+[itemdef 03287]
+dupeitem 03286
+
+[itemdef 03288]
+dupeitem 03286
+
+[itemdef 03289]
+dupeitem 03286
+
+[itemdef 0328a]
+dupeitem 03286
+
+[itemdef 0328b]
+dupeitem 03286
+
+[itemdef 0328c]
+dupeitem 03286
+
+[itemdef 0328d]
+dupeitem 03286
+
+[itemdef 0328e]
+dupeitem 03286
+
+[itemdef 0328f]
+dupeitem 03286
+
+[itemdef 03290]
+dupeitem 03286
+
+[itemdef 03291]
+dupeitem 03286
+
+[itemdef 03292]
+dupeitem 03286
+
+[itemdef 03293]
+dupeitem 03286
+
+[itemdef 03294]
+dupeitem 03286
+
+[itemdef 03295]
+dupeitem 03286
+
+[itemdef 03296]
+dupeitem 03286
+
+[itemdef 03297]
+dupeitem 03286
+
+[itemdef 03298]
+dupeitem 03286
+
+[itemdef 03299]
+dupeitem 03286
+
+[itemdef 0329a]
+dupeitem 03286
+
+[itemdef 0329b]
+dupeitem 03286
+
+[itemdef 0329c]
+dupeitem 03286
+
+[itemdef 0329d]
+dupeitem 03286
+
+[itemdef 0329e]
+dupeitem 03286
+
+[itemdef 0329f]
+dupeitem 03286
+
+[itemdef 032a0]
+dupeitem 03286
+
+[itemdef 032a1]
+dupeitem 03286
+
+[itemdef 032a2]
+dupeitem 03286
+
+[itemdef 032a3]
+dupeitem 03286
+
+[itemdef 032a4]
+dupeitem 03286
+
+[itemdef 032a5]
+dupeitem 03286
+
+[itemdef 032a6]
+dupeitem 03286
+
+[itemdef 032a7]
+dupeitem 03286
+
+[itemdef 032a8]
+dupeitem 03286
+
+[itemdef 032a9]
+dupeitem 03286
+
+[itemdef 032aa]
+dupeitem 03286
+
+[itemdef 032ab]
+dupeitem 03286
+
+[itemdef 032ac]
+dupeitem 03286
+
+[itemdef 032ad]
+dupeitem 03286
+
+[itemdef 032ae]
+dupeitem 03286
+
+[itemdef 032af]
+dupeitem 03286
+
+[itemdef 032b0]
+dupeitem 03286
+
+[itemdef 032b1]
+dupeitem 03286
+
+//lava bubble
+[itemdef 0343b]
+defname i_tile_lava_bubble
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava bubble
+dupelist 0343c,0343d,0343e,0343f,03440,03441,03442,03443,03444,03445,03447,03448,03449,0344a,0344b,0344c,0344e,0344f,03450,03451,03452,03453,03454,03455,03456,03457,03459,0345a,0345b,0345c,0345d,0345e,0345f,03460,03462,03463,03464,03465,03466,03468,03469,0346a,0346b,0346c
+
+[itemdef 0343c]
+dupeitem 0343b
+
+[itemdef 0343d]
+dupeitem 0343b
+
+[itemdef 0343e]
+dupeitem 0343b
+
+[itemdef 0343f]
+dupeitem 0343b
+
+[itemdef 03440]
+dupeitem 0343b
+
+[itemdef 03441]
+dupeitem 0343b
+
+[itemdef 03442]
+dupeitem 0343b
+
+[itemdef 03443]
+dupeitem 0343b
+
+[itemdef 03444]
+dupeitem 0343b
+
+[itemdef 03445]
+dupeitem 0343b
+
+[itemdef 03447]
+dupeitem 0343b
+
+[itemdef 03448]
+dupeitem 0343b
+
+[itemdef 03449]
+dupeitem 0343b
+
+[itemdef 0344a]
+dupeitem 0343b
+
+[itemdef 0344b]
+dupeitem 0343b
+
+[itemdef 0344c]
+dupeitem 0343b
+
+[itemdef 0344e]
+dupeitem 0343b
+
+[itemdef 0344f]
+dupeitem 0343b
+
+[itemdef 03450]
+dupeitem 0343b
+
+[itemdef 03451]
+dupeitem 0343b
+
+[itemdef 03452]
+dupeitem 0343b
+
+[itemdef 03453]
+dupeitem 0343b
+
+[itemdef 03454]
+dupeitem 0343b
+
+[itemdef 03455]
+dupeitem 0343b
+
+[itemdef 03456]
+dupeitem 0343b
+
+[itemdef 03457]
+dupeitem 0343b
+
+[itemdef 03459]
+dupeitem 0343b
+
+[itemdef 0345a]
+dupeitem 0343b
+
+[itemdef 0345b]
+dupeitem 0343b
+
+[itemdef 0345c]
+dupeitem 0343b
+
+[itemdef 0345d]
+dupeitem 0343b
+
+[itemdef 0345e]
+dupeitem 0343b
+
+[itemdef 0345f]
+dupeitem 0343b
+
+[itemdef 03460]
+dupeitem 0343b
+
+[itemdef 03462]
+dupeitem 0343b
+
+[itemdef 03463]
+dupeitem 0343b
+
+[itemdef 03464]
+dupeitem 0343b
+
+[itemdef 03465]
+dupeitem 0343b
+
+[itemdef 03466]
+dupeitem 0343b
+
+[itemdef 03468]
+dupeitem 0343b
+
+[itemdef 03469]
+dupeitem 0343b
+
+[itemdef 0346a]
+dupeitem 0343b
+
+[itemdef 0346b]
+dupeitem 0343b
+
+[itemdef 0346c]
+dupeitem 0343b
+
+//water anim
+[itemdef 0346e]
+defname i_tile_water_anim
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water (animated)
+dupelist 0346f,03470,03471,03472,03473,03474,03475,03476,03477,03478,03479,0347a,0347b,0347c,0347d,0347e,0347f,03480,03481,03482,03483,03484,03485
+
+[itemdef 0346f]
+dupeitem 0346e
+
+[itemdef 03470]
+dupeitem 0346e
+
+[itemdef 03471]
+dupeitem 0346e
+
+[itemdef 03472]
+dupeitem 0346e
+
+[itemdef 03473]
+dupeitem 0346e
+
+[itemdef 03474]
+dupeitem 0346e
+
+[itemdef 03475]
+dupeitem 0346e
+
+[itemdef 03476]
+dupeitem 0346e
+
+[itemdef 03477]
+dupeitem 0346e
+
+[itemdef 03478]
+dupeitem 0346e
+
+[itemdef 03479]
+dupeitem 0346e
+
+[itemdef 0347a]
+dupeitem 0346e
+
+[itemdef 0347b]
+dupeitem 0346e
+
+[itemdef 0347c]
+dupeitem 0346e
+
+[itemdef 0347d]
+dupeitem 0346e
+
+[itemdef 0347e]
+dupeitem 0346e
+
+[itemdef 0347f]
+dupeitem 0346e
+
+[itemdef 03480]
+dupeitem 0346e
+
+[itemdef 03481]
+dupeitem 0346e
+
+[itemdef 03482]
+dupeitem 0346e
+
+[itemdef 03483]
+dupeitem 0346e
+
+[itemdef 03484]
+dupeitem 0346e
+
+[itemdef 03485]
+dupeitem 0346e
+
+//water whirlpool
+[itemdef 03490]
+defname i_tile_water_whirlpool
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water whirlpool
+dupelist 03491,03492,03493
+
+[itemdef 03491]
+dupeitem 03490
+
+[itemdef 03492]
+dupeitem 03490
+
+[itemdef 03493]
+dupeitem 03490
+
+//water anim 2
+[itemdef 03494]
+defname i_tile_water_anim_2
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water (animated) 2
+dupelist 03495,03496,03497,03498,03499,0349a,0349b,0349c,0349d,0349e,0349f,034a0,034a1,034a2,034a3,034a4,034a5,034a6,034a7,034a8,034a9,034aa,034ab
+
+[itemdef 03495]
+dupeitem 03494
+
+[itemdef 03496]
+dupeitem 03494
+
+[itemdef 03497]
+dupeitem 03494
+
+[itemdef 03498]
+dupeitem 03494
+
+[itemdef 03499]
+dupeitem 03494
+
+[itemdef 0349a]
+dupeitem 03494
+
+[itemdef 0349b]
+dupeitem 03494
+
+[itemdef 0349c]
+dupeitem 03494
+
+[itemdef 0349d]
+dupeitem 03494
+
+[itemdef 0349e]
+dupeitem 03494
+
+[itemdef 0349f]
+dupeitem 03494
+
+[itemdef 034a0]
+dupeitem 03494
+
+[itemdef 034a1]
+dupeitem 03494
+
+[itemdef 034a2]
+dupeitem 03494
+
+[itemdef 034a3]
+dupeitem 03494
+
+[itemdef 034a4]
+dupeitem 03494
+
+[itemdef 034a5]
+dupeitem 03494
+
+[itemdef 034a6]
+dupeitem 03494
+
+[itemdef 034a7]
+dupeitem 03494
+
+[itemdef 034a8]
+dupeitem 03494
+
+[itemdef 034a9]
+dupeitem 03494
+
+[itemdef 034aa]
+dupeitem 03494
+
+[itemdef 034ab]
+dupeitem 03494
+
+//water whirlpool 2
+[itemdef 034b5]
+defname i_tile_water_whirlpool_2
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water whirlpool 2
+dupelist 034b6,034b7
+
+[itemdef 034b6]
+dupeitem 034b5
+
+[itemdef 034b7]
+dupeitem 034b5
+
+//water anim 3
+[itemdef 034b8]
+defname i_tile_water_anim_3
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water (animated) 3
+dupelist 034b9,034ba,034bb,034bd,034be,034bf,034c0,034c2,034c3,034c4,034c5,034c7,034c8,034c9,034ca,034d1,034d2,034d3,034d4,034d5
+
+[itemdef 034b9]
+dupeitem 034b8
+
+[itemdef 034ba]
+dupeitem 034b8
+
+[itemdef 034bb]
+dupeitem 034b8
+
+[itemdef 034bd]
+dupeitem 034b8
+
+[itemdef 034be]
+dupeitem 034b8
+
+[itemdef 034bf]
+dupeitem 034b8
+
+[itemdef 034c0]
+dupeitem 034b8
+
+[itemdef 034c2]
+dupeitem 034b8
+
+[itemdef 034c3]
+dupeitem 034b8
+
+[itemdef 034c4]
+dupeitem 034b8
+
+[itemdef 034c5]
+dupeitem 034b8
+
+[itemdef 034c7]
+dupeitem 034b8
+
+[itemdef 034c8]
+dupeitem 034b8
+
+[itemdef 034c9]
+dupeitem 034b8
+
+[itemdef 034ca]
+dupeitem 034b8
+
+[itemdef 034d1]
+dupeitem 034b8
+
+[itemdef 034d2]
+dupeitem 034b8
+
+[itemdef 034d3]
+dupeitem 034b8
+
+[itemdef 034d4]
+dupeitem 034b8
+
+[itemdef 034d5]
+dupeitem 034b8
+
+//waterfall med
+[itemdef 034ed]
+defname i_tile_waterfall_med
+type t_water
+height 5
+tag.category buildings
+tag.subsection tiles
+tag.description waterfall medium
+dupelist 034ee,034ef,034f0,034f1,034f2,0350b,0350c,0350d,0350e,0350f,03510
+
+[itemdef 034ee]
+dupeitem 034ed
+
+[itemdef 034ef]
+dupeitem 034ed
+
+[itemdef 034f0]
+dupeitem 034ed
+
+[itemdef 034f1]
+dupeitem 034ed
+
+[itemdef 034f2]
+dupeitem 034ed
+
+//waterfall high
+[itemdef 034f9]
+defname i_tile_waterfall_high
+type t_water
+height 10
+tag.category buildings
+tag.subsection tiles
+tag.description waterfall high
+dupelist 034f3,034f4,034f5,034f6,034f7,034f8,034fa,034fb,034fc,034fd,034fe,03511,03512,03513,03514,03515,03516,03517,03518,03519,0351a,0351b,0351c
+
+[itemdef 034f3]
+dupeitem 034f9
+
+[itemdef 034f4]
+dupeitem 034f9
+
+[itemdef 034f5]
+dupeitem 034f9
+
+[itemdef 034f6]
+dupeitem 034f9
+
+[itemdef 034f7]
+dupeitem 034f9
+
+[itemdef 034f8]
+dupeitem 034f9
+
+[itemdef 034fa]
+dupeitem 034f9
+
+[itemdef 034fb]
+dupeitem 034f9
+
+[itemdef 034fc]
+dupeitem 034f9
+
+[itemdef 034fd]
+dupeitem 034f9
+
+[itemdef 034fe]
+dupeitem 034f9
+
+//waterfall low
+[itemdef 034ff]
+defname i_tile_waterfall_low
+type t_water
+height 3
+tag.category buildings
+tag.subsection tiles
+tag.description waterfall low
+dupelist 03500,03501,03502,03503,03504,03505,03506,03507,03508,03509,0350a,0351d,0351e,0351f,03520,03521,03522,03523,03524,03525,03526,03527,03528
+
+[itemdef 03500]
+dupeitem 034ff
+
+[itemdef 03501]
+dupeitem 034ff
+
+[itemdef 03502]
+dupeitem 034ff
+
+[itemdef 03503]
+dupeitem 034ff
+
+[itemdef 03504]
+dupeitem 034ff
+
+[itemdef 03505]
+dupeitem 034ff
+
+[itemdef 03506]
+dupeitem 034ff
+
+[itemdef 03507]
+dupeitem 034ff
+
+[itemdef 03508]
+dupeitem 034ff
+
+[itemdef 03509]
+dupeitem 034ff
+
+[itemdef 0350a]
+dupeitem 034ff
+
+[itemdef 0350b]
+dupeitem 034ed
+
+[itemdef 0350c]
+dupeitem 034ed
+
+[itemdef 0350d]
+dupeitem 034ed
+
+[itemdef 0350e]
+dupeitem 034ed
+
+[itemdef 0350f]
+dupeitem 034ed
+
+[itemdef 03510]
+dupeitem 034ed
+
+[itemdef 03511]
+dupeitem 034f9
+
+[itemdef 03512]
+dupeitem 034f9
+
+[itemdef 03513]
+dupeitem 034f9
+
+[itemdef 03514]
+dupeitem 034f9
+
+[itemdef 03515]
+dupeitem 034f9
+
+[itemdef 03516]
+dupeitem 034f9
+
+[itemdef 03517]
+dupeitem 034f9
+
+[itemdef 03518]
+dupeitem 034f9
+
+[itemdef 03519]
+dupeitem 034f9
+
+[itemdef 0351a]
+dupeitem 034f9
+
+[itemdef 0351b]
+dupeitem 034f9
+
+[itemdef 0351c]
+dupeitem 034f9
+
+[itemdef 0351d]
+dupeitem 034ff
+
+[itemdef 0351e]
+dupeitem 034ff
+
+[itemdef 0351f]
+dupeitem 034ff
+
+[itemdef 03520]
+dupeitem 034ff
+
+[itemdef 03521]
+dupeitem 034ff
+
+[itemdef 03522]
+dupeitem 034ff
+
+[itemdef 03523]
+dupeitem 034ff
+
+[itemdef 03524]
+dupeitem 034ff
+
+[itemdef 03525]
+dupeitem 034ff
+
+[itemdef 03526]
+dupeitem 034ff
+
+[itemdef 03527]
+dupeitem 034ff
+
+[itemdef 03528]
+dupeitem 034ff
+
+//water anim 4
+[itemdef 0352d]
+defname i_tile_water_anim_4
+type t_water
+tag.category buildings
+tag.subsection tiles
+tag.description water (animated) 4
+dupelist 0352e,0352f,03530
+
+[itemdef 0352e]
+dupeitem 0352d
+
+[itemdef 0352f]
+dupeitem 0352d
+
+[itemdef 03530]
+dupeitem 0352d
+
+//lava duplicate
+[itemdef 03547]
+defname i_tile_lava_duplicate
+type t_lava
+tag.category buildings
+tag.subsection tiles
+tag.description lava duplicate
+dupelist 03548,03549,0354a,0354b,0354c,0354d,0354e,0354f,03550,03551,03552,03553,03554,03555,03556,03557,03558,03559,0355a,0355b,0355c,0355d,0355e,0355f,03560,03561,03546
+
+[itemdef 03548]
+dupeitem 03547
+
+[itemdef 03549]
+dupeitem 03547
+
+[itemdef 0354a]
+dupeitem 03547
+
+[itemdef 0354b]
+dupeitem 03547
+
+[itemdef 0354c]
+dupeitem 03547
+
+[itemdef 0354d]
+dupeitem 03547
+
+[itemdef 0354e]
+dupeitem 03547
+
+[itemdef 0354f]
+dupeitem 03547
+
+[itemdef 03550]
+dupeitem 03547
+
+[itemdef 03551]
+dupeitem 03547
+
+[itemdef 03552]
+dupeitem 03547
+
+[itemdef 03553]
+dupeitem 03547
+
+[itemdef 03554]
+dupeitem 03547
+
+[itemdef 03555]
+dupeitem 03547
+
+[itemdef 03556]
+dupeitem 03547
+
+[itemdef 03557]
+dupeitem 03547
+
+[itemdef 03558]
+dupeitem 03547
+
+[itemdef 03559]
+dupeitem 03547
+
+[itemdef 0355a]
+dupeitem 03547
+
+[itemdef 0355b]
+dupeitem 03547
+
+[itemdef 0355c]
+dupeitem 03547
+
+[itemdef 0355d]
+dupeitem 03547
+
+[itemdef 0355e]
+dupeitem 03547
+
+[itemdef 0355f]
+dupeitem 03547
+
+[itemdef 03560]
+dupeitem 03547
+
+[itemdef 03561]
+dupeitem 03547
+
+[itemdef 03546]
+dupeitem 03547
+
+[eof]

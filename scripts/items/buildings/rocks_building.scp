@@ -1,0 +1,320 @@
+// 14.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//değişiklikler
+//i_boulder			> i_rock_1
+//i_boulder_x		> i_rock_1_1
+//i_rock_plain		> i_rock_2
+//i_rock_2			> i_rock_2_1
+//i_rock_3			> i_rock_2_2
+//i_rock_plain_x	> i_rock_2_4
+
+//not
+//rock 4, rock 5, rock 6, rock 7, rock 8, rock 9 (water animated) eklendi ve type t_rock = t_arock yapıldı
+
+//rock 1
+[itemdef 0134f]
+defname i_rock_1
+type t_arock
+weight 100
+tag.category buildings
+tag.subsection rocks
+tag.description rock 1
+dupelist 01350,01351,01352,01353,01354,01355,01356,01357,01358,01359,0135a,0135b,0135c,0135d,0135e,0135f,01360,01361,01362
+
+[itemdef 01350]
+dupeitem 0134f
+
+[itemdef 01351]
+dupeitem 0134f
+
+[itemdef 01352]
+dupeitem 0134f
+
+[itemdef 01353]
+dupeitem 0134f
+
+[itemdef 01354]
+dupeitem 0134f
+
+[itemdef 01355]
+dupeitem 0134f
+
+[itemdef 01356]
+dupeitem 0134f
+
+[itemdef 01357]
+dupeitem 0134f
+
+[itemdef 01358]
+dupeitem 0134f
+
+[itemdef 01359]
+dupeitem 0134f
+
+[itemdef 0135a]
+dupeitem 0134f
+
+[itemdef 0135b]
+dupeitem 0134f
+
+[itemdef 0135c]
+dupeitem 0134f
+
+[itemdef 0135d]
+dupeitem 0134f
+
+[itemdef 0135e]
+dupeitem 0134f
+
+[itemdef 0135f]
+dupeitem 0134f
+
+[itemdef 01360]
+dupeitem 0134f
+
+[itemdef 01361]
+dupeitem 0134f
+
+[itemdef 01362]
+defname i_rock_1_1
+dupeitem 0134f
+
+//rock 2
+[itemdef 01363]
+defname i_rock_2
+type t_arock
+weight 50
+tag.category buildings
+tag.subsection rocks
+tag.description rock 2
+dupelist 01364,01365,01366,01367,01368,01369,0136a,0136b,0136c,0136d
+
+[itemdef 01364]
+dupeitem 01363
+
+[itemdef 01365]
+dupeitem 01363
+
+[itemdef 01366]
+dupeitem 01363
+
+[itemdef 01367]
+defname i_rock_2_1
+dupeitem 01363
+
+[itemdef 01368]
+defname i_rock_2_2
+dupeitem 01363
+
+[itemdef 01369]
+dupeitem 01363
+
+[itemdef 0136a]
+dupeitem 01363
+
+[itemdef 0136b]
+dupeitem 01363
+
+[itemdef 0136c]
+defname i_rock_2_3
+dupeitem 01363
+
+[itemdef 0136d]
+defname i_rock_2_4
+dupeitem 01363
+
+//rock 3
+[itemdef 01771]
+defname i_rock_3
+type t_arock
+weight 350
+tag.category buildings
+tag.subsection rocks
+tag.description rock 3
+dupelist 01772,01773,01774,01775,01776,01777,01778,01779,0177a,0177b,0177c
+
+[itemdef 01772]
+dupeitem 01771
+
+[itemdef 01773]
+dupeitem 01771
+
+[itemdef 01774]
+dupeitem 01771
+
+[itemdef 01775]
+dupeitem 01771
+
+[itemdef 01776]
+dupeitem 01771
+
+[itemdef 01777]
+dupeitem 01771
+
+[itemdef 01778]
+dupeitem 01771
+
+[itemdef 01779]
+dupeitem 01771
+
+[itemdef 0177a]
+dupeitem 01771
+
+[itemdef 0177b]
+dupeitem 01771
+
+[itemdef 0177c]
+dupeitem 01771
+
+//rock 4 (water animated)
+[itemdef 03421]
+defname i_rock_4
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 4 (water animated)
+dupelist 03422,03423,03424,03425,03426,03427,03428,03429
+
+[itemdef 03422]
+dupeitem 03421
+
+[itemdef 03423]
+dupeitem 03421
+
+[itemdef 03424]
+dupeitem 03421
+
+[itemdef 03425]
+dupeitem 03421
+
+[itemdef 03426]
+dupeitem 03421
+
+[itemdef 03427]
+dupeitem 03421
+
+[itemdef 03428]
+dupeitem 03421
+
+[itemdef 03429]
+dupeitem 03421
+
+//rock 5 (water animated)
+[itemdef 0342c]
+defname i_rock_5
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 5 (water animated)
+dupelist 0342d,0342e,0342f,03430,03431,03432,03433,03434,03435
+
+[itemdef 0342d]
+dupeitem 0342c
+
+[itemdef 0342e]
+dupeitem 0342c
+
+[itemdef 0342f]
+dupeitem 0342c
+
+[itemdef 03430]
+dupeitem 0342c
+
+[itemdef 03431]
+dupeitem 0342c
+
+[itemdef 03432]
+dupeitem 0342c
+
+[itemdef 03433]
+dupeitem 0342c
+
+[itemdef 03434]
+dupeitem 0342c
+
+[itemdef 03435]
+dupeitem 0342c
+
+//rock 6 (water animated)
+[itemdef 03486]
+defname i_rock_6
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 6 (water animated)
+dupelist 03487,03488,03489,0348a
+
+[itemdef 03487]
+dupeitem 03486
+
+[itemdef 03488]
+dupeitem 03486
+
+[itemdef 03489]
+dupeitem 03486
+
+[itemdef 0348a]
+dupeitem 03486
+
+//rock 7 (water animated)
+[itemdef 0348b]
+defname i_rock_7
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 7 (water animated)
+dupelist 0348c,0348d,0348e,0348f
+
+[itemdef 0348c]
+dupeitem 0348b
+
+[itemdef 0348d]
+dupeitem 0348b
+
+[itemdef 0348e]
+dupeitem 0348b
+
+[itemdef 0348f]
+dupeitem 0348b
+
+//rock 8 (water animated)
+[itemdef 034ac]
+defname i_rock_8
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 8 (water animated)
+dupelist 034ad,034ae,034af
+
+[itemdef 034ad]
+dupeitem 034ac
+
+[itemdef 034ae]
+dupeitem 034ac
+
+[itemdef 034af]
+dupeitem 034ac
+
+//rock 9 (water animated)
+[itemdef 034b0]
+defname i_rock_9
+type t_arock
+tag.category buildings
+tag.subsection rocks
+tag.description rock 9 (water animated)
+dupelist 034b1,034b2,034b3,034b4
+
+[itemdef 034b1]
+dupeitem 034b0
+
+[itemdef 034b2]
+dupeitem 034b0
+
+[itemdef 034b3]
+dupeitem 034b0
+
+[itemdef 034b4]
+dupeitem 034b0
+
+[eof]

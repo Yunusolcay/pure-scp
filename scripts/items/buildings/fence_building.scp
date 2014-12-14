@@ -1,0 +1,717 @@
+// 14.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//stone fence
+[itemdef 07d6]
+defname i_fence_stone
+tag.category buildings
+tag.subsection fences
+tag.description stone fence
+dupelist 07d7,07d8
+
+[itemdef 07d7]
+dupeitem 07d6
+
+[itemdef 07d8]
+dupeitem 07d6
+
+[itemdef 07e1]
+defname i_fence_bridge
+tag.category buildings
+tag.subsection fences
+tag.description bridge fence
+dupelist 07e2,07e3,07e4,07e5,07e6,07e7,07e8,07e9,07ea,07eb,07ec,07ed,07ee,07ef,07f0,07f1,07f2,07f3,07f4,07f5,07f6,07f7,07f8,07f9,07fa,07fb,07fc,07fd,07fe,07ff,0800,0801,0802,0803,0804,0805,0806,0807,0808,0809,080a,080b,080c,080d,080e,080f,0810,0811,0812,0813,0814,0815,0816,0817,0818
+
+[itemdef 07e2]
+dupeitem 07e1
+
+[itemdef 07e3]
+dupeitem 07e1
+
+[itemdef 07e4]
+dupeitem 07e1
+
+[itemdef 07e5]
+dupeitem 07e1
+
+[itemdef 07e6]
+dupeitem 07e1
+
+[itemdef 07e7]
+dupeitem 07e1
+
+[itemdef 07e8]
+dupeitem 07e1
+
+[itemdef 07e9]
+dupeitem 07e1
+
+[itemdef 07ea]
+dupeitem 07e1
+
+[itemdef 07eb]
+dupeitem 07e1
+
+[itemdef 07ec]
+dupeitem 07e1
+
+[itemdef 07ed]
+dupeitem 07e1
+
+[itemdef 07ee]
+dupeitem 07e1
+
+[itemdef 07ef]
+dupeitem 07e1
+
+[itemdef 07f0]
+dupeitem 07e1
+
+[itemdef 07f1]
+dupeitem 07e1
+
+[itemdef 07f2]
+dupeitem 07e1
+
+[itemdef 07f3]
+dupeitem 07e1
+
+[itemdef 07f4]
+dupeitem 07e1
+
+[itemdef 07f5]
+dupeitem 07e1
+
+[itemdef 07f6]
+dupeitem 07e1
+
+[itemdef 07f7]
+dupeitem 07e1
+
+[itemdef 07f8]
+dupeitem 07e1
+
+[itemdef 07f9]
+dupeitem 07e1
+
+[itemdef 07fa]
+dupeitem 07e1
+
+[itemdef 07fb]
+dupeitem 07e1
+
+[itemdef 07fc]
+dupeitem 07e1
+
+[itemdef 07fd]
+dupeitem 07e1
+
+[itemdef 07fe]
+dupeitem 07e1
+
+[itemdef 07ff]
+dupeitem 07e1
+
+[itemdef 0800]
+dupeitem 07e1
+
+[itemdef 0801]
+dupeitem 07e1
+
+[itemdef 0802]
+dupeitem 07e1
+
+[itemdef 0803]
+dupeitem 07e1
+
+[itemdef 0804]
+dupeitem 07e1
+
+[itemdef 0805]
+dupeitem 07e1
+
+[itemdef 0806]
+dupeitem 07e1
+
+[itemdef 0807]
+dupeitem 07e1
+
+[itemdef 0808]
+dupeitem 07e1
+
+[itemdef 0809]
+dupeitem 07e1
+
+[itemdef 080a]
+dupeitem 07e1
+
+[itemdef 080b]
+dupeitem 07e1
+
+[itemdef 080c]
+dupeitem 07e1
+
+[itemdef 080d]
+dupeitem 07e1
+
+[itemdef 080e]
+dupeitem 07e1
+
+[itemdef 080f]
+dupeitem 07e1
+
+[itemdef 0810]
+dupeitem 07e1
+
+[itemdef 0811]
+dupeitem 07e1
+
+[itemdef 0812]
+dupeitem 07e1
+
+[itemdef 0813]
+dupeitem 07e1
+
+[itemdef 0814]
+dupeitem 07e1
+
+[itemdef 0815]
+dupeitem 07e1
+
+[itemdef 0816]
+dupeitem 07e1
+
+[itemdef 0817]
+dupeitem 07e1
+
+[itemdef 0818]
+dupeitem 07e1
+
+//wooden fence
+[itemdef 03b3]
+defname i_fence_wood
+tag.category buildings
+tag.subsection fences
+tag.description wooden fence
+dupelist 03b4,03b5,03b6,0835,0836,0837,0838
+
+[itemdef 03b4]
+dupeitem 03b3
+
+[itemdef 03b5]
+dupeitem 03b3
+
+[itemdef 03b6]
+dupeitem 03b3
+
+[itemdef 0835]
+dupeitem 03b3
+
+[itemdef 0836]
+dupeitem 03b3
+
+[itemdef 0837]
+dupeitem 03b3
+
+[itemdef 0838]
+dupeitem 03b3
+
+//iron fence
+[itemdef 0821]
+defname i_fence_iron
+tag.category buildings
+tag.subsection fences
+tag.description iron fence
+dupelist 0822,0823,0849,084a,084b
+
+[itemdef 0822]
+dupeitem 0821
+
+[itemdef 0823]
+dupeitem 0821
+
+[itemdef 0849]
+dupeitem 0821
+
+[itemdef 084a]
+dupeitem 0821
+
+[itemdef 084b]
+dupeitem 0821
+
+//iron gate
+[itemdef 0824]
+defname i_gate_iron
+type t_door
+tag.category buildings
+tag.subsection fences
+tag.description iron gate
+dupelist 0825,0826,0827,0828,0829,082a,082b,082c,082d,082e,082f,0830,0831,0832,0833
+
+[itemdef 0825]
+dupeitem 0824
+
+[itemdef 0826]
+dupeitem 0824
+
+[itemdef 0827]
+dupeitem 0824
+
+[itemdef 0828]
+dupeitem 0824
+
+[itemdef 0829]
+dupeitem 0824
+
+[itemdef 082a]
+dupeitem 0824
+
+[itemdef 082b]
+dupeitem 0824
+
+[itemdef 082c]
+dupeitem 0824
+
+[itemdef 082d]
+dupeitem 0824
+
+[itemdef 082e]
+dupeitem 0824
+
+[itemdef 082f]
+dupeitem 0824
+
+[itemdef 0830]
+dupeitem 0824
+
+[itemdef 0831]
+dupeitem 0824
+
+[itemdef 0832]
+dupeitem 0824
+
+[itemdef 0833]
+dupeitem 0824
+
+//wooden gate
+[itemdef 0839]
+defname i_gate_wood
+type t_door
+tag.category buildings
+tag.subsection fences
+tag.description wooden gate
+dupelist 083a,083b,083c,083d,083e,083f,0840,0841,0842,0843,0844,0845,0846,0847,0848
+
+[itemdef 083a]
+dupeitem 0839
+
+[itemdef 083b]
+dupeitem 0839
+
+[itemdef 083c]
+dupeitem 0839
+
+[itemdef 083d]
+dupeitem 0839
+
+[itemdef 083e]
+dupeitem 0839
+
+[itemdef 083f]
+dupeitem 0839
+
+[itemdef 0840]
+dupeitem 0839
+
+[itemdef 0841]
+dupeitem 0839
+
+[itemdef 0842]
+dupeitem 0839
+
+[itemdef 0843]
+dupeitem 0839
+
+[itemdef 0844]
+dupeitem 0839
+
+[itemdef 0845]
+dupeitem 0839
+
+[itemdef 0846]
+dupeitem 0839
+
+[itemdef 0847]
+dupeitem 0839
+
+[itemdef 0848]
+dupeitem 0839
+
+//iron gate 2
+[itemdef 084c]
+defname i_gate_iron_2
+type t_door
+tag.category buildings
+tag.subsection fences
+tag.description iron gate 2
+dupelist 084d,084e,084f,0850,0851,0852,0853,0854,0855,0856,0857,0858,0859,085a,085b
+
+[itemdef 084d]
+dupeitem 084c
+
+[itemdef 084e]
+dupeitem 084c
+
+[itemdef 084f]
+dupeitem 084c
+
+[itemdef 0850]
+dupeitem 084c
+
+[itemdef 0851]
+dupeitem 084c
+
+[itemdef 0852]
+dupeitem 084c
+
+[itemdef 0853]
+dupeitem 084c
+
+[itemdef 0854]
+dupeitem 084c
+
+[itemdef 0855]
+dupeitem 084c
+
+[itemdef 0856]
+dupeitem 084c
+
+[itemdef 0857]
+dupeitem 084c
+
+[itemdef 0858]
+dupeitem 084c
+
+[itemdef 0859]
+dupeitem 084c
+
+[itemdef 085a]
+dupeitem 084c
+
+[itemdef 085b]
+dupeitem 084c
+
+//wooden fence 2
+[itemdef 085c]
+defname i_fence_wood_2
+tag.category buildings
+tag.subsection fences
+tag.description wooden fence 2
+dupelist 085d,085e,085f,0860,0861,0862,0863,0864,0865,0877,0878
+
+[itemdef 085d]
+dupeitem 085c
+
+[itemdef 085e]
+dupeitem 085c
+
+[itemdef 085f]
+dupeitem 085c
+
+[itemdef 0860]
+dupeitem 085c
+
+[itemdef 0861]
+dupeitem 085c
+
+[itemdef 0862]
+dupeitem 085c
+
+[itemdef 0863]
+dupeitem 085c
+
+[itemdef 0864]
+dupeitem 085c
+
+[itemdef 0865]
+dupeitem 085c
+
+[itemdef 0877]
+dupeitem 085c
+
+[itemdef 0878]
+dupeitem 085c
+
+//wooden gate 2
+[itemdef 0866]
+defname i_gate_wood_2
+type t_door
+tag.category buildings
+tag.subsection fences
+tag.description wooden gate 2
+dupelist 0867,0868,0869,086a,086b,086c,086d,086e,086f,0870,0871,0872,0873,0874,0875
+
+[itemdef 0867]
+dupeitem 0866
+
+[itemdef 0868]
+dupeitem 0866
+
+[itemdef 0869]
+dupeitem 0866
+
+[itemdef 086a]
+dupeitem 0866
+
+[itemdef 086b]
+dupeitem 0866
+
+[itemdef 086c]
+dupeitem 0866
+
+[itemdef 086d]
+dupeitem 0866
+
+[itemdef 086e]
+dupeitem 0866
+
+[itemdef 086f]
+dupeitem 0866
+
+[itemdef 0870]
+dupeitem 0866
+
+[itemdef 0871]
+dupeitem 0866
+
+[itemdef 0872]
+dupeitem 0866
+
+[itemdef 0873]
+dupeitem 0866
+
+[itemdef 0874]
+dupeitem 0866
+
+[itemdef 0875]
+dupeitem 0866
+
+//wooden railing fence
+[itemdef 087e]
+defname i_fence_railing_wooden
+tag.category buildings
+tag.subsection fences
+tag.description wooden railing fence
+dupelist 087f,0880,0881,0882,0883,0884,0885,0886,0887,0888,0889
+
+[itemdef 087f]
+dupeitem 087e
+
+[itemdef 0880]
+dupeitem 087e
+
+[itemdef 0881]
+dupeitem 087e
+
+[itemdef 0882]
+dupeitem 087e
+
+[itemdef 0883]
+dupeitem 087e
+
+[itemdef 0884]
+dupeitem 087e
+
+[itemdef 0885]
+dupeitem 087e
+
+[itemdef 0886]
+dupeitem 087e
+
+[itemdef 0887]
+dupeitem 087e
+
+[itemdef 0888]
+dupeitem 087e
+
+[itemdef 0889]
+dupeitem 087e
+
+//wooden fence 3
+[itemdef 088a]
+defname i_fence_wood_3
+tag.category buildings
+tag.subsection fences
+tag.description wooden fence 3
+dupelist 088b
+
+[itemdef 088b]
+dupeitem 088a
+
+//wooden banister fence
+[itemdef 08ae]
+defname i_fence_banister
+tag.category buildings
+tag.subsection fences
+tag.description wooden banister fence
+dupelist 08af,08b0,08b1,08b2,08b3,08b4,08b5,08b6,08b7,08b8,08b9,08ba,08bb,08bc,08bd,08be,08bf,08c0,08c1,08c2,08c3,08c4,08c5,08c6,08c7,08c8,08c9,08ca
+
+[itemdef 08af]
+dupeitem 08ae
+
+[itemdef 08b0]
+dupeitem 08ae
+
+[itemdef 08b1]
+dupeitem 08ae
+
+[itemdef 08b2]
+dupeitem 08ae
+
+[itemdef 08b3]
+dupeitem 08ae
+
+[itemdef 08b4]
+dupeitem 08ae
+
+[itemdef 08b5]
+dupeitem 08ae
+
+[itemdef 08b6]
+dupeitem 08ae
+
+[itemdef 08b7]
+dupeitem 08ae
+
+[itemdef 08b8]
+dupeitem 08ae
+
+[itemdef 08b9]
+dupeitem 08ae
+
+[itemdef 08ba]
+dupeitem 08ae
+
+[itemdef 08bb]
+dupeitem 08ae
+
+[itemdef 08bc]
+dupeitem 08ae
+
+[itemdef 08bd]
+dupeitem 08ae
+
+[itemdef 08be]
+dupeitem 08ae
+
+[itemdef 08bf]
+dupeitem 08ae
+
+[itemdef 08c0]
+dupeitem 08ae
+
+[itemdef 08c1]
+dupeitem 08ae
+
+[itemdef 08c2]
+dupeitem 08ae
+
+[itemdef 08c3]
+dupeitem 08ae
+
+[itemdef 08c4]
+dupeitem 08ae
+
+[itemdef 08c5]
+dupeitem 08ae
+
+[itemdef 08c6]
+dupeitem 08ae
+
+[itemdef 08c7]
+dupeitem 08ae
+
+[itemdef 08c8]
+dupeitem 08ae
+
+[itemdef 08c9]
+dupeitem 08ae
+
+[itemdef 08ca]
+dupeitem 08ae
+
+//stone railing fence 2
+[itemdef 08eb]
+defname i_fence_railing_stone_2
+tag.category buildings
+tag.subsection fences
+tag.description stone railing fence 2
+dupelist 08ec,08ed,08ee,08fb,08fc
+
+[itemdef 08ec]
+dupeitem 08eb
+
+[itemdef 08ed]
+dupeitem 08eb
+
+[itemdef 08ee]
+dupeitem 08eb
+
+//stone railing fence 3
+[itemdef 08ef]
+defname i_fence_railing_stone_3
+tag.category buildings
+tag.subsection fences
+tag.description stone railing fence 3
+dupelist 08f0,08f1,08f2,08fb,08fc
+
+[itemdef 08f0]
+dupeitem 08ef
+
+[itemdef 08f1]
+dupeitem 08ef
+
+[itemdef 08f2]
+dupeitem 08ef
+
+//stone railing fence 4
+[itemdef 08f3]
+defname i_fence_railing_stone_4
+tag.category buildings
+tag.subsection fences
+tag.description stone railing fence 4
+dupelist 08f4,08f5,08f6,08fb,08fc
+
+[itemdef 08f4]
+dupeitem 08f3
+
+[itemdef 08f5]
+dupeitem 08f3
+
+[itemdef 08f6]
+dupeitem 08f3
+
+//stone railing fence 5
+[itemdef 08f7]
+defname i_fence_railing_stone_5
+tag.category buildings
+tag.subsection fences
+tag.description stone railing fence 5
+dupelist 08f8,08f9,08fa,08fb,08fc
+
+[itemdef 08f8]
+dupeitem 08f7
+
+[itemdef 08f9]
+dupeitem 08f7
+
+[itemdef 08fa]
+dupeitem 08f7
+
+[itemdef 08fb]
+dupeitem 08f7
+
+[itemdef 08fc]
+dupeitem 08f7
+
+[eof]

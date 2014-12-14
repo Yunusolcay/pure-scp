@@ -1,0 +1,384 @@
+// 14.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//doors_secret_building.scp
+
+[typedef t_custom_door]
+// TDATA1 is the ID when opened
+// TDATA2 is the ID when closed
+// FIXME: Implement keys, secure locks, pickable locks, and traps.
+on=@dclick
+if (<id> == <tdata1>)
+	id <tdata2>
+else
+	id <tdata1>
+endif
+update
+return 1
+
+//tent door
+[itemdef 022c]
+defname i_door_tent
+dupelist 022f
+
+on=@dclick
+if (<dispid> == i_door_tent)
+	dispid i_door_tent_o
+else
+	dispid 022e
+endif
+
+//tent door (open)
+[itemdef 022d]
+defname i_door_tent_open
+dupelist 022e
+
+[itemdef 022e]
+dupeitem 022d
+
+[itemdef 022f]
+dupeitem 022c
+
+//0.56c start
+//tent door 1
+[itemdef 0432]
+defname i_door_tent
+type t_custom_door
+tdata1 0432 //id when opened
+tdata2 022f //id when closed
+
+[itemdef 022f]
+defname i_door_tent_open
+type t_custom_door
+
+//tent door 2
+[itemdef 0435]
+defname i_door_tent_2
+type t_custom_door
+tdata1 0435 //id when closed
+tdata2 022c //id when open
+
+[itemdef 022c]
+defname i_door_tent_2_open
+type t_custom_door
+//0.56c end
+
+//wall door
+[itemdef 0e8]
+defname i_wall_door
+type t_door
+dupelist 0ea,0ec,0ee,0f0,0f2,0f4,0f6
+
+[itemdef 0e9]
+defname i_wall_door_open
+type t_door_open
+dupelist 0eb,0ed,0ef,0f1,0f3,0f5,0f7
+
+[itemdef 0ea]
+dupeitem 0e8
+
+[itemdef 0eb]
+dupeitem 0e9
+
+[itemdef 0ec]
+dupeitem 0e8
+
+[itemdef 0ed]
+dupeitem 0e9
+
+[itemdef 0ee]
+dupeitem 0e8
+
+[itemdef 0ef]
+dupeitem 0e9
+
+[itemdef 0f0]
+dupeitem 0e8
+
+[itemdef 0f1]
+dupeitem 0e9
+
+[itemdef 0f2]
+dupeitem 0e8
+
+[itemdef 0f3]
+dupeitem 0e9
+
+[itemdef 0f4]
+dupeitem 0e8
+
+[itemdef 0f5]
+dupeitem 0e9
+
+[itemdef 0f6]
+dupeitem 0e8
+
+[itemdef 0f7]
+dupeitem 0e9
+
+//wall door 2
+[itemdef 0314]
+defname i_wall_door_2
+type t_door
+dupelist 0316,0318,031a,031c,031e,0320,0322
+
+[itemdef 0315]
+defname i_wall_door_2_open
+type t_door_open
+dupelist 0317,0319,031b,031d,031f,0321,0323
+
+[itemdef 0316]
+dupeitem 0314
+
+[itemdef 0317]
+dupeitem 0315
+
+[itemdef 0318]
+dupeitem 0314
+
+[itemdef 0319]
+dupeitem 0315
+
+[itemdef 031a]
+dupeitem 0314
+
+[itemdef 031b]
+dupeitem 0315
+
+[itemdef 031c]
+dupeitem 0314
+
+[itemdef 031d]
+dupeitem 0315
+
+[itemdef 031e]
+dupeitem 0314
+
+[itemdef 031f]
+dupeitem 0315
+
+[itemdef 0320]
+dupeitem 0314
+
+[itemdef 0321]
+dupeitem 0315
+
+[itemdef 0322]
+dupeitem 0314
+
+[itemdef 0323]
+dupeitem 0315
+
+//wall door 3
+[itemdef 0324]
+defname i_wall_door_3
+type t_door
+dupelist 0326,0328,032a,032c,032e,0330,0332
+
+[itemdef 0325]
+defname i_wall_door_3_open
+type t_door_open
+dupelist 0327,0329,032b,032d,032f,0331,0333
+
+[itemdef 0326]
+dupeitem 0324
+
+[itemdef 0327]
+dupeitem 0325
+
+[itemdef 0328]
+dupeitem 0324
+
+[itemdef 0329]
+dupeitem 0325
+
+[itemdef 032a]
+dupeitem 0324
+
+[itemdef 032b]
+dupeitem 0325
+
+[itemdef 032c]
+dupeitem 0324
+
+[itemdef 032d]
+dupeitem 0325
+
+[itemdef 032e]
+dupeitem 0324
+
+[itemdef 032f]
+dupeitem 0325
+
+[itemdef 0330]
+dupeitem 0324
+
+[itemdef 0331]
+dupeitem 0325
+
+[itemdef 0332]
+dupeitem 0324
+
+[itemdef 0333]
+dupeitem 0325
+
+//wall door 4
+[itemdef 0334]
+defname i_wall_door_4
+type t_door
+dupelist 0336,0338,033a,033c,033e,0340,0342
+
+[itemdef 0335]
+defname i_wall_door_4_open
+type t_door_open
+dupelist 0337,0339,033b,033d,033f,0341,0343
+
+[itemdef 0336]
+dupeitem 0334
+
+[itemdef 0337]
+dupeitem 0335
+
+[itemdef 0338]
+dupeitem 0334
+
+[itemdef 0339]
+dupeitem 0335
+
+[itemdef 033a]
+dupeitem 0334
+
+[itemdef 033b]
+dupeitem 0335
+
+[itemdef 033c]
+dupeitem 0334
+
+[itemdef 033d]
+dupeitem 0335
+
+[itemdef 033e]
+dupeitem 0334
+
+[itemdef 033f]
+dupeitem 0335
+
+[itemdef 0340]
+dupeitem 0334
+
+[itemdef 0341]
+dupeitem 0335
+
+[itemdef 0342]
+dupeitem 0334
+
+[itemdef 0343]
+dupeitem 0335
+
+//wall door 5
+[itemdef 0344]
+defname i_wall_door_5
+type t_door
+dupelist 0346,0348,034a,034c,034e,0350,0352
+
+[itemdef 0345]
+defname i_wall_door_5_open
+type t_door_open
+dupelist 0347,0349,034b,034d,034f,0351,0353
+
+[itemdef 0346]
+dupeitem 0344
+
+[itemdef 0347]
+dupeitem 0345
+
+[itemdef 0348]
+dupeitem 0344
+
+[itemdef 0349]
+dupeitem 0345
+
+[itemdef 034a]
+dupeitem 0344
+
+[itemdef 034b]
+dupeitem 0345
+
+[itemdef 034c]
+dupeitem 0344
+
+[itemdef 034d]
+dupeitem 0345
+
+[itemdef 034e]
+dupeitem 0344
+
+[itemdef 034f]
+dupeitem 0345
+
+[itemdef 0350]
+dupeitem 0344
+
+[itemdef 0351]
+dupeitem 0345
+
+[itemdef 0352]
+dupeitem 0344
+
+[itemdef 0353]
+dupeitem 0345
+
+//wall door 6
+[itemdef 0354]
+defname i_wall_door_6
+type t_door
+dupelist 0356,0358,035a,035c,035e,0360,0362
+
+[itemdef 0355]
+defname i_wall_door_6_open
+type t_door_open
+dupelist 0357,0359,035b,035d,035f,0361,0363
+
+[itemdef 0356]
+dupeitem 0354
+
+[itemdef 0357]
+dupeitem 0355
+
+[itemdef 0358]
+dupeitem 0354
+
+[itemdef 0359]
+dupeitem 0355
+
+[itemdef 035a]
+dupeitem 0354
+
+[itemdef 035b]
+dupeitem 0355
+
+[itemdef 035c]
+dupeitem 0354
+
+[itemdef 035d]
+dupeitem 0355
+
+[itemdef 035e]
+dupeitem 0354
+
+[itemdef 035f]
+dupeitem 0355
+
+[itemdef 0360]
+dupeitem 0354
+
+[itemdef 0361]
+dupeitem 0355
+
+[itemdef 0362]
+dupeitem 0354
+
+[itemdef 0363]
+dupeitem 0355
+
+[eof]

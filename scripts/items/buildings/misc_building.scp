@@ -1,0 +1,467 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2007
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, November 23, 2003
+//
+VERSION=0.56b
+
+//cristaller
+[itemdef 035f6]
+//sand
+
+[itemdef 035f7]
+//sand
+
+[itemdef 035f8]
+//sand
+
+[itemdef 035f9]
+//sand
+
+[itemdef 035fa]
+//sand
+
+[itemdef 035fb]
+//sand
+
+[itemdef 035fc]
+//sand
+
+[itemdef 035fd]
+//sand
+
+[itemdef 035fe]
+//sand
+
+[itemdef 035ff]
+//sand
+
+[itemdef 03600]
+//sand
+
+[itemdef 03601]
+//sand
+
+[itemdef 01eca]
+defname i_pylon_stone
+resources=1 i_rock_plain
+tag.category buildings - other
+tag.subsection stone pylon
+tag.description dark @
+
+[itemdef 01ecb]
+defname i_pylon_stone_light
+resources=1 i_rock_plain
+tag.category buildings - other
+tag.subsection stone pylon
+tag.description light @
+
+[itemdef 01ecc]
+defname i_pylon_stone_sand
+resources=1 i_stone_sand
+tag.category buildings - other
+tag.subsection stone pylon
+tag.description sandstone pylon
+
+[itemdef 0378]
+defname i_tent_dagges
+resources=5 i_canvas
+tag.category buildings - walls
+tag.subsection tent dagges
+tag.description @
+dupelist 0379,037a,037b,037c,037d
+
+[itemdef 0379]
+//dagges
+dupeitem 0378
+
+[itemdef 037a]
+//dagges
+dupeitem 0378
+
+[itemdef 037b]
+//dagges
+dupeitem 0378
+
+[itemdef 037c]
+//dagges
+dupeitem 0378
+
+[itemdef 037d]
+//dagges
+dupeitem 0378
+
+[itemdef 08e0]
+//stalagmites
+type T_ROCK
+tag.category Buildings - Floors
+tag.subsection Cave Floor
+tag.description Stalagmites
+dupelist 08e1,08e2,08e3,08e4,08e5,08e6,08e7,08e8,08e9,08ea
+
+[itemdef 08e1]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 08e2]
+//flowstone
+dupeitem 08e0
+tag.description Flowstone
+
+[itemdef 08e3]
+//flowstone
+dupeitem 08e0
+tag.description Flowstone
+
+[itemdef 08e4]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 08e5]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 08e6]
+//flowstone
+dupeitem 08e0
+tag.description Flowstone
+
+[itemdef 08e7]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 08e8]
+//flowstone
+dupeitem 08e0
+tag.description Flowstone
+
+[itemdef 08e9]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 08ea]
+//stalagmites
+dupeitem 08e0
+
+[itemdef 03a5]
+defname i_PIER_1
+RESOURCES=50 i_log
+tag.category Buildings - Docks
+tag.subsection Pier
+tag.description @
+dupelist 03aa,03ab,03ac,03ad,03ae,03af,03b0
+
+[itemdef 03a6]
+defname i_PIER_2
+RESOURCES=50 I_CLOTH
+tag.category Buildings - Docks
+tag.subsection Rope
+tag.description @
+dupelist 03a7,03a8,03a9
+
+[itemdef 03a7]
+//rope
+dupeitem 03a6
+
+[itemdef 03a8]
+//rope
+dupeitem 03a6
+
+[itemdef 03a9]
+//rope
+dupeitem 03a6
+
+[itemdef 03aa]
+//pier
+dupeitem 03a5
+
+[itemdef 03ab]
+//pier
+dupeitem 03a5
+
+[itemdef 03ac]
+//pier
+dupeitem 03a5
+
+[itemdef 03ad]
+//pier
+dupeitem 03a5
+
+[itemdef 03ae]
+//pier
+dupeitem 03a5
+
+[itemdef 03af]
+//pier
+dupeitem 03a5
+
+[itemdef 03b0]
+//pier
+dupeitem 03a5
+
+
+[itemdef 0899]
+defname i_ladder_wood
+RESOURCES=15 I_BOARD
+tag.category Buildings - Other
+tag.subsection Wooden Ladder 1
+tag.description @
+dupelist 089b
+
+[itemdef 089a]
+//wooden ladder
+dupelist 089c
+RESOURCES=15 I_BOARD
+tag.category Buildings - Other
+tag.subsection Wooden Ladder 2
+tag.description @
+
+[itemdef 089b]
+//wooden ladder
+dupeitem 0899
+
+[itemdef 089c]
+//wooden ladder
+dupeitem 089a
+
+[itemdef 089d]
+//wooden ladder
+dupelist 089e
+// HEIGHT=14 // not 12 like it says.
+RESOURCES=15 I_BOARD
+tag.category Buildings - Other
+tag.subsection Wooden Ladder 3
+tag.description @
+
+[itemdef 089e]
+//wooden ladder
+dupeitem 089d
+
+[itemdef 089f]
+defname i_ladder_wood_2
+RESOURCES=15 I_BOARD
+tag.category Buildings - Other
+tag.subsection Wooden Ladder 2
+tag.description @
+dupelist 08a0,08a1,08a2,08a3,08a4
+
+[itemdef 08a0]
+//wooden ladder
+dupeitem 089f
+
+[itemdef 08a1]
+//wooden ladder
+dupeitem 089f
+
+[itemdef 08a2]
+//wooden ladder
+dupeitem 089f
+
+[itemdef 08a3]
+//wooden ladder
+dupeitem 089f
+
+[itemdef 08a4]
+//wooden ladder
+dupeitem 089f
+
+[itemdef 08a5]
+defname i_ladder_rope
+RESOURCES=10 I_ROPE
+tag.category Buildings - Other
+tag.subsection Rope Ladder
+tag.description @
+dupelist 08a6
+
+[itemdef 08a6]
+//rope ladder
+dupeitem 08a5
+
+[itemdef 08cb]
+defname i_edging_wood
+RESOURCES=5 I_BOARD
+tag.category Buildings - Other
+tag.subsection Edging
+tag.description @
+dupelist 08cc,08cd,08ce
+
+[itemdef 08cc]
+//edging
+dupeitem 08cb
+
+[itemdef 08cd]
+//edging
+dupeitem 08cb
+
+[itemdef 08ce]
+//edging
+dupeitem 08cb
+
+[itemdef 01e9a]
+defname i_hook_and_pulley
+//RESOURCES3=1 i_PULLEY, i_ROPE, i_HOOK
+tag.category Buildings - Other
+tag.subsection Hooks, Pulleys and Winches
+tag.description Hook
+dupelist 01e9b
+
+[itemdef 01e9b]
+dupeitem 01e9a
+
+[itemdef 01e9c]
+defname i_pullies
+//RESOURCES3=2 i_PULLEY, i_ROPE
+tag.category Buildings - Other
+tag.subsection Hooks, Pulleys and Winches
+tag.description Pulley
+dupelist 01e9d,01e9e,01e9f
+
+[itemdef 01e9d]
+dupeitem 01e9c
+
+[itemdef 01e9e]
+dupeitem 01e9c
+
+[itemdef 01e9f]
+dupeitem 01e9c
+
+[itemdef 01ea0]
+defname i_rope_bundle
+RESOURCES=1 i_ROPE
+WEIGHT=1
+tag.category Buildings - Other
+tag.subsection Hooks, Pulleys and Winches
+tag.description Rope
+dupelist 01ea1,01ea2
+
+[itemdef 01ea1]
+dupeitem 01ea0
+
+[itemdef 01ea2]
+dupeitem 01ea0
+
+[itemdef 01ea3]
+defname i_net
+RESOURCES=5 i_ROPE
+WEIGHT=5
+tag.category Buildings - Other
+tag.subsection Hooks, Pulleys and Winches
+tag.description Net
+dupelist 01ea4,01ea5,01ea6
+
+[itemdef 01ea4]
+dupeitem 01ea3
+
+[itemdef 01ea5]
+dupeitem 01ea3
+
+[itemdef 01ea6]
+dupeitem 01ea3
+
+[itemdef 01ea8]
+defname i_winch
+RESOURCES=5 i_ROPE, 2 I_GEARS, 20 i_ingot_iron
+WEIGHT=17
+tag.category Buildings - Other
+tag.subsection Hooks, Pulleys and Winches
+tag.description Winch
+dupelist 01ea9,01eaa,01eab,01eac,01ead,01eae,01eaf
+
+[itemdef 01ea9]
+dupeitem 01ea8
+
+[itemdef 01eaa]
+dupeitem 01ea8
+
+[itemdef 01eab]
+dupeitem 01ea8
+
+[itemdef 01eac]
+dupeitem 01ea8
+
+[itemdef 01ead]
+dupeitem 01ea8
+
+[itemdef 01eae]
+dupeitem 01ea8
+
+[itemdef 01eaf]
+dupeitem 01ea8
+
+
+
+[itemdef 0233c]
+// serpant pillar
+dupelist 0233d,0233e,0233f,02340,02341,02342,02343,02344,02345,02346,02347,02348,02349,0234a
+
+[itemdef 0233d]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 0233e]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 0233f]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02340]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02341]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02342]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02343]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02344]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02345]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02346]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02347]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02348]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02349]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 0234a]
+// serpant pillar
+dupeitem 0233c
+
+[itemdef 02710]
+//tightrope
+dupelist 02711
+
+[itemdef 02711]
+//tightrope
+dupeitem 02710
+
+[eof]

@@ -1,0 +1,779 @@
+// 13.12.2014 - mon jeu
+// version 0.56b - 0.56c
+
+//stone stairs
+[itemdef 03ee]
+defname i_stairs_stone
+tag.category buildings
+tag.subsection stairs
+tag.description stone stairs
+dupelist 03ef,03f0,03f1,03f2,03f3,03f4,03f5,03f6,03f7,03f8,03f9,03fa,03fb,03fc,03fd,03fe,03ff,0400,0401,0402
+
+[itemdef 03ef]
+dupeitem 03ee
+
+[itemdef 03f0]
+dupeitem 03ee
+
+[itemdef 03f1]
+dupeitem 03ee
+
+[itemdef 03f2]
+dupeitem 03ee
+
+[itemdef 03f3]
+dupeitem 03ee
+
+[itemdef 03f4]
+dupeitem 03ee
+
+[itemdef 03f5]
+dupeitem 03ee
+
+[itemdef 03f6]
+dupeitem 03ee
+
+[itemdef 03f7]
+dupeitem 03ee
+
+[itemdef 03f8]
+dupeitem 03ee
+
+[itemdef 03f9]
+dupeitem 03ee
+
+[itemdef 03fa]
+dupeitem 03ee
+
+[itemdef 03fb]
+dupeitem 03ee
+
+[itemdef 03fc]
+dupeitem 03ee
+
+[itemdef 03fd]
+dupeitem 03ee
+
+[itemdef 03fe]
+dupeitem 03ee
+
+[itemdef 03ff]
+dupeitem 03ee
+
+[itemdef 0400]
+dupeitem 03ee
+
+[itemdef 0401]
+dupeitem 03ee
+
+[itemdef 0402]
+dupeitem 03ee
+
+//marble stairs
+[itemdef 070a]
+defname i_stairs_marble
+tag.category buildings
+tag.subsection stairs
+tag.description marble stairs
+dupelist 0709,070b,070c,070d,070e,070f,0710,0711,0712,0713,0714,0715,0716,0717,0718,0719,071a,071b,071c,071d
+
+[itemdef 0709]
+dupeitem 070a
+
+[itemdef 070b]
+dupeitem 070a
+
+[itemdef 070c]
+dupeitem 070a
+
+[itemdef 070d]
+dupeitem 070a
+
+[itemdef 070e]
+dupeitem 070a
+
+[itemdef 070f]
+dupeitem 070a
+
+[itemdef 0710]
+dupeitem 070a
+
+[itemdef 0711]
+dupeitem 070a
+
+[itemdef 0712]
+dupeitem 070a
+
+[itemdef 0713]
+dupeitem 070a
+
+[itemdef 0714]
+dupeitem 070a
+
+[itemdef 0715]
+dupeitem 070a
+
+[itemdef 0716]
+dupeitem 070a
+
+[itemdef 0717]
+dupeitem 070a
+
+[itemdef 0718]
+dupeitem 070a
+
+[itemdef 0719]
+dupeitem 070a
+
+[itemdef 071a]
+dupeitem 070a
+
+[itemdef 071b]
+dupeitem 070a
+
+[itemdef 071c]
+dupeitem 070a
+
+[itemdef 071d]
+dupeitem 070a
+
+//stone stairs 2
+[itemdef 071e]
+defname i_stairs_stone_2
+tag.category buildings
+tag.subsection stairs
+tag.description stone stairs 2
+dupelist 071f,0736,0737,0749,074a,074b,074c,074d,074e,074f,07da,07df,07e0,0782,0783,0834,0876
+
+[itemdef 071f]
+dupeitem 071e
+
+[itemdef 0782]
+dupeitem 071e
+
+[itemdef 0736]
+dupeitem 071e
+
+[itemdef 0737]
+dupeitem 071e
+
+[itemdef 0749]
+dupeitem 071e
+
+[itemdef 074a]
+dupeitem 071e
+
+[itemdef 074b]
+dupeitem 071e
+
+[itemdef 074c]
+dupeitem 071e
+
+[itemdef 074d]
+dupeitem 071e
+
+[itemdef 074e]
+dupeitem 071e
+
+[itemdef 074f]
+dupeitem 071e
+
+[itemdef 0783]
+dupeitem 071e
+
+[itemdef 0834]
+dupeitem 071e
+
+[itemdef 07da]
+dupeitem 071e
+
+[itemdef 07df]
+dupeitem 071e
+
+[itemdef 07e0]
+dupeitem 071e
+
+[itemdef 0876]
+dupeitem 071e
+
+//wooden staris
+[itemdef 0720]
+defname i_stairs_wood
+tag.category buildings
+tag.subsection stairs
+tag.description wooden stairs
+dupelist 0721,0722,0723,0724,0725,0726,0727,0728,0729,072a,072b,072c,072d,072e,072f,0730,0731,0732,0733,0734,0735
+
+[itemdef 0721]
+dupeitem 0720
+
+[itemdef 0722]
+dupeitem 0720
+
+[itemdef 0723]
+dupeitem 0720
+
+[itemdef 0724]
+dupeitem 0720
+
+[itemdef 0725]
+dupeitem 0720
+
+[itemdef 0726]
+dupeitem 0720
+
+[itemdef 0727]
+dupeitem 0720
+
+[itemdef 0728]
+dupeitem 0720
+
+[itemdef 0729]
+dupeitem 0720
+
+[itemdef 072a]
+dupeitem 0720
+
+[itemdef 072b]
+dupeitem 0720
+
+[itemdef 072c]
+dupeitem 0720
+
+[itemdef 072d]
+dupeitem 0720
+
+[itemdef 072e]
+dupeitem 0720
+
+[itemdef 072f]
+dupeitem 0720
+
+[itemdef 0730]
+dupeitem 0720
+
+[itemdef 0731]
+dupeitem 0720
+
+[itemdef 0732]
+dupeitem 0720
+
+[itemdef 0733]
+dupeitem 0720
+
+[itemdef 0734]
+dupeitem 0720
+
+[itemdef 0735]
+dupeitem 0720
+
+//wooden staris 2
+[itemdef 0738]
+defname i_stairs_wood_2
+tag.category buildings
+tag.subsection stairs
+tag.description wooden stairs 2
+dupelist 0739,073a,073b,073c,073d,073e,073f,0740,0741,0742,0743,0744,0745,0746,0747,0748,07b3,07b4,07b5,07b6
+
+[itemdef 0739]
+dupeitem 0738
+
+[itemdef 073a]
+dupeitem 0738
+
+[itemdef 073b]
+dupeitem 0738
+
+[itemdef 073c]
+dupeitem 0738
+
+[itemdef 073d]
+dupeitem 0738
+
+[itemdef 073e]
+dupeitem 0738
+
+[itemdef 073f]
+dupeitem 0738
+
+[itemdef 0740]
+dupeitem 0738
+
+[itemdef 0741]
+dupeitem 0738
+
+[itemdef 0742]
+dupeitem 0738
+
+[itemdef 0743]
+dupeitem 0738
+
+[itemdef 0744]
+dupeitem 0738
+
+[itemdef 0745]
+dupeitem 0738
+
+[itemdef 0746]
+dupeitem 0738
+
+[itemdef 0747]
+dupeitem 0738
+
+[itemdef 0748]
+dupeitem 0738
+
+[itemdef 07b3]
+dupeitem 0738
+
+[itemdef 07b4]
+dupeitem 0738
+
+[itemdef 07b5]
+dupeitem 0738
+
+[itemdef 07b6]
+dupeitem 0738
+
+[itemdef 0750]
+defname i_stairs_stone_3
+tag.category buildings
+tag.subsection stairs
+tag.description stone stairs 3
+dupelist 0751,0752,0753,0754,0755,0756,0757,0758,0759,075a,075b,075c,075d,075e,075f,0760,0761,0762,0763,0764,0765,0766,0767,0768
+
+[itemdef 0751]
+dupeitem 0750
+
+[itemdef 0752]
+dupeitem 0750
+
+[itemdef 0753]
+dupeitem 0750
+
+[itemdef 0754]
+dupeitem 0750
+
+[itemdef 0755]
+dupeitem 0750
+
+[itemdef 0756]
+dupeitem 0750
+
+[itemdef 0757]
+dupeitem 0750
+
+[itemdef 0758]
+dupeitem 0750
+
+[itemdef 0759]
+dupeitem 0750
+
+[itemdef 075a]
+dupeitem 0750
+
+[itemdef 075b]
+dupeitem 0750
+
+[itemdef 075c]
+dupeitem 0750
+
+[itemdef 075d]
+dupeitem 0750
+
+[itemdef 075e]
+dupeitem 0750
+
+[itemdef 075f]
+dupeitem 0750
+
+[itemdef 0760]
+dupeitem 0750
+
+[itemdef 0761]
+dupeitem 0750
+
+[itemdef 0762]
+dupeitem 0750
+
+[itemdef 0763]
+dupeitem 0750
+
+[itemdef 0764]
+dupeitem 0750
+
+[itemdef 0765]
+dupeitem 0750
+
+[itemdef 0766]
+dupeitem 0750
+
+[itemdef 0767]
+dupeitem 0750
+
+[itemdef 0768]
+dupeitem 0750
+
+//sandstone stairs
+[itemdef 0769]
+defname i_stairs_sandstone
+tag.category buildings
+tag.subsection stairs
+tag.description sandstone stairs
+dupelist 076a,076b,076c,076d,076e,076f,0770,0771,0772,0773,0774,0775,0776,0777,0778,0779,077a,077b,077c,077d,077e,077f,0780,0781
+
+[itemdef 076a]
+dupeitem 0769
+
+[itemdef 076b]
+dupeitem 0769
+
+[itemdef 076c]
+dupeitem 0769
+
+[itemdef 076d]
+dupeitem 0769
+
+[itemdef 076e]
+dupeitem 0769
+
+[itemdef 076f]
+dupeitem 0769
+
+[itemdef 0770]
+dupeitem 0769
+
+[itemdef 0771]
+dupeitem 0769
+
+[itemdef 0772]
+dupeitem 0769
+
+[itemdef 0773]
+dupeitem 0769
+
+[itemdef 0774]
+dupeitem 0769
+
+[itemdef 0775]
+dupeitem 0769
+
+[itemdef 0776]
+dupeitem 0769
+
+[itemdef 0777]
+dupeitem 0769
+
+[itemdef 0778]
+dupeitem 0769
+
+[itemdef 0779]
+dupeitem 0769
+
+[itemdef 077a]
+dupeitem 0769
+
+[itemdef 077b]
+dupeitem 0769
+
+[itemdef 077c]
+dupeitem 0769
+
+[itemdef 077d]
+dupeitem 0769
+
+[itemdef 077e]
+dupeitem 0769
+
+[itemdef 077f]
+dupeitem 0769
+
+[itemdef 0780]
+dupeitem 0769
+
+[itemdef 0781]
+dupeitem 0769
+
+//stone stairs 4
+[itemdef 0784]
+defname i_stairs_stone_4
+tag.category buildings
+tag.subsection stairs
+tag.description stone stairs 4
+dupelist 0785,0786,0787,0788,0789,078a,078b,078c,078d,078e,078f,0790,0791,0792,0793,0794,0795,0796,0797,0798,0799,079a,079b,079c
+
+[itemdef 0785]
+dupeitem 0784
+
+[itemdef 0786]
+dupeitem 0784
+
+[itemdef 0787]
+dupeitem 0784
+
+[itemdef 0788]
+dupeitem 0784
+
+[itemdef 0789]
+dupeitem 0784
+
+[itemdef 078a]
+dupeitem 0784
+
+[itemdef 078b]
+dupeitem 0784
+
+[itemdef 078c]
+dupeitem 0784
+
+[itemdef 078d]
+dupeitem 0784
+
+[itemdef 078e]
+dupeitem 0784
+
+[itemdef 078f]
+dupeitem 0784
+
+[itemdef 0790]
+dupeitem 0784
+
+[itemdef 0791]
+dupeitem 0784
+
+[itemdef 0792]
+dupeitem 0784
+
+[itemdef 0793]
+dupeitem 0784
+
+[itemdef 0794]
+dupeitem 0784
+
+[itemdef 0795]
+dupeitem 0784
+
+[itemdef 0796]
+dupeitem 0784
+
+[itemdef 0797]
+dupeitem 0784
+
+[itemdef 0798]
+dupeitem 0784
+
+[itemdef 0799]
+dupeitem 0784
+
+[itemdef 079a]
+dupeitem 0784
+
+[itemdef 079b]
+dupeitem 0784
+
+[itemdef 079c]
+dupeitem 0784
+
+//cave stairs
+[itemdef 079d]
+defname i_cave_step
+defname i_stairs_stone_3
+tag.category buildings
+tag.subsection stairs
+tag.description cave stairs
+dupelist 079e,079f,07b0,07b1,07b2,07b7,07b8,07b9
+
+[itemdef 079e]
+dupeitem 079d
+
+[itemdef 079f]
+dupeitem 079d
+
+[itemdef 07b0]
+dupeitem 079d
+
+[itemdef 07b1]
+dupeitem 079d
+
+[itemdef 07b2]
+dupeitem 079d
+
+[itemdef 07b7]
+dupeitem 079d
+
+[itemdef 07b8]
+dupeitem 079d
+
+[itemdef 07b9]
+dupeitem 079d
+
+[itemdef 07a0]
+//stone stairs
+[itemdef 07a1]
+//stone stairs
+[itemdef 07a2]
+//stone stairs
+
+//stone stairs 5
+[itemdef 07a3]
+defname i_stairs_stone_5
+tag.category buildings
+tag.subsection stairs
+tag.description stone stairs 5
+dupelist 07a4,07a5,07a6,07a7,07a8,07a9,07aa,07ab,07ac,07ad,07ae,07af
+
+[itemdef 07a4]
+dupeitem 07a3
+
+[itemdef 07a5]
+dupeitem 07a3
+
+[itemdef 07a6]
+dupeitem 07a3
+
+[itemdef 07a7]
+dupeitem 07a3
+
+[itemdef 07a8]
+dupeitem 07a3
+
+[itemdef 07a9]
+dupeitem 07a3
+
+[itemdef 07aa]
+dupeitem 07a3
+
+[itemdef 07ab]
+dupeitem 07a3
+
+[itemdef 07ac]
+dupeitem 07a3
+
+[itemdef 07ad]
+dupeitem 07a3
+
+[itemdef 07ae]
+dupeitem 07a3
+
+[itemdef 07af]
+dupeitem 07a3
+
+//carpeted stairs
+[itemdef 07ba]
+defname i_carpet_stairs
+tag.category buildings
+tag.subsection stairs
+tag.description carpet stairs
+dupelist 07bb,07bc,07c7,07c8
+
+[itemdef 07bb]
+dupeitem 07ba
+
+[itemdef 07bc]
+dupeitem 07ba
+
+[itemdef 07c7]
+dupeitem 07ba
+
+[itemdef 07c8]
+dupeitem 07ba
+
+//platform
+[itemdef 07bd]
+defname i_platform
+tag.category buildings
+tag.subsection stairs
+tag.description platform
+dupelist 07be,07bf,07c0,07c1,07c2,07c3,07c4,07c5,07c6
+
+[itemdef 07be]
+dupeitem 07bd
+
+[itemdef 07bf]
+dupeitem 07bd
+
+[itemdef 07c0]
+dupeitem 07bd
+
+[itemdef 07c1]
+dupeitem 07bd
+
+[itemdef 07c2]
+dupeitem 07bd
+
+[itemdef 07c3]
+dupeitem 07bd
+
+[itemdef 07c4]
+dupeitem 07bd
+
+[itemdef 07c5]
+dupeitem 07bd
+
+[itemdef 07c6]
+dupeitem 07bd
+
+//platform 2
+[itemdef 07c9]
+defname i_platform_2
+tag.category buildings
+tag.subsection stairs
+tag.description platform 2
+dupelist 07ca,07cb,07cc,07cd,07ce,07cf,07d0
+
+[itemdef 07ca]
+dupeitem 07c9
+
+[itemdef 07cb]
+dupeitem 07c9
+
+[itemdef 07cc]
+dupeitem 07c9
+
+[itemdef 07cd]
+dupeitem 07c9
+
+[itemdef 07ce]
+dupeitem 07c9
+
+[itemdef 07cf]
+dupeitem 07c9
+
+[itemdef 07d0]
+dupeitem 07c9
+
+//wooden ramp
+[itemdef 087a]
+defname i_ramp_wood
+tag.category buildings
+tag.subsection stairs
+tag.description wooden ramp
+dupelist 087b,087c,087d
+
+[itemdef 087b]
+dupeitem 087a
+
+[itemdef 087c]
+dupeitem 087a
+
+[itemdef 087d]
+dupeitem 087a
+
+//stone ramp
+[itemdef 0915]
+defname i_ramp_stone
+tag.category buildings
+tag.subsection stairs
+tag.description stone ramp
+dupelist 0916,0917,0918
+
+[itemdef 0916]
+dupeitem 0915
+
+[itemdef 0917]
+dupeitem 0915
+
+[itemdef 0918]
+dupeitem 0915
+
+[eof]
