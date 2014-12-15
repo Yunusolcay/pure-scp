@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 deneme local 2
+=======
+deneme local
+deneme web
+>>>>>>> origin/master
