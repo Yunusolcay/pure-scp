@@ -1,4 +1,4 @@
-# Pure Sphere Scripting
+# Pure Sphere Scriptinga
 ## NOT: Tamamlanmamıştır. İndirmeyiniz!
 
 ## Açıklama
