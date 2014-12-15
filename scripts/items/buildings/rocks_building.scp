@@ -6,7 +6,7 @@
 //i_boulder_x     > i_rock_1_1
 //i_rock_plain    > i_rock_2
 //i_rock_2        > i_rock_2_1
-//i_rock_3      > i_rock_2_2
+//i_rock_3        > i_rock_2_2
 //i_rock_plain_x  > i_rock_2_4
 
 //not
